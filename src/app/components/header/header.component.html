@@ -1,0 +1,97 @@
+
+<nav class="navbar  navbar-light  navbar-expand-sm">
+  <a   class="navbar-brand" ><div class="logo" id="logo" (click)="goToPage('home')">
+    <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
+    <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
+   </div></a>
+  <button id="collapsebut" class="navbar-toggler collapser" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav" id="navbarnavid">
+      <li class="nav-item">
+        <a class="nav-link "  id="navlink1" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('products') }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  id="navlink2" (click)="goToCollections('allcollections')">{{ts.translate('collections')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"   id="navlink3"  (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"   id="navlink4"  (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"   id="navlink5"  (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
+      </li>
+  </ul>
+ </div>
+ <div class="lang ">
+  <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />9042222681 &nbsp;&nbsp;&nbsp;|</span>
+  <mat-form-field class="langclass">
+      
+      <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
+        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
+          {{lang}}
+        </mat-option>
+      
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+
+</nav>
+<!-- 
+<nav class="navbar  navbar-light  navbar-expand-sm">
+  <a class="navbar-brand" ><div class="logo" id="logo" (click)="goToPage('home')">
+    <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
+    <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
+   </div></a>
+  <button id="collapsebut" class="navbar-toggler collapser" type="button" data-toggle="collapse" data-target="#navbarContent">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav" id="navbarnavid">
+      <li class="nav-item">
+     <a class="nav-link producthover"  id="navlink1" (click)="goToProducts('allproducts','allmetals')" >{{ts.translate('products') }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collectionhover" id="navlink2" (click)="goToCollections('allcollections')">{{ts.translate('collections')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="navlink3" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  id="navlink4" (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="navlink5" (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
+      </li>
+  </ul>
+  <div id="productdropdown">
+
+  </div>
+  <div id="collectiondropdown">
+    
+  </div>
+ </div>
+ <div class="lang ">
+  <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
+    9042222681 &nbsp;&nbsp;&nbsp;|</span>
+  <mat-form-field class="langclass">
+      
+      <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
+        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
+          {{lang}}
+        </mat-option>
+      
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+
+
+</nav> -->

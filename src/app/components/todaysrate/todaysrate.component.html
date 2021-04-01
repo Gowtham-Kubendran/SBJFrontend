@@ -1,0 +1,26 @@
+<div class="todaysrate">
+    
+  <div class="circle">
+   
+  
+        <span id="today">
+          {{ts.translate('todaysrate')}}
+        </span>
+        <span  id="close">{{ts.translate('close')}}</span>
+      
+   
+      
+  </div>
+  <div class="goldrate"  id="rate">
+    <div class="goldratehead">
+        {{ts.translate('todaysrate')}}
+    </div>
+    <div class="goldbody">
+     <div> <span class="bold"><img style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/goldrate.png" /> {{ts.translate('Gold') |  titlecase }} 1gm</span> - RS {{goldprice}}</div>
+     <div> <span class="bold"><img  style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/silverrate.png" /> {{ts.translate('Silver') |  titlecase }}  1gm</span> - RS {{silverprice}}</div>
+    </div>
+  </div>
+  <div class="bar"></div>
+  
+
+</div>

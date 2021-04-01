@@ -1,0 +1,368 @@
+
+<div id="wrapper" class="wrapper">
+ 
+
+  <app-todaysrate></app-todaysrate>
+  
+
+   <!-- <div class="todaysrate">
+     <div class="goldratediv">
+       <img class="goldrateimg"  src="../../../assets/images/goldrate.png" />
+
+       <div class="goldrate"  id="rate">
+          <div class="goldratehead">
+              {{ts.translate('todaysrate')}}
+          </div>
+          <div class="goldbody">
+           <div> <span class="bold"><img style="width:1.5em;    margin-right: 8px;" src="../../../assets/images/promise1.svg" /> {{ts.translate('Gold')}} 1gm</span> - RS {{goldprice}}</div>
+          
+          </div>
+        </div>
+
+
+     </div>
+
+     <div class="silverratediv">
+        <img class="silverrateimg"  src="../../../assets/images/silverrate.png" />
+ 
+        <div class="silverrate"  id="rate">
+           <div class="silverratehead">
+               {{ts.translate('todaysrate')}}
+           </div>
+           <div class="silverbody">
+           
+            <div> <span class="bold"><img  style="width:1.5em;    margin-right: 8px;" src="../../../assets/images/promise1.svg" /> {{ts.translate('Silver')}}  1gm</span> - RS {{silverprice}}</div>
+           </div>
+         </div>
+ 
+ 
+      </div>
+   </div> -->
+
+
+  <nav class="navbar  navbar-light  navbar-expand-sm">
+    <a class="navbar-brand" ><div class="logo" id="logo" (click)="goToPage('home')">
+      <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
+      <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
+     </div></a>
+    <button id="collapsebut" class="navbar-toggler collapser" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav" id="navbarnavid">
+        <li class="nav-item dropdown1">
+       <a class="nav-link producthover" (click)="goToProducts('allproducts','Gold')"  id="navlink1">{{ts.translate('products') }}</a>
+      
+        </li>
+      
+
+        <li class="nav-item">
+          <a class="nav-link" id="navlink2" (click)="goToCollections('allcollections')">{{ts.translate('collections')}}</a>
+       
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navlink3" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="navlink4" (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navlink5" (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
+        </li>
+    </ul>
+   
+   </div>
+   <div class="lang ">
+    <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
+      9042222681 &nbsp;&nbsp;&nbsp;|</span>
+    <mat-form-field class="langclass">
+        
+        <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
+          <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
+            {{lang}}
+          </mat-option>
+        
+        </mat-select>
+      </mat-form-field>
+    </div>
+  
+  
+  
+  </nav>
+  <div id="productdropdown" >
+    products
+      </div>
+  <div id="collectiondropdown">
+    
+  </div>
+
+<div class="homebody">
+
+  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner">
+      <div class="carousel-item .item active">
+        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
+        <div class="carousel-content">SBJ</div>
+      </div>
+      <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
+      </div>
+     
+      
+    </div>
+  
+    <div class="downarrowdiv">
+    <a (click)="scrollToproducts()"> <span class="material-icons downarrow" >
+      <button style="border: 0px;
+      outline: 0px;
+      background-color: transparent;">expand_more</button>
+            </span>
+          
+          </a>
+       
+    </div>
+  </div>
+  <div id="productsec" class="bodyView" #products data-aos="fade-up" data-aos-once="true">
+    <div class="bodyHeading">
+        {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('products') |  uppercase}}</span>
+    </div>
+   <div class="flexhori">
+        <div class="indi">
+            <div class="imageContainer">
+              <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
+                <div class="bottom-left "> {{ts.translate('gold') | titlecase }} <img class="rarrow" src="../../../assets/images/downarrow2.png"/></div></a>
+            </div>
+        </div>
+        <div class="">
+            <div class="imageContainer">
+                <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
+                <div class="bottom-left "> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+            </div>
+        </div>
+        <div class="">
+            <div class="imageContainer silver">
+                <a (click)="goToProducts('allproducts','Silver')"> <img class="collectionGoldImage silver" src="../../../assets/images/banners/silver.jpg">
+                <div class="bottom-left "> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+            </div>
+        </div>
+    </div> 
+
+
+   <div class="flexhorimobile">
+      <div id="demo3" class="carousel slide" data-interval="10000" pause="true" >
+
+ 
+  
+  
+          <div class="carousel-inner no-padding">
+
+            <div class="carousel-item padl4 active">
+              <div class="col-sm-12 col-12">
+                <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
+                <div class="bottom-left padr3"> {{ts.translate('gold') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>  
+            </div>  
+
+            <div class="carousel-item padl4">
+              <div class="col-sm-12 col-12">
+                  <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
+                    <div class="bottom-left padr3"> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>  
+            </div>
+        
+            <div class="carousel-item padl4">
+              <div class="col-sm-12 col-12">
+                  <a (click)="goToProducts('allproducts','Silver')">  <img class="collectionGoldImage" src="../../../assets/images/banners/silver.jpg">
+                    <div class="bottom-left padr3"> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>  
+            </div>  
+        
+            
+         </div>
+         <a id="prevbut" class="carousel-control-prev" href="#demo3" data-slide="prev">
+                <div class="nextCaro">	<img class="left" src="../../../assets/images/arrow.png" /></div>
+           </a>
+         
+         <a class="carousel-control-next" (click)="showprev()"  href="#demo3" data-slide="next">
+             <div class="nextCaro">	<img class="right" src="../../../assets/images/arrow.png" /></div>
+          </a>
+       </div>
+       
+     
+  </div>
+  
+       
+     
+
+     
+  
+  </div>
+  <div class="bodyView" data-aos="fade-up" data-aos-once="true">
+    <div class="bodyHeading" >
+        {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
+    </div>
+    <div class="row padl5">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 padding0" >
+          <div class="imageContainer marb20">
+              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" src="../../../assets/images/homehero1.jpg">
+              <div class="bottom-left left2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div class="row">
+              <div class="imageContainer colimg mar-3 mar-r-1">
+                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 " src="../../../assets/images/homehero1.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+            <div class="row padt20">
+                <div class="imageContainer marb20 colimg mar-r-1">
+                    <a (click)="goToCollections('women')"> <img class="collectionImage" src="../../../assets/images/homehero1.jpg">
+                    <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+                </div>
+             </div>
+         
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div class="row">
+              <div class="imageContainer colimg mar-3 padingt20">
+                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 " src="../../../assets/images/homehero1.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+          <div class="row padt20">
+             <div class="imageContainer colimg">
+                <a (click)="goToCollections('gifts')"> <img class="collectionImage" src="../../../assets/images/homehero1.jpg">
+                 <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+             </div>
+           </div>
+       </div>
+
+
+
+    </div>
+  </div>
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+    {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('promises') |  uppercase}}</span>
+  </div>
+  <div class="row marginTop">
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="PromiseContainer pcolor1">
+            <div class="promiseBody">
+              <div>
+                <img class="width50" src="../../../assets/images/promise1.svg" />
+              </div>
+              {{ts.translate('promise1')}}
+              
+            </div>
+            <div class="numbering">1</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="PromiseContainer pcolor2">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise2.svg" />
+                  </div>
+                  {{ts.translate('promise2')}}
+              
+            </div>
+            <div class="numbering">2</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="PromiseContainer pcolor1">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise3.svg" />
+                  </div>
+                  {{ts.translate('promise3')}}
+              
+            </div>
+            <div class="numbering">3</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="PromiseContainer pcolor2">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise4.svg" />
+                  </div>
+                  {{ts.translate('promise4')}}
+              
+            </div>
+            <div class="numbering">4</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+    {{ts.translate('top') |  uppercase}} <span class="bold">{{ts.translate('sellingjewels') |  uppercase}}</span>
+  </div>
+<app-topselling></app-topselling>
+</div>
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+      {{ts.translate('whatpeople') |  uppercase}} <span class="bold">{{ts.translate('talkaboutus') |  uppercase}}</span>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="userpic">
+        <img class="userimg" src="../../../assets/images/homehero1.jpg" />
+        <div class="username">
+          <div class="name">User1</div>
+          <div class="designation">Buisness Women</div>
+        </div>
+      </div>
+      <div class="usercomment">
+        <div>
+          <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+        </div>
+        <div class="comments">
+            Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: 
+            a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, 
+            though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="userpic">
+          <img class="userimg" src="../../../assets/images/homehero1.jpg" />
+          <div class="username">
+            <div class="name">User2</div>
+            <div class="designation">Buisness Women</div>
+          </div>
+        </div>
+        <div class="usercomment">
+          <div>
+            <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+          </div>
+          <div class="comments">
+              Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: 
+              a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, 
+              though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+          </div>
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+</div>
+<app-talktous [talktouscontent]="ts.translate('talktoushome')"></app-talktous>
+<app-footer></app-footer>
+</div>
+

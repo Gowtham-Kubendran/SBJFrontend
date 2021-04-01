@@ -1,0 +1,27 @@
+<div class="aboutuswrapper">
+    <app-header class="headerfixed"></app-header>
+    
+
+      <div class="schemebody">
+          <app-todaysrate></app-todaysrate>
+          <div class="productheroimgdiv">
+            <img class="productheroimg" src="../../../assets/images/banners/shop1.jpg" />
+          </div>
+          <div class="schemetext">
+            <div class="bodyHeading">
+              {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('story') |  uppercase}}</span>
+          </div>
+          <p>
+            {{ts.translate('aboutusdata1')}}
+          </p>
+          </div>
+      </div>
+      <div class="linkstab">
+        <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
+        <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToPage('aboutus')"  >{{ts.translate('aboutus')}} </a></span> </span> 
+      
+    
+      </div>
+      <app-footer></app-footer>
+      </div>
+    

@@ -1,0 +1,195 @@
+<div class="contactwrapper">
+  <app-header class="headerfixed"></app-header>
+  <div class="schemebody">
+      <app-todaysrate></app-todaysrate>
+      <div class="productheroimgdiv">
+      <img class="productheroimg" src="../../../assets/images/banners/contactbanner.jpg" />
+    </div>
+  <div class="contactbody">
+    
+    <div class="bodyHeading">
+      {{ ts.translate("our") | uppercase }}
+      <span class="bold">{{ ts.translate("locations") | uppercase }}</span>
+    </div>
+  
+    <div class="row store">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 padR">
+        <img
+          class="storeview"
+          src="../../../assets/images/banners/shopint1.jpg"
+        />
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 padL">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.200405003273!2d78.11522951461477!3d9.91726089290794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c583ef5928cb%3A0x145934dc50a65518!2sSri%20Balagopalan%20Jewellery%20Mart!5e0!3m2!1sen!2sin!4v1612636344337!5m2!1sen!2sin;output=embed"
+          width="100%"
+          height="350"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="center">
+        <div class="storeHead1 bold">
+          {{ ts.translate("storename1") }}
+        </div>
+        <div class="storetype bold">
+          {{ ts.translate("goldstore") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("address") }}
+        </div>
+        <div class="addbody">
+          {{ ts.translate("addressbody1") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("buisnesshours") }}
+        </div>
+        <div class="addbody">
+          {{ ts.translate("buisnesshoursbody1") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("phonenumber") }}
+        </div>
+        <div class="addbody">
+         <div> <a href="tel:+91 9994926518"> {{ ts.translate("phonenumberbody1") }}</a></div>
+         <div> <a href="tel:+0452 2346518"> {{ ts.translate("phonenumberbody2") }}</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="row store">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 padR">
+        
+        <img
+          class="storeview"
+          src="../../../assets/images/banners/shopint2.jpg"
+        />
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 padL">
+          <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.200405003273!2d78.11522951461477!3d9.91726089290794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c583ef5928cb%3A0x145934dc50a65518!2sSri%20Balagopalan%20Jewellery%20Mart!5e0!3m2!1sen!2sin!4v1612636344337!5m2!1sen!2sin;output=embed"
+          width="100%"
+          height="350"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+          <div class="center">
+        <div class="storeHead1 bold">
+          {{ ts.translate("storename1") }}
+        </div>
+        <div class="storetype bold">
+          {{ ts.translate("silverstore") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("address") }}
+        </div>
+        <div class="addbody">
+          {{ ts.translate("addressbody2") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("buisnesshours") }}
+        </div>
+        <div class="addbody">
+          {{ ts.translate("buisnesshoursbody1") }}
+        </div>
+        <div class="addHead">
+          {{ ts.translate("phonenumber") }}
+        </div>
+        <div class="addbody">
+         <div> <a href="tel:+9994926518"> {{ ts.translate("phonenumberbody3") }}</a></div>
+         <div> <a href="tel:+04522346518"> {{ ts.translate("phonenumberbody4") }}</a></div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="bodyHeading">
+      {{ ts.translate("get") | uppercase }}
+      <span class="bold">{{ ts.translate("intouch") | uppercase }}</span>
+    </div>
+    <div class="row emailblock">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+        <label>{{ts.translate('fullname')}}<span class="redast">*</span></label><br>
+       <input type="text" [(ngModel)]="firstname" placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}" />
+       <!-- <mat-form-field appearance="outline">
+        <mat-label>{{ts.translate('fullname')}}</mat-label>
+        <input matInput  [(ngModel)]="firstname" required placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}">
+       </mat-form-field> -->
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+        <label>{{ts.translate('phonenumber')}}<span class="redast">*</span></label><br>
+        <input type="number" [(ngModel)]="phonenumber" placeholder="{{ts.translate('enter')}}{{ts.translate('phonenumber')}}" />
+      </div>
+    </div>
+
+    <div class="row emailblock">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+        <label>{{ts.translate('email')}}<span class="redast">*</span></label><br>
+       <input type="email" [(ngModel)]="useremail" placeholder="{{ts.translate('enter')}}{{ts.translate('email')}}" />
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+        <label>{{ts.translate('subject')}}<span class="redast">*</span></label><br>
+        <input type="text" [(ngModel)]="subject" placeholder="{{ts.translate('enter')}}{{ts.translate('subject')}}" />
+      </div>
+    </div>
+
+    <div class="row emailblock">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 padb1">
+        <label>{{ts.translate('message')}}<span class="redast">*</span></label><br>
+       
+       <textarea [(ngModel)]="message"  rows="8" placeholder="{{ts.translate('enter')}}{{ts.translate('message')}}">
+       
+        </textarea>
+      </div>
+    
+    </div>
+   
+    <button mat-button class="submitbutton" (click)="sendmessage()" >
+      {{ts.translate('send')}}{{ts.translate('message')}}
+    </button>
+    <div class="errormessage" *ngIf="showerrormessage">** {{ts.translate('fillallfields')}} **</div>
+
+    <div class="bodyHeading">
+      {{ ts.translate("connect") | uppercase }}
+      <span class="bold">{{ ts.translate("withus") | uppercase }}</span>
+    </div>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com/sribalagopalanjewellerymart" target="_blank">
+      <div class="scircle padtopf">
+        <img class="scircleImg fbicon" src="../../../assets/images/facebook.svg">
+      </div>
+    </a>
+      <a href="https://www.instagram.com/sribalagopalanjewellerymart" target="_blank">
+      <div class="scircle">
+        <img class="scircleImg" src="../../../assets/images/Insta.svg">
+      </div>
+    </a>
+      <a href="//api.whatsapp.com/send?phone=919994926518&text=Hi Team !!!" target="_blank">
+      <div class="scircle padrw">
+        <img class="scircleImg" src="../../../assets/images/whatsapp.svg">
+      </div>
+    </a>
+      <a [href]="emailstring" target="_top">
+      <div class="scircle">
+        <img class="scircleImg" src="../../../assets/images/Mail.svg">
+      </div>
+    </a>
+    </div>
+  </div>
+  </div>
+  <div class="linkstab">
+    <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
+    <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToPage('contactus')" >{{ts.translate('contactus')}} </a></span> </span> 
+   
+
+  </div>
+  <app-footer></app-footer>
+</div>

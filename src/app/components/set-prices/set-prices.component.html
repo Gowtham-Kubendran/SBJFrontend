@@ -1,0 +1,24 @@
+<div class="setprices">
+  <div class="pad1">
+  <!-- <label  class="pad1">Gold Price</label> -->
+<div>
+  <!-- <input  class="pad1" type="text" [(ngModel)]="goldprice" placeholder="Gold Price" /> -->
+  <mat-form-field appearance="outline">
+    <mat-label>Gold Price</mat-label>
+    <input matInput  [(ngModel)]="goldprice" placeholder="Gold Price">
+   </mat-form-field>
+</div>
+</div>
+<div  class="pad1">
+    <!-- <label  class="pad1">Silver Price</label> -->
+  <div>
+    <!-- <input  class="pad1" type="text" [(ngModel)]="silverprice" placeholder="Silver Price" /> -->
+    <mat-form-field appearance="outline">
+      <mat-label>Silver Price</mat-label>
+      <input matInput  [(ngModel)]="silverprice" placeholder="Silver Price">
+     </mat-form-field>
+  </div>
+  </div>
+  
+  <button mat-raised-button (click)="setPrice()">Set Price</button>
+</div>

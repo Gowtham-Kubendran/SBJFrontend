@@ -1,0 +1,101 @@
+.schemebody
+{
+    padding: 7em 0 0em 0;
+    position:relative;
+}
+.productheroimgdiv
+{
+    width: 100%;
+    height: 420px;
+position: relative;
+}
+
+.productheroimg
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: right;
+}
+.schemetext
+{
+    padding: 2em 6em;
+}
+
+.bodyHeading
+{
+  padding:0 0.5em;
+  font-size: 26px;
+  margin:2em 0;
+  border-left:8px solid #CC9F08;
+}
+.bold
+  {
+    font-family: 'opEB','tamilf';
+  }
+
+  p
+  {
+    font-size: 18px;
+    line-height: 2em;
+    text-align: justify;
+    
+  }
+
+  .linkstab
+{
+    display: inline-flex;
+    color:#fff;
+    background-color: #171717;
+    font-size: 14px;
+    font-family: 'opR','tamilf';
+    width:100%;
+    padding:11px 65px;
+}
+.downarrow
+{
+    height:12px;
+    transform: rotate(-90deg);
+}
+.padl15
+{
+    padding-left: 15px;
+}
+.homeimg
+{
+    height: 22px;
+    width: 22px;
+    
+}
+
+.pointer
+{
+    cursor:pointer;
+}
+
+  @media screen and (max-width: 600px) {
+    .schemetext
+    {
+      padding:2em;
+    }
+  
+    p {
+      font-size:14px;
+    };
+    .linkstab
+    {
+        padding: 11px 40px;
+    }
+    .productheroimg
+    {
+      object-position: 95% 90%;
+    }
+
+  }
+
+  .headerfixed
+{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}

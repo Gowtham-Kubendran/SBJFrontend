@@ -1,0 +1,45 @@
+import { Component, OnInit, Input } from '@angular/core';
+import * as AOS from 'aos';
+import { TranslateService } from 'src/app/services/translate/translate.service';
+import { SharedService } from 'src/app/services/shared.service';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-talktous',
+  templateUrl: './talktous.component.html',
+  styleUrls: ['./talktous.component.scss']
+})
+export class TalktousComponent implements OnInit {
+
+  @Input('talktouscontent')
+  talktouscontent: any;
+
+  constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
+    private router: Router) { }
+
+  ngOnInit() {
+    console.log(window.sessionStorage.getItem('lang')+" talk tous");
+    this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
+
+    if(window.sessionStorage.getItem('lang')=="LA-TA")
+    (document.getElementById("talktousid") as HTMLInputElement).style.fontFamily = "tamilf !important";
+    if (window.sessionStorage.getItem('lang') == "LA-EN")
+      (document.getElementById("talktousid") as HTMLInputElement).style.fontFamily = "opR";
+    this.aosInit();
+    
+    console.log(this.talktouscontent);
+  }
+
+  aosInit()
+  {
+    AOS.init({
+      duration:1200
+    });
+  }
+
+  goToPage(route)
+  {
+    this.router.navigate([route]);
+  }
+  
+}

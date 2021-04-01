@@ -1,0 +1,50 @@
+<div class="schemewrapper">
+  <app-header class="headerfixed"></app-header>
+  <div class="schemebody">
+      <app-todaysrate></app-todaysrate>
+    <div class="productheroimgdiv">
+      <img class="productheroimg" src="../../../assets/images/banners/savings.jpg" />
+    </div>
+    <div class="schemetext">
+      <div class="bodyHeading">
+        {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('goldsavingscheme') |  uppercase}}</span>
+    </div>
+    <p>
+      {{ts.translate('goldschemedata')}}
+    </p>
+    <h2 class="gold"> {{ts.translate('flexischemeHead') |  titlecase }}</h2>
+    <p>
+      {{ts.translate('flexip1')}}
+
+    </p>
+    <p>
+      {{ts.translate('flexip2')}}
+    </p>
+    <p>
+      {{ts.translate('flexip3')}} <a target="_blank" href="../../../assets/images/chitscheme.pdf" download>{{ts.translate('downloadhere')}}<span><img class="downicon" src="../../../assets/images/download.png"/></span></a>
+    </p>
+    <h2  class="gold"> {{ts.translate('happyGoldHead') |  titlecase }}</h2>
+    <p>
+      {{ts.translate('happyGold1')}}
+
+    </p>
+    <p>
+      {{ts.translate('happyGold2')}}<a target="_blank" href="../../../assets/images/chitscheme.pdf" >{{ts.translate('downloadhere')}}<span><img class="downicon" src="../../../assets/images/download.png"/></span></a>
+    </p>
+    <!-- <p>
+      {{ts.translate('happyGold3')}} 
+    </p> -->
+  
+    
+      
+
+    </div>
+    <app-talktous [talktouscontent]="ts.translate('talktousgoldscheme')"></app-talktous>
+  </div>
+  <div class="linkstab">
+    <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
+    <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a></span> </span> 
+    
+  </div>
+ <app-footer></app-footer>
+</div>
