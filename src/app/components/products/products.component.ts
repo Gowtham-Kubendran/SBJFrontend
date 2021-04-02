@@ -27,7 +27,9 @@ export interface DialogData {
   
 export class ProductsComponent implements OnInit {
   selectedValue: any;
-  talktouscontent: any="";
+  talktouscontent: any = "";
+  
+  cartext = "";
 
   httpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',
@@ -125,6 +127,11 @@ export class ProductsComponent implements OnInit {
   
   ngOnInit() {
 
+    
+    
+     this.route.params.subscribe(params => this.selectedMetal=params.metal);
+    
+    
     this.showspinner = true;
     document.getElementById('wrapper').style.opacity = "0";
      
@@ -134,7 +141,7 @@ export class ProductsComponent implements OnInit {
     this.selectedValue = "allproducts";
     this.selectedoption = "allproducts";
 
-    this.selectedMetal=this.route.snapshot.paramMap.get('metal');
+    // this.selectedMetal=this.route.snapshot.paramMap.get('metal');
 let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     if (!this.selectedMetal)
     {
@@ -144,16 +151,19 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     
     if (this.selectedMetal.toLowerCase() == 'gold')
     {
+      this.cartext = this.ts.translate('gold');
       this.talktouscontent = this.ts.translate('talktousgold');
       img.src = "./assets/images/banners/goldbanner.jpg";
     }
     else if (this.selectedMetal.toLowerCase() == 'silver')
     {
+      this.cartext = this.ts.translate('silver');
       this.talktouscontent = this.ts.translate('talktoussilver');
       img.src = "./assets/images/banners/silverbanner.jpg";
     }
     else if (this.selectedMetal.toLowerCase() == 'diamond')
     {
+      this.cartext = this.ts.translate('diamond');
       this.talktouscontent = this.ts.translate('talktousdiamond');
       img.src = "./assets/images/banners/diamondbanner.jpg";
     }
@@ -162,6 +172,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       img.src = "./assets/images/banners/goldbanner.jpg";
     }
     
+    this.cartext = this.selectedMetal.toLowerCase();
     
     //this.selectedMetal="allmetals"
 

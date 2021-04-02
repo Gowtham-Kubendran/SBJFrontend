@@ -7,6 +7,15 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
 mat-sidenav {
   width: 250px;
 }
+.cartext
+{
+  position: absolute;
+    top: 40vh;
+    left: -70rem;
+    font-family:dance;
+    text-align: center;
+    font-size: 4rem;
+}
 main {
   padding: 10px;
 }
@@ -742,6 +751,16 @@ ul{
 }
 @media only screen and (max-width: 1300px) {
 
+  .cartext
+  {
+  position: absolute;
+  top: 44vh;
+  left: -40rem;
+  font-family: dance;
+  text-align: center;
+  font-size: 3rem;
+  }
+
   .navbar-nav {
     margin: -5px 0% 0 9%;
   }
@@ -908,6 +927,10 @@ ul{
  bottom: 1em;
 }
  
+.cartext
+{
+  left: -29rem;
+}
   .padding0
   {
     padding:0;
@@ -971,14 +994,12 @@ ul{
  }
 
  @media screen and (max-width: 700px) {
-//   .flexhori
-//  {
-//   display:block;
-//  }
-  // .flexhorimobile
-  // {
-  //   display:block;
-  // }
+
+  .cartext
+  {
+  left: -25rem;
+  }
+
   .bottom-left {
    
     left: 2em;

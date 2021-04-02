@@ -75,7 +75,7 @@
    </div>
    <div class="lang ">
     <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
-      9042222681 &nbsp;&nbsp;&nbsp;|</span>
+      {{ ts.translate("phonenumberbody1") }} &nbsp;&nbsp;&nbsp;|</span>
     <mat-form-field class="langclass">
         
         <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
@@ -99,20 +99,36 @@
 
 <div class="homebody">
 
-  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel" data-interval="2000">
+  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel" data-interval="3000">
     <div class="carousel-inner">
       <div class="carousel-item .item active">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
-        <div class="carousel-content">SBJ</div>
+        <div class="carousel-caption d-none d-md-block cartext">
+          <p>Celebrate Golden memories ..</p>
+         
+        </div>
       </div>
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block cartext">
+          <p>Brilliance for your shine</p>
+         
+        </div>
       </div>
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block cartext">
+            <p>Fashion in every Gold</p>
+          
+         
+        </div>
       </div>
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
+        <div class="carousel-caption d-none d-md-block cartext">
+            <p>Our jewelry, your style</p>
+         
+        </div>
       </div>
      
       
