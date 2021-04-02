@@ -62,15 +62,17 @@ html , body{
 /* background of the scrollbar except button or resizer */
 ::-webkit-scrollbar-track {
     background-color:transparent;
+    
 }
 ::-webkit-scrollbar-track:hover {
-    background-color:#f4f4f4
+    background-color:#f4f4f4;
 }
 
 /* scrollbar itself */
 ::-webkit-scrollbar-thumb {
     background-color:#babac0;
     border-radius:16px;
+    width:8px;
   
 }
 ::-webkit-scrollbar-thumb:hover {

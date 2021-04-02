@@ -53,7 +53,13 @@
       <ul class="navbar-nav" id="navbarnavid">
         <li class="nav-item dropdown1">
        <a class="nav-link producthover" (click)="goToProducts('allproducts','Gold')"  id="navlink1">{{ts.translate('products') }}</a>
-      
+
+       <!-- <button class="nav-link producthover"   id="navlink1" mat-button [matMenuTriggerFor]="menu">Products</button>
+       
+       <mat-menu #menu="matMenu">
+         <button mat-menu-item>Item 1</button>
+         <button mat-menu-item>Item 2</button>
+       </mat-menu> -->
         </li>
       
 
@@ -74,7 +80,7 @@
    
    </div>
    <div class="lang ">
-    <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
+    <span class="phonelink"><img class="phoneicon" style="width:18px;margin-top: -2px;" src="../../../assets/images/wiconw.png" />
       {{ ts.translate("phonenumberbody1") }} &nbsp;&nbsp;&nbsp;|</span>
     <mat-form-field class="langclass">
         
@@ -85,6 +91,8 @@
         
         </mat-select>
       </mat-form-field>
+
+      
     </div>
   
   

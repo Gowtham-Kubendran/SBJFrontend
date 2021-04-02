@@ -191,7 +191,10 @@ export class HomeComponent implements OnInit {
       $(window).scroll(function () {
       
          $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
-         
+         if ($(this).scrollTop() > 50)
+         $(".phoneicon").attr("src", "../../../assets/images/wicon.svg");
+      else
+         $(".phoneicon").attr("src", "../../../assets/images/wiconw.png"); 
        
       });
   

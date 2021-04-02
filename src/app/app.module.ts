@@ -22,6 +22,7 @@ import { TalktousComponent } from './components/talktous/talktous.component';
 import { TodaysrateComponent } from './components/todaysrate/todaysrate.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -49,6 +50,7 @@ import { SetPricesComponent } from './components/set-prices/set-prices.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatMenuModule,
     MaterialModuleModule,
     SlickCarouselModule,
     FlexLayoutModule,

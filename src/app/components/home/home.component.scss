@@ -15,6 +15,7 @@ mat-sidenav {
     font-family:dance;
     text-align: center;
     font-size: 4rem;
+    height:5rem;
 }
 main {
   padding: 10px;
@@ -87,7 +88,7 @@ top: 50%;
 
 .phoneicon
 {
-  padding-right: 1rem;
+  // padding-right: 1rem;
 }
   
   #products
@@ -273,7 +274,7 @@ transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     -ms-transform: translate(0, -8px);
     -o-transform: translate(0, -8px);
     transform: translate(0, -8px);
-
+cursor: pointer;
     
     
   }
@@ -480,10 +481,10 @@ transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 //  }
  
  
-//  .nav-link:hover {
+ .nav-link:hover {
   
-//    cursor: pointer;
-//  }
+   cursor: pointer;
+ }
  
 
 #navbarContent
@@ -724,11 +725,12 @@ ul{
 .langclass
 {
   width: 6rem;
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 1rem;
 }
 .phonelink
 {
-  padding-top: 1.3rem;
+  padding-top: 1.4rem;
+  
 }
 
 
