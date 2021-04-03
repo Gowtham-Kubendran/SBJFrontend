@@ -47,6 +47,8 @@
 .circle:hover p.new-label span{
   display: none;
 }
+
+
 .circle:hover p.new-label:after{
   font-size: 12px;
     line-height: 1.5rem;
@@ -90,6 +92,11 @@
     // box-shadow: 0 0 5px 1px #dfdfdf;
 
 }
+
+.circle:not(:hover) + .goldrate{
+  display:none;
+}
+
 .goldrate
 {
   width: 15em;

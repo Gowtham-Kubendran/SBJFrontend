@@ -191,6 +191,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.showspinner = false;
       document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
+      
       this.tempdata = this.jsondata;
       // console.log(this.tempdata);
 

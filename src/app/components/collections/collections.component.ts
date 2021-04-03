@@ -35,7 +35,7 @@ export class CollectionsComponent implements OnInit {
     'Cache-Control': 'no-cache'
   });
   showspinner = true;
-  
+  cartext = "";
   metals = ["marriage", "women", "men", "kids", "gifts"];
   types = [
     {
@@ -161,7 +161,8 @@ export class CollectionsComponent implements OnInit {
     
     
     if(this.sh.getValue())
-    this.value = this.sh.getValue();
+      this.value = this.sh.getValue();
+    this.cartext = this.ts.translate(this.value);
     this.selectedoption = this.value;
     this.selectedValue = this.value;
   // console.log(this.value);
@@ -175,7 +176,8 @@ export class CollectionsComponent implements OnInit {
       if (!this.metals.includes(this.value)) {
         (document.getElementById(this.value) as HTMLInputElement).checked = true;
         (document.getElementById('allcollections') as HTMLInputElement).checked = true;
-        this.value ='allcollections';
+        this.value = 'allcollections';
+        
       }
       else {
         this.tempdata = this.tempdata.filter(data => data.collection.includes(this.value));

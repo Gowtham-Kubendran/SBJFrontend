@@ -10,7 +10,7 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class HeaderComponent implements OnInit {
   languageselect: string;
-  langlist = ['LA-EN', 'LA-TA'];
+  langlist = [{ key: 'LA-EN', value: 'English' }, { key: 'LA-TA', value: 'தமிழ்' }];
  
 
  
@@ -22,23 +22,31 @@ export class HeaderComponent implements OnInit {
       if (window.innerWidth < 2700)
       {
         document.getElementById("navbarnavid").style.marginLeft = "35%";
+        document.getElementById("navdropdown1").style.marginLeft = "35%";
       }
       if (window.innerWidth < 1600)
       {
         document.getElementById("navbarnavid").style.marginLeft = "15%";
+        document.getElementById("navdropdown1").style.marginLeft = "18%";
+        document.getElementById("navdropdown2").style.marginLeft = "30%";
+      
       }
       if (window.innerWidth < 1500)
       {
         document.getElementById("navbarnavid").style.marginLeft = "9%";
+        document.getElementById("navdropdown1").style.marginLeft = "13%";
+        document.getElementById("navdropdown2").style.marginLeft = "25%";
         }
-      if (window.innerWidth < 1200) {
+      if (window.innerWidth < 1300) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 0.5rem";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 0";
         document.getElementById("navbarnavid").style.marginLeft = "6%";
+        document.getElementById("navdropdown1").style.marginLeft = "11%";
+        document.getElementById("navdropdown2").style.marginLeft = "23%";
       }
      
       if (window.innerWidth < 800) {
@@ -60,6 +68,8 @@ export class HeaderComponent implements OnInit {
           (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
           (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
           document.getElementById("navbarnavid").style.marginLeft = "1%";
+          document.getElementById("navdropdown1").style.marginLeft = "0";
+        document.getElementById("navdropdown2").style.marginLeft = "0";
         }
         
      
@@ -71,11 +81,11 @@ export class HeaderComponent implements OnInit {
     }
     else {
         
-      (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
+      (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 0px";
       document.getElementById("navbarnavid").style.marginLeft = "11%";
       if (window.innerWidth < 2700)
       {
@@ -83,15 +93,15 @@ export class HeaderComponent implements OnInit {
       }
       if (window.innerWidth < 1600)
       {
-        document.getElementById("navbarnavid").style.marginLeft = "15%";
+        document.getElementById("navbarnavid").style.marginLeft = "21%";
         }
 
-      if (window.innerWidth < 1200) {
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
+      if (window.innerWidth < 1300) {
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0px";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0px";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0px";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 0px";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 0px";
         document.getElementById("navbarnavid").style.marginLeft = "13%";
       }
       if (window.innerWidth < 800) {
@@ -110,6 +120,8 @@ export class HeaderComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
         document.getElementById("navbarnavid").style.marginLeft = "1%";
+        document.getElementById("navdropdown1").style.marginLeft = "0";
+        document.getElementById("navdropdown2").style.marginLeft = "0";
       }
       
 
@@ -117,6 +129,17 @@ export class HeaderComponent implements OnInit {
   }
   
   ngOnInit() {
+
+    $(document).ready(function () {
+      $('.dropdown-submenu a.test').on("click", function (e) {
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+
+    });
+
+
     if (window.sessionStorage.getItem('lang') == "EN")
     {
       window.sessionStorage.setItem('lang','LA-EN');
@@ -149,19 +172,26 @@ export class HeaderComponent implements OnInit {
       if (window.innerWidth < 1600)
       {
         document.getElementById("navbarnavid").style.marginLeft = "15%";
+        document.getElementById("navdropdown1").style.marginLeft = "18%";
+        document.getElementById("navdropdown2").style.marginLeft = "30%";
+     
       }
       if (window.innerWidth < 1500)
       {
         document.getElementById("navbarnavid").style.marginLeft = "9%";
+        document.getElementById("navdropdown1").style.marginLeft = "13%";
+        document.getElementById("navdropdown2").style.marginLeft = "25%";
         }
       if (window.innerWidth < 1200) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 0.5rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 0.5rem";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 0";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 0";
         document.getElementById("navbarnavid").style.marginLeft = "6%";
+        document.getElementById("navdropdown1").style.marginLeft = "11%";
+        document.getElementById("navdropdown2").style.marginLeft = "23%";
       }
       if (window.innerWidth < 800) {
      
@@ -180,16 +210,18 @@ export class HeaderComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "2rem 0";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "2rem 0";
         document.getElementById("navbarnavid").style.marginLeft = "1%";
+        document.getElementById("navdropdown1").style.marginLeft = "0";
+        document.getElementById("navdropdown2").style.marginLeft = "0";
       }
     
     
     }
     else {
-      (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-      (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
+      (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 0px";
+      (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 0px";
       document.getElementById("navbarnavid").style.marginLeft = "11%";
       if (window.innerWidth < 2700)
       {
@@ -197,14 +229,14 @@ export class HeaderComponent implements OnInit {
       }
       if (window.innerWidth < 1600)
       {
-        document.getElementById("navbarnavid").style.marginLeft = "15%";
+        document.getElementById("navbarnavid").style.marginLeft = "21%";
       }
       if (window.innerWidth < 1200) {
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0rem";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0rem";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0rem";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 0rem";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 0rem";
         document.getElementById("navbarnavid").style.marginLeft = "13%";
       }
       if (window.innerWidth < 800) {
@@ -224,6 +256,8 @@ export class HeaderComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
         document.getElementById("navbarnavid").style.marginLeft = "1%";
+        document.getElementById("navdropdown1").style.marginLeft = "0";
+        document.getElementById("navdropdown2").style.marginLeft = "0";
       }
       
 

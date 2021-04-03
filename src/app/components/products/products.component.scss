@@ -309,6 +309,11 @@ outline:0;
     ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
         color: #CC9F08 !important;
     }
+
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+        padding: 8px 0 1em 0;
+    }
+
     .headerfixed
 {
     position: fixed;

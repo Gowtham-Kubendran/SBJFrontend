@@ -32,7 +32,13 @@ export class TodaysrateComponent implements OnInit {
     });
    
   }
-
+  toggleview()
+  {
+    if (document.getElementById('rate').style.display = "block")
+      document.getElementById('rate').style.display = "none";
+    else
+      document.getElementById('rate').style.display = "block";
+  }
   over()
   {
     document.getElementById('content').innerHTML = this.ts.translate('close');

@@ -33,6 +33,20 @@ export const VOCAB_TA ={
   earrings: 'காதணிகள்',
   rings: 'மோதிரங்கள்',
   bracelet: 'ப்ராஸ்லெட் ',
+  stud: 'ஸ்டட்',
+
+  Maalai: 'மாலை',
+  Bangles: 'வளையல்கள்',
+  Chains: 'செய்ன்ஸ்',
+  Earrings: 'காதணிகள்',
+  Rings: 'மோதிரங்கள்',
+  Bracelet: 'ப்ராஸ்லெட்',
+  Necklace: 'நெக்லஸ்',
+  Stud: 'ஸ்டட்',
+  Dollar: 'டாலர்',
+  Anklet: 'கணுக்கால்',
+
+
   goldsavingscheme: 'தங்க சேமிப்பு திட்டம்',
 
 
@@ -68,6 +82,7 @@ export const VOCAB_TA ={
   buisnesshoursbody1: 'ஒவ்வொரு நாளும் 9AM - 9PM',
   phonenumber: 'தொலைபேசி எண்',
   phonenumberbody1: '+91-99949-26518',
+  phonebody1: '9994926518',
   phonenumberbody2: '+91-452-2346518',
   silverstore: 'வெள்ளி கடை',
   addressbody2: '218, மேற்கு மாசி தெரு மதுரை -625001',

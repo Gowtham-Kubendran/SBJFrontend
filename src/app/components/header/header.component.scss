@@ -14,7 +14,12 @@ color: black;
 #language:focus{
   outline:0;
 }
-
+#changedrop
+{
+  width: 12px;
+  padding-top: 15px;
+  margin-left: -17px;
+}
 #language option
 {
   background-color: transparent;
@@ -23,13 +28,38 @@ color: black;
   color:grey;
 
 }
+#navdropdown1
+{
+  position: absolute;
+  margin-left: 19%;
+  margin-top: 15px;
+  border: 0px;
+  font-size: 16px;
+  line-height: 2.4;
+  width: 300px;
 
+}
+#navdropdown2
+{
+  position: absolute;
+  margin-left: 31.5%;
+  margin-top: 15px;
+  border: 0px;
+  font-size: 16px;
+  line-height: 2.4;
+  width: 300px;
+}
+
+.dropdown-item:hover{
+  color:#CC9F08;
+  cursor: pointer;
+}
 .navbar{
   position: relative;
   display: flex;
    flex-wrap: wrap;
   box-shadow: 0 0 10px 0 #e2e2e2;
-  overflow-y: hidden;
+  overflow-y: unset;
   margin: 0;
   background-color: #fff;
   align-items: center;
@@ -144,7 +174,7 @@ ul{
   border-left: 15px solid transparent !important;
   border-right: none !important;
   border-top: 15px solid transparent !important;
-  border-image-source: url('../../../assets/images/downarrowb.png') !important;
+  border-image-source: none !important;
   border-image-repeat: stretch !important;
   margin-top: -2px !important;
   transform: scale(0.7);
@@ -156,13 +186,26 @@ ul{
     margin: 0 0% 0 35%;
     
 }
-}  
+
+  #navdropdown1{
+    margin-left: 37%;
+  }
+  #navdropdown2{
+    margin-left: 43.5%;
+  }
+}
 
   @media  screen and (max-width: 1600px){
     .navbar-nav{
       margin: 0 0% 0 15%;
       height: 100%;
     margin-left: 15%;
+  }
+  #navdropdown1{
+    margin-left: 24%;
+  }
+  #navdropdown2{
+    margin-left: 36%;
   }
   }
   @media  screen and (max-width: 1500px){
@@ -171,21 +214,51 @@ ul{
       height: 100%;
     margin-left: 15%;
   }
+  
+  }
+
+  @media screen and (max-width:1300px)
+  {
+    .navbar-nav{
+      padding: 0 6px;
+    }
+    .navbar-nav > li {
+      padding: 0px 10px;
+  }
+  .navbar-light .navbar-nav .nav-link
+  {
+    font-size: 16px;
+  }
+  #navdropdown1{
+    margin-left: 15%;
+  }
+  #navdropdown2{
+    margin-left: 28%;
+  }
   }
  
-  @media  screen and (max-width: 1024px){
+  @media  screen and (max-width: 1030px){
     .navbar-nav
     {
       margin: 0 0% 0 13%;
     }
     .navbar-nav > li {
-      padding: 0 1%;
+      padding: 0 13px;
     }
     .navbar-light .navbar-nav .nav-link {
          
       padding: 2rem 1rem;
       font-size: 14px;
      
+  }
+  #navdropdown1{
+    margin-left: 15%;
+  }
+  #navdropdown2{
+    margin-left: 28%;
+  }
+  .lang{
+    padding-top:4px;
   }
   }
       ::ng-deep .mat-select-value {
@@ -222,7 +295,7 @@ ul{
       .lang{
         position: absolute;
         right: 1rem;
-        top: 1.5rem;
+        top: 1rem;
       }
       .navbar-light .navbar-nav .nav-link {
        
@@ -234,13 +307,64 @@ ul{
     @media screen and (max-width: 500px){
       .lang{
         right: 5rem;
-        top: 1.8rem;
+        top: 1.5rem;
       }
       .navbar-nav {
         margin-left: 1rem ;
         
     }
+    #navdropdown1 {
+      margin-bottom: 1rem;
+      box-shadow: none;
+      margin-left: 0;
+      width: 100%;
+      position: unset;
+      background-color: #fbfbfb;
+      border: 0px;
+      font-size: 16px;
+      line-height: 2.4;
+      -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;
+    }
+    #navdropdown2 {
+      margin-bottom: 1rem;
+      box-shadow: none;
+      margin-left: 0;
+      width: 100%;
+      position: unset;
+      background-color: #fbfbfb;
+      border: 0px;
+      font-size: 16px;
+      line-height: 2.4;
+      -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;
+    }
+    .navbar > div > ul > li > a {
+       
+      font-size: 18px;
+      text-align: left;
+    }
     }
   
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -1px;
+  
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      color: #fff;
+      background-color: #efefef;
+      font-size: 14px;
+      border: 0;
+    }
 
+    .dropdown-toggle::after {
+      display: none;
+    }
  

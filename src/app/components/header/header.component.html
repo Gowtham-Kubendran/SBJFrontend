@@ -11,10 +11,34 @@
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="navbar-nav" id="navbarnavid">
       <li class="nav-item">
-        <a class="nav-link "  id="navlink1" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('products') }}</a>
+          <a class="nav-link producthover dropdown-toggle" href="#" id="navlink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ts.translate('products') }}
+            </a>
+        <div class="dropdown-menu" id="navdropdown1" aria-labelledby="navlink1">
+            <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('gold') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')" >{{ts.translate('silver') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')" >{{ts.translate('diamond') | titlecase}}</a>
+          
+            
+          </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link"  id="navlink2" (click)="goToCollections('allcollections')">{{ts.translate('collections')}}</a>
+          <a class="nav-link producthover dropdown-toggle" href="#"  id="navlink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ts.translate('collections')}}
+            </a>
+        <div class="dropdown-menu" id="navdropdown2" aria-labelledby="navlink2">
+            <a class="dropdown-item" (click)="goToCollections('allcollections')"> {{ts.translate('allcollections') | titlecase}} </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="goToCollections('marriage')" >{{ts.translate('wedding') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToCollections('women')" >{{ts.translate('women') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToCollections('men')" >{{ts.translate('men') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToCollections('kids')" >{{ts.translate('kids') | titlecase}}</a>
+            <a class="dropdown-item" (click)="goToCollections('gifts')" >{{ts.translate('gifts') | titlecase}}</a>
+          
+            
+          </div>
       </li>
       <li class="nav-item">
         <a class="nav-link"   id="navlink3"  (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
@@ -28,16 +52,18 @@
   </ul>
  </div>
  <div class="lang ">
-  <span class="phonelink"><img class="phoneiconheader" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />{{ ts.translate("phonenumberbody1") }} &nbsp;&nbsp;&nbsp;|</span>
+  <span class="phonelink"><img class="phoneiconheader" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
+    {{ ts.translate("phonebody1") }} &nbsp;&nbsp;&nbsp;|</span>
   <mat-form-field class="langclass">
       
       <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
-        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
-          {{lang}}
+        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang.key">
+          {{lang.key}}
         </mat-option>
       
       </mat-select>
     </mat-form-field>
+    <span> <img id="changedrop" src="../../../assets/images/downarrowb.png" /></span>
   </div>
 
 

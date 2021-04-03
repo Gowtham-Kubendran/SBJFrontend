@@ -34,6 +34,19 @@ export const VOCAB_EN = {
   earrings: 'earrings',
   rings: 'rings',
   bracelet: 'bracelet',
+  stud:'stud',
+
+  Maalai: 'maalai',
+  Bangles: 'bangles',
+  Chains: 'chains',
+  Earrings: 'earrings',
+  Rings: 'rings',
+  Bracelet: 'bracelet',
+  Necklace: 'necklace',
+  Stud: 'stud',
+  Dollar: 'dollar',
+  Anklet: 'anklet',
+
   //have to translate
   goldsavingscheme:'gold saving scheme',
   goldschemedata: 'Investing in gold has never been easier, SBJ Gold scheme is a special scheme that helps you to plan and buy your own dream jewellery as well as maintaining your healthy financial stability. We have two options specially designed to suit your individual levels of saving at your own pace. You will also be rewarded with a special prize when you subscribe to one of our gold schemes.',
@@ -67,6 +80,7 @@ export const VOCAB_EN = {
   buisnesshoursbody1: 'Every Day 9AM - 9PM',
   phonenumber: 'Phone Number',
   phonenumberbody1: '+91-99949-26518',
+  phonebody1: '9994926518',
   phonenumberbody2: '+91-452-2346518',
   silverstore: 'Exclusive Store for Silver',
   addressbody2: '218, West Masi Street Madurai-625001',
@@ -107,5 +121,7 @@ export const VOCAB_EN = {
   noproductsfound: 'No Products Found',
   fillallfields: 'Please fill all the fields',
   close: 'close',
+
+
   
 }

@@ -26,6 +26,8 @@ export class HomeComponent implements OnInit {
     });
   }
 
+ 
+
   setLang()
   {
     if (window.sessionStorage.getItem('lang') == 'LA-TA') {
@@ -37,6 +39,7 @@ export class HomeComponent implements OnInit {
       if (window.innerWidth < 1600)
       {
         document.getElementById("navbarnavid").style.marginLeft = "15%";
+        
       }
       if (window.innerWidth < 1500)
       {
@@ -44,11 +47,11 @@ export class HomeComponent implements OnInit {
         }
       if (window.innerWidth < 1200) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0 8px";
         document.getElementById("navbarnavid").style.marginLeft = "10%";
       }
      
@@ -118,8 +121,20 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
+   
+    if (window.innerWidth < 900)
+    {
+      $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+      }
 
-    $(document).ready(function () {
+
+
+      $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function(e){
+          $(this).next('ul').toggle();
+          e.stopPropagation();
+          e.preventDefault();
+        });
      
       (<any>jQuery('.carousel')).carousel({
         interval: 3000
@@ -162,6 +177,14 @@ export class HomeComponent implements OnInit {
   });
     this.aosInit();
   }
+
+  open(id)
+  {
+    document.getElementById('drop1').style.display = "none";
+    document.getElementById('drop2').style.display = "none";
+    document.getElementById('drop3').style.display = "none";
+    document.getElementById('drop'+id).style.display = "block";
+  }
   showprev()
   {
     (document.getElementById("prevbut") as HTMLInputElement).style.opacity = "1";
@@ -191,10 +214,21 @@ export class HomeComponent implements OnInit {
       $(window).scroll(function () {
       
          $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
-         if ($(this).scrollTop() > 50)
-         $(".phoneicon").attr("src", "../../../assets/images/wicon.svg");
-      else
-         $(".phoneicon").attr("src", "../../../assets/images/wiconw.png"); 
+        if ($(this).scrollTop() > 50) {
+          $(".phoneicon").attr("src", "../../../assets/images/wicon.svg");
+          // document.getElementById("langclassid").style.color = "black";
+          $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+        }
+        else {
+
+          $(".phoneicon").attr("src", "../../../assets/images/wiconw.png");
+          // document.getElementById("langclassid").style.color = "white";
+          $('#changedrop').attr("src", "../../../assets/images/downarrow.png");
+          if (window.innerWidth < 900)
+          {
+            $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+            }
+        }
        
       });
   
@@ -220,11 +254,11 @@ export class HomeComponent implements OnInit {
         }
       if (window.innerWidth < 1200) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0 8px";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0 8px";
         document.getElementById("navbarnavid").style.marginLeft = "10%";
       }
      

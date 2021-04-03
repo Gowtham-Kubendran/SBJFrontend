@@ -7,6 +7,7 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
 mat-sidenav {
   width: 250px;
 }
+
 .cartext
 {
   position: absolute;
@@ -54,6 +55,13 @@ top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#changedrop
+{
+  width: 12px;
+  padding-top: 17px;
+  margin-left: -17px;
+}
 .downarrow
 {
     color: white;
@@ -61,7 +69,7 @@ top: 50%;
     /* top: 5em; */
     font-size: 5em;
     bottom: 0;
-    left: 50%;
+    left: 47%;
     animation: mymove 1s infinite;
     cursor: pointer;
   }
@@ -138,7 +146,7 @@ top: 50%;
   .rarrow
   {
     transform: rotate(-90deg);
-    width: 18px;
+    width: 14px;
     margin-left:-8px;
     margin-top:-2px;
     opacity:0;
@@ -281,7 +289,7 @@ cursor: pointer;
   .collectionImage:hover + .bottom-left >.rarrow , .collectionGoldImage:hover + .bottom-left > .rarrow , .collectionwedding:hover + .bottom-left > .rarrow
   {
     opacity:1;
-    margin-left: 0;
+    margin-left: 8px;
     transition: 0.5s all ease-in-out;
   }
   .PromiseContainer
@@ -339,7 +347,7 @@ cursor: pointer;
     border-left: 15px solid transparent !important;
     border-right: none !important;
     border-top: 15px solid transparent !important;
-    border-image-source: url('../../../assets/images/downarrow2.png') !important;
+    border-image-source: none !important;
     border-image-repeat: stretch !important;
     margin-top: -2px !important;
 
@@ -389,6 +397,10 @@ cursor: pointer;
   {
     margin: 3em 0;
   }
+  .dropdown-toggle::after {
+    display: none;
+  }
+ 
   .talktous
   {
     background-color: #F6F7F7;
@@ -438,6 +450,32 @@ cursor: pointer;
   display: flex;
   overflow-x: auto;
 }
+#navdropdown1
+{
+  position: absolute;
+  margin-left: 19%;
+  margin-top: 15px;
+  border: 0px;
+  font-size: 16px;
+  line-height: 2.4;
+  width: 300px;
+
+}
+#navdropdown2
+{
+  position: absolute;
+  margin-left: 31.5%;
+  margin-top: 15px;
+  border: 0px;
+  font-size: 16px;
+  line-height: 2.4;
+  width: 300px;
+}
+
+.dropdown-item:hover{
+  color:#CC9F08;
+  cursor: pointer;
+}
 .flexhori::-webkit-scrollbar 
 {
       display: none;
@@ -476,9 +514,9 @@ cursor: pointer;
     transform: rotate(-90deg)
 }
 
-// .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-//   color:#CC9F08;
-//  }
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color:#CC9F08;
+ }
  
  
  .nav-link:hover {
@@ -574,10 +612,24 @@ color: black;
 }
 .langclass
 {
-  width: 5em;
-   
-    color: #272727;
-    border: 0;
+  width: 6rem;
+  margin: 0 0 0 1rem;
+  background: transparent;
+  color: #fff;
+  margin-top: 1rem;
+  border: 0;
+  outline: 0;
+}
+.langoption
+{
+  color:black;
+  background-color: #fff;
+}
+
+.langoption:hover
+{
+  background-color: #fff;
+color:#CC9F08;
 }
 #language:focus{
   outline:0;
@@ -595,7 +647,7 @@ color: black;
 .navbar{
 display: flex;
 flex-wrap: wrap;
-overflow-y: hidden;
+overflow-y: unset;
 margin: 0;
 color:#fff;
 align-items: center;
@@ -632,7 +684,7 @@ transition: 0.5s all ease-in-out;
   border-left: 15px solid transparent !important;
   border-right: none !important;
   border-top: 15px solid transparent !important;
-  border-image-source: url('../../../assets/images/downarrowb.png') !important;
+  border-image-source: none !important;
   border-image-repeat: stretch !important;
   margin-top: -2px !important;
   transform: scale(0.7);
@@ -720,12 +772,13 @@ ul{
   display: flex;
     flex-direction: row;
     font-size:12px;
+    margin-top: 1rem;
 }
 
 .langclass
 {
   width: 6rem;
-  margin: 0 0 0 1rem;
+  margin: 2px 0 0 1rem;
 }
 .phonelink
 {
@@ -738,7 +791,16 @@ ul{
 ::ng-deep .mat-form-field-underline {
   display: none;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 2600px) {
+  #navdropdown1{
+    margin-left: 37%;
+  }
+  #navdropdown2{
+    margin-left: 43.5%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
   .nav-link
   {
     padding: 6px 0rem 1rem;
@@ -750,9 +812,24 @@ ul{
   
   margin-left: 15%;
 }
+#navdropdown1{
+  margin-left: 18%;
+}
+#navdropdown2{
+  margin-left: 30%;
+}
+.lang{
+  
+  margin-top: 4px;
+}
 }
 @media only screen and (max-width: 1300px) {
-
+  #navdropdown1{
+    margin-left: 15%;
+  }
+  #navdropdown2{
+    margin-left: 28%;
+  }
   .cartext
   {
   position: absolute;
@@ -796,6 +873,35 @@ ul{
 }
 
 
+
+
+@media  screen and (max-width: 1030px){
+  .navbar-nav
+  {
+    margin: 0 0% 0 13%;
+  }
+  .navbar-nav > li {
+    padding: 0 1%;
+  }
+  .navbar-light .navbar-nav .nav-link {
+       
+    padding: 2rem 1rem;
+    font-size: 14px;
+   
+}
+.lang {
+  float: right;
+  padding: 6px 0 0 0;
+}
+#navdropdown1{
+  margin-left: 15%;
+}
+#navdropdown2{
+  margin-left: 28%;
+}
+
+}
+
 @media screen and (max-width: 912px) {
       
     
@@ -822,7 +928,7 @@ ul{
     border-left: 15px solid transparent !important;
     border-right: none !important;
     border-top: 15px solid transparent !important;
-    border-image-source: url('../../../assets/images/downarrowb.png') !important;
+    border-image-source: none !important;
     border-image-repeat: stretch !important;
     margin-top: -2px !important;
     transform: scale(0.7);
@@ -851,7 +957,7 @@ ul{
   .lang{
     position: absolute;
     right: 1rem;
-    top: 2.1rem;
+    top: 1.3rem;
   }
   .navbar-light .navbar-nav .nav-link {
    
@@ -1145,20 +1251,60 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
       {
         margin-top: 6rem;
       }
+      .navbar > div > ul > li > a {
+       
+        font-size: 18px;
+        text-align: left;
+      }
+      #navdropdown1 {
+        margin-bottom: 1rem;
+        box-shadow: none;
+        margin-left: 0;
+        width: 100%;
+        position: unset;
+        background-color: #fbfbfb;
+        border: 0px;
+        font-size: 16px;
+        line-height: 2.4;
+        -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+      }
+      #navdropdown2 {
+        margin-bottom: 1rem;
+        box-shadow: none;
+        margin-left: 0;
+        width: 100%;
+        position: unset;
+        background-color: #fbfbfb;
+        border: 0px;
+        font-size: 16px;
+        line-height: 2.4;
+        -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+      }
+      .heroc
+      {
+        height:80vh;
+      }
       .carosolimg
 {
   transition: 0.3s all ease-in-out;
-  height:84%;
+  height:100%;
+}
+.bodyHeading
+{
+ 
+    margin: 40px 0 32px 0;
 }
 .downarrowdiv
 {
   position:absolute;
-  margin-left:45%;
-  bottom:10rem;
+  margin-left:42%;
+  
 }
       .lang{
         right: 5rem;
-        top: 2.3rem;
+        top: 1.4rem;
       }
       .navbar-nav {
         margin-left: 1rem !important;
@@ -1167,15 +1313,14 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
    
       left: 5em;
   }
-
-  // .todaysrate
-  // {
-  //   top: 70%;
-  // }
-  // .goldrateimg , .silverrateimg{
-  //   width: 8em;
-  // }
-  
+.bottom-left
+{
+  left:1em;
+}
+.top2
+{
+  bottom:2em;
+}
     }
   
     #collectiondropdown
@@ -1197,4 +1342,20 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     }
   }
 
-   
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #efefef;
+    font-size: 14px;
+    border: 0;
+  }

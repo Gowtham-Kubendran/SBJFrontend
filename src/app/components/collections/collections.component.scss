@@ -16,6 +16,9 @@
     color: #808080;
     font-family: 'opR','tamilf';
   }
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 8px 0 1em 0;
+}
     .spinnerc
   {
     position: absolute;
@@ -31,6 +34,17 @@
     padding: 7em 0 0em 0;
     position:relative;
 }
+.cartextdiv
+{
+  position: absolute;
+  top: 22vh;
+  font-family: 'dance';
+  left: 10%;
+  font-size: 5rem;
+  color: #ffffff;
+  height:5rem;
+}
+
 .productheroimgdiv
 {
     width: 100%;
@@ -397,6 +411,7 @@ label > span:hover{
     width: 100%;
 }
 @media screen and (max-width: 1200px) {
+
     .cent{
         text-align: left;
     }
@@ -422,6 +437,12 @@ label > span:hover{
  }
 }
 
+@media screen and (max-width: 600px) {
+    .productheroimg
+    {
+      object-position: 65% 90%;
+    }
+}
 
 
 
