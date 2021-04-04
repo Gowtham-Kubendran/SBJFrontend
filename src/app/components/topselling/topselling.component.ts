@@ -29,7 +29,7 @@ export class TopsellingComponent implements OnInit {
     
       {
         "imgsrc": "../../../assets/images/bangles/bangles1.jpg",
-        "name": "Bangles name 1",
+        "name": "1",
         "code": "SBJBA001",
         "category": "Bangles",
         "collection": ["marriage", "women"],
@@ -37,7 +37,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/bangles/bangles3.jpg",
-      "name": "Bangles name 3",
+      "name": "3",
       "code": "SBJBA003",
       "category": "Bangles",
       "collection": ["marriage", "women"],
@@ -45,7 +45,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/earrings/earrings1.jpg",
-      "name": "Earrings name 1",
+      "name": "1",
       "code": "SBJER001",
       "category": "Earrings",
       "collection": ["marriage", "women"],
@@ -53,7 +53,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/maalai/maalai4.jpg",
-      "name": "Maalai name 4",
+      "name": "4",
       "code": "SBJMA004",
       "category": "Maalai",
       "collection": ["marriage","women"],
@@ -61,7 +61,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/maalai/maalai9.jpg",
-      "name": "Maalai name 9",
+      "name": "9",
       "code": "SBJMA009",
       "category": "Maalai",
       "collection": ["marriage","women"],
@@ -69,7 +69,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/necklace/necklace2.jpg",
-      "name": "Necklace name 2",
+      "name": "2",
       "code": "SBJNC002",
       "category": "Necklace",
       "collection": ["marriage","women"],
@@ -77,7 +77,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/necklace/necklace3.jpg",
-      "name": "Necklace name 3",
+      "name": "3",
       "code": "SBJNC003",
       "category": "Necklace",
       "collection": ["marriage","women"],
@@ -85,7 +85,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/necklace/necklace7.jpg",
-      "name": "Necklace name 7",
+      "name": "7",
       "code": "SBJNC007",
       "category": "Necklace",
       "collection": ["marriage","women"],
@@ -93,7 +93,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/necklace/necklace12.jpg",
-      "name": "Necklace name 12",
+      "name": "12",
       "code": "SBJNC012",
       "category": "Necklace",
       "collection": ["marriage","women"],
@@ -101,7 +101,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/rings/rings3.jpg",
-      "name": "Ring name 3",
+      "name": "3",
       "code": "SBJRN003",
       "category": "Rings",
       "collection": ["men"],
@@ -109,7 +109,7 @@ export class TopsellingComponent implements OnInit {
     },
     {
       "imgsrc": "../../../assets/images/bangles/bangles1.jpg",
-      "name": "Bangles name 1",
+      "name": "1",
       "code": "SBJBA001",
       "category": "Bangles",
       "collection": ["marriage", "women"],
@@ -117,7 +117,7 @@ export class TopsellingComponent implements OnInit {
   },
   {
     "imgsrc": "../../../assets/images/bangles/bangles3.jpg",
-    "name": "Bangles name 3",
+    "name": "3",
     "code": "SBJBA003",
     "category": "Bangles",
     "collection": ["marriage", "women"],

@@ -53,6 +53,8 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0 8px";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0 8px";
         document.getElementById("navbarnavid").style.marginLeft = "10%";
+        document.getElementById("navdropdown1").style.marginLeft = "14%";
+        document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
      
       if (window.innerWidth < 800) {
@@ -63,17 +65,22 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 1rem";
         document.getElementById("navbarnavid").style.marginLeft = "5%";
+        document.getElementById("navdropdown1").style.marginLeft = "9%";
+        document.getElementById("navdropdown2").style.marginLeft = "20%";
+
       }
     
  
         if (window.innerWidth < 500) {
      
-          (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
+          (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "2rem 0";
           document.getElementById("navbarnavid").style.marginLeft = "1%";
+          document.getElementById("navdropdown1").style.marginLeft = "0%";
+          document.getElementById("navdropdown2").style.marginLeft = "0%";
         }
         
      
@@ -103,18 +110,25 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 1rem";
         document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navdropdown1").style.marginLeft = "15%";
+        document.getElementById("navdropdown2").style.marginLeft = "28%";
       }
       if (window.innerWidth < 800) {
      
         document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navdropdown1").style.marginLeft = "14%";
+        document.getElementById("navdropdown2").style.marginLeft = "26%";
+        
       }
       if (window.innerWidth < 500) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "2rem 0";
+        document.getElementById("navdropdown1").style.marginLeft = "0%";
+        document.getElementById("navdropdown2").style.marginLeft = "0%";
       }
     }
   }
@@ -261,6 +275,8 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0 8px";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0 8px";
         document.getElementById("navbarnavid").style.marginLeft = "10%";
+        document.getElementById("navdropdown1").style.marginLeft = "14%";
+        document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
      
       if (window.innerWidth < 800) {
@@ -271,17 +287,21 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 1rem";
         document.getElementById("navbarnavid").style.marginLeft = "5%";
+        document.getElementById("navdropdown1").style.marginLeft = "9%";
+        document.getElementById("navdropdown2").style.marginLeft = "20%";
       }
     
  
         if (window.innerWidth < 500) {
      
-          (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
-          (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
+          (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "2rem 0";
+          (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "2rem 0";
           document.getElementById("navbarnavid").style.marginLeft = "1%";
+          document.getElementById("navdropdown1").style.marginLeft = "0%";
+          document.getElementById("navdropdown2").style.marginLeft = "0%";
         }
         
      
@@ -310,18 +330,24 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "0rem 1rem";
         document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navdropdown1").style.marginLeft = "15%";
+        document.getElementById("navdropdown2").style.marginLeft = "28%";
       }
       if (window.innerWidth < 800) {
      
         document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navdropdown1").style.marginLeft = "14%";
+        document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
       if (window.innerWidth < 500) {
      
-        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "1rem 0";
-        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "1rem 0";
+        (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "2rem 0";
+        (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "2rem 0";
+        document.getElementById("navdropdown1").style.marginLeft = "0%";
+        document.getElementById("navdropdown2").style.marginLeft = "0%";
       }
 
     }
@@ -330,9 +356,10 @@ export class HomeComponent implements OnInit {
     
      
   }
-  goToProducts(types,metals)
+  goToProducts(types,metals,type)
   {
     this.sh.setValue(types);
+    this.sh.setProductType(type);
    this.router.navigate(['products',metals]);
   }
 
@@ -376,5 +403,55 @@ export class HomeComponent implements OnInit {
     });
   };
 
+  openMenu(metal)
+  {
+    if (metal == 'diamond')
+    {
+     
+        document.getElementById('goldmenu').style.display = "none";
+        document.getElementById('silvermenu').style.display = "none";
+        document.getElementById('diamondmenu').style.display = "block";
+     
+    }
+    if (metal == 'gold')
+    {
+      
+      document.getElementById('diamondmenu').style.display = "none";
+      document.getElementById('silvermenu').style.display = "none";
+      document.getElementById('goldmenu').style.display = "block";
+    
+   
+  
+    }
+    if (metal == 'silver')
+    {
+     
+      document.getElementById('diamondmenu').style.display = "none";
+      document.getElementById('goldmenu').style.display = "none";
+      document.getElementById('silvermenu').style.display = "block";
+    
+  
+      }
+  }
 
+  hidesubmenus()
+  {
+    document.getElementById('diamondmenu').style.display = "none";
+    document.getElementById('goldmenu').style.display = "none";
+    document.getElementById('silvermenu').style.display = "none";
+  }
+  toggleuser()
+  {
+    if (document.getElementById("user1").style.display == "none")
+    {
+      document.getElementById("user1").style.display = "block";
+      document.getElementById("user2").style.display = "none";
+      }
+    else
+    {
+      document.getElementById("user1").style.display = "none";
+      document.getElementById("user2").style.display = "block";
+      }
+  }
+  
 }

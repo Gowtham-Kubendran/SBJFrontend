@@ -122,5 +122,9 @@ Gifts: 'பரிசுகள்',
   noproductsfound: 'எதுவும் கிடைக்கவில்லை',
   fillallfields: 'அனைத்து விவரங்களையும் நிரப்பவும',
   close: 'மூடு',
+
+  silvervessels: 'வெள்ளி பாத்திரம்',
+  idols:'சிலைகள்',
+  poojaitems:'பூஜை உருப்படிகள்',
   
 }

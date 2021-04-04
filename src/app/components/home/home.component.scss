@@ -64,15 +64,23 @@ top: 50%;
 }
 .downarrow
 {
-    color: white;
-    position: absolute;
-    /* top: 5em; */
-    font-size: 5em;
-    bottom: 0;
-    left: 47%;
-    animation: mymove 1s infinite;
-    cursor: pointer;
+  color: white;
+  /* position: absolute; */
+  font-size: 5em;
+  /* margin-top: -9rem; */
+  /* bottom: 20rem; */
+  /* left: 47%; */
+  -webkit-animation: mymove 1s infinite;
+  animation: mymove 1s infinite;
+  cursor: pointer;
   }
+
+  .downarrowdiv
+{
+  text-align: center;
+  margin-top: -6rem;
+  
+}
   
   @keyframes mymove {
     from {opacity: 0;
@@ -220,6 +228,32 @@ color: white;
     font-size: 12px;
     padding-top: 1em;
   }
+
+  #prevuser  
+  {
+    opacity:0
+    
+  }
+  #prevuser:hover{
+    cursor: pointer;
+  }
+  #nextuser
+  {
+    opacity:0;
+  }
+  #nextuser:hover{
+    cursor: pointer;
+  }
+#user1
+{
+display:block;
+transition:0.5s all ease-in-out;
+}
+#user2
+{
+  display:none;
+  transition:0.5s all ease-in-out;
+}
 .marbar2
 {
   margin-bottom: 2em;
@@ -459,7 +493,8 @@ cursor: pointer;
   font-size: 16px;
   line-height: 2.4;
   width: 300px;
-
+  font-family: 'opR','tamilf';
+  
 }
 #navdropdown2
 {
@@ -470,11 +505,41 @@ cursor: pointer;
   font-size: 16px;
   line-height: 2.4;
   width: 300px;
+  font-family: 'opR','tamilf';
 }
-
+.submenu
+{
+  transition: 0.5s all ease-in-out;
+  position: absolute;
+  background-color: #fff;
+  right: -21.5rem;
+  margin-top: -4rem;
+  cursor: pointer;
+  padding:0;
+  display: none;
+}
 .dropdown-item:hover{
   color:#CC9F08;
   cursor: pointer;
+}
+.downarrowmenu
+{
+  opacity:0;
+  margin-left: 0px;
+  transition: 0.5s all ease-in-out;
+  float: right;
+  transform: rotate(-90deg);
+  margin-right: 0rem;
+  margin-top: 1.2rem;
+}
+.dropdown-item:hover > span > .downarrowmenu{
+  opacity:1;
+  margin-left: 8px;
+  transition: 0.5s all ease-in-out;
+  float: right;
+  transform: rotate(-90deg);
+    margin-right: 0rem;
+    margin-top: 1.2rem;
 }
 .flexhori::-webkit-scrollbar 
 {
@@ -1062,10 +1127,7 @@ ul{
    {
      margin-bottom:4em;
    }
-   .downarrow
-   {
-     left: 45%;
-   }
+   
    .bodyView
    {
      padding:2em 2em;
@@ -1247,6 +1309,27 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
       margin-top: -10rem;
     }
     @media screen and (max-width: 500px){
+
+      #prevuser
+      {
+        
+        background-color: #CC9F08;
+        padding: 2px;
+        height: 30px;
+        width: 30px;
+        border-radius: 6px;
+        opacity:1;
+      }
+      #nextuser
+      {
+        opacity:1;
+    background-color: #CC9F08;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    margin-left: 1rem;
+      }
       .homebody
       {
         margin-top: 6rem;
@@ -1262,7 +1345,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
         margin-left: 0;
         width: 100%;
         position: unset;
-        background-color: #fbfbfb;
+        background-color: #fff;
         border: 0px;
         font-size: 16px;
         line-height: 2.4;
@@ -1275,7 +1358,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
         margin-left: 0;
         width: 100%;
         position: unset;
-        background-color: #fbfbfb;
+        background-color: #fff;
         border: 0px;
         font-size: 16px;
         line-height: 2.4;
@@ -1296,18 +1379,16 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
  
     margin: 40px 0 32px 0;
 }
-.downarrowdiv
-{
-  position:absolute;
-  margin-left:42%;
-  
-}
+
       .lang{
         right: 5rem;
         top: 1.4rem;
       }
       .navbar-nav {
         margin-left: 1rem !important;
+    }
+    .collectionGoldImage {
+      height: 350px;
     }
     .padr3 {
    
@@ -1334,6 +1415,49 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 {
   object-position:65% 80%;
 }
+
+
+.downarrowmenu
+{
+  transform: rotate(0deg);
+  opacity:1;
+}
+
+.dropdown-item:hover > span > .downarrowmenu{
+ 
+  transform: rotate(0deg);
+  
+}
+
+
+.nav-link
+{
+  font-family:'opEB','tamilf';
+  color:#CC9F08;
+}
+.dropdown-menu > a
+{
+  font-family: 'opR','tamilf';
+  color:#CC9F08
+}
+
+.submenu{
+  transition: 0.5s all ease-in-out;
+  position: unset;
+  cursor: pointer;
+  padding: 0;
+  width: 100%;
+  font-weight: 100;
+  margin-top: 0rem;
+  padding: 0 2rem;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+
+}
+.submenu > a {
+  font-family: 'opR','tamilf';
+}
+
     }
   
     #collectiondropdown

@@ -123,5 +123,8 @@ export const VOCAB_EN = {
   close: 'close',
 
 
+  silvervessels: 'Silver Vessels',
+  idols:'idols',
+  poojaitems:'Pooja Items',
   
 }

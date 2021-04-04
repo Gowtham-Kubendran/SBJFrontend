@@ -10,6 +10,7 @@ export class SharedService {
   value: any;
   url:any;
   seturl: string;
+  producttype: string;
 
   productsData:any;
 
@@ -36,6 +37,16 @@ export class SharedService {
   setPrices(price:Price): Observable<Price> {
    
     return this.http.post<Price>(this.seturl,price);
+  }
+
+  getProductType()
+  {
+return this.producttype
+  }
+
+  setProductType(value)
+  {
+    this.producttype = value;
   }
 
  

@@ -11,16 +11,51 @@
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="navbar-nav" id="navbarnavid">
       <li class="nav-item">
-          <a class="nav-link producthover dropdown-toggle" href="#" id="navlink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link producthover dropdown-toggle" href="#" id="navlink1" role="button" (click)="hidesubmenus()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ts.translate('products') }}
             </a>
         <div class="dropdown-menu" id="navdropdown1" aria-labelledby="navlink1">
             <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('gold') | titlecase}}</a>
+            <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('gold') | titlecase}}</a>
             <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')" >{{ts.translate('silver') | titlecase}}</a>
             <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')" >{{ts.translate('diamond') | titlecase}}</a>
-          
+           -->
+           <a class="dropdown-item" (click)="openMenu('diamond')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              {{ts.translate('diamond') | titlecase}} <span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
+            <ul class="submenu" id="diamondmenu">
+              
+              <a class="dropdown-item" (click)="goToProducts('necklace','Diamond')">{{ts.translate('necklace') | titlecase}}</a>
+              <a class="dropdown-item" (click)="goToProducts('earrings','Diamond')">{{ts.translate('earrings') | titlecase}}</a>
+              <a class="dropdown-item" (click)="goToProducts('rings','Diamond')">{{ts.translate('rings') | titlecase}}</a>
+            </ul>
+            <a class="dropdown-item" (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
+            <ul class="submenu" id="goldmenu">
+              
+                <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a>
+            
+              
+            </ul>
+            <a class="dropdown-item" (click)="openMenu('silver')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              {{ts.translate('silver') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
+            <ul class="submenu" id="silvermenu">
+              
+                <a class="dropdown-item" (click)="goToProducts('allproducts','Silver','silvervessel')">{{ts.translate('silvervessels') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('allproducts','Silver','gifts')">{{ts.translate('gifts') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('allproducts','Silver','idols')">{{ts.translate('idols') | titlecase}}</a>
+                <a class="dropdown-item" (click)="goToProducts('allproducts','Silver','poojaitems')">{{ts.translate('poojaitems') | titlecase}}</a>
+        
+
+              
+            </ul>
             
           </div>
       </li>
@@ -63,7 +98,7 @@
       
       </mat-select>
     </mat-form-field>
-    <span> <img  id="changedropicon" src="../../../assets/images/downarrowb.png" /></span>
+    <span> <img  id="changedropicon" src="../../../assets/images/translate.png" /></span>
   </div>
 
 

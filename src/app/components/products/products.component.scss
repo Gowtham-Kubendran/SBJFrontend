@@ -36,6 +36,14 @@
   	
 	margin: auto;
 }
+
+#productdropicon
+{position: absolute;
+right: 0;
+top: 10px;
+
+transition:0.5s all ease-in-out;
+}
 .productbody
 {
     padding: 7em 0 0em 0;
@@ -314,6 +322,9 @@ outline:0;
         padding: 8px 0 1em 0;
     }
 
+    .droptext {
+    text-align: center;
+        }
     .headerfixed
 {
     position: fixed;
@@ -381,8 +392,8 @@ display:block;
     .productimg
     {
         height: 100%;
+        -o-object-fit: cover;
         object-fit: cover;
-        width: 100%;
     }
     .zoombut
     {
@@ -404,8 +415,9 @@ display:block;
     }
     .imgwrapper
     {
+        
         width:100%;
-        height:100%;
+        object-fit: cover;
     }
    .w100
    {
@@ -427,6 +439,22 @@ display:block;
     width: 100%;
     font-size: 18px;
    }
+
+   .cartextdiv
+    {
+    
+    
+        margin-top: -22rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    }
   
    ::ng-deep .mat-form-field-appearance-outline  ::ng-deep .mat-form-field-outline {
     // border: 0px solid #A57F00;
@@ -464,6 +492,21 @@ display:block;
         padding: 11px 40px;
     }
 
+}
+
+@media screen and (max-width: 600px){
+    .procode
+    {
+        font-size: 15px;
+    }
+    .proname
+    {
+    font-size: 20px;
+    }
+    .indiImg {
+        margin: 1em 1em;
+        height: auto;
+    }    
 }
 @media screen and (max-width: 1024px) {
     .cent{

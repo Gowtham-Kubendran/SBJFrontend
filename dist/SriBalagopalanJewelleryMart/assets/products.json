@@ -389,6 +389,46 @@
     "collection": ["marriage", "women"],
     "metal": "Gold"
   },
+   {
+    "imgsrc": "../../../assets/images/earrings/earrings15.jpg",
+    "name": "15",
+    "code": "SBJER015",
+    "category": "Earrings",
+    "collection": ["marriage", "women"],
+    "metal": "Gold"
+  },
+   {
+    "imgsrc": "../../../assets/images/earrings/earrings16.jpg",
+    "name": "16",
+    "code": "SBJER016",
+    "category": "Earrings",
+    "collection": ["marriage", "women"],
+    "metal": "Diamond"
+  },
+   {
+    "imgsrc": "../../../assets/images/earrings/earrings17.jpg",
+    "name": "17",
+    "code": "SBJER017",
+    "category": "Earrings",
+    "collection": ["marriage", "women"],
+    "metal": "Diamond"
+  },
+   {
+    "imgsrc": "../../../assets/images/earrings/earrings18.jpg",
+    "name": "18",
+    "code": "SBJER018",
+    "category": "Earrings",
+    "collection": ["marriage", "women"],
+    "metal": "Diamond"
+  },
+  {
+    "imgsrc": "../../../assets/images/earrings/earrings19.jpg",
+    "name": "19",
+    "code": "SBJER019",
+    "category": "Earrings",
+    "collection": ["marriage", "women"],
+    "metal": "Diamond"
+  },
 
   {
     "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
@@ -427,7 +467,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts5.jpg",
     "name": "5",
     "code": "SBJGF005",
-    "category": "Gifts",
+    "category": "idols",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -435,7 +475,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts6.jpg",
     "name": "6",
     "code": "SBJGF006",
-    "category": "Gifts",
+    "category": "poojaitems",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -443,14 +483,14 @@
     "imgsrc": "../../../assets/images/gifts/gifts7.jpg",
     "name": "7",
     "code": "SBJGF007",
-    "category": "Gifts",
+    "category": "poojaitems",
     "collection": ["gifts"],
     "metal": "Silver"
   },
   {
     "imgsrc": "../../../assets/images/gifts/gifts8.jpg",
     "name": "8",
-    "code": "SBJGF004",
+    "code": "SBJGF008",
     "category": "Gifts",
     "collection": ["gifts"],
     "metal": "Silver"
@@ -458,7 +498,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts9.jpg",
     "name": "9",
     "code": "SBJGF009",
-    "category": "Gifts",
+    "category": "poojaitems",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -466,7 +506,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts10.jpg",
     "name": "10",
     "code": "SBJGF010",
-    "category": "Gifts",
+    "category": "idols",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -474,7 +514,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts11.jpg",
     "name": "11",
     "code": "SBJGF011",
-    "category": "Gifts",
+    "category": "silvervessels",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -482,7 +522,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts12.jpg",
     "name": "12",
     "code": "SBJGF012",
-    "category": "Gifts",
+    "category": "poojaitems",
     "collection": ["gifts"],
     "metal": "Silver"
   }, {
@@ -809,7 +849,7 @@
     "code": "SBJNC001",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace2.jpg",
@@ -817,7 +857,7 @@
     "code": "SBJNC002",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace3.jpg",
@@ -825,7 +865,7 @@
     "code": "SBJNC003",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace4.jpg",
@@ -833,7 +873,7 @@
     "code": "SBJNC004",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace5.jpg",
@@ -841,7 +881,7 @@
     "code": "SBJNC005",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace6.jpg",
@@ -849,7 +889,7 @@
     "code": "SBJNC006",
     "category": "Necklace",
     "collection": ["marriage","women"],
-    "metal": "Gold"
+    "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/necklace/necklace7.jpg",
@@ -899,6 +939,57 @@
     "collection": ["marriage","women"],
     "metal": "Gold"
   },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace13.jpg",
+    "name": "13",
+    "code": "SBJNC013",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace14.jpg",
+    "name": "14",
+    "code": "SBJNC014",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace15.jpg",
+    "name": "15",
+    "code": "SBJNC015",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace16.jpg",
+    "name": "16",
+    "code": "SBJNC016",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace17.jpg",
+    "name": "17",
+    "code": "SBJNC017",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/necklace/necklace18.jpg",
+    "name": "18",
+    "code": "SBJNC018",
+    "category": "Necklace",
+    "collection": ["marriage","women"],
+    "metal": "Gold"
+  },
+  
+  
+  
  
   {
     "imgsrc": "../../../assets/images/rings/rings1.jpg",

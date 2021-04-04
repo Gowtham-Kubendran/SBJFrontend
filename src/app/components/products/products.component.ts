@@ -41,25 +41,79 @@ export class ProductsComponent implements OnInit {
   
 
   metals = ['Gold', 'Silver', 'Diamond'];
-  typediamind=[
+  typediamond = [
     {
       
-        key: 'allproducts',
-        value: 'allproducts'
+      key: 'allproducts',
+      value: 'allproducts'
     },
     {
       key: 'necklace',
       value: 'necklace'
     },
     {
-      key: 'stud',
-      value: 'stud'
+      key: 'earrings',
+      value: 'earrings'
     },
     {
       key: 'rings',
       value: 'rings'
-    },
+    }
     
+  ];
+  typeGold = [
+    {
+      key: 'allproducts',
+      value: 'allproducts'
+    },
+    {
+      key: 'maalai',
+      value: 'maalai'
+    }, {
+      key: 'bangles',
+      value: 'bangles'
+    }, {
+      key: 'necklace',
+      value: 'necklace'
+    }, {
+      key: 'chains',
+      value: 'chains'
+    }, {
+      key: 'earrings',
+      value: 'earrings'
+    }, {
+      key: 'rings',
+      value: 'rings'
+    }, {
+      key: 'bracelet',
+      value: 'bracelet'
+    },
+    {
+      key: 'dollar',
+      value: 'dollar'
+    },
+  ];
+  typeSilver = [
+    {
+    key: 'allproducts',
+    value: 'allproducts'
+  },
+  {
+    key: 'gifts',
+    value: 'gifts'
+    },
+    {
+      key: 'silvervessels',
+      value: 'silvervessels'
+    },
+    {
+      key: 'idols',
+      value: 'idols'
+    },
+    {
+      key: 'poojaitems',
+      value: 'poojaitems'
+    },
   ]
   types = [
     {
@@ -149,11 +203,11 @@ export class ProductsComponent implements OnInit {
   
   ngOnInit() {
 
-    
+   
     
      this.route.params.subscribe(params => this.selectedMetal=params.metal);
     
-    
+    console.log(this.selectedMetal);
     this.showspinner = true;
     document.getElementById('wrapper').style.opacity = "0";
      
@@ -169,6 +223,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.selectedMetal = "allmetals";
       img.src = "./assets/images/banners/goldbanner.jpg";
+      this.types = this.typeGold;
       }
     
     if (this.selectedMetal.toLowerCase() == 'gold')
@@ -176,22 +231,26 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.cartext = this.ts.translate('gold');
       this.talktouscontent = this.ts.translate('talktousgold');
       img.src = "./assets/images/banners/goldbanner.jpg";
+      this.types = this.typeGold;
     }
     else if (this.selectedMetal.toLowerCase() == 'silver')
     {
       this.cartext = this.ts.translate('silver');
       this.talktouscontent = this.ts.translate('talktoussilver');
       img.src = "./assets/images/banners/silverbanner.jpg";
+      this.types = this.typeSilver;
     }
     else if (this.selectedMetal.toLowerCase() == 'diamond')
     {
       this.cartext = this.ts.translate('diamond');
       this.talktouscontent = this.ts.translate('talktousdiamond');
       img.src = "./assets/images/banners/diamondbanner.jpg";
+      this.types = this.typediamond;
     }
     else {
       this.talktouscontent = this.ts.translate('talktousproduct');
       img.src = "./assets/images/banners/goldbanner.jpg";
+      this.types = this.typeGold;
     }
     
     this.cartext = this.selectedMetal.toLowerCase();
@@ -204,6 +263,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.selectedValue = this.value;
 
     }
+   
 
     // this.value="allproducts"
 
@@ -313,6 +373,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
 
   handleChange(event)
   {
+    document.getElementById("productdropicon").style.transform = "rotate(180deg)";
     (document.getElementById(event) as HTMLInputElement).checked = true;
     this.aosInit();
     window.scrollTo(0, 0);

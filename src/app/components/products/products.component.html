@@ -1,125 +1,310 @@
-
-<div *ngIf="showspinner" ><div class="loading">  <mat-spinner class="spinnerc" [value]="80"></mat-spinner></div></div>
-<div  class="productwrapper" id="wrapper">
+<div *ngIf="showspinner">
+  <div class="loading">
+    <mat-spinner class="spinnerc" [value]="80"></mat-spinner>
+  </div>
+</div>
+<div class="productwrapper" id="wrapper">
   <app-header class="headerfixed"></app-header>
   <div class="productbody">
-      <app-todaysrate></app-todaysrate>
+    <app-todaysrate></app-todaysrate>
     <div class="productheroimgdiv">
-      <img id="heroimgplaceholder" class="productheroimg loading"  />
+      <img id="heroimgplaceholder" class="productheroimg loading" />
       <div class="cartextdiv">
-        {{cartext}}
+        {{ cartext }}
       </div>
     </div>
     <div class="mainbody ">
-        
       <div class="row w100">
-      <div class="col-lg-3 cent">
-        
-        <div class="findjewels">
-          {{ ts.translate("findyourjewels") | uppercase }}
-        </div>
-        <div id="selectedJewell" class="selectedJewell">{{ ts.translate(value) | uppercase }}</div>
-        <div class="btnGroup">
-         <label>
-            <input id="allproducts" (change)="handleChange($event.target.value)" type="radio" value="allproducts" name="productradio" />
-            <span>{{ ts.translate("allproducts") | titlecase }}</span>
-          </label>
+        <div class="col-lg-3 cent">
+          <div class="findjewels">
+            {{ ts.translate("findyourjewels") | uppercase }}
+          </div>
+          <div id="selectedJewell" class="selectedJewell">
+            {{ ts.translate(value) | uppercase }}
+          </div>
+          <div class="btnGroup">
+            <label>
+              <input
+                id="allproducts"
+                (change)="handleChange($event.target.value)"
+                type="radio"
+                value="allproducts"
+                name="productradio"
+              />
+              <span>{{ ts.translate("allproducts") | titlecase }}</span>
+            </label>
 
-          <label>
-            <input id="maalai" type="radio" (change)="handleChange($event.target.value)" value="maalai" name="productradio" />
-            <span>{{ ts.translate("maalai") | titlecase }}</span>
-          </label>
-          <label>
-            <input id="bangles" type="radio" (change)="handleChange($event.target.value)" value="bangles" name="productradio" />
-            <span>{{ ts.translate("bangles") | titlecase }}</span>
-          </label>
+            <label  *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="maalai"
+               
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="maalai"
+                name="productradio"
+              />
+              <span>{{ ts.translate("maalai") | titlecase }}</span>
+            </label>
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="bangles"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="bangles"
+                name="productradio"
+              />
+              <span>{{ ts.translate("bangles") | titlecase }}</span>
+            </label>
 
-          <label>
-            <input id="necklace" type="radio" (change)="handleChange($event.target.value)" value="necklace" name="productradio" />
-            <span>{{ ts.translate("necklace") | titlecase }}</span>
-          </label>
-          <label>
-            <input id="chains" type="radio" (change)="handleChange($event.target.value)" value="chains"  name="productradio" />
-            <span>{{ ts.translate("chains") | titlecase }}</span>
-          </label>
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals' ||
+            selectedMetal == 'Diamond'
+           ">
+              <input
+                id="necklace"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="necklace"
+                name="productradio"
+              />
+              <span>{{ ts.translate("necklace") | titlecase }}</span>
+            </label>
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="chains"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="chains"
+                name="productradio"
+              />
+              <span>{{ ts.translate("chains") | titlecase }}</span>
+            </label>
 
-          <label>
-            <input id="earrings" type="radio" (change)="handleChange($event.target.value)"  value="earrings" name="productradio" />
-            <span>{{ ts.translate("earrings") | titlecase }}</span>
-          </label>
-          <label>
-            <input id="rings" type="radio" (change)="handleChange($event.target.value)" value="rings"  name="productradio" />
-            <span>{{ ts.translate("rings") | titlecase }}</span>
-          </label>
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals' ||
+            selectedMetal == 'Diamond'
+           ">
+              <input
+                id="earrings"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="earrings"
+                name="productradio"
+              />
+              <span>{{ ts.translate("earrings") | titlecase }}</span>
+            </label>
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals' ||
+            selectedMetal == 'Diamond'
+           ">
+              <input
+                id="rings"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="rings"
+                name="productradio"
+              />
+              <span>{{ ts.translate("rings") | titlecase }}</span>
+            </label>
 
-          <label>
-            <input id="anklet" type="radio" (change)="handleChange($event.target.value)"  value="anklet" name="productradio" />
-            <span>{{ ts.translate("anklet") | titlecase }}</span>
-          </label>
-          <label>
-            <input id="dollar" type="radio" (change)="handleChange($event.target.value)" value="dollar"  name="productradio" />
-            <span>{{ ts.translate("dollar") | titlecase }}</span>
-          </label>
-
-
-          <label>
-            <input id="bracelet" type="radio" (change)="handleChange($event.target.value)" value="bracelet"  name="productradio" />
-            <span>{{ ts.translate("bracelet") | titlecase }}</span>
-          </label>
-        </div>
-      
-      </div>
-
-      <div id="dropdown" class="dropdown" >
-        <div class="staticfield">
-          <label id="findtext"> {{ ts.translate("findyourjewels") | uppercase }}</label>
-        <mat-form-field appearance="outline">
-      
-        <mat-select  class="dropdownselect" [(ngModel)]="selectedoption" (selectionChange)="handleChange($event.value)" name="jwelltype">
-          <mat-option class="droptext" *ngFor="let item of types" [value]="item.key">
-            {{ ts.translate(item.value) | titlecase }}
-          </mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-      </div>
-    
-
-      <div  id="productsLists" class="col-lg-9 productsLists">
-
-        <div *ngIf="tempdata.length==0" class="noproducts">{{ts.translate('noproductsfound')}}</div>
-          <!-- <div *ngIf="showspinner" class="col-12 col-lg-12 col-md-12 col-sm-12 center"><div class="loading">  <mat-spinner class="spinnerc"></mat-spinner></div></div> -->
-        <div class="ImgList col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" *ngFor="let item of tempdata">
-          <div class="indiImg" data-aos="fade-up" data-aos-once="true">
-          <!-- <a class="zoombut" (click)="openDialog(item)">Click to zoom</a> -->
-            <!-- <button mat-button (click)="openDialog(item)">Click to Zoom</button> -->
-            <div class="procode">{{item.code}}</div>
-           <div  class="proname"> {{ts.translate(item.category)}} {{item.name}}</div>
-            <div (click)="openDialog(item)" class="imgwrapper"><img
-              class="productimg"
-              src="{{ item.imgsrc }}"
+            <label  *ngIf="
+            selectedMetal == 'Silver' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="anklet"
+               
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="anklet"
+                name="productradio"
+              />
+              <span>{{ ts.translate("anklet") | titlecase }}</span>
+            </label>
+            <label   *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="dollar"
               
-            /></div>
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="dollar"
+                name="productradio"
+              />
+              <span>{{ ts.translate("dollar") | titlecase }}</span>
+            </label>
+
+            <label *ngIf="
+            selectedMetal == 'Gold' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="bracelet"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="bracelet"
+                name="productradio"
+              />
+              <span>{{ ts.translate("bracelet") | titlecase }}</span>
+            </label>
+
+            <label *ngIf="
+            selectedMetal == 'Silver' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="gifts"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="gifts"
+                name="productradio"
+              />
+              <span>{{ ts.translate("gifts") | titlecase }}</span>
+            </label>
+
+            <label *ngIf="
+            selectedMetal == 'Silver' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="silvervessels"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="silvervessels"
+                name="productradio"
+              />
+              <span>{{ ts.translate("silvervessels") | titlecase }}</span>
+            </label>
+
+            <label *ngIf="
+            selectedMetal == 'Silver' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="idols"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="idols"
+                name="productradio"
+              />
+              <span>{{ ts.translate("idols") | titlecase }}</span>
+            </label>
+
+            <label *ngIf="
+            selectedMetal == 'Silver' ||
+            selectedMetal == 'allmetals'
+           ">
+              <input
+                id="poojaitems"
+                
+                type="radio"
+                (change)="handleChange($event.target.value)"
+                value="poojaitems"
+                name="productradio"
+              />
+              <span>{{ ts.translate("poojaitems") | titlecase }}</span>
+            </label>
+          </div>
+        </div>
+
+        <div id="dropdown" class="dropdown">
+          <div class="staticfield">
+            <label id="findtext">
+              {{ ts.translate("findyourjewels") | uppercase }}</label
+            >
+            <mat-form-field appearance="outline">
+              <mat-select
+                class="dropdownselect"
+                [(ngModel)]="selectedoption"
+                (selectionChange)="handleChange($event.value)"
+                name="jwelltype"
+              >
+                <mat-option
+                  class="droptext"
+                  *ngFor="let item of types"
+                  [value]="item.key"
+                >
+                  {{ ts.translate(item.value) | titlecase }}
+                </mat-option>
+              </mat-select>
+              <img
+                id="productdropicon"
+                src="../../../assets/images/downarrowb.png"
+              />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div id="productsLists" class="col-lg-9 productsLists">
+          <div *ngIf="tempdata.length == 0" class="noproducts">
+            {{ ts.translate("noproductsfound") }}
+          </div>
+          <!-- <div *ngIf="showspinner" class="col-12 col-lg-12 col-md-12 col-sm-12 center"><div class="loading">  <mat-spinner class="spinnerc"></mat-spinner></div></div> -->
+          <div
+            class="ImgList col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+            *ngFor="let item of tempdata"
+          >
+            <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+              <!-- <a class="zoombut" (click)="openDialog(item)">Click to zoom</a> -->
+              <!-- <button mat-button (click)="openDialog(item)">Click to Zoom</button> -->
+              <div class="procode">{{ item.code }}</div>
+              <div class="proname">
+                {{ ts.translate(item.category) }} {{ item.name }}
+              </div>
+              <div (click)="openDialog(item)" class="imgwrapper">
+                <img class="productimg" src="{{ item.imgsrc }}" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-
-
+      <app-talktous
+        [talktouscontent]="ts.translate('talktouscollection')"
+      ></app-talktous>
     </div>
-    
-    <app-talktous [talktouscontent]="ts.translate('talktouscollection')"></app-talktous>
+    <div class="linkstab">
+      <a (click)="goToPage('home')"
+        ><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"
+      /></a>
+      <span class="padl15">
+        <img class="downarrow " src="../../../assets/images/downarrow.png" />
+        <span class="padl15 pointer">
+          <a (click)="goToProducts('allproducts', 'allmetals')"
+            >{{ ts.translate("products") }}
+          </a></span
+        >
+      </span>
+      <span class="padl15" *ngIf="selectedMetal !== 'allmetals'">
+        <img class="downarrow " src="../../../assets/images/downarrow.png" />
+        <span class="padl15 pointer">
+          {{ ts.translate(selectedMetal) | titlecase }}
+        </span>
+      </span>
+    </div>
+    <app-footer></app-footer>
   </div>
-  <div class="linkstab">
-    <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
-    <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToProducts('allproducts','allmetals')"  >{{ts.translate('products')}} </a></span> </span> 
-    <span class="padl15" *ngIf="selectedMetal!=='allmetals'"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> {{ts.translate(selectedMetal) |  titlecase }} </span> </span> 
-
-  </div>
-  <app-footer></app-footer>
-  </div>
- 
 </div>
-
-
- 
