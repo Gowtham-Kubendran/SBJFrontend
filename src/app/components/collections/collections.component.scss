@@ -36,13 +36,14 @@
 }
 .cartextdiv
 {
-  position: absolute;
-  top: 22vh;
-  font-family: 'dance';
-  left: 10%;
-  font-size: 5rem;
-  color: #ffffff;
-  height:5rem;
+    font-family: 'dance','tamilf';
+    position: relative;
+    width: 100%;
+    margin-top: -10rem;
+    font-size: 5rem;
+    color: #ffffff;
+    text-align: center;
+    height: 5rem;
 }
 
 .productheroimgdiv
@@ -325,7 +326,7 @@ label > span:hover{
     {
         height: 100%;
         object-fit: cover;
-        width: 100%;
+        
     }
     .zoombut
     {
@@ -441,6 +442,18 @@ label > span:hover{
     .productheroimg
     {
       object-position: 65% 90%;
+    }
+    .cartextdiv
+    {
+    
+    
+    margin-top: -5rem;
+    text-align: center;
+    bottom: 2rem;
+    font-size: 3rem;
+    color: #ffffff;
+    height: 5rem;
+
     }
 }
 

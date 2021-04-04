@@ -12,6 +12,7 @@ export const VOCAB_TA ={
   women: 'பெண்கள்',
   kids: 'குழந்தைகள்',
   gifts: 'பரிசுகள்',
+
   
   gold: 'தங்கம்',
   diamond:'வைரம்',
@@ -45,7 +46,7 @@ export const VOCAB_TA ={
   Stud: 'ஸ்டட்',
   Dollar: 'டாலர்',
   Anklet: 'கணுக்கால்',
-
+Gifts: 'பரிசுகள்',
 
   goldsavingscheme: 'தங்க சேமிப்பு திட்டம்',
 

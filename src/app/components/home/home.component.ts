@@ -125,6 +125,7 @@ export class HomeComponent implements OnInit {
     if (window.innerWidth < 900)
     {
       $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+      $('#marriagecoll').attr("src", "../../../assets/images/banners/collectionlandscape.jpg");
       }
 
 

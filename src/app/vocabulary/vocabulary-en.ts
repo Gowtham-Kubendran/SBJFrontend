@@ -46,7 +46,7 @@ export const VOCAB_EN = {
   Stud: 'stud',
   Dollar: 'dollar',
   Anklet: 'anklet',
-
+  Gifts:'gifts',
   //have to translate
   goldsavingscheme:'gold saving scheme',
   goldschemedata: 'Investing in gold has never been easier, SBJ Gold scheme is a special scheme that helps you to plan and buy your own dream jewellery as well as maintaining your healthy financial stability. We have two options specially designed to suit your individual levels of saving at your own pace. You will also be rewarded with a special prize when you subscribe to one of our gold schemes.',

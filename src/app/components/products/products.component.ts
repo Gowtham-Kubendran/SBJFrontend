@@ -31,6 +31,8 @@ export class ProductsComponent implements OnInit {
   
   cartext = "";
 
+
+
   httpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',
     'Cache-Control': 'no-cache'
@@ -39,6 +41,26 @@ export class ProductsComponent implements OnInit {
   
 
   metals = ['Gold', 'Silver', 'Diamond'];
+  typediamind=[
+    {
+      
+        key: 'allproducts',
+        value: 'allproducts'
+    },
+    {
+      key: 'necklace',
+      value: 'necklace'
+    },
+    {
+      key: 'stud',
+      value: 'stud'
+    },
+    {
+      key: 'rings',
+      value: 'rings'
+    },
+    
+  ]
   types = [
     {
       key: 'allproducts',
