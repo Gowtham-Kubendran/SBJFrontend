@@ -469,13 +469,13 @@
     "code": "SBJGF005",
     "category": "idols",
     "collection": ["gifts"],
-    "metal": "Silver"
+    "metal": "Gold"
   },
   {
     "imgsrc": "../../../assets/images/gifts/gifts6.jpg",
     "name": "6",
     "code": "SBJGF006",
-    "category": "poojaitems",
+    "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -483,7 +483,7 @@
     "imgsrc": "../../../assets/images/gifts/gifts7.jpg",
     "name": "7",
     "code": "SBJGF007",
-    "category": "poojaitems",
+    "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
   },
@@ -491,268 +491,19 @@
     "imgsrc": "../../../assets/images/gifts/gifts8.jpg",
     "name": "8",
     "code": "SBJGF008",
-    "category": "Gifts",
+    "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
-  }, {
+  },
+   {
     "imgsrc": "../../../assets/images/gifts/gifts9.jpg",
     "name": "9",
     "code": "SBJGF009",
-    "category": "poojaitems",
+    "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
   },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts10.jpg",
-    "name": "10",
-    "code": "SBJGF010",
-    "category": "idols",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts11.jpg",
-    "name": "11",
-    "code": "SBJGF011",
-    "category": "silvervessels",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts12.jpg",
-    "name": "12",
-    "code": "SBJGF012",
-    "category": "poojaitems",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts13.jpg",
-    "name": "13",
-    "code": "SBJGF013",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts14.jpg",
-    "name": "14",
-    "code": "SBJGF014",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts15.jpg",
-    "name": "15",
-    "code": "SBJGF015",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts16.jpg",
-    "name": "16",
-    "code": "SBJGF016",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts17.jpg",
-    "name": "17",
-    "code": "SBJGF017",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts18.jpg",
-    "name": "18",
-    "code": "SBJGF018",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts19.jpg",
-    "name": "19",
-    "code": "SBJGF019",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts20.jpg",
-    "name": "20",
-    "code": "SBJGF020",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts21.jpg",
-    "name": "21",
-    "code": "SBJGF021",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts22.jpg",
-    "name": "22",
-    "code": "SBJGF022",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts23.jpg",
-    "name": "23",
-    "code": "SBJGF023",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts24.jpg",
-    "name": "24",
-    "code": "SBJGF024",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts25.jpg",
-    "name": "25",
-    "code": "SBJGF025",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts26.jpg",
-    "name": "26",
-    "code": "SBJGF026",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts27.jpg",
-    "name": "27",
-    "code": "SBJGF027",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts28.jpg",
-    "name": "28",
-    "code": "SBJGF028",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts29.jpg",
-    "name": "29",
-    "code": "SBJGF029",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts30.jpg",
-    "name": "30",
-    "code": "SBJGF030",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts31.jpg",
-    "name": "31",
-    "code": "SBJGF031",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts32.jpg",
-    "name": "32",
-    "code": "SBJGF032",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts33.jpg",
-    "name": "33",
-    "code": "SBJGF033",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts34.jpg",
-    "name": "34",
-    "code": "SBJGF034",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts35.jpg",
-    "name": "35",
-    "code": "SBJGF035",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts36.jpg",
-    "name": "36",
-    "code": "SBJGF036",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts37.jpg",
-    "name": "37",
-    "code": "SBJGF037",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts38.jpg",
-    "name": "38",
-    "code": "SBJGF038",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts40.jpg",
-    "name": "40",
-    "code": "SBJGF040",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  }, {
-    "imgsrc": "../../../assets/images/gifts/gifts41.jpg",
-    "name": "41",
-    "code": "SBJGF041",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts42.jpg",
-    "name": "42",
-    "code": "SBJGF042",
-    "category": "Gifts",
-    "collection": ["gifts"],
-    "metal": "Silver"
-  },
- 
-
+  
 
   {
     "imgsrc": "../../../assets/images/maalai/maalai1.jpg",
@@ -1225,10 +976,193 @@
     "category": "Dollar",
     "collection": ["wedding","women"],
     "metal": "Gold"
+  },
+  
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels1.jpg",
+    "name": "1",
+    "code": "SBJVS001",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels2.jpg",
+    "name": "2",
+    "code": "SBJVS002",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels3.jpg",
+    "name": "3",
+    "code": "SBJVS003",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels4.jpg",
+    "name": "4",
+    "code": "SBJVS004",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels5.jpg",
+    "name": "5",
+    "code": "SBJVS005",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels6.jpg",
+    "name": "6",
+    "code": "SBJVS006",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels7.jpg",
+    "name": "7",
+    "code": "SBJVS007",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/vessels/vessels8.jpg",
+    "name": "8",
+    "code": "SBJVS008",
+    "category": "silvervessels",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/idols/idol1.jpg",
+    "name": "1",
+    "code": "SBJID001",
+    "category": "idols",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/idols/idol2.jpg",
+    "name": "2",
+    "code": "SBJID002",
+    "category": "idols",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai1.jpg",
+    "name": "1",
+    "code": "SBPID001",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai2.jpg",
+    "name": "2",
+    "code": "SBPID002",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai3.jpg",
+    "name": "3",
+    "code": "SBPID003",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai4.jpg",
+    "name": "4",
+    "code": "SBPID004",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai5.jpg",
+    "name": "5",
+    "code": "SBPID005",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai6.jpg",
+    "name": "6",
+    "code": "SBPID006",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai7.jpg",
+    "name": "7",
+    "code": "SBPID007",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai8.jpg",
+    "name": "8",
+    "code": "SBPID008",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai9.jpg",
+    "name": "9",
+    "code": "SBPID009",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai10.jpg",
+    "name": "10",
+    "code": "SBPID0010",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai11.jpg",
+    "name": "11",
+    "code": "SBPID011",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai12.jpg",
+    "name": "12",
+    "code": "SBPID012",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/silverpoojai/poojai13.jpg",
+    "name": "13",
+    "code": "SBPID013",
+    "category": "poojaitems",
+    "collection": ["wedding"],
+    "metal": "Silver"
   }
-
-
-
 
 
 
