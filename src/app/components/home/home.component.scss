@@ -1331,16 +1331,22 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
       #user2
       {
         display:none;
+        
+      }
+      .disabledclass
+      {
+        background-color: grey;
       }
       #prevuser
       {
         
-        background-color: #CC9F08;
+        background-color: grey;
         padding: 2px;
         height: 30px;
         width: 30px;
         border-radius: 6px;
         opacity:1;
+        transition: 0.5s ease all;
       }
       #nextuser
       {
@@ -1351,6 +1357,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     width: 30px;
     border-radius: 6px;
     margin-left: 1rem;
+    transition: 0.5s ease all;
       }
       .homebody
       {
@@ -1518,4 +1525,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     font-size: 14px;
     border: 0;
   }
+
+
 

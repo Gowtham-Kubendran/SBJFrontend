@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   clicked = true;
   goldprice: number;
   silverprice: number;
+  userdisable: boolean;
   constructor(private ts:TranslateService,private sh:SharedService,private router: Router) { }
   aosInit()
   {
@@ -134,7 +135,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.userdisable = true;
    
     if (window.innerWidth < 900)
     {
@@ -444,17 +445,21 @@ export class HomeComponent implements OnInit {
 
 
   }
-  toggleuser()
+  toggleuser(num)
   {
-    if (document.getElementById("user1").style.display == "none")
-    {
+    if (num == 1)
+      {
+      document.getElementById("prevuser").style.background="grey";
+      document.getElementById("nextuser").style.backgroundColor = "#CC9F08";
       document.getElementById("user1").style.display = "block";
       document.getElementById("user2").style.display = "none";
-      }
-    else
-    {
-      document.getElementById("user1").style.display = "none";
+    }
+    if (num == 2)
+      {
+      document.getElementById("nextuser").style.background="grey";
+      document.getElementById("prevuser").style.backgroundColor = "#CC9F08";
       document.getElementById("user2").style.display = "block";
+      document.getElementById("user1").style.display = "none";
       }
   }
   
