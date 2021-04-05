@@ -408,9 +408,11 @@ export class HomeComponent implements OnInit {
     if (metal == 'diamond')
     {
      
-        document.getElementById('goldmenu').style.display = "none";
-        document.getElementById('silvermenu').style.display = "none";
-        document.getElementById('diamondmenu').style.display = "block";
+      document.getElementById('goldmenu').style.display = "none";
+    document.getElementById('silvermenu').style.display = "none";
+   document.getElementById('diamondmenu').style.display = "block";
+      
+ 
      
     }
     if (metal == 'gold')
@@ -439,6 +441,8 @@ export class HomeComponent implements OnInit {
     document.getElementById('diamondmenu').style.display = "none";
     document.getElementById('goldmenu').style.display = "none";
     document.getElementById('silvermenu').style.display = "none";
+
+
   }
   toggleuser()
   {

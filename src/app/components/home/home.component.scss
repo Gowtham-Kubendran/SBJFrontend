@@ -168,9 +168,7 @@ top: 50%;
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
  
-
 
 #language
 {background: transparent;
@@ -196,7 +194,24 @@ color: white;
   height: 100%;
   object-fit: cover;
 }
- 
+// .navbar-nav .dropdown-menu {
+//   -webkit-transition: all 0.3s;
+//   -moz-transition: all 0.3s;
+//   -ms-transition: all 0.3s;
+//   -o-transition: all 0.3s;
+//   transition: all 0.3s;
+
+//   max-height: 0;
+//   display: block;
+//   overflow: hidden;
+//   opacity: 0;
+// }
+
+
+// .navbar-nav.open .dropdown-menu {
+//   max-height: 200px;
+//   opacity: 1;
+// }
 
   .bodyView
   {
@@ -251,7 +266,7 @@ transition:0.5s all ease-in-out;
 }
 #user2
 {
-  display:none;
+  display:block;
   transition:0.5s all ease-in-out;
 }
 .marbar2
@@ -509,15 +524,21 @@ cursor: pointer;
 }
 .submenu
 {
-  transition: 0.5s all ease-in-out;
+ 
   position: absolute;
   background-color: #fff;
   right: -21.5rem;
   margin-top: -4rem;
   cursor: pointer;
   padding:0;
-  display: none;
+display:block;
+//  display:none;
+//  height:0;
+ 
 }
+
+
+
 .dropdown-item:hover{
   color:#CC9F08;
   cursor: pointer;
@@ -754,10 +775,7 @@ transition: 0.5s all ease-in-out;
   margin-top: -2px !important;
   transform: scale(0.7);
 }
-color:black;
-// background: #fff;
-// background-color: #fff;
-transition: 0.5s all ease-in-out;
+
 .navbar-light .navbar-nav .nav-link  {
   color: #000;
   /* color: black; */
@@ -1310,6 +1328,10 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     }
     @media screen and (max-width: 500px){
 
+      #user2
+      {
+        display:none;
+      }
       #prevuser
       {
         
@@ -1496,3 +1518,4 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     font-size: 14px;
     border: 0;
   }
+

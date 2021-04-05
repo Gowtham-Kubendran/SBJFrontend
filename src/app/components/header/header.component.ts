@@ -3,6 +3,7 @@ import { TranslateService } from 'src/app/services/translate/translate.service';
 import { Router } from '@angular/router';
 import { SharedService } from 'src/app/services/shared.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -137,6 +138,8 @@ export class HeaderComponent implements OnInit {
   }
   
   ngOnInit() {
+
+
 
     $(document).ready(function () {
       $('.dropdown-submenu a.test').on("click", function (e) {
@@ -290,10 +293,14 @@ export class HeaderComponent implements OnInit {
   }
   goToProducts(types,metals)
   {
+   
     (document.getElementById("collapsebut") as HTMLInputElement).click();
     this.sh.setValue(types);
-
     this.router.navigate(['products',metals]);
+
+ 
+   
+  
   }
 
   goToCollections(data)

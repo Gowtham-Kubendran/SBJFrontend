@@ -179,7 +179,12 @@ export class ProductsComponent implements OnInit {
   
   tempdata: any[] = [];
   constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
-    private router: Router, private http:HttpClient,public dialog: MatDialog) { }
+    private router: Router, private http: HttpClient, public dialog: MatDialog) {
+      router.events.subscribe((val) => {
+        // see also 
+        this.ngOnInit();
+    });
+     }
 
 
   aosInit()
@@ -364,7 +369,11 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       modal.find('.modal-body input').val(recipient)
     });
   }
- 
+ refreshpage()
+ {
+   console.log('refresh');
+   window.location.reload();
+ }
 
   getAllProducts(): Observable<any> 
   {
@@ -373,7 +382,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
 
   handleChange(event)
   {
-    document.getElementById("productdropicon").style.transform = "rotate(180deg)";
+    // document.getElementById("productdropicon").style.transform = "rotate(180deg)";
     (document.getElementById(event) as HTMLInputElement).checked = true;
     this.aosInit();
     window.scrollTo(0, 0);
