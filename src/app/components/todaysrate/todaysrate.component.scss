@@ -57,7 +57,7 @@
     text-align: center;
     width: 100%;
     margin-top: 8px;
-  content:"close";
+  
 }
 .circle:hover
 {
@@ -71,31 +71,55 @@
 #close
 {
   display:none;
-  position:absolute;
-  left:2rem;
+  position: absolute;
+  left: 28px;
+  top: 19px;
+  font-size: 23px;
+  font-family: 'avenirR';
+  font-weight: 900;
 }
-.circle:hover > #today
+.circle:hover > #today , .circle:active > #today
 {
   opacity:0;
 }
-.circle:hover > #close
+
+.circle:hover > #close , .circle:active > #close
 {
   display:block;
 }
-
-.circle:hover + .goldrate{
+.circle:hover + .goldrate , .circle:active + .goldrate
+{
  
 
-   display:block;
-    transform: scale(1);
-    color:black;
-    // box-shadow: 0 0 5px 1px #dfdfdf;
+  display:block;
+   transform: scale(1);
+   color:black;
+  
 
 }
 
-.circle:not(:hover) + .goldrate{
-  display:none;
+.circle:focus > #close
+{
+  display:block;
 }
+.circle:focus > #today
+{
+  opacity:0;
+}
+
+
+.circle:focus + .goldrate{
+ 
+
+  display:block;
+   transform: scale(1);
+   color:black;
+   // box-shadow: 0 0 5px 1px #dfdfdf;
+
+}
+
+
+
 
 .goldrate
 {
@@ -136,3 +160,115 @@
     border-radius: 5px;
 line-height: 3rem;
   }
+
+
+
+  .todaysrate1
+{
+  position: fixed;
+  display: inline-flex;
+  top: 77%;
+  right: 0;
+  text-align: right;
+  z-index: 5;
+  font-family:'opR','tamilf';
+  cursor: pointer;
+}
+.bar1
+{
+  height: 3px;
+  width: 3em;
+  margin-top: 34px;
+  background-color: #A57F00;
+}
+.circle1
+{
+  height: 70px;
+  width: 70px;
+  padding-top: 17px;
+    font-size: 12px;
+    display: flex;
+    flex: 1;
+    margin: auto 0;
+    padding-left: -10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    border-radius: 50%;
+    background-color: #A57F00;
+    color: #fff;
+}
+.circle1 p.new-label1 span{
+  font-size: 12px;
+  line-height: 1.5rem;
+  font-weight: 100;
+  white-space: pre-wrap;
+  position: relative;
+  
+}
+.success1{
+  width:100%;
+}
+
+#today1{
+  opacity:1;
+}
+#close1
+{
+  display: none;
+  position: absolute;
+  left: 28px;
+  top: 19px;
+  font-size: 23px;
+  font-family: 'avenirR';
+  font-weight: 900;
+}
+
+
+
+
+
+.goldrate1
+{
+  width: 15em;
+  font-size: 12px;
+  position: absolute;
+  top: -14rem;
+  right: 3em;
+  text-align: center;
+  
+  background-color: #fff;
+  border-radius:5px;
+  display:none;
+  
+  transform: scale(1.2);
+  transition: 0.3s all ease-in-out;
+}
+.goldratehead1
+{
+  background-color: #A57F00;
+  color: #fff;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 8px;
+
+}
+.bold1
+{
+  font-weight: 600;
+}
+.goldbody1
+{
+    padding:8px;
+    border-left: 2px solid #ececec;
+    border-bottom: 2px solid #ececec;
+    border-right: 2px solid #ececec;
+    border-radius: 5px;
+line-height: 3rem;
+  }
+
+
+
+
+  

@@ -123,7 +123,7 @@ Gifts: 'பரிசுகள்',
   fillallfields: 'அனைத்து விவரங்களையும் நிரப்பவும',
   close: 'மூடு',
 
-  silvervessels: 'வெள்ளி பாத்திரம்',
+  silvervessels: 'பாத்திரம்',
   idols:'சிலைகள்',
   poojaitems:'பூஜை உருப்படிகள்',
   

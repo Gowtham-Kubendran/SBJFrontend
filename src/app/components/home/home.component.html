@@ -283,52 +283,55 @@
      
   
   </div>
+
+
   <div class="bodyView" data-aos="fade-up" data-aos-once="true">
-    <div class="bodyHeading" >
-        {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
-    </div>
-    <div class="row padl5">
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12 padding0" >
-          <div class="imageContainer marb20">
-              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
-              <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
-          </div>
+      <div class="bodyHeading nonmargin" >
+          {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
       </div>
-
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-          <div class="row">
-              <div class="imageContainer colimg mar-3 mar-r-1">
-                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 " src="../../../assets/images/banners/collectionmen.jpg">
-                  <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
-              </div>
+      <div class="row padl5">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12 padding0" >
+            <div class="imageContainer marb20 nonmargin">
+                <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
+                <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
             </div>
-            <div class="row padt20">
-                <div class="imageContainer marb20 colimg mar-r-1">
-                    <a (click)="goToCollections('women')"> <img class="collectionImage" src="../../../assets/images/banners/collectionwomen.jpg"/>
-                    <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+        </div>
+  
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="row">
+                <div class="imageContainer colimg mar-3 mar-r-1 collectionside p15">
+                    <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25" src="../../../assets/images/banners/collectionmen.jpg">
+                    <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
                 </div>
-             </div>
-         
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-          <div class="row">
-              <div class="imageContainer colimg mar-3 padingt20">
-                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 " src="../../../assets/images/banners/collectionkids.jpg">
-                  <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>
-            </div>
-          <div class="row padt20">
-             <div class="imageContainer colimg">
-                <a (click)="goToCollections('gifts')"> <img class="collectionImage" src="../../../assets/images/banners/collectiongift.jpg">
-                 <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+              <div class="row padt20">
+                  <div class="imageContainer marb20 colimg mar-r-1 collectionside p15" >
+                      <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25" src="../../../assets/images/banners/collectionwomen.jpg"/>
+                      <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+                  </div>
+               </div>
+           
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            <div class="row">
+                <div class="imageContainer colimg mar-3 padingt20 collectionsideright">
+                    <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage p15" src="../../../assets/images/banners/collectionkids.jpg">
+                    <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+                </div>
+              </div>
+            <div class="row padt20">
+               <div class="imageContainer colimg collectionsideright">
+                  <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage p15" src="../../../assets/images/banners/collectiongift.jpg">
+                   <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+               </div>
              </div>
-           </div>
-       </div>
-
-
-
+         </div>
+  
+  
+  
+      </div>
     </div>
-  </div>
+
 <div class="bodyView" data-aos="fade-up" data-aos-once="true">
   <div class="bodyHeading">
     {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('promises') |  uppercase}}</span>

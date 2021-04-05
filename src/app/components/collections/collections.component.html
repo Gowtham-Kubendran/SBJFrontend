@@ -77,7 +77,7 @@
             <!-- <a class="zoombut" (click)="openDialog(item)">Click to zoom</a> -->
               <!-- <button mat-button (click)="openDialog(item)">Click to Zoom</button> -->
               <div class="procode">{{item.code}}</div>
-              <div  class="proname"> {{ts.translate(item.category)}} {{item.name}}</div>
+              <div  class="proname"> {{ ts.translate(item.metal) | titlecase }} {{ts.translate(item.category)}} {{item.name}}</div>
              <div class="imgwrapper">
               <img
                 class="productimg"

@@ -133,6 +133,11 @@ export class TopsellingComponent implements OnInit {
       duration:1200
     });
     
+
+    (<any>$('.carousel')).carousel({
+      interval: false,
+    });
+
   }
 
   constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,

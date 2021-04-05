@@ -14,13 +14,20 @@ export class TodaysrateComponent implements OnInit {
   getValue;
 
   price: Prices;
+  flag: boolean;
 
   goldprice;
   silverprice;
+  desktop: boolean;
   constructor(private ts:TranslateService,private sh:SharedService,private router: Router,private http:HttpClient) { }
 
   ngOnInit() {
-
+    this.desktop = true;
+    this.flag = true;
+    if (window.innerWidth < 800)
+    {
+      this.desktop = false;
+     }
    
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
 
@@ -32,12 +39,21 @@ export class TodaysrateComponent implements OnInit {
     });
    
   }
-  toggleview()
+  toggle()
   {
-    if (document.getElementById('rate').style.display = "block")
-      document.getElementById('rate').style.display = "none";
+    if (this.flag == true) {
+      document.getElementById("today1").style.display = "none";
+      document.getElementById("close1").style.display = "block"
+      document.getElementById("rate1").style.display = "block";
+      this.flag = false;
+    }
     else
-      document.getElementById('rate').style.display = "block";
+    {
+      document.getElementById("today1").style.display = "block";
+      document.getElementById("close1").style.display = "none";
+      document.getElementById("rate1").style.display = "none";
+      this.flag = true;
+      }
   }
   over()
   {
