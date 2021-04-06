@@ -206,9 +206,17 @@ export class ProductsComponent implements OnInit {
   }
 
   
+  clearcolor()
+  {
+    document.getElementById("navlink1").style.color = "#000";
+    document.getElementById("navlink2").style.color = "#000";
+    document.getElementById("navlink3").style.color = "#000";
+    document.getElementById("navlink4").style.color = "#000";
+    document.getElementById("navlink5").style.color = "#000";
+  }
   ngOnInit() {
-
-   
+    this.clearcolor();
+    document.getElementById("navlink1").style.color = "#CC9F08";
     
      this.route.params.subscribe(params => this.selectedMetal=params.metal);
     

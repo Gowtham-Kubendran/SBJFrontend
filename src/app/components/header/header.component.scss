@@ -239,7 +239,36 @@ ul{
   margin-top: -2px !important;
   transform: scale(0.7);
 }
+::ng-deep .mat-option-text
+{
+  color:#444;
+}
+.radbutton {
+  display:block;
+  font-family:'opR','tamilf';
+font-size:12px;
+line-height: 3rem;
+color:#444;
+}
+button:focus{
+  outline:0;
+}
+.radbutton:hover{
+  color:#CC9F08
+}
+::ng-deep .mat-radio-label-content {
+    
+  line-height: 3rem;
+}
+::ng-deep .mat-menu-content
+{
+ padding:1em 0 1em 1em;
+}
 
+::ng-deep .mat-radio-label-content {
+  
+  line-height: 3rem;
+}
  
 @media  screen and (max-width: 2700px){
   .navbar-nav{

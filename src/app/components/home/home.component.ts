@@ -14,11 +14,12 @@ import { HttpParams } from '@angular/common/http';
 export class HomeComponent implements OnInit {
   languageselect;
   list: any = [];
-  langlist = ['LA-EN', 'LA-TA'];
+  langlist = [{ key: 'LA-EN', value: 'English' ,checked:false},{key:'LA-TA',value:'தமிழ்',checked:false}];
   clicked = true;
   goldprice: number;
   silverprice: number;
   userdisable: boolean;
+  showlang: any;
   constructor(private ts:TranslateService,private sh:SharedService,private router: Router) { }
   aosInit()
   {
@@ -135,6 +136,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+   
     this.userdisable = true;
    
     if (window.innerWidth < 900)
@@ -168,8 +170,14 @@ export class HomeComponent implements OnInit {
 
     if (window.sessionStorage.getItem('lang') == "EN")
     {
-      window.sessionStorage.setItem('lang','LA-EN');
-      }
+      window.sessionStorage.setItem('lang', 'LA-EN');
+      this.showlang = "EN";
+      this.langlist[0].checked = true;
+    }
+    else {
+      this.showlang = "TA"
+      this.langlist[1].checked = true;
+    }
     console.log(window.sessionStorage.getItem('lang'))
     if (window.sessionStorage.getItem('lang'))
     {
@@ -233,16 +241,16 @@ export class HomeComponent implements OnInit {
         if ($(this).scrollTop() > 50) {
           $(".phoneicon").attr("src", "../../../assets/images/wicon.svg");
           // document.getElementById("langclassid").style.color = "black";
-          $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+          $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
         }
         else {
 
           $(".phoneicon").attr("src", "../../../assets/images/wiconw.png");
           // document.getElementById("langclassid").style.color = "white";
-          $('#changedrop').attr("src", "../../../assets/images/downarrow.png");
+          $('#changedrop').attr("src", "../../../assets/images/languageiconw.svg");
           if (window.innerWidth < 900)
           {
-            $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+            $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
             }
         }
        
@@ -255,7 +263,10 @@ export class HomeComponent implements OnInit {
 
   getLang(data) {
     console.log(data);
+    
+
     if (data == 'LA-TA') {
+      this.showlang = 'TA';
       if (window.innerWidth < 2700)
       {
         document.getElementById("navbarnavid").style.marginLeft = "35%";
@@ -310,7 +321,7 @@ export class HomeComponent implements OnInit {
       (document.getElementById("wrapper") as HTMLInputElement).style.fontFamily = "tamilf !important";
     }
     else {
-        
+      this.showlang = 'EN';
       (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";

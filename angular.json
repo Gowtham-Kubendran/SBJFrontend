@@ -34,7 +34,7 @@
               "./node_modules/slick-carousel/slick/slick-theme.scss",
             
 
-              "src/styles.scss",
+              "src/styles.scss"
 
               
             ],

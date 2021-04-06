@@ -24,6 +24,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
 import { MatMenuModule } from '@angular/material/menu';
 
+import { Location, PathLocationStrategy} from '@angular/common';
+
 
 
 @NgModule({
@@ -56,7 +58,7 @@ import { MatMenuModule } from '@angular/material/menu';
     FlexLayoutModule,
     
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }
+  providers: [Location,{ provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent],
   entryComponents: [DialogDataExampleDialog,DialogDataExample,TopSellingDialog]

@@ -11,7 +11,8 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class HeaderComponent implements OnInit {
   languageselect: string;
-  langlist = [{ key: 'LA-EN', value: 'English' }, { key: 'LA-TA', value: 'தமிழ்' }];
+  langlist1 = [{ key: 'LA-EN', value: 'English' , checked:false},{key:'LA-TA',value:'தமிழ்' , checked:false}];
+  showlang: string;
  
 
  
@@ -149,12 +150,29 @@ export class HeaderComponent implements OnInit {
       });
 
     });
-
+    $(window).scroll(function () {
+      
+     
+      if ($(this).scrollTop() > 50) {
+     
+        $('#changedrop2').attr("src", "../../../assets/images/languageiconb.svg");
+      }
+      else {
+        $('#changedrop2').attr("src", "../../../assets/images/languageiconb.svg");
+      }
+    });
 
     if (window.sessionStorage.getItem('lang') == "EN")
     {
-      window.sessionStorage.setItem('lang','LA-EN');
-      }
+      window.sessionStorage.setItem('lang', 'LA-EN');
+      this.showlang = "EN";
+      this.langlist1[0].checked = true;
+    }
+    else
+    {
+      this.showlang = "TA";
+      this.langlist1[1].checked = true;
+    }
     console.log(window.sessionStorage.getItem('lang'))
     if (window.sessionStorage.getItem('lang'))
     {
@@ -169,13 +187,14 @@ export class HeaderComponent implements OnInit {
     this.languageselect = 'LA-EN';
     }
 
-    (document.getElementById("language") as HTMLInputElement).style.color = "#000";
+    // (document.getElementById("language") as HTMLInputElement).style.color = "#000";
     
     
   }
   getLang(data) {
     console.log(data);
     if (data == 'LA-TA') {
+      this.showlang = 'TA';
       if (window.innerWidth < 2700)
       {
         document.getElementById("navbarnavid").style.marginLeft = "35%";
@@ -230,6 +249,7 @@ export class HeaderComponent implements OnInit {
     
     }
     else {
+      this.showlang = 'EN';
       (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0px";
       (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0px";
       (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0px";
@@ -291,13 +311,16 @@ export class HeaderComponent implements OnInit {
     window.sessionStorage.setItem('lang', data);
      
   }
+ 
   goToProducts(types,metals)
   {
    
+
+      
     (document.getElementById("collapsebut") as HTMLInputElement).click();
     this.sh.setValue(types);
     this.router.navigate(['products',metals]);
-
+    document.getElementById("navlink21").style.color = "#CC9F08";
  
    
   
@@ -305,12 +328,17 @@ export class HeaderComponent implements OnInit {
 
   goToCollections(data)
   {
+    
     this.sh.setValue(data);
+   
     this.router.navigate(['collections']);
+   
   }
-  goToPage(route)
+  goToPage(route,num)
   {
+ 
     this.router.navigate([route]);
+  
   }
  
   myFunction()

@@ -135,7 +135,7 @@
    <div class="lang ">
     <span class="phonelink"><img class="phoneicon" style="width:18px;margin-top: -2px;" src="../../../assets/images/wiconw.png" />
       {{ ts.translate("phonebody1") }} &nbsp;&nbsp;&nbsp;|</span>
-    <mat-form-field class="langclass">
+    <!-- <mat-form-field class="langclass">
         
         <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
           <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
@@ -143,8 +143,34 @@
           </mat-option>
         
         </mat-select>
-      </mat-form-field>
-      <span> <img id="changedrop" src="../../../assets/images/downarrow.png" /></span>
+      </mat-form-field> -->
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+       <img id="changedrop" style="width:20px" src="../../../assets/images/languageiconw.svg" />
+      </button>
+      <mat-menu #menu="matMenu">
+        <!-- <button mat-menu-item (click)="getLang('LA-EN')">
+         
+          <span>English</span>
+        </button>
+      
+        <button mat-menu-item (click)="getLang('LA-TA')">
+          
+          <span>தமிழ்</span>
+        </button> -->
+         <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="selectedLang">
+          <mat-radio-button class="radbutton" *ngFor="let lang of langlist"  [checked]="lang.checked" [value]="lang.key" (change)="getLang(lang.key)" >
+            {{lang.value}}
+          </mat-radio-button>
+        </mat-radio-group>
+
+
+      </mat-menu>
+      <span style="font-size:12px;    padding-top: 14px;">{{showlang}}</span>
+    
 
    
       
@@ -153,13 +179,7 @@
   
   
   </nav>
-  <div id="productdropdown" >
-    products
-      </div>
-  <div id="collectiondropdown">
-    
-  </div>
-
+ 
 <div class="homebody">
 
   <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel" data-interval="3000">
