@@ -14,7 +14,7 @@ export class TalktousComponent implements OnInit {
   @Input('talktouscontent')
   talktouscontent: any;
 
-  constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
+  constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit() {

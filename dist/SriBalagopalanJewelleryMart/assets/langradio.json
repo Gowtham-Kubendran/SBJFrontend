@@ -1,0 +1,6 @@
+{
+  "list": [
+    {"name": "English", "key": "LA-EN", "checked": true},
+    {"name": "Tamil", "key": "LA-TA", "checked": false}
+  ]
+}

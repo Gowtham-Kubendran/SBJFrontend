@@ -13,7 +13,7 @@ export class SetPricesComponent implements OnInit {
   prices: Price=new Price();
   goldprice=0;
   silverprice=0;
-  constructor(private ts:TranslateService,private sh:SharedService,private snackBar: MatSnackBar) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.prices=new Price();

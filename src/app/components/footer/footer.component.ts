@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private ts:TranslateService,private sh:SharedService,private router: Router) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
 
   ngOnInit() {
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));

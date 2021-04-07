@@ -138,6 +138,7 @@ input[type=number] {
 .socialmedia
 {
   display: flex;
+  width: 100vw;
   text-align: center;
   justify-content: center;
 }
@@ -295,7 +296,7 @@ input[type=number] {
   }
 .padb1
 {
-  padding-bottom:3rem;
+  padding: 0 0 3rem 0;
 }
 .fbicon
 {
@@ -308,7 +309,11 @@ input[type=number] {
     width:100%;
   }
   
-
+  .padL
+  {
+    padding-right:0;
+  padding-left:15px;
+  }
   
   .linkstab
   {

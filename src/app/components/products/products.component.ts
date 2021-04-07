@@ -179,7 +179,7 @@ export class ProductsComponent implements OnInit {
   selectedoption: any = 'allproducts';
   
   tempdata: any[] = [];
-  constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
+  constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
     private router: Router, private http: HttpClient, public dialog: MatDialog) {
     // this.loadflag
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event =>  this.getallDetails());    

@@ -136,8 +136,8 @@ export class TopsellingComponent implements OnInit {
 
   }
 
-  constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
-    private router: Router, public dialog: MatDialog) {
+  constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
+    public router: Router, public dialog: MatDialog) {
     
   }
   show1()

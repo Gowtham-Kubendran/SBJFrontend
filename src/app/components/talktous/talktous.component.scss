@@ -7,7 +7,9 @@
     font-family: 'opR','tamilf';
     padding: 2em 4.2rem;
     font-size: 20px;
-   
+    display:inline-flex;
+    flex-direction: row;
+    width: 100%;
   }
   .talktousButton
   {
@@ -28,9 +30,13 @@
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  text-align: justify;
+
     padding-right: 30px;
     font-family: 'opR','tamilf';
+
+    text-align: left;
+    width: 80%;
+    padding-left: 40px;
 }
 .talktousButton
 {
@@ -61,7 +67,7 @@
 
 .talktousButton
 {
-  right: 5px;
+
   padding: 7px;
 }
 

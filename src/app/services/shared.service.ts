@@ -50,11 +50,7 @@ export class SharedService {
 return this.producttype
   }
 
-  setProductType(value)
-  {
-    this.producttype = value;
-  }
-
+ 
  
 
    

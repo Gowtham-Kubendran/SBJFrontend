@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class GoldSchemesComponent implements OnInit {
 
-  constructor(private ts:TranslateService,private sh:SharedService,private router: Router) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
 
   clearcolor()
   {

@@ -19,7 +19,7 @@ export class TodaysrateComponent implements OnInit {
   goldprice;
   silverprice;
   desktop: boolean;
-  constructor(private ts:TranslateService,private sh:SharedService,private router: Router,private http:HttpClient) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public router: Router,public http:HttpClient) { }
 
   ngOnInit() {
     this.desktop = true;

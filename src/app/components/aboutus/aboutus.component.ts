@@ -10,7 +10,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AboutusComponent implements OnInit {
 
-  constructor(private ts:TranslateService,private router:Router) { }
+  constructor(public ts:TranslateService,public router:Router) { }
 
   clearcolor()
   {

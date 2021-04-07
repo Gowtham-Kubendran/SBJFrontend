@@ -92,8 +92,8 @@ export class CollectionsComponent implements OnInit {
   value: any = 'allcollections';
   
   tempdata: any[] = [];
-  constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
-    private router: Router, private http:HttpClient,public dialog: MatDialog) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
+    public router: Router, public http:HttpClient,public dialog: MatDialog) { }
 
   aosInit()
   {

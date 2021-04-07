@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   silverprice: number;
   userdisable: boolean;
   showlang: any;
-  constructor(private ts:TranslateService,private sh:SharedService,private router: Router) { }
+  constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
   aosInit()
   {
     AOS.init({
@@ -386,10 +386,10 @@ export class HomeComponent implements OnInit {
     
      
   }
-  goToProducts(types,metals,type)
+  goToProducts(types,metals)
   {
     this.sh.setValue(types);
-    this.sh.setProductType(type);
+
    this.router.navigate(['products',metals]);
   }
 

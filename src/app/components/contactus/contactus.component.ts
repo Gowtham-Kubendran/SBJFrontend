@@ -13,7 +13,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 export class ContactusComponent implements OnInit {
   showerrormessage: boolean;
 
-  constructor(private ts:TranslateService,private router:Router,private snackBar: MatSnackBar) { }
+  constructor(public ts:TranslateService,public router:Router,public snackBar: MatSnackBar) { }
   emailstring:any="";
   subject:any;
   firstname:any="";
