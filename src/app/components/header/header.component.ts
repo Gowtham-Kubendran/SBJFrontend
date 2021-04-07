@@ -2,6 +2,8 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { TranslateService } from 'src/app/services/translate/translate.service';
 import { Router } from '@angular/router';
 import { SharedService } from 'src/app/services/shared.service';
+import { Observable } from 'rxjs';
+import { HttpBackend } from '@angular/common/http';
 
 
 @Component({
@@ -137,10 +139,25 @@ export class HeaderComponent implements OnInit {
 
     }
   }
+
+  
   
   ngOnInit() {
 
+    
 
+    if (window.sessionStorage.getItem('lang')=="LA-EN")
+    {
+      this.showlang = "EN";
+      this.langlist1[0].checked = true;
+      this.languageselect = "LA-EN";
+  
+    }
+    else {
+      this.showlang = "TA"
+      this.langlist1[1].checked = true;
+      this.languageselect = "LA-TA";
+    }
 
     $(document).ready(function () {
       $('.dropdown-submenu a.test').on("click", function (e) {
@@ -154,25 +171,17 @@ export class HeaderComponent implements OnInit {
       
      
       if ($(this).scrollTop() > 50) {
+      
      
         $('#changedrop2').attr("src", "../../../assets/images/languageiconb.svg");
       }
       else {
+     
         $('#changedrop2').attr("src", "../../../assets/images/languageiconb.svg");
       }
     });
 
-    if (window.sessionStorage.getItem('lang') == "EN")
-    {
-      window.sessionStorage.setItem('lang', 'LA-EN');
-      this.showlang = "EN";
-      this.langlist1[0].checked = true;
-    }
-    else
-    {
-      this.showlang = "TA";
-      this.langlist1[1].checked = true;
-    }
+   
     console.log(window.sessionStorage.getItem('lang'))
     if (window.sessionStorage.getItem('lang'))
     {
@@ -195,6 +204,7 @@ export class HeaderComponent implements OnInit {
     console.log(data);
     if (data == 'LA-TA') {
       this.showlang = 'TA';
+      this.languageselect = "LA-TA";
       if (window.innerWidth < 2700)
       {
         document.getElementById("navbarnavid").style.marginLeft = "35%";
@@ -250,6 +260,7 @@ export class HeaderComponent implements OnInit {
     }
     else {
       this.showlang = 'EN';
+      this.languageselect = "LA-EN";
       (document.getElementById(`navlink1`) as HTMLInputElement).style.padding = "10px 0px";
       (document.getElementById(`navlink2`) as HTMLInputElement).style.padding = "10px 0px";
       (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 0px";
@@ -320,7 +331,7 @@ export class HeaderComponent implements OnInit {
     (document.getElementById("collapsebut") as HTMLInputElement).click();
     this.sh.setValue(types);
     this.router.navigate(['products',metals]);
-    document.getElementById("navlink21").style.color = "#CC9F08";
+    document.getElementById("navlink1").style.color = "#CC9F08";
  
    
   

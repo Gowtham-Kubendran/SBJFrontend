@@ -10,6 +10,7 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import * as $ from 'jquery';
 import * as AOS from 'aos';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 
 export interface DialogData {
@@ -180,10 +181,9 @@ export class ProductsComponent implements OnInit {
   tempdata: any[] = [];
   constructor(private ts:TranslateService,private sh:SharedService,private route: ActivatedRoute,
     private router: Router, private http: HttpClient, public dialog: MatDialog) {
-      router.events.subscribe((val) => {
-        // see also 
-        this.ngOnInit();
-    });
+    // this.loadflag
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event =>  this.getallDetails());    
+
      }
 
 
@@ -208,13 +208,20 @@ export class ProductsComponent implements OnInit {
   
   clearcolor()
   {
-    document.getElementById("navlink1").style.color = "#000";
+    document.getElementById("navlink1").style.color = "#CC9F08";
     document.getElementById("navlink2").style.color = "#000";
     document.getElementById("navlink3").style.color = "#000";
     document.getElementById("navlink4").style.color = "#000";
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
+  
+    this.getallDetails();
+    this.clearcolor();
+
+  }
+  getallDetails()
+  {
     this.clearcolor();
     document.getElementById("navlink1").style.color = "#CC9F08";
     
@@ -279,6 +286,8 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
    
 
     // this.value="allproducts"
+
+    this.getAllProducts();
 
     this.getAllProducts().subscribe(data => {
       
@@ -359,10 +368,8 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
    
 
 
-  
-   
-
   }
+
   ngAfterViewInit() {
     // this.showspinner = false;
 

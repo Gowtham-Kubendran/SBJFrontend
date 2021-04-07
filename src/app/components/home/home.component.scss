@@ -60,7 +60,7 @@ top: 50%;
 {
   width: 12px;
   padding-top: 6px;
- 
+ padding-left: -5px;
 }
 .downarrow
 {
@@ -140,7 +140,7 @@ top: 50%;
   }
   .lang{
     float: right;
-    
+    padding-right: 50px;
   }
 
   .dropdown-content a {
@@ -298,6 +298,7 @@ transition:0.5s all ease-in-out;
   -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+padding-left:0;
 }
 .smallheight
 {
@@ -373,7 +374,10 @@ cursor: pointer;
     font-size:18px;
   
   }
-
+  .nonmargin
+  {
+    margin-right: 0px;
+  }
   .numbering
   {
     position: absolute;
@@ -458,6 +462,7 @@ color:#444;
     margin: auto;
     padding: 0 2em;
   }
+  
   .name{
     color: #444444;
     font-size: 18px;
@@ -520,7 +525,7 @@ color:#444;
 
 .mar-3
 {
-  margin-bottom:20px;
+  margin-bottom:15px;
  
 }
 .mar-r-1
@@ -803,32 +808,30 @@ position: fixed;
   }
   
 }
-.nonmargin
-{
-  margin-right: 0px;
-}
+
 .collectionside
 {
   overflow: hidden;
-    /* width: 100%; */
-    border-radius: 5px;
-    position: relative;
-   padding:0 5px;
+  border-radius: 5px;
+  position: relative;
+  padding: 0 0px;
+  width: 100%;
 }
 .collectionsideright
 {
   overflow: hidden;
-    /* width: 100%; */
-    border-radius: 5px;
-    position: relative;
-   padding:0 0px;
-   margin-left: -5px;
-    margin-right: 15px;
+  border-radius: 5px;
+  position: relative;
+  padding: 0 0px;
+  margin-left: -5px;
+  /* margin-right: 15px; */
+  width: 100%;
 }
-.p15
-  {
-    padding-right:15px;
-  }
+.margin0
+{
+  margin:0;
+}
+
 .sidecollectionimage
 {
   width: 100%;
@@ -953,7 +956,10 @@ ul{
     font-size:12px;
     margin-top: 1rem;
 }
-
+.padr5
+{
+  padding-right:5px;
+}
 .langclass
 {
   width: 6rem;
@@ -964,12 +970,59 @@ ul{
   padding-top: 1.4rem;
   
 }
+.upperdiv1{
+  padding: 0 10px 0 0px;
+  margin: 0 0px 20px -5px;
+  width: 100%;
+}
+.upperdiv2{
+  padding: 0 0px 0 0px;
+  margin: 0 0px 20px -25px;
+  width: 100%;
+}
 
-
-
+.lowerdiv1
+{
+  padding-right: 0px;
+    width: 100%;
+    margin: 0 0px 0px -8px;
+}
+.lowerdiv1img
+{
+  margin: 0 0px -5px -5px;
+}
 ::ng-deep .mat-form-field-underline {
   display: none;
 }
+
+.padl0
+{
+  padding-left:0;
+}
+.mar0
+{
+  margin-right: 0;
+}
+.coll2column
+{
+  padding: 0 15px 0 5px;
+}
+.coll3column
+{
+  padding: 0 0px 0 0px;
+  margin-left: -5px;
+}
+
+.p15
+  {
+    padding-left:15px;
+  }
+  .adjust
+  {
+    padding-left: 0;
+    margin-left: 0px;
+    border-radius: 5px;
+  }
 @media only screen and (max-width: 2600px) {
   #navdropdown1{
     margin-left: 37%;
@@ -999,8 +1052,9 @@ ul{
 }
 .lang{
   
-  margin-top: 4px;
+  margin-top: -6px;
 }
+
 }
 @media only screen and (max-width: 1300px) {
   #navdropdown1{
@@ -1019,6 +1073,7 @@ ul{
   font-size: 3rem;
   }
 
+ 
   .navbar-nav {
     margin: -5px 0% 0 9%;
   }
@@ -1082,7 +1137,11 @@ ul{
 }
 
 @media screen and (max-width: 912px) {
-      
+  .height100
+  {
+    height: 302px;
+      padding-right: 0;
+  }
     
   .logoimg{
     height:60px;
@@ -1151,6 +1210,7 @@ ul{
 .collectionwedding
 {
   height:100%;
+  padding-left: 0;
 }
 .left2
 {
@@ -1164,7 +1224,10 @@ ul{
  {
    opacity:0;
  }
- 
+ .setpad0
+ {
+padding:0;
+ }
  .imageContainer
  {
    padding:0 15px 0 0;
@@ -1209,6 +1272,7 @@ ul{
   padding-right: 5px;
 }
 
+
 .bot1
 {
  bottom: 1em;
@@ -1218,6 +1282,7 @@ ul{
 {
   left: -29rem;
 }
+
   .padding0
   {
     padding:0;
@@ -1299,6 +1364,7 @@ ul{
 {
   padding-top:20;
 }
+
 .padl4
 {
   padding-left: 0rem;
@@ -1429,10 +1495,35 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
         display:none;
         
       }
+      .padl5
+      {
+        padding:0;
+      }
+      .coll2column
+      {
+        padding: 0 15px 0 0px;
+      }
+      .coll3column
+      {
+        margin-left: 0px;
+      }
+      .padr0
+      {
+        padding-right: 0;
+      }
       .disabledclass
       {
         background-color: grey;
       }
+      .imageContainer
+      {
+        padding-right: 0;
+      }
+      .coll3column
+      {
+        padding:0 15px 0 0;
+      }
+
       #prevuser
       {
         
@@ -1588,16 +1679,14 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   margin-left: 0px;
   margin-right: 0px;
 }
-.padl5 {
-  padding-left: 20px;
-}
+
     }
   
     #collectiondropdown
   {
     display:none;
   }
-  .navbar-nav > .dropdown1:hover   + #productdropdown , .navbar-nav > .dropdown1 >#navlink1:hover
+  .navbar-nav > .dropdown1:hover   + #productdropdown , .navbar-nav > .dropdown1 >#manlinkh1:hover
   {
     display:block !important;
     transition:0.5s all ease-in-out;

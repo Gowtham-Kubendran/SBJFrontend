@@ -53,15 +53,31 @@
       <ul class="navbar-nav" id="navbarnavid">
         <li class="nav-item dropdown1">
       
-       <a class="nav-link producthover dropdown-toggle" href="#" id="navlink1" (click)="hidesubmenus()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <a class="nav-link producthover dropdown-toggle" href="#" id="manlinkh1" (click)="hidesubmenus()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{ts.translate('products') }}
         </a>
-       <div class="dropdown-menu" id="navdropdown1" aria-labelledby="navlink1">
-          <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
-          <div class="dropdown-divider"></div>
+       <div class="dropdown-menu" id="navdropdown1" aria-labelledby="manlinkh1">
+          <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
+          <div class="dropdown-divider"></div> -->
           <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('gold') | titlecase}}</a>
           <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')" >{{ts.translate('silver') | titlecase}}</a>
           <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')" >{{ts.translate('diamond') | titlecase}}</a> -->
+          <a class="dropdown-item" (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
+            <ul class="submenu" id="goldmenu">
+              
+                  <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a>
+                  <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a>
+                  <a class="dropdown-item" (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a>
+                  <!-- <a class="dropdown-item" (click)="goToProducts('gifts','Gold')">{{ts.translate('gifts') | titlecase}}</a> -->
+                  <a class="dropdown-item" (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a>
+              
+            </ul>
           <a class="dropdown-item" (click)="openMenu('diamond')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
             {{ts.translate('diamond') | titlecase}} <span><img class="downarrowmenu" id="rot1" src="../../../assets/images/downarrowb.png"/></span></a>
           <ul class="submenu" id="diamondmenu">
@@ -71,21 +87,7 @@
             <a class="dropdown-item" (click)="goToProducts('rings','Diamond')">{{ts.translate('rings') | titlecase}}</a>
             
           </ul>
-          <a class="dropdown-item" (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
-          <ul class="submenu" id="goldmenu">
-            
-                <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('gifts','Gold')">{{ts.translate('gifts') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a>
-            
-          </ul>
+         
           <a class="dropdown-item" (click)="openMenu('silver')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
             {{ts.translate('silver') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
           <ul class="submenu" id="silvermenu">
@@ -105,10 +107,10 @@
       
 
         <li class="nav-item">
-          <a class="nav-link producthover dropdown-toggle" href="#"  id="navlink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link producthover dropdown-toggle" href="#"  id="manlinkh2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ts.translate('collections')}}
           </a>
-          <div class="dropdown-menu" id="navdropdown2" aria-labelledby="navlink2">
+          <div class="dropdown-menu" id="navdropdown2" aria-labelledby="manlinkh2">
               <a class="dropdown-item" (click)="goToCollections('allcollections')"> {{ts.translate('allcollections') | titlecase}} </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" (click)="goToCollections('marriage')" >{{ts.translate('wedding') | titlecase}}</a>
@@ -121,13 +123,13 @@
             </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="navlink3" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
+          <a class="nav-link" id="manlinkh3" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  id="navlink4" (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
+          <a class="nav-link"  id="manlinkh4" (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="navlink5" (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
+          <a class="nav-link" id="manlinkh5" (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
         </li>
     </ul>
    
@@ -161,8 +163,8 @@
          <mat-radio-group
           aria-labelledby="example-radio-group-label"
           class="example-radio-group"
-          [(ngModel)]="selectedLang">
-          <mat-radio-button class="radbutton" *ngFor="let lang of langlist"  [checked]="lang.checked" [value]="lang.key" (change)="getLang(lang.key)" >
+          [(ngModel)]="languageselect" name="radbutton">
+          <mat-radio-button class="radbutton" *ngFor="let lang of langlist"  [checked]="lang.checked == 'true'" [value]="lang.key" (change)="getLang(lang.key)" >
             {{lang.value}}
           </mat-radio-button>
         </mat-radio-group>
@@ -234,19 +236,19 @@
     </div>
    <div class="flexhori">
         <div class="indi">
-            <div class="imageContainer">
+            <div class="imageContainer  setpad0">
               <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
                 <div class="bottom-left "> {{ts.translate('gold') | titlecase }} <img class="rarrow" src="../../../assets/images/downarrow2.png"/></div></a>
             </div>
         </div>
         <div class="">
-            <div class="imageContainer">
+            <div class="imageContainer setpad0">
                 <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
                 <div class="bottom-left "> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
             </div>
         </div>
         <div class="">
-            <div class="imageContainer silver">
+            <div class="imageContainer silver setpad0">
                 <a (click)="goToProducts('allproducts','Silver')"> <img class="collectionGoldImage silver" src="../../../assets/images/banners/silver.jpg">
                 <div class="bottom-left "> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
             </div>
@@ -260,10 +262,10 @@
  
   
   
-          <div class="carousel-inner no-padding">
+          <div class="carousel-inner no-padding ">
 
             <div class="carousel-item padl4 active">
-              <div class="col-sm-12 col-12">
+              <div class="col-sm-12 col-12 padr5">
                 <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
                 <div class="bottom-left padr3"> {{ts.translate('gold') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>  
@@ -306,52 +308,51 @@
 
 
   <div class="bodyView" data-aos="fade-up" data-aos-once="true">
-      <div class="bodyHeading nonmargin" >
-          {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
-      </div>
-      <div class="row padl5">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 padding0" >
-            <div class="imageContainer marb20 nonmargin">
-                <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
-                <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
-            </div>
-        </div>
-  
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="row">
-                <div class="imageContainer colimg mar-3 mar-r-1 collectionside p15">
-                    <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25" src="../../../assets/images/banners/collectionmen.jpg">
-                    <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
-                </div>
-              </div>
-              <div class="row padt20">
-                  <div class="imageContainer marb20 colimg mar-r-1 collectionside p15" >
-                      <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25" src="../../../assets/images/banners/collectionwomen.jpg"/>
-                      <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
-                  </div>
-               </div>
-           
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-            <div class="row">
-                <div class="imageContainer colimg mar-3 padingt20 collectionsideright">
-                    <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage p15" src="../../../assets/images/banners/collectionkids.jpg">
-                    <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
-                </div>
-              </div>
-            <div class="row padt20">
-               <div class="imageContainer colimg collectionsideright">
-                  <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage p15" src="../../../assets/images/banners/collectiongift.jpg">
-                   <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
-               </div>
-             </div>
-         </div>
-  
-  
-  
-      </div>
+    <div class="bodyHeading nonmargin" >
+        {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
     </div>
+    <div class="row padl5 margin0">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 padl0 height100" >
+          <div class="imageContainer marb20 nonmargin mar0">
+              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
+              <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
+          </div>
+      </div>
 
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 coll2column">
+          <div class="row">
+              <div class="imageContainer colimg mar-3 mar-r-1 collectionside  mar0 padr0">
+                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionmen.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+            <div class="row padt20">
+                <div class="imageContainer marb20 colimg mar-r-1 collectionside  mar0 padr0" >
+                    <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionwomen.jpg"/>
+                    <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+                </div>
+             </div>
+         
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12 coll3column">
+          <div class="row">
+              <div class="imageContainer colimg mar-3 padingt20 collectionsideright mar0 p15 padr0">
+                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage  padl0" src="../../../assets/images/banners/collectionkids.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+          <div class="row padt20">
+             <div class="imageContainer colimg collectionsideright mar0 p15 padr0">
+                <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage  padl0" src="../../../assets/images/banners/collectiongift.jpg">
+                 <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+             </div>
+           </div>
+       </div>
+
+
+
+    </div>
+  </div>
 <div class="bodyView" data-aos="fade-up" data-aos-once="true">
   <div class="bodyHeading">
     {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('promises') |  uppercase}}</span>

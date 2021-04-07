@@ -39,6 +39,12 @@ export class SharedService {
     return this.http.post<Price>(this.seturl,price);
   }
 
+  getLangs(): Observable<any> {
+   
+    return this.http.get("../../assets/langradio.json");
+  }
+
+
   getProductType()
   {
 return this.producttype
