@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   silverprice: number;
   userdisable: boolean;
   showlang: any;
+  counter: number;
   constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
   aosInit()
   {
@@ -136,7 +137,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+    this.counter = 0;
     this.togglesclass();
     this.langlist = [{ key: 'LA-EN', value: 'English', checked: 'false' }, { key: 'LA-TA', value: 'தமிழ்', checked: 'false' }];
     
@@ -159,7 +160,7 @@ export class HomeComponent implements OnInit {
    
     if (window.innerWidth < 900)
     {
-      $('#changedrop').attr("src", "../../../assets/images/downarrowb.png");
+      $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
       $('#marriagecoll').attr("src", "../../../assets/images/banners/collectionlandscape.jpg");
       }
 
@@ -173,7 +174,8 @@ export class HomeComponent implements OnInit {
         });
      
       (<any>jQuery('.carousel')).carousel({
-        interval: 3000
+        interval: 6000,
+        pause:true
     });
     });
    
@@ -474,22 +476,85 @@ export class HomeComponent implements OnInit {
 
 
   }
+  clearuser()
+  {
+    document.getElementById("user1").style.display = "none";
+    document.getElementById("user2").style.display = "none";
+    document.getElementById("user3").style.display = "none";
+    document.getElementById("user4").style.display = "none";
+  }
+  toggleuser0(num)
+  {
+  
+    if (num == 1)
+    {
+      this.clearuser();
+      document.getElementById("prevuser0").style.background="grey";
+      document.getElementById("nextuser0").style.backgroundColor = "#CC9F08";
+      document.getElementById("user1").style.display = "block";
+      document.getElementById("user2").style.display = "block";
+     
+    }
+    if (num == 2)
+    {
+      this.clearuser();
+      document.getElementById("nextuser0").style.background="grey";
+      document.getElementById("prevuser0").style.backgroundColor = "#CC9F08";
+      document.getElementById("user3").style.display = "block";
+      document.getElementById("user4").style.display = "block";
+    }
+  }
+
+
   toggleuser(num)
   {
-    if (num == 1)
-      {
+    if (num == 'prev')
+      --this.counter;
+    else
+      ++this.counter;
+
+    if (this.counter == 0)
+    {
+      this.clearuser();
       document.getElementById("prevuser").style.background="grey";
       document.getElementById("nextuser").style.backgroundColor = "#CC9F08";
       document.getElementById("user1").style.display = "block";
-      document.getElementById("user2").style.display = "none";
+     
     }
-    if (num == 2)
+    if (this.counter == 1)
       {
-      document.getElementById("nextuser").style.background="grey";
-      document.getElementById("prevuser").style.backgroundColor = "#CC9F08";
+      this.clearuser();
+      document.getElementById("nextuser").style.background="#CC9F08";
+    document.getElementById("prevuser").style.backgroundColor = "#CC9F08";
       document.getElementById("user2").style.display = "block";
-      document.getElementById("user1").style.display = "none";
-      }
+    
+    }
+    if (this.counter == 2)
+    {
+      this.clearuser();
+      document.getElementById("nextuser").style.background="#CC9F08";
+    document.getElementById("prevuser").style.backgroundColor = "#CC9F08";
+    document.getElementById("user3").style.display = "block";
+  
+    }
+    if (this.counter == 3)
+    {
+      this.clearuser();
+    document.getElementById("nextuser").style.background="grey";
+    document.getElementById("prevuser").style.backgroundColor = "#CC9F08";
+    document.getElementById("user4").style.display = "block";
+  
+    }
+  }
+
+  hidetalk()
+  {
+
+  }
+
+  showtalk()
+  {
+
   }
   
 }

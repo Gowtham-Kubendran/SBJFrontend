@@ -66,7 +66,7 @@
               {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
             <ul class="submenu" id="goldmenu">
               
-                  <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a>
+                  <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a> -->
                   <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
                   <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
                   <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
@@ -137,29 +137,13 @@
    <div class="lang ">
     <span class="phonelink"><img class="phoneicon" style="width:18px;margin-top: -2px;" src="../../../assets/images/wiconw.png" />
       {{ ts.translate("phonebody1") }} &nbsp;&nbsp;&nbsp;|</span>
-    <!-- <mat-form-field class="langclass">
-        
-        <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
-          <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
-            {{lang}} 
-          </mat-option>
-        
-        </mat-select>
-      </mat-form-field> -->
+  
 
       <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
        <img id="changedrop" style="width:20px" src="../../../assets/images/languageiconw.svg" />
       </button>
       <mat-menu #menu="matMenu">
-        <!-- <button mat-menu-item (click)="getLang('LA-EN')">
-         
-          <span>English</span>
-        </button>
       
-        <button mat-menu-item (click)="getLang('LA-TA')">
-          
-          <span>தமிழ்</span>
-        </button> -->
          <mat-radio-group
           aria-labelledby="example-radio-group-label"
           class="example-radio-group"
@@ -184,26 +168,52 @@
  
 <div class="homebody">
 
-  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel" data-interval="3000">
+  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel"  data-pause="true" data-interval="6000">
     <div class="carousel-inner">
       <div class="carousel-item .item active">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block cartext">
-          <p>Celebrate Golden memories ..</p>
+         
+          <div class="lines" >{{ts.translate('goldheroline1')}}   </div>
+          <div class="lines" >{{ts.translate('goldheroline2')}}  </div>
+       
+          <div class="box-1">
+              <div class="btn btn-one">
+                <span>{{ts.translate('our')}} {{ts.translate('Gold')}}</span>
+              </div>
+            </div>
+            
          
         </div>
       </div>
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
         <div class="carousel-caption d-none d-md-block cartext">
-          <p>Brilliance for your shine</p>
          
-        </div>
+            <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
+            <div class="lines" > {{ts.translate('diamondheroline2')}}  </div>
+            
+            <div class="box-1">
+                <div class="btn btn-one">
+                  <span>{{ts.translate('our')}} {{ts.translate('diamond')}}</span>
+                </div>
+              </div>
+              
+           
+          </div>
       </div>
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
         <div class="carousel-caption d-none d-md-block cartext">
-            <p>Fashion in every Gold</p>
+            <div class="lines" > {{ts.translate('silverheroline1')}}  </div>
+
+            <div class="box-1">
+                <div class="btn btn-one">
+                   
+                  <span>{{ts.translate('our')}} {{ts.translate('silver')}}</span>
+                </div>
+              </div>
+              
           
          
         </div>
@@ -211,7 +221,17 @@
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
         <div class="carousel-caption d-none d-md-block cartext">
-            <p>Our jewelry, your style</p>
+
+            <div class="lines" > {{ts.translate('collectionsheroline1')}}  </div>
+            <div class="lines" > {{ts.translate('collectionsheroline2')}}         </div>
+
+
+            <div class="box-1">
+                <div class="btn btn-one">
+                  <span>{{ts.translate('our')}} {{ts.translate('collections')}}</span>
+                </div>
+              </div>
+              
          
         </div>
       </div>
@@ -458,10 +478,58 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user3">
+          <div class="userpic">
+            <img class="userimg" src="../../../assets/images/homehero1.jpg" />
+            <div class="username">
+              <div class="name">User3</div>
+              <div class="designation">Buisness Women</div>
+            </div>
+          </div>
+          <div class="usercomment">
+            <div>
+              <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+            </div>
+            <div class="comments">
+                Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: 
+                a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, 
+                though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user4">
+            <div class="userpic">
+              <img class="userimg" src="../../../assets/images/homehero1.jpg" />
+              <div class="username">
+                <div class="name">User4</div>
+                <div class="designation">Buisness Women</div>
+              </div>
+            </div>
+            <div class="usercomment">
+              <div>
+                <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+              </div>
+              <div class="comments">
+                  Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: 
+                  a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, 
+                  though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+              </div>
+            </div>
+          </div>
+
+
+
+
+      
   </div>
+  <div class="pagination0">
+      <div id="prevuser0"  ><img  (click)="toggleuser0(1)"  style="transform:rotate(90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+      <div id="nextuser0"  ><img (click)="toggleuser0(2)"  style="transform:rotate(-90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+    </div>
+
   <div class="pagination">
-    <div id="prevuser"  ><img  (click)="toggleuser(1)"  style="transform:rotate(90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
-    <div id="nextuser"  ><img (click)="toggleuser(2)"  style="transform:rotate(-90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+    <div id="prevuser"  ><img  (click)="toggleuser('prev')"  style="transform:rotate(90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+    <div id="nextuser"  ><img  (click)="toggleuser('next')"   style="transform:rotate(-90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
   </div>
 
 </div>

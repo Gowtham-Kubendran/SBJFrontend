@@ -125,6 +125,14 @@ export const VOCAB_EN = {
 
   silvervessels: 'Vessels',
   idols:'idols',
-  poojaitems:'Pooja Items',
+  poojaitems: 'Pooja Items',
+  
+  goldheroline1:  'Get ready to explore the wide spectrum of',   
+  goldheroline2:'creativity and style with our Gold ornaments',
+  diamondheroline1:  'let the jewellery make your life',
+  diamondheroline2: 'bright and shine with exquisite Diamonds',
+  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
+  collectionsheroline1: 'Look as beautiful outside as you are within',
+  collectionsheroline2:  'through our enormus collections ...'          
   
 }

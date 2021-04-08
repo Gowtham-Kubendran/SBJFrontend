@@ -11,12 +11,39 @@ mat-sidenav {
 .cartext
 {
   position: absolute;
-    top: 40vh;
-    left: -70rem;
-    font-family:dance;
-    text-align: center;
-    font-size: 4rem;
-    height:5rem;
+    font-family: 'dance', 'tamilf';
+    text-align: left;
+    font-size: 35px;
+    left: 0;
+    padding: 10% 0 0 10rem;
+    width: 100vw;
+    height: 43%;
+    padding-top: 0;
+    bottom: 20%;
+    line-height: 10rem;
+    background-image: linear-gradient(to right, #a52a2a2e, #ffd70000);
+}
+.pagination0
+{
+  padding-left: 15px;
+  display: inline-flex;
+}
+.lines
+{
+  opacity:0;
+  animation: fadein 1s forwards;
+  animation-delay: 1s
+}
+
+
+@keyframes fadein {
+  from {opacity: 0;
+   transform: translateX(-20px);
+    bottom:0.5em;}
+  to {opacity: 1;
+    bottom:0;
+    transform: translateX(0px);
+  }
 }
 main {
   padding: 10px;
@@ -251,14 +278,53 @@ color: white;
     opacity:0
     
   }
+  #prevuser0
+  {
+    opacity:1
+  }
+  
   #prevuser:hover{
     cursor: pointer;
+  }
+  #prevuser0:hover{
+    cursor: pointer;
+  }
+  #prevuser0
+  {
+    
+    background-color: grey;
+    padding: 2px;
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    opacity:1;
+    transition: 0.5s ease all;
+  }
+  #nextuser0
+  {
+    opacity:1;
+background-color: #CC9F08;
+padding: 2px;
+height: 30px;
+width: 30px;
+border-radius: 6px;
+margin-left: 1rem;
+transition: 0.5s ease all;
   }
   #nextuser
   {
     opacity:0;
   }
   #nextuser:hover{
+    cursor: pointer;
+  }
+
+
+  #nextuser0
+  {
+    opacity:1;
+  }
+  #nextuser0:hover{
     cursor: pointer;
   }
 #user1
@@ -271,6 +337,19 @@ transition:0.5s all ease-in-out;
   display:block;
   transition:0.5s all ease-in-out;
 }
+#user3
+{
+  display:none;
+  transition:0.5s all ease-in-out;
+}
+
+#user4
+{
+  display:none;
+  transition:0.5s all ease-in-out;
+}
+
+
 .marbar2
 {
   margin-bottom: 2em;
@@ -809,6 +888,76 @@ position: fixed;
   
 }
 
+.btn {
+	
+	height: 50px;
+	text-align: center;
+  width: 250px;
+  opacity:0;
+  cursor: pointer;
+  font-family: 'avenirR' , 'tamilf';
+  
+}
+.btn-one {
+	color: #FFF;
+	transition: all 0.3s;
+  position: relative;
+  font-family: 'avenirR' , 'tamilf';
+  padding: 1rem;
+  animation: fadein 1s forwards;
+  animation-delay: 1s
+}
+.btn-one span {
+  transition: all 0.3s;
+  font-family: 'avenirR' , 'tamilf';
+  font-size: 2rem;
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+  font-family: 'avenirR' , 'tamilf';
+}
+.btn-one:hover span {
+  letter-spacing:4px;
+  font-family: 'avenirR' , 'tamilf';
+}
+.btn-one:hover::before {
+	opacity: 1;	
+  transform: scale(1, 1);	
+  font-family: 'avenirR' , 'tamilf';
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+  font-family: 'avenirR' , 'tamilf';
+}
+.btn-one:hover::after {
+	opacity: 0;	
+  transform: scale(0.1, 1);
+  font-family: 'avenirR' , 'tamilf';
+}
+
 .collectionside
 {
   overflow: hidden;
@@ -1065,12 +1214,12 @@ ul{
   }
   .cartext
   {
-  position: absolute;
-  top: 44vh;
-  left: -40rem;
-  font-family: dance;
-  text-align: center;
-  font-size: 3rem;
+    position: absolute;
+    top: 44vh;
+    left: -2rem;
+    font-family: 'dance','tamilf';
+    text-align: left;
+    font-size: 3rem;
   }
 
  
@@ -1125,7 +1274,7 @@ ul{
 }
 .lang {
   float: right;
-  padding: 6px 0 0 0;
+  padding: 0px 5rem 0 0rem;
 }
 #navdropdown1{
   margin-left: 15%;
@@ -1194,8 +1343,8 @@ ul{
   }
   .lang{
     position: absolute;
-    right: 1rem;
-    top: 1.3rem;
+    right: 0rem;
+    top: 17px;
   }
   .navbar-light .navbar-nav .nav-link {
    
@@ -1339,6 +1488,11 @@ padding:0;
    {
      margin-right: 0;
    }
+
+   .talktouspara
+   {
+    padding-left: 15px;
+   }
  
  }
 
@@ -1352,6 +1506,10 @@ padding:0;
   .bottom-left {
    
     left: 2em;
+}
+.talktouspara
+{
+ padding-left: 15px;
 }
 .h240{
   height: 140px;
@@ -1489,6 +1647,11 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
       margin-top: -10rem;
     }
     @media screen and (max-width: 500px){
+
+      .pagination0
+      {
+        display:none;
+      }
       .height100
       {
         height:auto;
@@ -1547,6 +1710,9 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     margin-left: 1rem;
     transition: 0.5s ease all;
       }
+
+    
+
       .homebody
       {
         margin-top: 6rem;
@@ -1599,7 +1765,8 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
 
       .lang{
         right: 5rem;
-        top: 1.4rem;
+    padding-right: 0;
+    top: 1.9rem;
       }
       .navbar-nav {
         margin-left: 1rem !important;
