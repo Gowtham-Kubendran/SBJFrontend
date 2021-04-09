@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
   diaclick   : any;
   goldclick  : any;
   silverclick: any;
+  // status: boolean;
   constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
   aosInit()
   {
@@ -140,6 +141,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    // this.status = false;
     this.diaclick   =0;
     this.goldclick  =0;
     this.silverclick=0;
@@ -497,9 +499,12 @@ export class HomeComponent implements OnInit {
 
   hidesubmenus()
   {
+
+    // this.status = !this.status;       
     document.getElementById('diamondmenu').style.display = "none";
     document.getElementById('goldmenu').style.display = "none";
     document.getElementById('silvermenu').style.display = "none";
+    document.getElementById('navdropdown2').style.display = "none";
 
 
   }

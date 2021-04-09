@@ -18,10 +18,12 @@ mat-sidenav {
     padding: 10% 0 0 10rem;
     width: 100vw;
     height: 43%;
+    border-top: 1px solid #ffffff26;
+    border-bottom: 1px solid #ffffff26;
     padding-top: 0;
     bottom: 20%;
     line-height: 10rem;
-    background-image: linear-gradient(to right, #a52a2a2e, #ffd70000);
+    background-image: linear-gradient(to right, #c7c7c72b, #ffd70000);
 }
 .pagination0
 {
@@ -35,7 +37,18 @@ mat-sidenav {
   animation-delay: 1s
 }
 
-
+//  #navdropdown1
+// {
+//     animation: fadein 1s forwards;
+//     animation-duration: 1s
+//   }
+  
+  .dropdown-item 
+  {
+    animation: fadeout 1s forwards;
+    animation-duration: 1s
+  } 
+  
 @keyframes fadein {
   from {opacity: 0;
    transform: translateX(-20px);
@@ -651,7 +664,30 @@ color:#444;
   line-height: 2.4;
   width: 300px;
   font-family: 'opR','tamilf';
-  
+
+
+  transition: 0.5s all ease;
+}
+// #navdropdown1
+// {
+//   animation: fadeout 1s linear;
+//   animation-duration: 1s
+
+// }
+.submenu
+{
+  animation: fadeout 1s forwards;
+  animation-duration: 1s
+}
+
+@keyframes fadeout
+{
+  from {opacity: 0;
+   
+     }
+   to {opacity: 1;
+   
+   }
 }
 
 #navdropdown2
@@ -704,6 +740,10 @@ display:block;
   transform: rotate(-90deg);
     margin-right: 0rem;
     margin-top: 1.2rem;
+}
+.goldmenuhover
+{
+
 }
 .flexhori::-webkit-scrollbar 
 {
@@ -922,6 +962,7 @@ position: fixed;
   transition: all 0.3s;
   font-family: 'avenirR' , 'tamilf';
   font-size: 2rem;
+  color: darkgoldenrod;
 }
 .btn-one::before {
 	content: '';
@@ -1903,7 +1944,6 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     top: 0;
     left: 100%;
     margin-top: -1px;
-
     display: block;
     width: 100%;
     margin: 10px 0;

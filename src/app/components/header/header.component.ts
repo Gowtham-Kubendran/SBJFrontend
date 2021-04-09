@@ -419,6 +419,7 @@ export class HeaderComponent implements OnInit {
     document.getElementById('diamondmenu').style.display = "none";
     document.getElementById('goldmenu').style.display = "none";
     document.getElementById('silvermenu').style.display = "none";
+    document.getElementById('navdropdown2').style.display = "none";
   }
   
 }

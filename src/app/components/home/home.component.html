@@ -56,13 +56,13 @@
        <a class="nav-link producthover dropdown-toggle" href="#" id="manlinkh1" (click)="hidesubmenus()" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{ts.translate('products') }}
         </a>
-       <div class="dropdown-menu" id="navdropdown1" aria-labelledby="manlinkh1">
+       <div class="dropdown-menu" id="navdropdown1" aria-labelledby="manlinkh1" >
           <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
           <div class="dropdown-divider"></div> -->
           <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')" >{{ts.translate('gold') | titlecase}}</a>
           <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')" >{{ts.translate('silver') | titlecase}}</a>
           <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')" >{{ts.translate('diamond') | titlecase}}</a> -->
-          <a class="dropdown-item" (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          <a class="dropdown-item goldmenuhover"   (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
               {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
             <ul class="submenu" id="goldmenu">
               
