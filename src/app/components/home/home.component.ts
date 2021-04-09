@@ -21,6 +21,9 @@ export class HomeComponent implements OnInit {
   userdisable: boolean;
   showlang: any;
   counter: number;
+  diaclick   : any;
+  goldclick  : any;
+  silverclick: any;
   constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
   aosInit()
   {
@@ -137,6 +140,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.diaclick   =0;
+    this.goldclick  =0;
+    this.silverclick=0;
     this.counter = 0;
     this.togglesclass();
     this.langlist = [{ key: 'LA-EN', value: 'English', checked: 'false' }, { key: 'LA-TA', value: 'தமிழ்', checked: 'false' }];
@@ -435,6 +441,12 @@ export class HomeComponent implements OnInit {
     });
   };
 
+  clearclicks()
+  {
+    this.diaclick = 0;
+    this.goldclick = 0;
+    this.silverclick = 0;
+  }
   openMenu(metal)
   {
     if (metal == 'diamond')
@@ -443,7 +455,12 @@ export class HomeComponent implements OnInit {
       document.getElementById('goldmenu').style.display = "none";
     document.getElementById('silvermenu').style.display = "none";
    document.getElementById('diamondmenu').style.display = "block";
-      
+      this.diaclick++;
+      if (this.diaclick == 2)
+      {
+        document.getElementById('diamondmenu').style.display = "none";
+        this.clearclicks();
+        }
  
      
     }
@@ -454,7 +471,12 @@ export class HomeComponent implements OnInit {
       document.getElementById('silvermenu').style.display = "none";
       document.getElementById('goldmenu').style.display = "block";
     
-   
+      this.goldclick++;
+      if (this.goldclick == 2)
+      {
+        document.getElementById('goldmenu').style.display = "none";
+        this.clearclicks();
+        }
   
     }
     if (metal == 'silver')
@@ -463,7 +485,12 @@ export class HomeComponent implements OnInit {
       document.getElementById('diamondmenu').style.display = "none";
       document.getElementById('goldmenu').style.display = "none";
       document.getElementById('silvermenu').style.display = "block";
-    
+      this.silverclick++;
+      if (this.silverclick == 2)
+      {
+        document.getElementById('silvermenu').style.display = "none";
+        this.clearclicks();
+        }
   
       }
   }
