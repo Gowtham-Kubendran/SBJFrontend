@@ -43,11 +43,11 @@ mat-sidenav {
 //     animation-duration: 1s
 //   }
   
-  .dropdown-item 
-  {
-    animation: fadeout 1s forwards;
-    animation-duration: 1s
-  } 
+  // .goldmenuhover
+  // {
+  //   animation: fadeout 1s forwards;
+  //   animation-duration: 1s
+  // } 
   
 @keyframes fadein {
   from {opacity: 0;
@@ -680,6 +680,11 @@ color:#444;
   animation-duration: 1s
 }
 
+.dropdown-menu
+{
+  animation: fadeout 1s forwards;
+  animation-duration: 1s
+}
 @keyframes fadeout
 {
   from {opacity: 0;
@@ -741,10 +746,18 @@ display:block;
     margin-right: 0rem;
     margin-top: 1.2rem;
 }
-.goldmenuhover
+#goldmenu
 {
-
+opacity:0;
+transition: 0.5s ease all;
 }
+
+// .goldmenuhover:hover + #goldmenu
+// {
+//   opacity:1;
+//   display:block;
+//   transition: 0.5s ease all;
+// }
 .flexhori::-webkit-scrollbar 
 {
       display: none;

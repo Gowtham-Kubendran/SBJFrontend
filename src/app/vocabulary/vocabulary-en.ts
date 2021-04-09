@@ -128,7 +128,8 @@ export const VOCAB_EN = {
   idols:'idols',
   poojaitems: 'Pooja Items',
   
-  goldheroline1:  'Get ready to explore the wide spectrum of',   
+  // goldheroline1: 'Get ready to explore the wide spectrum of',  
+  goldheroline1:'A day without Gold is like a day without sunshine',
   goldheroline2:'creativity and style with our Gold ornaments',
   diamondheroline1:  'let the jewellery make your life',
   diamondheroline2: 'bright and shine with exquisite Diamonds',

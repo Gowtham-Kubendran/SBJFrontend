@@ -252,7 +252,14 @@
     "collection": ["women","marriage"],
     "metal": "Gold"
   },
- 
+  {
+    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
+    "name": "5",
+    "code": "SBJGF005",
+    "category": "Bracelet",
+    "collection": ["gifts","men"],
+    "metal": "Gold"
+  },
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet6.jpg",
     "name": "6",
@@ -416,14 +423,7 @@
     "metal": "Diamond"
   },
 
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
-    "name": "7",
-    "code": "SBJGF007",
-    "category": "Bracelet",
-    "collection": ["gifts","men"],
-    "metal": "Gold"
-  },
+  
   {
     "imgsrc": "../../../assets/images/gifts/gifts2.jpg",
     "name": "2",
@@ -836,8 +836,8 @@
   },
   {
     "imgsrc": "../../../assets/images/rings/rings16.jpg",
-    "name": "05",
-    "code": "SBJRN005",
+    "name": "012",
+    "code": "SBJRN012",
     "category": "Rings",
     "collection": ["men","wedding"],
     "metal": "Gold"
