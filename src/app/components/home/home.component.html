@@ -178,8 +178,8 @@
           <div class="lines" >{{ts.translate('goldheroline2')}}  </div>
        
           <div class="box-1">
-              <div class="btn btn-one">
-                <span>{{ts.translate('our')}} {{ts.translate('Gold')}}</span>
+              <div class="btn btn-one" (click)="goToProducts('allproducts','Gold')">
+                <span >{{ts.translate('our') | titlecase }} {{ts.translate('Gold')  | titlecase  }}</span>
               </div>
             </div>
             
@@ -194,8 +194,8 @@
             <div class="lines" > {{ts.translate('diamondheroline2')}}  </div>
             
             <div class="box-1">
-                <div class="btn btn-one">
-                  <span>{{ts.translate('our')}} {{ts.translate('diamond')}}</span>
+                <div class="btn btn-one"  (click)="goToProducts('allproducts','Diamond')">
+                  <span>{{ts.translate('our')  | titlecase }} {{ts.translate('diamond')  | titlecase }}</span>
                 </div>
               </div>
               
@@ -205,12 +205,12 @@
       <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
         <div class="carousel-caption d-none d-md-block cartext">
-            <div class="lines" > {{ts.translate('silverheroline1')}}  </div>
+            <div class="lines" > {{ts.translate('silverheroline1') }}  </div>
 
             <div class="box-1">
-                <div class="btn btn-one">
+                <div class="btn btn-one" (click)="goToProducts('allproducts','Silver')">
                    
-                  <span>{{ts.translate('our')}} {{ts.translate('silver')}}</span>
+                  <span >{{ts.translate('our')  | titlecase  }} {{ts.translate('silver')  | titlecase  }}</span>
                 </div>
               </div>
               
@@ -227,8 +227,8 @@
 
 
             <div class="box-1">
-                <div class="btn btn-one">
-                  <span>{{ts.translate('our')}} {{ts.translate('collections')}}</span>
+                <div class="btn btn-one" (click)="goToCollections('marriage')">
+                  <span >{{ts.translate('our')  | titlecase  }} {{ts.translate('collections')  | titlecase }}</span>
                 </div>
               </div>
               
@@ -355,14 +355,14 @@
          
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-12 coll3column">
-          <div class="row">
-              <div class="imageContainer colimg mar-3 padingt20 collectionsideright mar0 p15 padr0">
+          <div class="row p15 w103">
+              <div class="imageContainer colimg mar-3 padingt20 collectionsideright mar0  padr0">
                   <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage  padl0" src="../../../assets/images/banners/collectionkids.jpg">
                   <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>
             </div>
-          <div class="row padt20">
-             <div class="imageContainer colimg collectionsideright mar0 p15 padr0">
+          <div class="row padt20 p15 w103">
+             <div class="imageContainer colimg collectionsideright mar0  padr0">
                 <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage  padl0" src="../../../assets/images/banners/collectiongift.jpg">
                  <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
              </div>
