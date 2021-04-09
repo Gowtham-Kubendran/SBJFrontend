@@ -216,12 +216,6 @@ export class ProductsComponent implements OnInit {
   }
   ngOnInit() {
   
-    this.getallDetails();
-    this.clearcolor();
-
-  }
-  getallDetails()
-  {
     this.clearcolor();
     document.getElementById("navlink1").style.color = "#CC9F08";
     
@@ -367,6 +361,12 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     this.aosInit();
    
 
+    this.clearcolor();
+
+  }
+  getallDetails()
+  {
+   
 
   }
 

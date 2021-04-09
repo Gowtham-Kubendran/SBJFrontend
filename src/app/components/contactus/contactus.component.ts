@@ -12,6 +12,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class ContactusComponent implements OnInit {
   showerrormessage: boolean;
+  sending: boolean;
 
   constructor(public ts:TranslateService,public router:Router,public snackBar: MatSnackBar) { }
   emailstring:any="";
@@ -32,6 +33,7 @@ export class ContactusComponent implements OnInit {
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
+    this.sending = false;
     this.clearcolor();
     document.getElementById("navlink5").style.color = "#CC9F08";
 
@@ -56,12 +58,14 @@ export class ContactusComponent implements OnInit {
 
   sendmessage()
   {
+    
     if (this.firstname == "" || this.phonenumber == "" || this.useremail == "" || this.subject=="" || this.message == "")
     {
       this.showerrormessage = true;
     
     }
     else {
+      this.sending = true;
       this.showerrormessage = false;
       emailjs.send("service_8kkn9d8", "template_9xzsunc", {
         subject: this.subject,
@@ -70,7 +74,7 @@ export class ContactusComponent implements OnInit {
         reply_to: this.useremail,
       }, "user_7DouggsmqErev7C2MVHFp").then((result: EmailJSResponseStatus) => {
         console.log(result.text);
-      
+        this.sending = false;
         this.snackBar.open("sent successfully", "close", {
           duration: 3000,
         });

@@ -417,13 +417,13 @@ MIT
 
 @angular/material/menu
 
-@angular/material/progress-spinner
-
 @angular/material/core
 
 @angular/material/form-field
 
 @angular/material/select
+
+@angular/material/progress-spinner
 
 @angular/material/dialog
 

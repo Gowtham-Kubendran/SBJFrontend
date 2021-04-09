@@ -178,6 +178,9 @@ input[type=number] {
     width:100%;
     padding:11px 60px;
 }
+.uploader-status ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #fff;
+}
 .downarrow
 {
     height:12px;
@@ -193,7 +196,14 @@ input[type=number] {
     width: 22px;
     
 }
-
+.padl0
+{
+  padding-left:0;
+}
+.padr0
+{
+  padding-right: 0;
+}
 .pointer
 {
     cursor:pointer;

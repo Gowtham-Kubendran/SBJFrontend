@@ -13,7 +13,7 @@
     </div>
   
     <div class="row store">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-12 padR">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 padR padl0">
         <img
           class="storeview"
           src="../../../assets/images/banners/shopint1.jpg"
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="row store">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-12 padR">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 padR padl0">
         
         <img
           class="storeview"
@@ -117,7 +117,7 @@
       <span class="bold">{{ ts.translate("intouch") | uppercase }}</span>
     </div>
     <div class="row emailblock">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padl0">
         <label>{{ts.translate('fullname')}}<span class="redast">*</span></label><br>
        <input type="text" [(ngModel)]="firstname" placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}" />
        <!-- <mat-form-field appearance="outline">
@@ -125,25 +125,25 @@
         <input matInput  [(ngModel)]="firstname" required placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}">
        </mat-form-field> -->
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padr0">
         <label>{{ts.translate('phonenumber')}}<span class="redast">*</span></label><br>
         <input type="number" [(ngModel)]="phonenumber" placeholder="{{ts.translate('enter')}}{{ts.translate('phonenumber')}}" />
       </div>
     </div>
 
     <div class="row emailblock">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padl0">
         <label>{{ts.translate('email')}}<span class="redast">*</span></label><br>
        <input type="email" [(ngModel)]="useremail" placeholder="{{ts.translate('enter')}}{{ts.translate('email')}}" />
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padr0">
         <label>{{ts.translate('subject')}}<span class="redast">*</span></label><br>
         <input type="text" [(ngModel)]="subject" placeholder="{{ts.translate('enter')}}{{ts.translate('subject')}}" />
       </div>
     </div>
 
     <div class="row emailblock">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-12 padb1">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 padb1 padl0">
         <label>{{ts.translate('message')}}<span class="redast">*</span></label><br>
        
        <textarea [(ngModel)]="message"  rows="8" placeholder="{{ts.translate('enter')}}{{ts.translate('message')}}">
@@ -154,7 +154,8 @@
     </div>
    
     <button mat-button class="submitbutton" (click)="sendmessage()" >
-      {{ts.translate('send')}}{{ts.translate('message')}}
+      {{ts.translate('send')}}{{ts.translate('message')}} <mat-spinner style="display: inline-flex;" *ngIf="sending" diameter="20">
+      </mat-spinner>
     </button>
     <div class="errormessage" *ngIf="showerrormessage">** {{ts.translate('fillallfields')}} **</div>
 

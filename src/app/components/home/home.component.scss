@@ -418,10 +418,13 @@ padding-left:0;
     font-family: 'opB','tamilf';
     font-size: 2em;
   }
-
+.padr20
+{
+  padding-right:20px;
+}
 .w103
 {
-  width:103%;
+  width:102%;
 }
   .collectionImage:hover , .collectionGoldImage:hover , .collectionwedding:hover{
     -webkit-transform: scale(1.1);
@@ -624,6 +627,10 @@ color:#444;
 {
   width:100%;
   object-fit: cover;
+}
+.w101
+{
+  width:101%
 }
 
 .mar-3
@@ -1219,7 +1226,7 @@ ul{
 }
 .coll2column
 {
-  padding: 0 15px 0 5px;
+  padding: 0 20px 0 0px;
 }
 .coll3column
 {
@@ -1229,7 +1236,7 @@ ul{
 
 .p15
   {
-    padding-left:15px;
+    padding-left:10px;
   }
   .adjust
   {
@@ -1282,6 +1289,7 @@ ul{
     position: absolute;
     top: 44vh;
     left: -2rem;
+    line-height: 8rem;
     font-family: 'dance','tamilf';
     text-align: left;
     font-size: 3rem;
