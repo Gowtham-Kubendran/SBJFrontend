@@ -23,14 +23,18 @@ mat-sidenav {
   background: none;
   border: none;
   color: #FFDDC3;
+  border: 1px solid;
   font-size: 18px;
   cursor: pointer;
   margin: 20px 30px;
   padding-left: 0;
   position: absolute;
-  left: 0;
+  left: -3rem;
   transform: scale(0.5);
   border-radius: 5px; 
+  // opacity:0;
+  // animation: fadein 1s forwards;
+  // animation-delay: 1s
 }
 .spanclass{
   display: block;
@@ -58,9 +62,11 @@ mat-sidenav {
 }
 .buttonclass:hover::before, .buttonclass:hover::after{
   width: 100%;
+  
 }
 .buttonclass:hover .spanclass::before, .buttonclass:hover .spanclass::after{
   height: 100%;
+  border:none;
 }
 /*----- button 1 -----*/
 .btn-1::before, .btn-1::after{
@@ -101,7 +107,6 @@ mat-sidenav {
 
 
 
-
 .boldcartext
 {
   font-family:'monB','tamilf';
@@ -116,7 +121,7 @@ mat-sidenav {
     font-family: 'monR', 'tamilf';
     text-align: left;
     font-size: 35px;
-    left: 0;
+    left: -4rem;
     padding: 10% 0 0 10rem;
     width: 100vw;
     height: 43%;
@@ -155,9 +160,9 @@ mat-sidenav {
 @keyframes fadein {
   from {opacity: 0;
    transform: translateX(-20px);
-    bottom:0.5em;}
+   }
   to {opacity: 1;
-    bottom:0;
+   
     transform: translateX(0px);
   }
 }
@@ -1411,14 +1416,17 @@ ul{
   .cartext
   {
     position: absolute;
-    top: 44vh;
-    left: -2rem;
-    line-height: 8rem;
-    font-family: 'dance','tamilf';
+    top: 34vh;
+    left: -4rem;
+    line-height: 4.5rem;
+    font-family: 'monR','tamilf';
     text-align: left;
     font-size: 3rem;
   }
-
+  .spanclass {
+    
+    padding: 12px 5rem;
+  }
  
   .navbar-nav {
     margin: -5px 0% 0 9%;
@@ -1624,11 +1632,16 @@ padding:0;
  bottom: 1em;
 }
  
-.cartext
-{
-  left: -29rem;
-}
 
+.cartext {
+  position: absolute;
+  top: 50vh;
+  left: -6rem;
+  line-height: 5rem;
+  font-family: 'monR','tamilf';
+  text-align: left;
+  font-size: 3rem;
+}
   .padding0
   {
     padding:0;
@@ -1695,11 +1708,46 @@ padding:0;
 
  @media screen and (max-width: 700px) {
 
+  // .cartext
+  // {
+  // left: 0;
+  // display: block;
+  // }
+.downarrow
+{
+  display:none;
+}
+.carousel-inner
+{
+  overflow: inherit;
+}
   .cartext
   {
-  left: -25rem;
-  }
+    text-align: center;
+    margin-left: 0;
+    left: 0;
+    width: 100%;
+    top: 60vh;
+    position: absolute;
+    padding: 0;
+    font-size: 17px;
+    color: #ffffff;
+    z-index: 4;
+    background-color: brown;
+    box-shadow: 0 0 80px 107px brown;
+    line-height: 3rem;
+    font-family: 'monR','tamilf';
+}
+#productsec
+{
+  margin-top: 25rem;
+}
 
+.lines
+{
+  opacity:1;
+  display: block;
+}
   .bottom-left {
    
     left: 2em;

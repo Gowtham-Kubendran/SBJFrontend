@@ -141,7 +141,12 @@ export const VOCAB_EN = {
   diamondheroline4: 'Ornaments',
 
   
-  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
+  silverheroline1: 'Try exclusive collections',
+  silverheroline2: 'of our',
+  silverheroline3:'Silver Jewells',
+
+
+
   collectionsheroline1: 'Let our Jewels make your ',
   collectionsheroline2:  'life bright and shine with '     ,
   collectionsheroline3:  'Exquisite Collections', 
