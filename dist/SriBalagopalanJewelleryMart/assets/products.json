@@ -416,15 +416,7 @@
     "metal": "Diamond"
   },
 
-  
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
-    "name": "1",
-    "code": "SBJGF001",
-    "category": "Gifts",
-    "collection": ["gifts","men"],
-    "metal": "Gold"
-  },
+
   {
     "imgsrc": "../../../assets/images/gifts/gifts2.jpg",
     "name": "2",

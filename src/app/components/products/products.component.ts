@@ -9,7 +9,7 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import * as $ from 'jquery';
 import * as AOS from 'aos';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, RouterEvent } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 
@@ -215,7 +215,25 @@ export class ProductsComponent implements OnInit {
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
-  
+
+
+
+    this.router.events.pipe(
+      filter((event: RouterEvent) => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.getallDetails();
+    });
+
+    
+   
+    this.aosInit();
+   
+
+    this.clearcolor();
+
+  }
+  getallDetails()
+  {
     this.clearcolor();
     document.getElementById("navlink1").style.color = "#CC9F08";
     
@@ -358,15 +376,6 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
 
 
 
-    this.aosInit();
-   
-
-    this.clearcolor();
-
-  }
-  getallDetails()
-  {
-   
 
   }
 
