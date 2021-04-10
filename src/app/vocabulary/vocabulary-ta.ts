@@ -128,14 +128,24 @@ Gifts: 'பரிசுகள்',
   idols:'சிலைகள்',
   poojaitems: 'பூஜை உருப்படிகள்',
   
-  // goldheroline1:  'எங்கள் தங்க ஆபரணங்களுடன் படைப்பாற்றல் மற்றும் ',   
-  goldheroline1:  'தங்கம் இல்லாத ஒரு நாள் சூரிய ஒளி இல்லாத ஒரு நாள் போன்றது',
-  goldheroline2:'பாணியின் பரந்த அளவை ஆராயத் தயாராகுங்கள்',
-  diamondheroline1:  'நகைகள் உங்கள் வாழ்க்கையை பிரகாசமாக்கி,',
-  diamondheroline2: 'நேர்த்தியான வைரங்களுடன் பிரகாசிக்கட்டும்',
-  silverheroline1:'எங்கள் வெள்ளியிலிருந்து பிரகாசிக்கும் ஆரோ மகிழ்ச்சியை அதிகரிக்கும் ..',
-  collectionsheroline1: ' எங்கள் மகத்தான நகை வகைகள் ',
-  collectionsheroline2: '   போல வெளியே அழகாக இருங்கள் ...',
+  // goldheroline1: 'Get ready to explore the wide spectrum of',  
+  // கருணை மற்றும் அழகை மேம்படுத்தும் எங்கள் கையால் செய்யப்பட்ட தங்க நகைகளை ஆராயுங்கள்
+  goldheroline1:'Explore Our Handmade',
+  goldheroline2: 'Gold ORNAMENTS',
+  goldheroline3:'that',
+  goldheroline4:'enhances the grace and ',
+  goldheroline5:'beauty',
+  
+  diamondheroline1:  'Enhance your beauty by ',
+  diamondheroline2: 'Wearing our ',
+  diamondheroline3: 'Diamond',
+  diamondheroline4: 'Ornaments',
+
+  
+  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
+  collectionsheroline1: 'Let our Jewels make your ',
+  collectionsheroline2:  'life bright and shine with '     ,
+  collectionsheroline3:  'Exquisite Collections', 
   
   fullnameerror: 'முழு பெயர் குறைந்தபட்சம் 3 எழுத்துக்களாக இருக்க வேண்டும்',
   phoneerror: 'செல்லுபடியாகும் 10 இலக்க தொலைபேசி எண்களை உள்ளிடவும்',
@@ -143,6 +153,6 @@ Gifts: 'பரிசுகள்',
   subjecterror: 'பொருள் குறைந்தபட்சம் 3 எழுத்துக்களாக இருக்க வேண்டும்',
   messageerror:'செய்தி குறைந்தபட்சம் 10 எழுத்துக்களாக இருக்க வேண்டும்',
   
-
+  viewourjewels:'எங்கள் நகைகளைக் காண்க',
   
 }

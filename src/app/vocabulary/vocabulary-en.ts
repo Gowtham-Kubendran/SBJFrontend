@@ -129,18 +129,26 @@ export const VOCAB_EN = {
   poojaitems: 'Pooja Items',
   
   // goldheroline1: 'Get ready to explore the wide spectrum of',  
-  goldheroline1:'A day without Gold is like a day without sunshine',
-  goldheroline2:'creativity and style with our Gold ornaments',
-  diamondheroline1:  'let the jewellery make your life',
-  diamondheroline2: 'bright and shine with exquisite Diamonds',
-  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
-  collectionsheroline1: 'Look as beautiful outside as you are within',
-  collectionsheroline2:  'through our enormus collections ...'     ,
+  goldheroline1:'Explore Our Handmade',
+  goldheroline2: 'Gold ORNAMENTS',
+  goldheroline3:'that',
+  goldheroline4:'enhances the grace and ',
+  goldheroline5:'beauty',
   
+  diamondheroline1:  'Enhance your beauty by ',
+  diamondheroline2: 'Wearing our ',
+  diamondheroline3: 'Diamond',
+  diamondheroline4: 'Ornaments',
+
+  
+  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
+  collectionsheroline1: 'Let our Jewels make your ',
+  collectionsheroline2:  'life bright and shine with '     ,
+  collectionsheroline3:  'Exquisite Collections', 
   fullnameerror: 'Full Name should be atleast 3 letters',
   phoneerror: 'Enter valid 10 digit numbers',
   emailerror: 'Enter valid Emailaddress',
   subjecterror: 'Subject Should be ateast 3 letters',
   messageerror:'Message should be atleast 10 letters',
-  
+  viewourjewels:'View Our Jewels',
 }

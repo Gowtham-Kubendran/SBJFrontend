@@ -421,7 +421,9 @@ export class HomeComponent implements OnInit {
   }
   scrollToproducts()
   {
+   
     document.getElementById("productsec").scrollIntoView();
+    document.getElementById("wrapper").scrollTop -= 10;
 
   }
   toggleDrop()
