@@ -12,12 +12,13 @@
   .cartextdiv
   {
     position: absolute;
-    top: 22vh;
-    font-family: 'dance';
-    left: 10%;
-    font-size: 5rem;
-    color: #ffffff;
-    height:5rem;
+    top: 25vh;
+    font-family: 'monB';
+    color: #FDEEBC !important;
+    left: 60px;
+    font-size: 48px;
+    /* color: #ffffff; */
+    height: 5rem;
   }
   .noproducts
   {
@@ -458,7 +459,7 @@ display:block;
     {
     
     
-        margin-top: -22rem;
+        margin-top: -27rem;
         text-align: center;
         /* bottom: 2rem; */
         margin-left: 0;
@@ -520,7 +521,22 @@ display:block;
     .indiImg {
         margin: 1em 1em;
         height: auto;
-    }    
+    }   
+    .cartextdiv
+    {
+    
+    
+        margin-top: -25rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    } 
 }
 @media screen and (max-width: 1024px) {
     .cent{

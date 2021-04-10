@@ -260,32 +260,33 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     
     if (this.selectedMetal.toLowerCase() == 'gold')
     {
-      this.cartext = this.ts.translate('gold');
+      this.cartext = this.ts.translate('goldjewels');
       this.talktouscontent = this.ts.translate('talktousgold');
       img.src = "./assets/images/banners/goldbanner.jpg";
       this.types = this.typeGold;
     }
     else if (this.selectedMetal.toLowerCase() == 'silver')
     {
-      this.cartext = this.ts.translate('silver');
+      this.cartext = this.ts.translate('silverjewels');
       this.talktouscontent = this.ts.translate('talktoussilver');
       img.src = "./assets/images/banners/silverbanner.jpg";
       this.types = this.typeSilver;
     }
     else if (this.selectedMetal.toLowerCase() == 'diamond')
     {
-      this.cartext = this.ts.translate('diamond');
+      this.cartext = this.ts.translate('diamondjewels');
       this.talktouscontent = this.ts.translate('talktousdiamond');
       img.src = "./assets/images/banners/diamondbanner.jpg";
       this.types = this.typediamond;
     }
     else {
       this.talktouscontent = this.ts.translate('talktousproduct');
+      this.cartext = this.ts.translate('goldjewels');
       img.src = "./assets/images/banners/goldbanner.jpg";
       this.types = this.typeGold;
     }
     
-    this.cartext = this.selectedMetal.toLowerCase();
+    // this.cartext = this.selectedMetal.toLowerCase();
     
     //this.selectedMetal="allmetals"
 

@@ -157,5 +157,9 @@ export const VOCAB_EN = {
   emailerror: 'Enter valid Emailaddress',
   subjecterror: 'Subject Should be ateast 3 letters',
   messageerror:'Message should be atleast 10 letters',
-  viewourjewels:'View Our Jewels',
+  viewourjewels: 'View Our Jewels',
+  goldjewels: 'Gold Jewels',
+  silverjewels: 'Silver Jewels',
+  diamondjewels: 'Diamond Jewels',
+  
 }
