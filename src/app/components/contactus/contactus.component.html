@@ -119,36 +119,38 @@
     <div class="row emailblock">
       <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padl0">
         <label>{{ts.translate('fullname')}}<span class="redast">*</span></label><br>
-       <input type="text" [(ngModel)]="firstname" placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}" />
-       <!-- <mat-form-field appearance="outline">
-        <mat-label>{{ts.translate('fullname')}}</mat-label>
-        <input matInput  [(ngModel)]="firstname" required placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}">
-       </mat-form-field> -->
+       <input type="text" [(ngModel)]="firstname"  [ngClass]="{'errorclass': fullnameerror == true}" placeholder="{{ts.translate('enter')}}{{ts.translate('fullname')}}" />
+       <div class="errormessage" *ngIf="fullnameerror">{{ts.translate('fullnameerror')}}</div>
+      
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padr0">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 pad r0">
         <label>{{ts.translate('phonenumber')}}<span class="redast">*</span></label><br>
-        <input type="number" [(ngModel)]="phonenumber" placeholder="{{ts.translate('enter')}}{{ts.translate('phonenumber')}}" />
+        <input type="number" [(ngModel)]="phonenumber" [ngClass]="{'errorclass': phoneerror == true}" placeholder="{{ts.translate('enter')}}{{ts.translate('phonenumber')}}" />
+        <div class="errormessage" *ngIf="phoneerror">{{ts.translate('phoneerror')}}</div>
       </div>
     </div>
 
     <div class="row emailblock">
       <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padl0">
         <label>{{ts.translate('email')}}<span class="redast">*</span></label><br>
-       <input type="email" [(ngModel)]="useremail" placeholder="{{ts.translate('enter')}}{{ts.translate('email')}}" />
+       <input type="email" [(ngModel)]="useremail" [ngClass]="{'errorclass': emailerror == true}" placeholder="{{ts.translate('enter')}}{{ts.translate('email')}}" />
+       <div class="errormessage" *ngIf="emailerror">{{ts.translate('emailerror')}}</div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-12 padb1 padr0">
         <label>{{ts.translate('subject')}}<span class="redast">*</span></label><br>
-        <input type="text" [(ngModel)]="subject" placeholder="{{ts.translate('enter')}}{{ts.translate('subject')}}" />
+        <input type="text" [(ngModel)]="subject" [ngClass]="{'errorclass': suberror == true}" placeholder="{{ts.translate('enter')}}{{ts.translate('subject')}}" />
+        <div class="errormessage" *ngIf="suberror">{{ts.translate('subjecterror')}}</div>
       </div>
     </div>
 
     <div class="row emailblock">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-12 padb1 padl0">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 padb1 padl0 padr0">
         <label>{{ts.translate('message')}}<span class="redast">*</span></label><br>
        
-       <textarea [(ngModel)]="message"  rows="8" placeholder="{{ts.translate('enter')}}{{ts.translate('message')}}">
+       <textarea [(ngModel)]="message"  rows="5" [ngClass]="{'errorclass': messageerror == true}" placeholder="{{ts.translate('enter')}}{{ts.translate('message')}}">
        
         </textarea>
+        <div class="errormessage" *ngIf="messageerror">{{ts.translate('messageerror')}}</div>
       </div>
     
     </div>

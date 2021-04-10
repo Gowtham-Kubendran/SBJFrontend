@@ -135,6 +135,12 @@ export const VOCAB_EN = {
   diamondheroline2: 'bright and shine with exquisite Diamonds',
   silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
   collectionsheroline1: 'Look as beautiful outside as you are within',
-  collectionsheroline2:  'through our enormus collections ...'          
+  collectionsheroline2:  'through our enormus collections ...'     ,
+  
+  fullnameerror: 'Full Name should be atleast 3 letters',
+  phoneerror: 'Enter valid 10 digit numbers',
+  emailerror: 'Enter valid Emailaddress',
+  subjecterror: 'Subject Should be ateast 3 letters',
+  messageerror:'Message should be atleast 10 letters',
   
 }

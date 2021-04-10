@@ -13,6 +13,13 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 export class ContactusComponent implements OnInit {
   showerrormessage: boolean;
   sending: boolean;
+  
+  regexp: RegExp;
+  fullnameerror: boolean;
+  phoneerror: boolean;
+  emailerror: boolean;
+  messageerror: boolean;
+  suberror: boolean;
 
   constructor(public ts:TranslateService,public router:Router,public snackBar: MatSnackBar) { }
   emailstring:any="";
@@ -34,6 +41,10 @@ export class ContactusComponent implements OnInit {
   }
   ngOnInit() {
     this.sending = false;
+
+    this.clearerrors();
+    
+    
     this.clearcolor();
     document.getElementById("navlink5").style.color = "#CC9F08";
 
@@ -49,7 +60,15 @@ export class ContactusComponent implements OnInit {
   });
   }
 
- 
+  clearerrors()
+  {
+    this.fullnameerror   =false;
+    this.phoneerror      =false;
+    this.emailerror      =false;
+    this.messageerror    =false;
+    this.suberror        =false;
+  }
+
 
   goToPage(route)
   {
@@ -58,12 +77,37 @@ export class ContactusComponent implements OnInit {
 
   sendmessage()
   {
-    
-    if (this.firstname == "" || this.phonenumber == "" || this.useremail == "" || this.subject=="" || this.message == "")
+    if (!this.phonenumber)
     {
-      this.showerrormessage = true;
+      this.phonenumber = 0;
+      }
+    // if (this.firstname == "" || this.phonenumber == "" || this.useremail == "" || this.subject=="" || this.message == "")
+    // {
+    //   this.showerrormessage = true;
     
+    // }
+    this.clearerrors();
+    this.regexp = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    if (this.firstname.length <= 3)
+    {
+      this.fullnameerror = true;
     }
+    if (this.phonenumber.toString().length != 10)
+    {
+      this.phoneerror = true;
+    }
+    if (!this.regexp.test(this.useremail))
+    {
+      this.emailerror = true;
+    }
+    if (this.subject.length <= 3)
+    {
+      this.suberror = true;
+      }
+    if (this.message.length <= 10)
+    {
+      this.messageerror = true;
+      }
     else {
       this.sending = true;
       this.showerrormessage = false;

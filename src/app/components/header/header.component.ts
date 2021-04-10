@@ -15,6 +15,9 @@ export class HeaderComponent implements OnInit {
   languageselect: string;
   langlist1 = [{ key: 'LA-EN', value: 'English' , checked:false},{key:'LA-TA',value:'தமிழ்' , checked:false}];
   showlang: string;
+  diaclick: number;
+  goldclick: number;
+  silverclick: number;
  
 
  
@@ -144,7 +147,9 @@ export class HeaderComponent implements OnInit {
   
   ngOnInit() {
 
-    
+    this.diaclick = 0;
+    this.goldclick = 0;
+    this.silverclick = 0;
 
     if (window.sessionStorage.getItem('lang')=="LA-EN")
     {
@@ -375,42 +380,56 @@ export class HeaderComponent implements OnInit {
      
    }
   }
+  clearclicks()
+  {
+    this.diaclick = 0;
+    this.goldclick = 0;
+    this.silverclick = 0;
+  }
   openMenu(metal)
   {
     if (metal == 'diamond')
     {
-      // if (window.innerWidth > 500) {
-        document.getElementById('goldmenu').style.display = "none";
-        document.getElementById('silvermenu').style.display = "none";
-        document.getElementById('diamondmenu').style.display = "block";
-      // }
-      // else {
-      //   this.router.navigate(['products','diamond']);
-      // }
-    
+     
+      document.getElementById('goldmenu').style.display = "none";
+    document.getElementById('silvermenu').style.display = "none";
+   document.getElementById('diamondmenu').style.display = "block";
+      this.diaclick++;
+      if (this.diaclick == 2)
+      {
+        document.getElementById('diamondmenu').style.display = "none";
+        this.clearclicks();
+        }
+ 
+     
     }
     if (metal == 'gold')
     {
-      // if (window.innerWidth > 500) {
+      
       document.getElementById('diamondmenu').style.display = "none";
       document.getElementById('silvermenu').style.display = "none";
       document.getElementById('goldmenu').style.display = "block";
-    // }
-    // else {
-    //   this.router.navigate(['products','gold']);
-    // }
+    
+      this.goldclick++;
+      if (this.goldclick == 2)
+      {
+        document.getElementById('goldmenu').style.display = "none";
+        this.clearclicks();
+        }
   
     }
     if (metal == 'silver')
     {
-      // if (window.innerWidth > 500) {
+     
       document.getElementById('diamondmenu').style.display = "none";
       document.getElementById('goldmenu').style.display = "none";
       document.getElementById('silvermenu').style.display = "block";
-    // }
-    // else {
-    //   this.router.navigate(['products','silver']);
-    // }
+      this.silverclick++;
+      if (this.silverclick == 2)
+      {
+        document.getElementById('silvermenu').style.display = "none";
+        this.clearclicks();
+        }
   
       }
   }

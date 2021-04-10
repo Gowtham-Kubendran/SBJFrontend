@@ -66,7 +66,7 @@
               {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
             <ul class="submenu" id="goldmenu">
               
-                  <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a> -->
+                  <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a>
                   <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
                   <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
                   <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
@@ -81,7 +81,7 @@
           <a class="dropdown-item" (click)="openMenu('diamond')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
             {{ts.translate('diamond') | titlecase}} <span><img class="downarrowmenu" id="rot1" src="../../../assets/images/downarrowb.png"/></span></a>
           <ul class="submenu" id="diamondmenu">
-            
+            <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')"> {{ts.translate('allproducts') | titlecase}} </a>
             <a class="dropdown-item" (click)="goToProducts('necklace','Diamond')">{{ts.translate('necklace') | titlecase}}</a>
             <a class="dropdown-item" (click)="goToProducts('earrings','Diamond')">{{ts.translate('earrings') | titlecase}}</a>
             <a class="dropdown-item" (click)="goToProducts('rings','Diamond')">{{ts.translate('rings') | titlecase}}</a>
@@ -91,9 +91,9 @@
           <a class="dropdown-item" (click)="openMenu('silver')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
             {{ts.translate('silver') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
           <ul class="submenu" id="silvermenu">
-            
+            <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')"> {{ts.translate('allproducts') | titlecase}} </a>
                 <a class="dropdown-item" (click)="goToProducts('silvervessels','Silver')">{{ts.translate('silvervessels') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('gifts','Silver')">{{ts.translate('gifts') | titlecase}}</a>
+                <!-- <a class="dropdown-item" (click)="goToProducts('gifts','Silver')">{{ts.translate('gifts') | titlecase}}</a> -->
                 <a class="dropdown-item" (click)="goToProducts('idols','Silver')">{{ts.translate('idols') | titlecase}}</a>
                 <a class="dropdown-item" (click)="goToProducts('poojaitems','Silver')">{{ts.translate('poojaitems') | titlecase}}</a>
         
@@ -174,19 +174,24 @@
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block cartext">
          
-          <div class="lines" >{{ts.translate('goldheroline1')}}   </div>
+          <!-- <div class="lines" >{{ts.translate('goldheroline1')}}   </div> -->
           <!-- <div class="lines" >{{ts.translate('goldheroline2')}}  </div> -->
        
-          <div class="box-1">
+          <!-- <div class="box-1">
               <div class="btn btn-one" (click)="goToProducts('allproducts','Gold')">
                 <span >{{ts.translate('our') | titlecase }} {{ts.translate('Gold')  | titlecase  }}</span>
+
+               
+
+
               </div>
-            </div>
+            </div> -->
             
+            <button class="buttonclass btn-1"><span class="spanclass">Hover Me</span></button>
          
         </div>
       </div>
-      <div class="carousel-item .item">
+      <!-- <div class="carousel-item .item">
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
         <div class="carousel-caption d-none d-md-block cartext">
          
@@ -211,6 +216,10 @@
                 <div class="btn btn-one" (click)="goToProducts('allproducts','Silver')">
                    
                   <span >{{ts.translate('our')  | titlecase  }} {{ts.translate('silver')  | titlecase  }}</span>
+
+
+
+
                 </div>
               </div>
               
@@ -234,7 +243,7 @@
               
          
         </div>
-      </div>
+      </div> -->
      
       
     </div>
@@ -379,7 +388,7 @@
   </div>
   <div class="row marginTop">
     <div class="col-lg-3 col-md-3 col-sm-6">
-        <div class="PromiseContainer pcolor1">
+        <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
               <div>
                 <img class="width50" src="../../../assets/images/promise1.svg" />
@@ -391,7 +400,7 @@
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
-        <div class="PromiseContainer pcolor2">
+        <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>
                     <img class="width50" src="../../../assets/images/promise2.svg" />
@@ -403,7 +412,7 @@
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
-        <div class="PromiseContainer pcolor1">
+        <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>
                     <img class="width50" src="../../../assets/images/promise3.svg" />
@@ -415,7 +424,7 @@
         </div>
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
-        <div class="PromiseContainer pcolor2">
+        <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>
                     <img class="width50" src="../../../assets/images/promise4.svg" />
@@ -440,7 +449,7 @@
       {{ts.translate('whatpeople') |  uppercase}} <span class="bold">{{ts.translate('talkaboutus') |  uppercase}}</span>
   </div>
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user1">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user1">
       <div class="userpic">
         <img class="userimg" src="../../../assets/images/homehero1.jpg" />
         <div class="username">
@@ -459,7 +468,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user2">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user2">
         <div class="userpic">
           <img class="userimg" src="../../../assets/images/homehero1.jpg" />
           <div class="username">
@@ -478,7 +487,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user3">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user3">
           <div class="userpic">
             <img class="userimg" src="../../../assets/images/homehero1.jpg" />
             <div class="username">
@@ -497,7 +506,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12" id="user4">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user4">
             <div class="userpic">
               <img class="userimg" src="../../../assets/images/homehero1.jpg" />
               <div class="username">

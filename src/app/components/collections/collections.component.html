@@ -1,4 +1,9 @@
-<div *ngIf="showspinner" ><div class="loading">  <mat-spinner class="spinnerc"></mat-spinner></div></div>
+<div *ngIf="showspinner" >
+  <div class="loading"> 
+   <!-- <mat-spinner class="spinnerc"></mat-spinner> -->
+   <img class="spinnerc" src="../../../assets/images/sbjlogo.png" />
+  </div>
+</div>
 <div class="productwrapper" id="wrapper">
     <app-header class="headerfixed"></app-header>
     <div class="productbody">
@@ -28,24 +33,24 @@
                 <input id="marriage" type="radio" (change)="handleChange($event.target.value)" value="marriage" name="productradio" />
                 <span>{{ ts.translate("wedding") | titlecase }}</span>
               </label>
-
+              <label>
+                <input id="women" type="radio" (change)="handleChange($event.target.value)" value="women" name="productradio" />
+                <span>{{ ts.translate("women") | titlecase }}</span>
+              </label>
             <label>
               <input id="men" type="radio" (change)="handleChange($event.target.value)" value="men" name="productradio" />
               <span>{{ ts.translate("men") | titlecase }}</span>
             </label>
-            <label>
-              <input id="women" type="radio" (change)="handleChange($event.target.value)" value="women" name="productradio" />
-              <span>{{ ts.translate("women") | titlecase }}</span>
-            </label>
-  
-            <label>
-              <input id="gifts" type="radio" (change)="handleChange($event.target.value)" value="gifts" name="productradio" />
-              <span>{{ ts.translate("gifts") | titlecase }}</span>
-            </label>
+           
             <label>
               <input id="kids" type="radio" (change)="handleChange($event.target.value)" value="kids"  name="productradio" />
               <span>{{ ts.translate("kids") | titlecase }}</span>
             </label>
+            <label>
+              <input id="gifts" type="radio" (change)="handleChange($event.target.value)" value="gifts" name="productradio" />
+              <span>{{ ts.translate("gifts") | titlecase }}</span>
+            </label>
+           
   
             
           </div>

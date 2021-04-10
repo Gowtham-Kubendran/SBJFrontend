@@ -417,22 +417,6 @@ MIT
 
 @angular/material/menu
 
-@angular/material/core
-
-@angular/material/form-field
-
-@angular/material/select
-
-@angular/material/progress-spinner
-
-@angular/material/dialog
-
-@angular/material/datepicker
-
-@angular/material/tooltip
-
-@angular/material/snack-bar
-
 @angular/flex-layout
 MIT
 The MIT License
@@ -457,6 +441,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+
+@angular/material/core
+
+@angular/material/form-field
+
+@angular/material/select
+
+@angular/material/progress-spinner
+
+@angular/material/dialog
+
+@angular/material/datepicker
+
+@angular/material/tooltip
+
+@angular/material/snack-bar
 
 ngx-slick-carousel
 MIT

@@ -175,11 +175,17 @@ export class HomeComponent implements OnInit {
 
 
       $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function(e){
-          $(this).next('ul').toggle();
-          e.stopPropagation();
-          e.preventDefault();
-        });
+        // $('.producthover').on("hover", function(e){
+        //   $(this).next('ul').toggle();
+        //   e.stopPropagation();
+        //   e.preventDefault();
+        // });
+        $(".nav-link").hover(function(){
+          var dropdownMenu = $(this).children(".dropdown-menu");
+          if(dropdownMenu.is(":visible")){
+              dropdownMenu.parent().toggleClass("open");
+          }
+      });
      
       (<any>jQuery('.carousel')).carousel({
         interval: 6000,
@@ -293,6 +299,7 @@ export class HomeComponent implements OnInit {
 
     if (data == 'LA-TA') {
       this.showlang = 'TA';
+      
       this.languageselect = "LA-TA";
       if (window.innerWidth < 2700)
       {

@@ -323,7 +323,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       var y = $(document).scrollTop(), //get page y value 
           header = $("#selectedJewell");
       if(y >= 450)  {
-        header.css({ position: "fixed", "left": "0", "top": "3em", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "14px 2.6em 8px 80px" });
+        header.css({ position: "fixed", "left": "0", "top": "3em", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "22px 2.6em 8px 80px" });
         if (window.innerWidth < 1200) {
           header.css({"top":"4em","padding":"14px 2.6em 8px 60px"})
         }
