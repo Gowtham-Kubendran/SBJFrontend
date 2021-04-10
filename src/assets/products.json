@@ -382,14 +382,7 @@
     "metal": "Gold"
   },
  
-   {
-    "imgsrc": "../../../assets/images/earrings/earrings15.jpg",
-    "name": "15",
-    "code": "SBJER015",
-    "category": "Earrings",
-    "collection": ["marriage", "women"],
-    "metal": "Gold"
-  },
+  
    {
     "imgsrc": "../../../assets/images/earrings/earrings16.jpg",
     "name": "16",
@@ -425,25 +418,25 @@
 
   
   {
+    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
+    "name": "1",
+    "code": "SBJGF001",
+    "category": "Gifts",
+    "collection": ["gifts","men"],
+    "metal": "Gold"
+  },
+  {
     "imgsrc": "../../../assets/images/gifts/gifts2.jpg",
     "name": "2",
     "code": "SBJGF002",
     "category": "Gifts",
-    "collection": ["gifts","men"],
+    "collection": ["gifts","women"],
     "metal": "Gold"
   },
   {
     "imgsrc": "../../../assets/images/gifts/gifts3.jpg",
     "name": "3",
     "code": "SBJGF003",
-    "category": "Gifts",
-    "collection": ["gifts","women"],
-    "metal": "Gold"
-  },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts4.jpg",
-    "name": "4",
-    "code": "SBJGF004",
     "category": "Gifts",
     "collection": ["gifts"],
     "metal": "Gold"
@@ -735,7 +728,7 @@
     "name": "3",
     "code": "SBJRN003",
     "category": "Rings",
-    "collection": ["women","wedding"],
+    "collection": ["women","marriage"],
     "metal": "Gold"
   },
   {
@@ -823,7 +816,7 @@
     "name": "3",
     "code": "SBJRN003",
     "category": "Rings",
-    "collection": ["men","wedding","kids"],
+    "collection": ["men","marriage","kids"],
     "metal": "Diamond"
   },
   {
@@ -836,10 +829,10 @@
   },
   {
     "imgsrc": "../../../assets/images/rings/rings16.jpg",
-    "name": "012",
+    "name": "12",
     "code": "SBJRN012",
     "category": "Rings",
-    "collection": ["men","wedding"],
+    "collection": ["men","marriage"],
     "metal": "Gold"
   },
 

@@ -23,6 +23,8 @@ export const VOCAB_EN = {
   whatpeople: 'What People',
   talkaboutus:'talk about us',
   talktous: 'talk to us',
+  talkto: 'talk to',
+  us:'us',
   todaysrate: 'Today\'s Rate',
   
   findyourjewels: 'find your jewels',
