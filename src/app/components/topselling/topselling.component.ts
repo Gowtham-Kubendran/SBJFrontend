@@ -27,48 +27,33 @@ export class TopsellingComponent implements OnInit {
   
   imgsrc: any[] = [
     
-      {
-        "imgsrc": "../../../assets/images/bangles/bangles1.jpg",
-        "name": "1",
-        "code": "SBJBA001",
-        "category": "Bangles",
-        "collection": ["marriage", "women"],
-        "metal": "Gold"
+    
+    {
+      "imgsrc": "../../../assets/images/maalai/maalai2.jpg",
+      "name": "2",
+      "code": "SBJMA002",
+      "category": "Maalai",
+      "collection": ["marriage","women"],
+      "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/bangles/bangles3.jpg",
+      "imgsrc": "../../../assets/images/maalai/maalai3.jpg",
       "name": "3",
-      "code": "SBJBA003",
-      "category": "Bangles",
-      "collection": ["marriage", "women"],
-      "metal": "Gold"
-    },
-    {
-      "imgsrc": "../../../assets/images/earrings/earrings1.jpg",
-      "name": "1",
-      "code": "SBJER001",
-      "category": "Earrings",
-      "collection": ["marriage", "women"],
-      "metal": "Gold"
-    },
-    {
-      "imgsrc": "../../../assets/images/maalai/maalai4.jpg",
-      "name": "4",
-      "code": "SBJMA004",
+      "code": "SBJMA003",
       "category": "Maalai",
       "collection": ["marriage","women"],
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/maalai/maalai9.jpg",
-      "name": "9",
-      "code": "SBJMA009",
+      "imgsrc": "../../../assets/images/maalai/maalai11.jpg",
+      "name": "11",
+      "code": "SBJMA011",
       "category": "Maalai",
       "collection": ["marriage","women"],
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace2.jpg",
+      "imgsrc": "../../../assets/images/necklace/necklace8.jpg",
       "name": "2",
       "code": "SBJNC002",
       "category": "Necklace",
@@ -76,7 +61,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace3.jpg",
+      "imgsrc": "../../../assets/images/necklace/necklace9.jpg",
       "name": "3",
       "code": "SBJNC003",
       "category": "Necklace",
@@ -84,45 +69,62 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace7.jpg",
-      "name": "7",
-      "code": "SBJNC007",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace2.jpg",
+      "name": "2",
+      "code": "SBJNC002",
       "category": "Necklace",
       "collection": ["marriage","women"],
-      "metal": "Gold"
+      "metal": "Diamond"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace12.jpg",
-      "name": "12",
-      "code": "SBJNC012",
-      "category": "Necklace",
-      "collection": ["marriage","women"],
-      "metal": "Gold"
-    },
-    {
-      "imgsrc": "../../../assets/images/rings/rings3.jpg",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace3.jpg",
       "name": "3",
-      "code": "SBJRN003",
-      "category": "Rings",
-      "collection": ["men"],
-      "metal": "Gold"
+      "code": "SBJNC003",
+      "category": "Necklace",
+      "collection": ["marriage","women","kids"],
+      "metal": "Diamond"
     },
     {
-      "imgsrc": "../../../assets/images/bangles/bangles1.jpg",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace6.jpg",
+      "name": "6",
+      "code": "SBJNC006",
+      "category": "Necklace",
+      "collection": ["marriage","women","kids"],
+      "metal": "Diamond"
+    },
+    {
+      "imgsrc": "../../../assets/images/bangles/bangles12.jpg",
       "name": "1",
       "code": "SBJBA001",
       "category": "Bangles",
       "collection": ["marriage", "women"],
       "metal": "Gold"
-  },
-  {
-    "imgsrc": "../../../assets/images/bangles/bangles3.jpg",
-    "name": "3",
-    "code": "SBJBA003",
-    "category": "Bangles",
-    "collection": ["marriage", "women"],
-    "metal": "Gold"
-  },
+    },
+    {
+      "imgsrc": "../../../assets/images/rings/rings8.jpg",
+      "name": "8",
+      "code": "SBJRN008",
+      "category": "Rings",
+      "collection": ["men"],
+      "metal": "Gold"
+    },
+    {
+      "imgsrc": "../../../assets/images/earrings/earrings5.jpg",
+      "name": "5",
+      "code": "SBJER005",
+      "category": "Earrings",
+      "collection": [ "women","kids"],
+      "metal": "Gold"
+    },
+    {
+      "imgsrc": "../../../assets/images/rings/rings13.jpg",
+      "name": "2",
+      "code": "SBJRN002",
+      "category": "Rings",
+      "collection": ["women"],
+      "metal": "Diamond"
+    },
+
   ];
   step2: any;
   ngOnInit() {
@@ -185,7 +187,7 @@ export class TopsellingComponent implements OnInit {
       this.show2();
       ++this.step2;
       document.getElementById("prevbut2").style.opacity = "1";
-      if (this.step2 == 7)
+      if (this.step2 == 11)
       {
         document.getElementById("nextbut2").style.opacity = "0";
       }
