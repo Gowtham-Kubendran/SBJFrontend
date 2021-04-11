@@ -2,7 +2,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains1.jpg",
     "name": "1",
-    "code": "SBJCH001",
+    "code": "SBJGCH001",
     "category": "Chains",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -10,7 +10,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains2.jpg",
     "name": "2",
-    "code": "SBJCH002",
+    "code": "SBJGCH002",
     "category": "Chains",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -18,7 +18,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains3.jpg",
     "name": "3",
-    "code": "SBJCH003",
+    "code": "SBJGCH003",
     "category": "Chains",
     "collection": ["men", "women"],
     "metal": "Gold"
@@ -26,7 +26,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains4.jpg",
     "name": "4",
-    "code": "SBJCH004",
+    "code": "SBJGCH004",
     "category": "Chains",
     "collection": ["men","women"],
     "metal": "Gold"
@@ -42,7 +42,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains6.jpg",
     "name": "6",
-    "code": "SBJCH006",
+    "code": "SBJGCH006",
     "category": "Chains",
     "collection": ["men"],
     "metal": "Gold"
@@ -50,7 +50,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains7.jpg",
     "name": "7",
-    "code": "SBJCH007",
+    "code": "SBJGCH007",
     "category": "Chains",
     "collection": ["men"],
     "metal": "Gold"
@@ -58,7 +58,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains8.jpg",
     "name": "8",
-    "code": "SBJCH008",
+    "code": "SBJGCH008",
     "category": "Chains",
     "collection": ["women"],
     "metal": "Gold"
@@ -66,7 +66,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains9.jpg",
     "name": "9",
-    "code": "SBJCH009",
+    "code": "SBJGCH009",
     "category": "Chains",
     "collection": ["women"],
     "metal": "Gold"
@@ -74,7 +74,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains10.jpg",
     "name": "10",
-    "code": "SBJCH010",
+    "code": "SBJGCH010",
     "category": "Chains",
     "collection": ["women"],
     "metal": "Gold"
@@ -82,7 +82,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains11.jpg",
     "name": "11",
-    "code": "SBJCH011",
+    "code": "SBJGCH011",
     "category": "Chains",
     "collection": ["men", "kids"],
     "metal": "Gold"
@@ -90,7 +90,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains12.jpg",
     "name": "12",
-    "code": "SBJCH012",
+    "code": "SBJGCH012",
     "category": "Chains",
     "collection": ["women"],
     "metal": "Gold"
@@ -98,7 +98,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains13.jpg",
     "name": "13",
-    "code": "SBJCH013",
+    "code": "SBJGCH013",
     "category": "Chains",
     "collection": ["men", "kids"],
     "metal": "Gold"
@@ -106,7 +106,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains14.jpg",
     "name": "14",
-    "code": "SBJCH014",
+    "code": "SBJGCH014",
     "category": "Chains",
     "collection": ["men", "women","kids"],
     "metal": "Gold"
@@ -114,7 +114,7 @@
   {
     "imgsrc": "../../../assets/images/chains/chains15.jpg",
     "name": "15",
-    "code": "SBJCH015",
+    "code": "SBJGCH015",
     "category": "Chains",
     "collection": ["men", "women","kids"],
     "metal": "Gold"
@@ -125,7 +125,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles12.jpg",
     "name": "1",
-    "code": "SBJBA001",
+    "code": "SBJGBA001",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -133,7 +133,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles2.jpg",
     "name": "2",
-    "code": "SBJBA002",
+    "code": "SBJGBA002",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -141,7 +141,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles3.jpg",
     "name": "3",
-    "code": "SBJBA003",
+    "code": "SBJGBA003",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -149,7 +149,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles4.jpg",
     "name": "4",
-    "code": "SBJBA004",
+    "code": "SBJGBA004",
     "category": "Bangles",
     "collection": [ "women"],
     "metal": "Gold"
@@ -157,7 +157,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles5.jpg",
     "name": "5",
-    "code": "SBJBA006",
+    "code": "SBJGBA006",
     "category": "Bangles",
     "collection": [ "women"],
     "metal": "Gold"
@@ -165,7 +165,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles6.jpg",
     "name": "6",
-    "code": "SBJBA006",
+    "code": "SBJGBA006",
     "category": "Bangles",
     "collection": [ "women"],
     "metal": "Gold"
@@ -173,7 +173,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles7.jpg",
     "name": "7",
-    "code": "SBJBA007",
+    "code": "SBJGBA007",
     "category": "Bangles",
     "collection": ["women"],
     "metal": "Gold"
@@ -181,7 +181,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles8.jpg",
     "name": "8",
-    "code": "SBJBA008",
+    "code": "SBJGBA008",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -189,7 +189,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles9.jpg",
     "name": "9",
-    "code": "SBJBA009",
+    "code": "SBJGBA009",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -197,7 +197,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles10.jpg",
     "name": "10",
-    "code": "SBJBA010",
+    "code": "SBJGBA010",
     "category": "Bangles",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -205,7 +205,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles11.jpg",
     "name": "11",
-    "code": "SBJBA011",
+    "code": "SBJGBA011",
     "category": "Bangles",
     "collection": [ "women"],
     "metal": "Gold"
@@ -213,7 +213,7 @@
   {
     "imgsrc": "../../../assets/images/bangles/bangles1.jpg",
     "name": "12",
-    "code": "SBJBA012",
+    "code": "SBJGBA012",
     "category": "Bangles",
     "collection": [ "women"],
     "metal": "Gold"
@@ -223,7 +223,7 @@
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet1.jpg",
     "name": "1",
-    "code": "SBJBR001",
+    "code": "SBJGBR001",
     "category": "Bracelet",
     "collection": ["men" ],
     "metal": "Gold"
@@ -231,7 +231,7 @@
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet2.jpg",
     "name": "2",
-    "code": "SBJBR002",
+    "code": "SBJGBR002",
     "category": "Bracelet",
     "collection": ["men", "marriage"],
     "metal": "Gold"
@@ -239,7 +239,7 @@
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet3.jpg",
     "name": "3",
-    "code": "SBJBR003",
+    "code": "SBJGBR003",
     "category": "Bracelet",
     "collection": ["men"],
     "metal": "Gold"
@@ -247,23 +247,16 @@
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet4.jpg",
     "name": "4",
-    "code": "SBJBR004",
+    "code": "SBJGBR004",
     "category": "Bracelet",
     "collection": ["women","marriage"],
     "metal": "Gold"
   },
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
-    "name": "5",
-    "code": "SBJGF005",
-    "category": "Bracelet",
-    "collection": ["gifts","men"],
-    "metal": "Gold"
-  },
+
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet6.jpg",
     "name": "6",
-    "code": "SBJBR006",
+    "code": "SBJGBR006",
     "category": "Bracelet",
     "collection": ["women"],
     "metal": "Gold"
@@ -272,7 +265,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings1.jpg",
     "name": "1",
-    "code": "SBJER001",
+    "code": "SBJGER001",
     "category": "Earrings",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -280,7 +273,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings2.jpg",
     "name": "2",
-    "code": "SBJER002",
+    "code": "SBJGER002",
     "category": "Earrings",
     "collection": [ "women","kids"],
     "metal": "Gold"
@@ -288,7 +281,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings3.jpg",
     "name": "3",
-    "code": "SBJER003",
+    "code": "SBJGER003",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -296,7 +289,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings4.jpg",
     "name": "4",
-    "code": "SBJER004",
+    "code": "SBJGER004",
     "category": "Earrings",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -304,7 +297,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings5.jpg",
     "name": "5",
-    "code": "SBJER005",
+    "code": "SBJGER005",
     "category": "Earrings",
     "collection": [ "women","kids"],
     "metal": "Gold"
@@ -312,7 +305,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings6.jpg",
     "name": "6",
-    "code": "SBJER006",
+    "code": "SBJGER006",
     "category": "Earrings",
     "collection": ["women"],
     "metal": "Gold"
@@ -320,7 +313,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings7.jpg",
     "name": "7",
-    "code": "SBJER007",
+    "code": "SBJGER007",
     "category": "Earrings",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -328,7 +321,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings8.jpg",
     "name": "8",
-    "code": "SBJER008",
+    "code": "SBJGER008",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -336,7 +329,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings9.jpg",
     "name": "9",
-    "code": "SBJER009",
+    "code": "SBJGER009",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -344,7 +337,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings10.jpg",
     "name": "10",
-    "code": "SBJER010",
+    "code": "SBJGER010",
     "category": "Earrings",
     "collection": ["women"],
     "metal": "Gold"
@@ -352,7 +345,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings11.jpg",
     "name": "11",
-    "code": "SBJER011",
+    "code": "SBJGER011",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -360,7 +353,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings12.jpg",
     "name": "12",
-    "code": "SBJER012",
+    "code": "SBJGER012",
     "category": "Earrings",
     "collection": ["marriage", "women"],
     "metal": "Gold"
@@ -368,7 +361,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings13.jpg",
     "name": "13",
-    "code": "SBJER013",
+    "code": "SBJGER013",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -376,7 +369,7 @@
   {
     "imgsrc": "../../../assets/images/earrings/earrings14.jpg",
     "name": "14",
-    "code": "SBJER014",
+    "code": "SBJGER014",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Gold"
@@ -385,42 +378,50 @@
   
    {
     "imgsrc": "../../../assets/images/earrings/earrings16.jpg",
-    "name": "16",
-    "code": "SBJER016",
+    "name": "1",
+    "code": "SBJDER001",
     "category": "Earrings",
     "collection": [ "women","kids"],
     "metal": "Diamond"
   },
    {
     "imgsrc": "../../../assets/images/earrings/earrings17.jpg",
-    "name": "17",
-    "code": "SBJER017",
+    "name": "2",
+    "code": "SBJDER002",
     "category": "Earrings",
     "collection": ["marriage", "women","kids"],
     "metal": "Diamond"
   },
    {
     "imgsrc": "../../../assets/images/earrings/earrings18.jpg",
-    "name": "18",
-    "code": "SBJER018",
+    "name": "3",
+    "code": "SBJDER003",
     "category": "Earrings",
     "collection": ["marriage", "women","kids"],
     "metal": "Diamond"
   },
   {
     "imgsrc": "../../../assets/images/earrings/earrings19.jpg",
-    "name": "19",
-    "code": "SBJER019",
+    "name": "4",
+    "code": "SBJDER004",
     "category": "Earrings",
     "collection": [ "women"],
     "metal": "Diamond"
   },
 
+  {
+    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
+    "name": "5",
+    "code": "SBJGGF005",
+    "category": "Bracelet",
+    "collection": ["gifts","men"],
+    "metal": "Gold"
+  },
 
   {
     "imgsrc": "../../../assets/images/gifts/gifts2.jpg",
     "name": "2",
-    "code": "SBJGF002",
+    "code": "SBJGGF002",
     "category": "Gifts",
     "collection": ["gifts","women"],
     "metal": "Gold"
@@ -428,7 +429,7 @@
   {
     "imgsrc": "../../../assets/images/gifts/gifts3.jpg",
     "name": "3",
-    "code": "SBJGF003",
+    "code": "SBJGGF003",
     "category": "Gifts",
     "collection": ["gifts"],
     "metal": "Gold"
@@ -437,16 +438,16 @@
   
   {
     "imgsrc": "../../../assets/images/gifts/gifts6.jpg",
-    "name": "6",
-    "code": "SBJGF006",
+    "name": "1",
+    "code": "SBJSGF001",
     "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
   },
   {
     "imgsrc": "../../../assets/images/gifts/gifts7.jpg",
-    "name": "7",
-    "code": "SBJGF007",
+    "name": "2",
+    "code": "SBJSGF002",
     "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
@@ -454,8 +455,8 @@
   
    {
     "imgsrc": "../../../assets/images/gifts/gifts9.jpg",
-    "name": "9",
-    "code": "SBJGF009",
+    "name": "3",
+    "code": "SBJSGF003",
     "category": "gifts",
     "collection": ["gifts"],
     "metal": "Silver"
@@ -465,7 +466,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai1.jpg",
     "name": "1",
-    "code": "SBJMA001",
+    "code": "SBJGMA001",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -473,7 +474,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai2.jpg",
     "name": "2",
-    "code": "SBJMA002",
+    "code": "SBJGMA002",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -481,7 +482,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai3.jpg",
     "name": "3",
-    "code": "SBJMA003",
+    "code": "SBJGMA003",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -489,7 +490,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai4.jpg",
     "name": "4",
-    "code": "SBJMA004",
+    "code": "SBJGMA004",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -497,7 +498,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai5.jpg",
     "name": "5",
-    "code": "SBJMA005",
+    "code": "SBJGMA005",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -505,7 +506,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai6.jpg",
     "name": "6",
-    "code": "SBJMA006",
+    "code": "SBJGMA006",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -513,7 +514,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai7.jpg",
     "name": "7",
-    "code": "SBJMA007",
+    "code": "SBJGMA007",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -521,7 +522,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai8.jpg",
     "name": "8",
-    "code": "SBJMA008",
+    "code": "SBJGMA008",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -529,7 +530,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai9.jpg",
     "name": "9",
-    "code": "SBJMA009",
+    "code": "SBJGMA009",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -537,7 +538,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai10.jpg",
     "name": "10",
-    "code": "SBJMA010",
+    "code": "SBJGMA010",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -545,7 +546,7 @@
   {
     "imgsrc": "../../../assets/images/maalai/maalai11.jpg",
     "name": "11",
-    "code": "SBJMA011",
+    "code": "SBJGMA011",
     "category": "Maalai",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -554,7 +555,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace1.jpg",
     "name": "1",
-    "code": "SBJNC001",
+    "code": "SBJDNC001",
     "category": "Necklace",
     "collection": ["marriage","women","kids"],
     "metal": "Diamond"
@@ -562,7 +563,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace2.jpg",
     "name": "2",
-    "code": "SBJNC002",
+    "code": "SBJDNC002",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Diamond"
@@ -570,7 +571,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace3.jpg",
     "name": "3",
-    "code": "SBJNC003",
+    "code": "SBJDNC003",
     "category": "Necklace",
     "collection": ["marriage","women","kids"],
     "metal": "Diamond"
@@ -578,7 +579,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace4.jpg",
     "name": "4",
-    "code": "SBJNC004",
+    "code": "SBJDNC004",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Diamond"
@@ -586,7 +587,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace5.jpg",
     "name": "5",
-    "code": "SBJNC005",
+    "code": "SBJDNC005",
     "category": "Necklace",
     "collection": ["marriage","women","kids"],
     "metal": "Diamond"
@@ -594,7 +595,7 @@
   {
     "imgsrc": "../../../assets/images/diamondnecklace/necklace6.jpg",
     "name": "6",
-    "code": "SBJNC006",
+    "code": "SBJDNC006",
     "category": "Necklace",
     "collection": ["marriage","women","kids"],
     "metal": "Diamond"
@@ -602,7 +603,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace7.jpg",
     "name": "1",
-    "code": "SBJNC001",
+    "code": "SBJGNC001",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -610,7 +611,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace8.jpg",
     "name": "2",
-    "code": "SBJNC002",
+    "code": "SBJGNC002",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -618,7 +619,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace9.jpg",
     "name": "3",
-    "code": "SBJNC003",
+    "code": "SBJGNC003",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -626,7 +627,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace10.jpg",
     "name": "4",
-    "code": "SBJNC004",
+    "code": "SBJGNC004",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -634,7 +635,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace11.jpg",
     "name": "5",
-    "code": "SBJNC005",
+    "code": "SBJGNC005",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -642,7 +643,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace12.jpg",
     "name": "6",
-    "code": "SBJNC006",
+    "code": "SBJGNC006",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -650,7 +651,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace13.jpg",
     "name": "7",
-    "code": "SBJNC007",
+    "code": "SBJGNC007",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -658,7 +659,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace14.jpg",
     "name": "8",
-    "code": "SBJNC008",
+    "code": "SBJGNC008",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -666,7 +667,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace15.jpg",
     "name": "9",
-    "code": "SBJNC009",
+    "code": "SBJGNC009",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -674,7 +675,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace16.jpg",
     "name": "10",
-    "code": "SBJNC010",
+    "code": "SBJGNC010",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -682,7 +683,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace17.jpg",
     "name": "11",
-    "code": "SBJNC011",
+    "code": "SBJGNC011",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -690,7 +691,7 @@
   {
     "imgsrc": "../../../assets/images/necklace/necklace18.jpg",
     "name": "12",
-    "code": "SBJNC012",
+    "code": "SBJGNC012",
     "category": "Necklace",
     "collection": ["marriage","women"],
     "metal": "Gold"
@@ -702,7 +703,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings1.jpg",
     "name": "1",
-    "code": "SBJRN001",
+    "code": "SBJGRN001",
     "category": "Rings",
     "collection": ["kids","women"],
     "metal": "Gold"
@@ -710,7 +711,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings2.jpg",
     "name": "2",
-    "code": "SBJRN002",
+    "code": "SBJGRN002",
     "category": "Rings",
     "collection": ["women","kids"],
     "metal": "Gold"
@@ -718,7 +719,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings3.jpg",
     "name": "3",
-    "code": "SBJRN003",
+    "code": "SBJGRN003",
     "category": "Rings",
     "collection": ["women","marriage"],
     "metal": "Gold"
@@ -726,7 +727,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings4.jpg",
     "name": "4",
-    "code": "SBJRN004",
+    "code": "SBJGRN004",
     "category": "Rings",
     "collection": ["women","kids"],
     "metal": "Gold"
@@ -734,7 +735,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings5.jpg",
     "name": "5",
-    "code": "SBJRN005",
+    "code": "SBJGRN005",
     "category": "Rings",
     "collection": ["men"],
     "metal": "Gold"
@@ -742,7 +743,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings6.jpg",
     "name": "6",
-    "code": "SBJRN006",
+    "code": "SBJGRN006",
     "category": "Rings",
     "collection": ["kids","women"],
     "metal": "Gold"
@@ -750,7 +751,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings7.jpg",
     "name": "7",
-    "code": "SBJRN007",
+    "code": "SBJGRN007",
     "category": "Rings",
     "collection": ["women"],
     "metal": "Gold"
@@ -758,7 +759,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings8.jpg",
     "name": "8",
-    "code": "SBJRN008",
+    "code": "SBJGRN008",
     "category": "Rings",
     "collection": ["men"],
     "metal": "Gold"
@@ -766,7 +767,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings9.jpg",
     "name": "9",
-    "code": "SBJRN009",
+    "code": "SBJGRN009",
     "category": "Rings",
     "collection": ["men","kids"],
     "metal": "Gold"
@@ -782,7 +783,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings11.jpg",
     "name": "11",
-    "code": "SBJRN011",
+    "code": "SBJGRN011",
     "category": "Rings",
     "collection": ["men"],
     "metal": "Gold"
@@ -790,7 +791,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings12.jpg",
     "name": "1",
-    "code": "SBJRN001",
+    "code": "SBJDRN001",
     "category": "Rings",
     "collection": ["women"],
     "metal": "Diamond"
@@ -798,7 +799,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings13.jpg",
     "name": "2",
-    "code": "SBJRN002",
+    "code": "SBJDRN002",
     "category": "Rings",
     "collection": ["women"],
     "metal": "Diamond"
@@ -806,7 +807,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings14.jpg",
     "name": "3",
-    "code": "SBJRN003",
+    "code": "SBJDRN003",
     "category": "Rings",
     "collection": ["men","marriage","kids"],
     "metal": "Diamond"
@@ -814,7 +815,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings15.jpg",
     "name": "04",
-    "code": "SBJRN004",
+    "code": "SBJDRN004",
     "category": "Rings",
     "collection": ["men","kids"],
     "metal": "Diamond"
@@ -822,7 +823,7 @@
   {
     "imgsrc": "../../../assets/images/rings/rings16.jpg",
     "name": "12",
-    "code": "SBJRN012",
+    "code": "SBJGRN012",
     "category": "Rings",
     "collection": ["men","marriage"],
     "metal": "Gold"
@@ -832,7 +833,7 @@
   {
     "imgsrc": "../../../assets/images/anklet/anklet1.jpg",
     "name": "1",
-    "code": "SBJAK001",
+    "code": "SBJSAK001",
     "category": "Anklet",
     "collection": ["kids","women"],
     "metal": "Silver"
@@ -840,7 +841,7 @@
   {
     "imgsrc": "../../../assets/images/anklet/anklet2.jpg",
     "name": "2",
-    "code": "SBJAK002",
+    "code": "SBJSAK002",
     "category": "Anklet",
     "collection": ["kids","women"],
     "metal": "Silver"
@@ -848,7 +849,7 @@
   {
     "imgsrc": "../../../assets/images/anklet/anklet3.jpg",
     "name": "3",
-    "code": "SBJAK003",
+    "code": "SBJSAK003",
     "category": "Anklet",
     "collection": ["kids","women"],
     "metal": "Silver"
@@ -857,7 +858,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar1.jpg",
     "name": "1",
-    "code": "SBJDO001",
+    "code": "SBJGDO001",
     "category": "Dollar",
     "collection": ["kids","women"],
     "metal": "Gold"
@@ -865,7 +866,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar2.jpg",
     "name": "2",
-    "code": "SBJDO002",
+    "code": "SBJGDO002",
     "category": "Dollar",
     "collection": ["women"],
     "metal": "Gold"
@@ -873,7 +874,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar3.jpg",
     "name": "3",
-    "code": "SBJDO003",
+    "code": "SBJGDO003",
     "category": "Dollar",
     "collection": ["wedding","women"],
     "metal": "Gold"
@@ -881,7 +882,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar4.jpg",
     "name": "4",
-    "code": "SBJDO004",
+    "code": "SBJGDO004",
     "category": "Dollar",
     "collection": ["wedding","women"],
     "metal": "Gold"
@@ -889,7 +890,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar5.jpg",
     "name": "5",
-    "code": "SBJDO005",
+    "code": "SBJGDO005",
     "category": "Dollar",
     "collection": ["wedding","women"],
     "metal": "Gold"
@@ -897,7 +898,7 @@
   {
     "imgsrc": "../../../assets/images/dollar/dollar6.jpg",
     "name": "6",
-    "code": "SBJDO006",
+    "code": "SBJGDO006",
     "category": "Dollar",
     "collection": ["women"],
     "metal": "Gold"
@@ -906,7 +907,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels1.jpg",
     "name": "1",
-    "code": "SBJVS001",
+    "code": "SBJSVS001",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -914,7 +915,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels2.jpg",
     "name": "2",
-    "code": "SBJVS002",
+    "code": "SBJSVS002",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -922,7 +923,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels3.jpg",
     "name": "3",
-    "code": "SBJVS003",
+    "code": "SBJSVS003",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -930,7 +931,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels4.jpg",
     "name": "4",
-    "code": "SBJVS004",
+    "code": "SBJSVS004",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -938,7 +939,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels5.jpg",
     "name": "5",
-    "code": "SBJVS005",
+    "code": "SBJSVS005",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -946,7 +947,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels6.jpg",
     "name": "6",
-    "code": "SBJVS006",
+    "code": "SBJSVS006",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -954,7 +955,7 @@
   {
     "imgsrc": "../../../assets/images/vessels/vessels8.jpg",
     "name": "7",
-    "code": "SBJVS007",
+    "code": "SBJSVS007",
     "category": "silvervessels",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -964,7 +965,7 @@
   {
     "imgsrc": "../../../assets/images/gifts/gifts8.jpg",
     "name": "1",
-    "code": "SBJID001",
+    "code": "SBJSID001",
     "category": "idols",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -972,7 +973,7 @@
   {
     "imgsrc": "../../../assets/images/idols/idol2.jpg",
     "name": "2",
-    "code": "SBJID002",
+    "code": "SBJSID002",
     "category": "idols",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -980,7 +981,7 @@
   {
     "imgsrc": "../../../assets/images/idols/idol3.jpg",
     "name": "3",
-    "code": "SBJID003",
+    "code": "SBJSID003",
     "category": "idols",
     "collection": ["wedding"],
     "metal": "Gold"
@@ -989,7 +990,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai1.jpg",
     "name": "1",
-    "code": "SBPID001",
+    "code": "SBSPID001",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -998,7 +999,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai2.jpg",
     "name": "2",
-    "code": "SBPID002",
+    "code": "SBSPID002",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1006,7 +1007,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai3.jpg",
     "name": "3",
-    "code": "SBPID003",
+    "code": "SBSPID003",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1014,7 +1015,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai4.jpg",
     "name": "4",
-    "code": "SBPID004",
+    "code": "SBSPID004",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1022,7 +1023,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai5.jpg",
     "name": "5",
-    "code": "SBPID005",
+    "code": "SBSPID005",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1030,7 +1031,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai6.jpg",
     "name": "6",
-    "code": "SBPID006",
+    "code": "SBSPID006",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1038,7 +1039,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai7.jpg",
     "name": "7",
-    "code": "SBPID007",
+    "code": "SBSPID007",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1046,7 +1047,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai8.jpg",
     "name": "8",
-    "code": "SBPID008",
+    "code": "SBSPID008",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1054,7 +1055,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai9.jpg",
     "name": "9",
-    "code": "SBPID009",
+    "code": "SBSPID009",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1062,7 +1063,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai10.jpg",
     "name": "10",
-    "code": "SBPID0010",
+    "code": "SBSPID0010",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1070,7 +1071,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai11.jpg",
     "name": "11",
-    "code": "SBPID011",
+    "code": "SBSPID011",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1078,7 +1079,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai12.jpg",
     "name": "12",
-    "code": "SBPID012",
+    "code": "SBSPID012",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1086,7 +1087,7 @@
   {
     "imgsrc": "../../../assets/images/silverpoojai/poojai13.jpg",
     "name": "13",
-    "code": "SBPID013",
+    "code": "SBSPID013",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
@@ -1095,7 +1096,7 @@
   {
     "imgsrc": "../../../assets/images/idols/idol1.jpg",
     "name": "14",
-    "code": "SBPID014",
+    "code": "SBSPID014",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
