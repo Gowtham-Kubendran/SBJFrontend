@@ -84,9 +84,10 @@ color: black;
   padding:0;
   display: none;
 }
-.dropdown-item:hover{
+.dropdown-item:hover , .dropdown-item:focus , .dropdown-item:active{
   color:#CC9F08;
   cursor: pointer;
+  background-color: #fff;
 }
 .downarrowmenu
 {

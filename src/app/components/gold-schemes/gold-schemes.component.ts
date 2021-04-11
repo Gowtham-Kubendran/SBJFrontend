@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./gold-schemes.component.scss']
 })
 export class GoldSchemesComponent implements OnInit {
+  cartext: string;
 
   constructor(public ts:TranslateService,public sh:SharedService,public router: Router) { }
 
@@ -21,6 +22,7 @@ export class GoldSchemesComponent implements OnInit {
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
+    this.cartext = "goldschemes";
     this.clearcolor();
     document.getElementById("navlink3").style.color = "#CC9F08";
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));

@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./aboutus.component.scss']
 })
 export class AboutusComponent implements OnInit {
+  cartext: any;
 
   constructor(public ts:TranslateService,public router:Router) { }
 
@@ -21,6 +22,7 @@ export class AboutusComponent implements OnInit {
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
+    this.cartext = 'aboutus';
     this.clearcolor();
     document.getElementById("navlink4").style.color = "#CC9F08";
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));

@@ -46,18 +46,18 @@
     padding: 7em 0 0em 0;
     position:relative;
 }
-.cartextdiv
-{
-    font-family: 'dance','tamilf';
-    position: relative;
-    width: 100%;
-    margin-top: -10rem;
-    font-size: 5rem;
-    color: #ffffff;
-    text-align: center;
-    height: 5rem;
-}
 
+.cartextdiv
+  {
+    position: absolute;
+    top: 25vh;
+    font-family: 'monB';
+    color: #FDEEBC !important;
+    left: 60px;
+    font-size: 48px;
+    /* color: #ffffff; */
+    height: 5rem;
+  }
 .productheroimgdiv
 {
     width: 100%;
@@ -296,6 +296,22 @@ label > span:hover{
         width:100%;
           transition: 0.5s all ease-in-out;
     }
+    .cartextdiv
+    {
+    
+    
+        margin-top: -27rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    }
+  
     label
     {
         display: inline-block;
@@ -465,14 +481,17 @@ label > span:hover{
     {
     
     
-    margin-top: -5rem;
-    text-align: center;
-    bottom: 2rem;
-    font-size: 3rem;
-    color: #ffffff;
-    height: 5rem;
+        margin-top: -25rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
 
-    }
+    } 
     .procode
     {
         font-size: 15px;

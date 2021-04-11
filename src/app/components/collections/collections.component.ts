@@ -119,7 +119,7 @@ export class CollectionsComponent implements OnInit {
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
 
 
-    this.cartext = this.ts.translate('allcollections');
+    this.cartext = 'allcollections';
     
   $(document).scroll(function() {
     var y = $(document).scrollTop(), //get page y value 
@@ -173,7 +173,7 @@ export class CollectionsComponent implements OnInit {
     
     if(this.sh.getValue())
       this.value = this.sh.getValue();
-    this.cartext = this.ts.translate(this.value);
+    // this.cartext = this.ts.translate(this.value);
     this.selectedoption = this.value;
     this.selectedValue = this.value;
   // console.log(this.value);
@@ -234,7 +234,7 @@ export class CollectionsComponent implements OnInit {
     this.aosInit();
     this.selectedValue = event;
     this.selectedoption = this.value;
-    this.cartext = this.ts.translate(event);
+    // this.cartext = this.ts.translate(event);
     if (this.selectedValue == 'allcollections')
     {
       this.tempdata = this.jsondata;

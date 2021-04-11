@@ -841,9 +841,10 @@ display:block;
 
 
 
-.dropdown-item:hover{
+.dropdown-item:hover , .dropdown-item:focus , .dropdown-item:active{
   color:#CC9F08;
   cursor: pointer;
+  background-color: #fff;
 }
 .downarrowmenu
 {
@@ -863,6 +864,7 @@ display:block;
   transform: rotate(-90deg);
     margin-right: 0rem;
     margin-top: 1.2rem;
+
 }
 #goldmenu
 {

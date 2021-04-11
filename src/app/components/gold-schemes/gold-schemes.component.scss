@@ -20,7 +20,17 @@ position: relative;
 {
     padding: 2em 6em;
 }
-
+.cartextdiv
+  {
+    position: absolute;
+    top: 25vh;
+    font-family: 'monB';
+    color: #FDEEBC !important;
+    left: 60px;
+    font-size: 48px;
+    /* color: #ffffff; */
+    height: 5rem;
+  }
 .bodyHeading
 {
   padding:0 0.5em;
@@ -99,6 +109,23 @@ a{
   {
       cursor:pointer;
   }
+  @media screen and (max-width: 800px) {
+    .cartextdiv
+    {
+    
+    
+        margin-top: -27rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+    
+    }
+    }
   @media screen and (max-width: 600px) {
   .schemetext
   {
@@ -107,7 +134,22 @@ a{
 
   p {
     font-size:14px;
-  };
+  }
+  .cartextdiv
+  {
+  
+  
+      margin-top: -25rem;
+      text-align: center;
+      /* bottom: 2rem; */
+      margin-left: 0;
+      left: 0;
+      width: 100%;
+      position: relative;
+      font-size: 3rem;
+      color: #ffffff;
+
+  } 
   .linkstab
   {
       padding: 11px 40px;

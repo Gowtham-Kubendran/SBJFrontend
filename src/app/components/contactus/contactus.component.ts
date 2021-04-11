@@ -20,6 +20,7 @@ export class ContactusComponent implements OnInit {
   emailerror: boolean;
   messageerror: boolean;
   suberror: boolean;
+  cartext: string;
 
   constructor(public ts:TranslateService,public router:Router,public snackBar: MatSnackBar) { }
   emailstring:any="";
@@ -41,7 +42,7 @@ export class ContactusComponent implements OnInit {
   }
   ngOnInit() {
     this.sending = false;
-
+    this.cartext = "contactus";
     this.clearerrors();
     
     
