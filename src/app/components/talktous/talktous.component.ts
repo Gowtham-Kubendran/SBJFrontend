@@ -14,11 +14,22 @@ export class TalktousComponent implements OnInit {
   @Input('talktouscontent')
   talktouscontent: any;
   lang: boolean;
+  smallerscreen: boolean;
 
   constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit() {
+    if (window.innerWidth < 700)
+    {
+      this.smallerscreen = true;
+    }
+    else
+    {
+      this.smallerscreen = false;
+    }
+
+    console.log(this.smallerscreen);
     this.lang=window.sessionStorage.getItem('lang')=="LA-TA"
     console.log(window.sessionStorage.getItem('lang')+" talk tous");
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));

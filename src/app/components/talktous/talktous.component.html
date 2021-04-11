@@ -4,11 +4,15 @@
        {{talktouscontent}}
       </div>
     
-
-      <button (click)="goToPage('contactus')"  class="talktousButton">
+      <button *ngIf="smallerscreen" (click)="goToPage('contactus')"  class="talktousButton">
         {{ts.translate('talkto') |  titlecase }}
         <br>
         {{ts.translate('us') |  titlecase }}
+      </button>
+
+      <button *ngIf="!smallerscreen" (click)="goToPage('contactus')"  class="talktousButton">
+        {{ts.translate('talktous') |  titlecase }}
+        
       </button>
       <!-- <button (click)="goToPage('contactus')" *ngIf="lang=='LA-TA'" class="talktousButton">
         {{ts.translate('engaludan') |  titlecase }}

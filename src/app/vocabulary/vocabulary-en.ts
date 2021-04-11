@@ -131,7 +131,7 @@ export const VOCAB_EN = {
   poojaitems: 'Pooja Items',
   
   // goldheroline1: 'Get ready to explore the wide spectrum of',  
-  goldheroline1:'Explore Our Handmade',
+  goldheroline1:'Explore Our latest',
   goldheroline2: 'Gold ORNAMENTS',
   goldheroline3:'that',
   goldheroline4:'enhances the grace and ',
@@ -143,9 +143,9 @@ export const VOCAB_EN = {
   diamondheroline4: 'Ornaments',
 
   
-  silverheroline1: 'Try exclusive collections',
-  silverheroline2: 'of our',
-  silverheroline3:'Silver Jewells',
+  silverheroline1: 'Explore our dazling ',
+  silverheroline2: 'Silver Ornaments',
+  
 
 
 
