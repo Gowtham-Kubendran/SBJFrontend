@@ -180,7 +180,7 @@
           <div class="lines" >{{ts.translate('goldheroline5')}}  </div>
         
             
-            <button class="buttonclass btn-1" (click)="goToProducts('allproducts','Gold')"><span class="spanclass">{{ts.translate('viewourjewels')}} </span></button>
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Gold')"><span class="spanclass">{{ts.translate('viewourjewels')}} </span></button>
          
         </div>
       </div>
@@ -190,8 +190,8 @@
          
             <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
             <div class="lines" > {{ts.translate('diamondheroline2')}} <span class="boldcartext" >{{ts.translate('diamondheroline3')}} </span> </div>
-            <div class="lines" >  <span class="boldcartext" >{{ts.translate('diamondheroline4')}} </span> </div>
-            <button class="buttonclass btn-1" (click)="goToProducts('allproducts','Diamond')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+            <div class="lines" >  <span class="boldcartext" >{{ts.translate('diamondheroline4')}} {{ts.translate('diamondheroline5')}}</span> </div>
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Diamond')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
               
            
           </div>
@@ -200,11 +200,11 @@
         <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
         <div class="carousel-caption cartext">
             <div class="lines" > {{ts.translate('silverheroline1') }}  </div>
-            <div class="lines" > {{ts.translate('silverheroline2') }} <span class="boldcartext" >{{ts.translate('silverheroline3') }} </span> </div>
+            <div class="lines" > <span class="boldcartext" >{{ts.translate('silverheroline2') }} </span> </div>
            
 
-            <button class="buttonclass btn-1" (click)="goToProducts('allproducts','Silver')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
-              
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Silver')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+                        
           
          
         </div>
@@ -217,7 +217,7 @@
             <div class="lines" > {{ts.translate('collectionsheroline2')}}         </div>
             <div class="lines" ><span class="boldcartext" > {{ts.translate('collectionsheroline3')}}     </span>    </div>
 
-            <button class="buttonclass btn-1" (click)="goToCollections('marriage')" ><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+            <button class="buttonclass btn-1"  [ngClass]="{'left9': showlang == 'TA'}" (click)="goToCollections('marriage')" ><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
          
         </div>
       </div>

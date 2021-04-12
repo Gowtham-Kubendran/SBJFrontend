@@ -44,29 +44,25 @@ export class CollectionsComponent implements OnInit {
       value:"allcollections"
     },
     {
+      key: "marriage",
+      value:"marriage"
+      },
+    {
       key: "women",
       value:"women"
       },
+     {
+     key: "men",
+     value:"men"
+     },
     {
-    key: "marriage",
-    value:"marriage"
-    },
-   
-    
-      {
-        key: "men",
-        value:"men"
-        },
-    
-        {
-          key: "kids",
-          value:"kids"
-          },
-    
-          {
-            key: "gifts",
-            value:"gifts"
-            },
+     key: "kids",
+     value:"kids"
+     },
+     {
+      key: "gifts",
+      value:"gifts"
+      },
             
   ]
   sub;

@@ -132,22 +132,35 @@ Gifts: 'பரிசுகள்',
   
   // goldheroline1: 'Get ready to explore the wide spectrum of',  
   // கருணை மற்றும் அழகை மேம்படுத்தும் எங்கள் கையால் செய்யப்பட்ட தங்க நகைகளை ஆராயுங்கள்
-  goldheroline1:'Explore Our Handmade',
-  goldheroline2: 'Gold ORNAMENTS',
-  goldheroline3:'that',
-  goldheroline4:'enhances the grace and ',
-  goldheroline5:'beauty',
+  goldheroline1:'எங்கள் அற்புதமான',
+  goldheroline2: 'தங்க நகைகளை',
+  goldheroline3:'காண வாருங்கள்',
+  goldheroline4:'',
+  goldheroline5:'',
   
-  diamondheroline1:  'Enhance your beauty by ',
-  diamondheroline2: 'Wearing our ',
-  diamondheroline3: 'Diamond',
-  diamondheroline4: 'Ornaments',
+  diamondheroline1:  'அழகுக்கு அழகு ',
+  diamondheroline2: 'சேர்க்கும் எங்கள்',
+  diamondheroline3: '',
+  diamondheroline4: 'வைர',
+  diamondheroline5: 'நகைகளை',
+  diamondheroline6: 'காண வாருங்கள்',
 
   
-  silverheroline1:'lustrous and shinny aura, Silver jewellery ..',
-  collectionsheroline1: 'Let our Jewels make your ',
-  collectionsheroline2:  'life bright and shine with '     ,
-  collectionsheroline3:  'Exquisite Collections', 
+
+  
+  silverheroline1: 'அழகு மற்றும் நேர்த்தியான ',
+  silverheroline2: 'வெள்ளி ஆபரணங்கள்',
+  silverheroline3: 'காண வாருங்கள்',
+  
+
+
+
+  collectionsheroline1: 'எங்கள் நாகைகலை போல் ',
+  collectionsheroline2:  'உங்கள் வாழ்க்கையும் ',
+  collectionsheroline3:  'பிரகாசிக்கட்டும்', 
+
+
+
   
   fullnameerror: 'முழு பெயர் குறைந்தபட்சம் 3 எழுத்துக்களாக இருக்க வேண்டும்',
   phoneerror: 'செல்லுபடியாகும் 10 இலக்க தொலைபேசி எண்களை உள்ளிடவும்',

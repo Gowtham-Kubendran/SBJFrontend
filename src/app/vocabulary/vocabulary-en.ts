@@ -141,18 +141,26 @@ export const VOCAB_EN = {
   diamondheroline2: 'Wearing our ',
   diamondheroline3: 'Diamond',
   diamondheroline4: 'Ornaments',
+  diamondheroline5:'',
+  diamondheroline6:'',
 
   
   silverheroline1: 'Explore our dazling ',
   silverheroline2: 'Silver Ornaments',
-  
+  silverheroline3:'',
 
 
 
   collectionsheroline1: 'Let our Jewels make your ',
-  collectionsheroline2:  'life bright and shine with '     ,
+  collectionsheroline2:  'life bright and shine with ',
   collectionsheroline3:  'Exquisite Collections', 
+
+
+
   fullnameerror: 'Full Name should be atleast 3 letters',
+
+
+
   phoneerror: 'Enter valid 10 digit numbers',
   emailerror: 'Enter valid Emailaddress',
   subjecterror: 'Subject Should be ateast 3 letters',

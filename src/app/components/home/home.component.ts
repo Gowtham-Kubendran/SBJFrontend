@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
   setLang()
   {
     if (window.sessionStorage.getItem('lang') == 'LA-TA') {
+      // document.getElementById("butonid").style.left = "-9rem";
       console.log(window.innerWidth);
       if (window.innerWidth < 2700 )
       {
@@ -96,7 +97,7 @@ export class HomeComponent implements OnInit {
       (document.getElementById("wrapper") as HTMLInputElement).style.fontFamily = "tamilf !important";
     }
     else {
-     
+      // document.getElementById("butonid").style.left = "-3rem";
       (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
@@ -299,6 +300,7 @@ export class HomeComponent implements OnInit {
 
     if (data == 'LA-TA') {
       this.showlang = 'TA';
+      // document.getElementById("butonid").style.left = "-9rem";
       
       this.languageselect = "LA-TA";
       if (window.innerWidth < 2700)
@@ -357,6 +359,7 @@ export class HomeComponent implements OnInit {
     else {
       this.showlang = 'EN';
       this.languageselect = "LA-EN";
+      // document.getElementById("butonid").style.left = "-3rem";
       (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
