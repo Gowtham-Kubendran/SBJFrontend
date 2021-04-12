@@ -143,10 +143,7 @@ export class ProductsComponent implements OnInit {
       key: 'bracelet',
       value: 'bracelet'
     },
-    {
-      key: 'anklet',
-      value: 'anklet'
-    },
+   
     {
       key: 'dollar',
       value: 'dollar'
@@ -182,9 +179,9 @@ export class ProductsComponent implements OnInit {
   constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
     private router: Router, private http: HttpClient, public dialog: MatDialog) {
     // this.loadflag
-    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event =>  this.getallDetails());    
+     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event =>  this.getallDetails());    
 
-     }
+      }
 
 
   aosInit()
@@ -294,6 +291,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.value = this.sh.getValue();
       this.selectedoption = this.value;
       this.selectedValue = this.value;
+      setTimeout(() => {
+        this.handleChange(this.selectedoption);
+      }, 500);
+    
 
     }
    

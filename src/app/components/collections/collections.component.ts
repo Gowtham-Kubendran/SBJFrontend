@@ -2,13 +2,14 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { TranslateService } from 'src/app/services/translate/translate.service';
 import { SharedService } from 'src/app/services/shared.service';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Router, NavigationEnd, RouterEvent } from '@angular/router';
 
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Observable } from 'rxjs';
 
 import * as $ from 'jquery';
 import * as AOS from 'aos';
+import { filter } from 'rxjs/operators';
 
 
 
@@ -94,7 +95,10 @@ export class CollectionsComponent implements OnInit {
   
   tempdata: any[] = [];
   constructor(public ts:TranslateService,public sh:SharedService,public route: ActivatedRoute,
-    public router: Router, public http:HttpClient,public dialog: MatDialog) { }
+    public router: Router, public http: HttpClient, public dialog: MatDialog) { 
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event => this.getallDetails());    
+    
+    }
 
   aosInit()
   {
@@ -112,6 +116,18 @@ export class CollectionsComponent implements OnInit {
     document.getElementById("navlink5").style.color = "#000";
   }
   ngOnInit() {
+    this.router.events.pipe(
+      filter((event: RouterEvent) => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.getallDetails();
+    });
+
+    
+   
+
+  }
+  getallDetails()
+  {
     this.clearcolor();
     document.getElementById("navlink2").style.color = "#CC9F08";
     this.showspinner = true;
@@ -197,9 +213,8 @@ export class CollectionsComponent implements OnInit {
       }
       // console.log(this.tempdata);
     });
-   
-
   }
+ 
   ngAfterViewInit() {
     $('#exampleModal').on('show.bs.modal', function (event) {
       var button = $(event) // Button that triggered the modal

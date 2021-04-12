@@ -125,7 +125,7 @@
               <span>{{ ts.translate("rings") | titlecase }}</span>
             </label>
 
-            <label  *ngIf="
+            <!-- <label  *ngIf="
             selectedMetal == 'Silver' ||
             selectedMetal == 'allmetals'
            ">
@@ -138,11 +138,13 @@
                 name="productradio"
               />
               <span>{{ ts.translate("anklet") | titlecase }}</span>
-            </label>
+            </label>-->
+
+            
             <label   *ngIf="
             selectedMetal == 'Gold' ||
             selectedMetal == 'allmetals'
-           ">
+           "> 
               <input
                 id="dollar"
               
@@ -169,8 +171,8 @@
               <span>{{ ts.translate("bracelet") | titlecase }}</span>
             </label>
 
-            <!-- <label *ngIf="
-            selectedMetal == 'Silver' || selectedMetal == 'Gold' ||
+            <label *ngIf="
+            selectedMetal == 'Silver'  ||
             selectedMetal == 'allmetals'
            ">
               <input
@@ -182,7 +184,7 @@
                 name="productradio"
               />
               <span>{{ ts.translate("gifts") | titlecase }}</span>
-            </label> -->
+            </label>
 
             <label *ngIf="
             selectedMetal == 'Silver' ||
