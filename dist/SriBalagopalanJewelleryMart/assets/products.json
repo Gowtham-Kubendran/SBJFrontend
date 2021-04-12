@@ -255,10 +255,26 @@
 
   {
     "imgsrc": "../../../assets/images/bracelet/bracelet6.jpg",
-    "name": "6",
-    "code": "SBJGBR006",
+    "name": "5",
+    "code": "SBJGBR005",
     "category": "Bracelet",
     "collection": ["women"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
+    "name": "6",
+    "code": "SBJGGF006",
+    "category": "Bracelet",
+    "collection": ["men"],
+    "metal": "Gold"
+  },
+  {
+    "imgsrc": "../../../assets/images/gifts/gifts4.jpg",
+    "name": "1",
+    "code": "SBJGGF001",
+    "category": "Gifts",
+    "collection": ["gifts"],
     "metal": "Gold"
   },
 
@@ -409,21 +425,14 @@
     "metal": "Diamond"
   },
 
-  {
-    "imgsrc": "../../../assets/images/gifts/gifts1.jpg",
-    "name": "5",
-    "code": "SBJGGF005",
-    "category": "Bracelet",
-    "collection": ["gifts","men"],
-    "metal": "Gold"
-  },
+ 
 
   {
     "imgsrc": "../../../assets/images/gifts/gifts2.jpg",
     "name": "2",
     "code": "SBJGGF002",
     "category": "Gifts",
-    "collection": ["gifts","women"],
+    "collection": ["gifts","men"],
     "metal": "Gold"
   },
   {
@@ -737,7 +746,7 @@
     "name": "5",
     "code": "SBJGRN005",
     "category": "Rings",
-    "collection": ["men"],
+    "collection": ["women"],
     "metal": "Gold"
   },
   {
@@ -814,14 +823,14 @@
   },
   {
     "imgsrc": "../../../assets/images/rings/rings15.jpg",
-    "name": "04",
+    "name": "4",
     "code": "SBJDRN004",
     "category": "Rings",
     "collection": ["men","kids"],
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings16.jpg",
+    "imgsrc": "../../../assets/images/rings/rings8.jpg",
     "name": "12",
     "code": "SBJGRN012",
     "category": "Rings",
