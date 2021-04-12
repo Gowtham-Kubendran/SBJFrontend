@@ -169,5 +169,21 @@ export const VOCAB_EN = {
   goldjewels: 'Gold Jewels',
   silverjewels: 'Silver Jewels',
   diamondjewels: 'Diamond Jewels',
+
+  comments1: 'This is such a beautiful statement necklace. I felt like showing it off the whole day I wore it. I received multiple compliments the ENTIRE day ? It was my first time wearing a necklace this large, but it’s too beautiful and made too well to resist. I received the order very quickly as well. I’ll be back VERY soon!',
+  comments2:'SBJ\'s new collection and so relevant especially with everything happening today. So many exquisite pieces full of colour and life, it can make anyone smile.',
+  comments3:'The workmanship is exquisite and designs are unique. Extremely happy with every purchase I have made so far',
+  comments4:'I’ve had my ring for 14 years and it’s still so pretty. I do have it checked and flashed every year or so. It is light and comfortable. SBJ did an incredible job creating wedding Rings to match. I get loads of compliments. ',
+  
+
+  username1: 'Akilesh',
+  username2: 'Sharmila',
+  username3: 'Ramji Dev',
+  username4: 'Menaka Ramalingam',
+  
+  userprofession1: 'Buisness Man',
+  userprofession2: 'Software Engineer',
+  userprofession3: 'LIC Agent',
+  userprofession4: 'Home Maker',
   
 }

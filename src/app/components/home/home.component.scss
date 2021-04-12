@@ -660,7 +660,7 @@ color:#444;
   .userpic
   {
     display: inline-flex;
-    height:100px;
+    
     position: relative;
   }
   .userimg
@@ -678,11 +678,7 @@ color:#444;
   button:focus{
     outline:0;
   }
-  .username
-  {
-    margin: auto;
-    padding: 0 2em;
-  }
+ 
   
   .name{
     color: #444444;
