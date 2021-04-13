@@ -131,17 +131,17 @@ export class TopsellingComponent implements OnInit {
 
     // $(document).ready(function () {
 
-      (<any>$('#demo2')).carousel({
-        touch: false
-      });
+      // (<any>$('#demo2')).carousel({
+      //   touch: false
+      // });
 
     //  (<any>$('#demo1')).carousel({
     //     touch: false
     //  });
       
-    $("#demo2").on('slide.bs.carousel', function (){
-      alert('A new slide is about to be shown!');
-    });
+    // $("#demo2").on('slide.bs.carousel', function (){
+    //   alert('A new slide is about to be shown!');
+    // });
       
     
     // });
@@ -209,10 +209,7 @@ export class TopsellingComponent implements OnInit {
   }
     showprev2()
     {
-      (<any>$('#demo2')).carousel({
-        touch: false
-      });
-        
+    
       this.show2();
       ++this.step2;
       document.getElementById("prevbut2").style.visibility = "visible";
@@ -226,10 +223,7 @@ export class TopsellingComponent implements OnInit {
   }
   hideprev2()
   {
-    (<any>$('#demo2')).carousel({
-      touch: false
-    });
-      
+   
     this.show2();
     --this.step2;
     if (this.step2 == 0)
