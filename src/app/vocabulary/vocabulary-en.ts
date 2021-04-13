@@ -101,8 +101,14 @@ export const VOCAB_EN = {
   withus: 'with us',
   allcollections:'All Collections',
   marriage: 'wedding',
-  story:'story',
-  aboutusdata1:'In 1992, Sri Balagopalan Jewellery Mart has been inaugrated in Small Scale by S.B.Senthilkumar . Each and everyone feel elite on shopping with us in quality, design, price and service . Quality for the end consumer is key priority for us and we are comitted to fulfill our promises!!!',
+  story: 'story',
+  
+  aboutusdata1:'Sri balagopalan jewelry mart (SBJ) one of the finest sellers of Gold , Silver and Diamond in and around madurai was first inagurated by S.B.Senthil Kumar in 1992 as a small scale industry with 2 employees , the customers satisfaction on the quality of the products and services made our enterprise the best place to buy jewelry was primary key for increase in ratio in the family having around 30 employees till date.The small scale was then made as the large scale jewelers around 2012 which has become the landmark for purchasing the exquisite ornaments . The uniqueness of our enterprise is that the jewelry will be carved based on the customers design and our collection is said to have an tranditional essence as our goldsmiths have experience more than 20 years.',
+  aboutusdata2:'Our enterprise instituted a number of savings schemes to suit the specific needs of various demographics, distinguishing itself a great deal from the run-of-the-mill business practices in retail jewellery and has the collections has been distinguished specific to the events.',
+  aboutusdata3:'The "Sri Silver" exclusive showroom for the silver  the overwhelming response and love of the people made us in introducing the showroom which has the distinguished collections of silver ornaments on the latest trend for all occasions ,auspicious events.',
+
+
+  // aboutusdata1:'In 1992, Sri Balagopalan Jewellery Mart has been inaugrated in Small Scale by S.B.Senthilkumar . Each and everyone feel elite on shopping with us in quality, design, price and service . Quality for the end consumer is key priority for us and we are comitted to fulfill our promises!!!',
   Gold: 'gold',
   Diamond:'diamond',
   Silver: 'silver',
