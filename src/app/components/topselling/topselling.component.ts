@@ -128,6 +128,20 @@ export class TopsellingComponent implements OnInit {
   ];
   step2: any;
   ngOnInit() {
+
+    $(document).ready(function () {
+
+     (<any>$('#demo1')).carousel({
+        touch: false
+      });
+    });
+
+    
+
+    document.getElementById("prevbut1").style.visibility = "hidden"; 
+    document.getElementById("prevbut2").style.visibility = "hidden";
+    
+
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
     this.step1 = 0;
     this.step2 = 0;
@@ -144,26 +158,26 @@ export class TopsellingComponent implements OnInit {
   }
   show1()
   {
-    document.getElementById("prevbut1").style.opacity = "1"; 
-    document.getElementById("nextbut1").style.opacity = "1";
+    document.getElementById("prevbut1").style.visibility = "visible"; 
+    document.getElementById("nextbut1").style.visibility = "visible";
 
   }
   show2()
   {
-    document.getElementById("prevbut2").style.opacity = "1";
-    document.getElementById("nextbut1").style.opacity = "1";
+    document.getElementById("prevbut1").style.visibility = "visible";
+    document.getElementById("nextbut2").style.visibility = "visible";
   }
     showprev1()
     {
       this.show1();
       ++this.step1;
-      document.getElementById("prevbut1").style.opacity = "1";
-      if (this.step1 == 3)
+      document.getElementById("prevbut1").style.visibility = "visible";
+      if (this.step1 == 2)
       {
-        document.getElementById("nextbut1").style.opacity = "0";
+        document.getElementById("nextbut1").style.visibility = "hidden";
       }
       else {
-        document.getElementById("nextbut1").style.opacity = "1";
+        document.getElementById("nextbut1").style.visibility = "visible";
       }
   }
   hideprev1()
@@ -172,12 +186,12 @@ export class TopsellingComponent implements OnInit {
     --this.step1;
     if (this.step1 == 0)
     {
-      document.getElementById("prevbut1").style.opacity = "0";
+      document.getElementById("prevbut1").style.visibility = "hidden";
       
     }
     else 
       {
-        document.getElementById("prevbut1").style.opacity = "1";
+        document.getElementById("prevbut1").style.visibility = "visible";
         
         
     }
@@ -186,13 +200,13 @@ export class TopsellingComponent implements OnInit {
     {
       this.show2();
       ++this.step2;
-      document.getElementById("prevbut2").style.opacity = "1";
+      document.getElementById("prevbut2").style.visibility = "visible";
       if (this.step2 == 11)
       {
-        document.getElementById("nextbut2").style.opacity = "0";
+        document.getElementById("nextbut2").style.visibility = "hidden";
       }
       else {
-        document.getElementById("nextbut2").style.opacity = "1";
+        document.getElementById("nextbut2").style.visibility = "visible";
       }
   }
   hideprev2()
@@ -201,10 +215,10 @@ export class TopsellingComponent implements OnInit {
     --this.step2;
     if (this.step2 == 0)
     {
-      document.getElementById("prevbut2").style.opacity = "0";
+      document.getElementById("prevbut2").style.visibility = "hidden";
     }
     else {
-      document.getElementById("nextbut2").style.opacity = "1";
+      document.getElementById("nextbut2").style.visibility = "visible";
     }
   }
 
