@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
       }
       if (window.innerWidth < 1500)
       {
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
+        document.getElementById("navbarnavid").style.marginLeft = "6%";
         document.getElementById("navdropdown1").style.marginLeft = "13%";
         document.getElementById("navdropdown2").style.marginLeft = "25%";
         }
@@ -223,7 +223,7 @@ export class HeaderComponent implements OnInit {
       }
       if (window.innerWidth < 1500)
       {
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
+        document.getElementById("navbarnavid").style.marginLeft = "6%";
         document.getElementById("navdropdown1").style.marginLeft = "13%";
         document.getElementById("navdropdown2").style.marginLeft = "25%";
         }

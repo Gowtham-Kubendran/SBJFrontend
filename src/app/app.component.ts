@@ -21,7 +21,7 @@ export class AppComponent {
 
   
     // Blink engine detection
-    window.sessionStorage.setItem('lang',"LA-EN");
+    // window.sessionStorage.setItem('lang',"LA-EN");
     
   }
 

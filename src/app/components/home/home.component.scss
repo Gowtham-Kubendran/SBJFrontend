@@ -417,7 +417,7 @@ color: white;
   #prevuser0
   {
     
-    background-color: grey;
+    background-color: #D0B96E;
     padding: 2px;
     height: 30px;
     width: 30px;
@@ -1462,7 +1462,26 @@ ul{
 
 }
 
-
+// @media (min-width: 1300px){
+//   .navbar-expand-custom {
+//       flex-direction: row;
+//       flex-wrap: nowrap;
+//       justify-content: flex-start;
+//   }
+//   .navbar-expand-custom .navbar-nav {
+//       flex-direction: row;
+//   }
+//   .navbar-expand-custom .navbar-nav .nav-link {
+//       padding-right: .5rem;
+//       padding-left: .5rem;
+//   }
+//   .navbar-expand-custom .navbar-collapse {
+//       display: flex!important;
+//   }
+//   .navbar-expand-custom .navbar-toggler {
+//       display: none;
+//   }
+// }
 
 
 @media  screen and (max-width: 1030px){
@@ -1491,6 +1510,12 @@ ul{
 }
 
 }
+
+// @media (min-width: 768px) and (max-width: 1000px) {
+//   .collapse {
+//       display: none !important;
+//   }
+// }
 
 @media screen and (max-width: 912px) {
   .height100
@@ -1855,6 +1880,12 @@ all and (min-width: 768px) and (-webkit-transform-3d) {
   }
 }
 
+
+
+
+
+
+
 @media all and (min-width: 992px) {
   .carousel-showmanymoveone .carousel-inner > .active.left,
   .carousel-showmanymoveone .carousel-inner > .prev {
@@ -1966,7 +1997,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
       #prevuser
       {
         
-        background-color: grey;
+        background-color: #D0B96E;
         padding: 2px;
         height: 30px;
         width: 30px;
@@ -2130,7 +2161,44 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   margin-right: 0px;
 }
 
-
+.cartext {
+  text-align: center;
+  margin-left: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 2rem;
+  z-index: 1;
+  font-family: 'monR','tamilf';
+}
+.left9 {
+  left: -3rem;
+  top: 3rem;
+}
+.buttonclass{
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #FFDDC3;
+  border: 2px solid;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  padding-left: 0;
+  position: absolute;
+  left: -3rem;
+  transform: scale(0.5);
+  border-radius: 5px;
+}
+.spanclass {
+  display: block;
+  padding: 15px 5rem;
+  font-family: 'monR';
+  font-size: 22px;
+}
     }
   
     #collectiondropdown
@@ -2168,6 +2236,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     font-size: 14px;
     border: 0;
   }
+
 
 
 
