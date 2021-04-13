@@ -118,6 +118,12 @@ export class CollectionsComponent implements OnInit {
       this.getallDetails();
     });
 
+    if (window.innerWidth < 600)
+    {
+      $('#collheroimg').attr("src", "../../../assets/images/mobilebanners/collectionsmobile.jpg");
+     
+        
+     }
     
    
 

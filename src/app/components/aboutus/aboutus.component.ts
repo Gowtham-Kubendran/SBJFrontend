@@ -32,7 +32,16 @@ export class AboutusComponent implements OnInit {
           return;
       }
       window.scrollTo(0, 0)
-  });
+    });
+    
+    if (window.innerWidth < 600)
+    {
+      $('#shop1img').attr("src", "../../../assets/images/mobilebanners/aboutusmobile.jpg");
+     
+        
+     }
+
+
   }
   goToPage(route)
   {

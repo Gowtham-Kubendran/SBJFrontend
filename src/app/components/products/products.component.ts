@@ -252,6 +252,12 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.selectedMetal = "allmetals";
       img.src = "./assets/images/banners/goldbanner.jpg";
+      if (window.innerWidth < 600)
+      {
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+       
+      
+        }
       this.types = this.typeGold;
       }
     
@@ -260,6 +266,12 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.cartext = this.ts.translate('goldjewels');
       this.talktouscontent = this.ts.translate('talktousgold');
       img.src = "./assets/images/banners/goldbanner.jpg";
+      if (window.innerWidth < 600)
+      {
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+       
+      
+        }
       this.types = this.typeGold;
     }
     else if (this.selectedMetal.toLowerCase() == 'silver')
@@ -267,6 +279,12 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.cartext = this.ts.translate('silverjewels');
       this.talktouscontent = this.ts.translate('talktoussilver');
       img.src = "./assets/images/banners/silverbanner.jpg";
+      if (window.innerWidth < 600)
+      {
+        img.src = "../../../assets/images/mobilebanners/silverproductsmobile.jpg"
+       
+      
+        }
       this.types = this.typeSilver;
     }
     else if (this.selectedMetal.toLowerCase() == 'diamond')
@@ -274,12 +292,24 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.cartext = this.ts.translate('diamondjewels');
       this.talktouscontent = this.ts.translate('talktousdiamond');
       img.src = "./assets/images/banners/diamondbanner.jpg";
+      if (window.innerWidth < 600)
+      {
+        img.src = "../../../assets/images/mobilebanners/diamondproductsmobile.jpg"
+       
+      
+        }
       this.types = this.typediamond;
     }
     else {
       this.talktouscontent = this.ts.translate('talktousproduct');
       this.cartext = this.ts.translate('goldjewels');
       img.src = "./assets/images/banners/goldbanner.jpg";
+      if (window.innerWidth < 600)
+      {
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+       
+      
+        }
       this.types = this.typeGold;
     }
     

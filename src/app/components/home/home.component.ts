@@ -174,6 +174,17 @@ export class HomeComponent implements OnInit {
       }
 
 
+      if (window.innerWidth < 600)
+      {
+        $('#heroone').attr("src", "../../../assets/images/mobilebanners/hero1mobile.jpg");
+       
+        $('#herotwo').attr("src", "../../../assets/images/mobilebanners/hero2mobile.jpg");
+        $('#herothree').attr("src", "../../../assets/images/mobilebanners/hero3mobile.jpg");
+        $('#herofour').attr("src", "../../../assets/images/mobilebanners/hero4mobile.jpg");
+      
+        }
+  
+
 
       $(document).ready(function () {
         // $('.producthover').on("hover", function(e){

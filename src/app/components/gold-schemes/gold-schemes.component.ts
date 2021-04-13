@@ -32,7 +32,15 @@ export class GoldSchemesComponent implements OnInit {
           return;
       }
       window.scrollTo(0, 0)
-  });
+    });
+    
+    
+    if (window.innerWidth < 600)
+    {
+      $('#goldheroimg').attr("src", "../../../assets/images/mobilebanners/savingsmobile.jpg");
+     
+        
+     }
   }
   goToPage(route)
   {

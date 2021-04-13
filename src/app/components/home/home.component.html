@@ -171,7 +171,7 @@
   <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel"  data-pause="true" data-interval="6000">
     <div class="carousel-inner">
       <div class="carousel-item .item active">
-        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="heroone" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
         <div class="carousel-caption cartext">
          
           <div class="lines" >{{ts.translate('goldheroline1')}}   </div> 
@@ -184,8 +184,8 @@
          
         </div>
       </div>
-      <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
+     <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" id="herotwo" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
         <div class="carousel-caption cartext">
          
             <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
@@ -197,7 +197,7 @@
           </div>
       </div>
       <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="herothree" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
         <div class="carousel-caption cartext">
             <div class="lines" > {{ts.translate('silverheroline1') }}  </div>
             <div class="lines" > <span class="boldcartext" >{{ts.translate('silverheroline2') }} </span> </div>
@@ -210,7 +210,7 @@
         </div>
       </div>
       <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="herofour" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
         <div class="carousel-caption cartext">
 
             <div class="lines" > {{ts.translate('collectionsheroline1')}}  </div>
@@ -220,7 +220,7 @@
             <button class="buttonclass btn-1"  [ngClass]="{'left9': showlang == 'TA'}" (click)="goToCollections('marriage')" ><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
          
         </div>
-      </div>
+      </div> 
      
       
     </div>
