@@ -137,6 +137,7 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
         document.getElementById("navdropdown1").style.marginLeft = "0%";
         document.getElementById("navdropdown2").style.marginLeft = "0%";
+        document.getElementById("butonid").style.left = "3rem";
       }
     }
   }
@@ -370,7 +371,7 @@ export class HomeComponent implements OnInit {
     else {
       this.showlang = 'EN';
       this.languageselect = "LA-EN";
-      // document.getElementById("butonid").style.left = "-3rem";
+      //
       (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
       (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
@@ -409,6 +410,7 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
         document.getElementById("navdropdown1").style.marginLeft = "0%";
         document.getElementById("navdropdown2").style.marginLeft = "0%";
+        document.getElementById("butonid").style.left = "3rem";
       }
 
     }
