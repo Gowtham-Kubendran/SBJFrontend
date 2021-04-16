@@ -770,7 +770,7 @@
     "name": "8",
     "code": "SBJGRN008",
     "category": "Rings",
-    "collection": ["men"],
+    "collection": ["men","marriage"],
     "metal": "Gold"
   },
   {
@@ -829,40 +829,9 @@
     "collection": ["men","kids"],
     "metal": "Diamond"
   },
-  {
-    "imgsrc": "../../../assets/images/rings/rings8.jpg",
-    "name": "12",
-    "code": "SBJGRN012",
-    "category": "Rings",
-    "collection": ["men","marriage"],
-    "metal": "Gold"
-  },
+  
 
   
-  {
-    "imgsrc": "../../../assets/images/anklet/anklet1.jpg",
-    "name": "1",
-    "code": "SBJSAK001",
-    "category": "Anklet",
-    "collection": ["kids","women"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/anklet/anklet2.jpg",
-    "name": "2",
-    "code": "SBJSAK002",
-    "category": "Anklet",
-    "collection": ["kids","women"],
-    "metal": "Silver"
-  },
-  {
-    "imgsrc": "../../../assets/images/anklet/anklet3.jpg",
-    "name": "3",
-    "code": "SBJSAK003",
-    "category": "Anklet",
-    "collection": ["kids","women"],
-    "metal": "Silver"
-  },
 
   {
     "imgsrc": "../../../assets/images/dollar/dollar1.jpg",
@@ -961,14 +930,7 @@
     "collection": ["wedding"],
     "metal": "Silver"
   },
-  {
-    "imgsrc": "../../../assets/images/vessels/vessels8.jpg",
-    "name": "7",
-    "code": "SBJSVS007",
-    "category": "silvervessels",
-    "collection": ["wedding"],
-    "metal": "Silver"
-  },
+ 
   
   
   {
@@ -1053,16 +1015,19 @@
     "collection": ["wedding"],
     "metal": "Silver"
   },
+
+
+
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai8.jpg",
-    "name": "8",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai9.jpg",
+    "name": "9",
     "code": "SBSPID008",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai9.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai10.jpg",
     "name": "9",
     "code": "SBSPID009",
     "category": "poojaitems",
@@ -1070,15 +1035,15 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai10.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai11.jpg",
     "name": "10",
-    "code": "SBSPID0010",
+    "code": "SBSPID010",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai11.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai12.jpg",
     "name": "11",
     "code": "SBSPID011",
     "category": "poojaitems",
@@ -1086,21 +1051,16 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai12.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai13.jpg",
     "name": "12",
     "code": "SBSPID012",
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
   },
-  {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai13.jpg",
-    "name": "13",
-    "code": "SBSPID013",
-    "category": "poojaitems",
-    "collection": ["wedding"],
-    "metal": "Silver"
-  },
+
+
+
  
   {
     "imgsrc": "../../../assets/images/idols/idol1.jpg",
@@ -1109,8 +1069,32 @@
     "category": "poojaitems",
     "collection": ["wedding"],
     "metal": "Silver"
-  }
+  },
 
+  {
+    "imgsrc": "../../../assets/images/anklet/anklet1.jpg",
+    "name": "1",
+    "code": "SBJSAK001",
+    "category": "Anklet",
+    "collection": ["kids","women"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/anklet/anklet2.jpg",
+    "name": "2",
+    "code": "SBJSAK002",
+    "category": "Anklet",
+    "collection": ["kids","women"],
+    "metal": "Silver"
+  },
+  {
+    "imgsrc": "../../../assets/images/anklet/anklet3.jpg",
+    "name": "3",
+    "code": "SBJSAK003",
+    "category": "Anklet",
+    "collection": ["kids","women"],
+    "metal": "Silver"
+  }
 
 
 

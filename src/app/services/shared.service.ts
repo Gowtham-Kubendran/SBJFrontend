@@ -15,8 +15,8 @@ export class SharedService {
   productsData:any;
 
   constructor(private http:HttpClient) { 
-    this.url = "https://sbjbackend.herokuapp.com/getValue";
-    this.seturl = "https://sbjbackend.herokuapp.com/setValue";
+    this.url = "https://us-central1-sribalagopalanjewellerymart.cloudfunctions.net/user/metals";
+    this.seturl = "https://us-central1-sribalagopalanjewellerymart.cloudfunctions.net/user/metals";
   }
 
   getValue()

@@ -33,13 +33,21 @@ position: relative;
   {
     font-family: 'opEB','tamilf';
   }
-
+.para2
+{
+  font-size: 18px;
+  line-height: 2em;
+  text-align: justify;
+  padding-bottom: 3rem;
+  font-family: 'opR','tamilf';
+}
   p
   {
     font-size: 18px;
     line-height: 2em;
     text-align: justify;
     padding-bottom: 3rem;
+    font-family: 'opR','tamilf';
     
   }
 
@@ -110,6 +118,10 @@ position: relative;
     p {
       font-size:14px;
     }
+    .para2
+{
+  font-size: 14px;
+}
     .cartextdiv
     {
     

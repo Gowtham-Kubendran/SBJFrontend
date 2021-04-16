@@ -137,7 +137,7 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
         document.getElementById("navdropdown1").style.marginLeft = "0%";
         document.getElementById("navdropdown2").style.marginLeft = "0%";
-        document.getElementById("butonid").style.left = "3rem";
+        // document.getElementById("butonid").style.left = "3rem";
       }
     }
   }
@@ -151,19 +151,20 @@ export class HomeComponent implements OnInit {
     this.togglesclass();
     this.langlist = [{ key: 'LA-EN', value: 'English', checked: 'false' }, { key: 'LA-TA', value: 'தமிழ்', checked: 'false' }];
     
-    if (window.sessionStorage.getItem('lang') == "LA-EN")
+    if (window.sessionStorage.getItem('lang') == "LA-TA")
     {
+      this.showlang = "TA";
+      this.languageselect = "LA-TA";
+      this.langlist[1].checked = 'true';
+      this.langlist[0].checked = 'false';
+    }
+    else {
+    
       window.sessionStorage.setItem('lang', 'LA-EN');
       this.showlang = "EN";
       this.languageselect = "LA-EN";
       this.langlist[0].checked = 'true';
       this.langlist[1].checked = 'false';
-    }
-    else {
-      this.showlang = "TA";
-      this.languageselect = "LA-TA";
-      this.langlist[1].checked = 'true';
-      this.langlist[0].checked = 'false';
     }
    
     this.userdisable = true;
@@ -200,10 +201,10 @@ export class HomeComponent implements OnInit {
       //     }
       // });
      
-    //   (<any>jQuery('.carousel')).carousel({
-    //     interval: 6000,
-    //     pause:true
-    // });
+      (<any>jQuery('.carousel')).carousel({
+        interval: 6000,
+        pause:true
+    });
     });
    
 
@@ -410,7 +411,7 @@ export class HomeComponent implements OnInit {
         (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
         document.getElementById("navdropdown1").style.marginLeft = "0%";
         document.getElementById("navdropdown2").style.marginLeft = "0%";
-        document.getElementById("butonid").style.left = "3rem";
+        // document.getElementById("butonid").style.left = "3rem";
       }
 
     }

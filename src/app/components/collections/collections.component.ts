@@ -248,6 +248,8 @@ export class CollectionsComponent implements OnInit {
 
   handleChange(event)
   {
+
+    // this.showspinner = true;
     this.aosInit();
     this.selectedValue = event;
     this.selectedoption = this.value;

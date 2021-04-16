@@ -2168,28 +2168,33 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   width: 100%;
   position: absolute;
   padding: 0;
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 2rem;
+  font-size: 22px;
+    color: #ffffff;
+    line-height: 3rem;
   z-index: 1;
   font-family: 'monR','tamilf';
 }
-.left9 {
-  left: -3rem;
-  top: 5rem;
-}
+// .left9 {
+//   left: -3rem !important;
+//   top: 5rem;
+
+// }
 .buttonclass{
-  display: inline-block;
+  display: block;
   background: none;
   border: none;
+  position: absolute;
+  margin: 0 auto;
+  left: 0%;
+  right: 0%;
   color: #FFDDC3;
   border: 2px solid;
   font-size: 18px;
   cursor: pointer;
-  margin: 20px 30px;
+  /* margin: 20px 30px; */
   padding-left: 0;
-  position: absolute;
-  left: 3rem;
+  /* position: absolute; */
+  /* left: 2rem; */
   transform: scale(0.5);
   border-radius: 5px;
 }
@@ -2197,16 +2202,16 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   display: block;
   padding: 15px 5rem;
   font-family: 'monR';
-  font-size: 22px;
+  font-size: 32px;
 }
     }
 
     @media screen and (max-width: 400px){
 
-      .left9 {
-        left: -3rem;
-        top: 3rem;
-      }
+      // .left9 {
+      //   left: -3rem;
+      //   top: 3rem;
+      // }
     }
   
     #collectiondropdown

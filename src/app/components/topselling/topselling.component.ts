@@ -129,7 +129,7 @@ export class TopsellingComponent implements OnInit {
   step2: any;
   ngOnInit() {
 
-    // $(document).ready(function () {
+    $(document).ready(function () {
 
       // (<any>$('#demo2')).carousel({
       //   touch: false
@@ -142,9 +142,11 @@ export class TopsellingComponent implements OnInit {
     // $("#demo2").on('slide.bs.carousel', function (){
     //   alert('A new slide is about to be shown!');
     // });
-      
+    (<any>jQuery('#demo2')).carousel({
+      touch:false
+  });
     
-    // });
+    });
 
     
 

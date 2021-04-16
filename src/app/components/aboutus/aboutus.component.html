@@ -14,17 +14,28 @@
             <div class="bodyHeading">
               {{ts.translate('our') |  uppercase}} <span class="bold">{{ts.translate('story') |  uppercase}}</span>
           </div>
-          <p>
-            {{ts.translate('aboutusdata1')}}
-          </p>
-          <p>
-            {{ts.translate('aboutusdata2')}}
-          </p>
-          <p>
-            {{ts.translate('aboutusdata3')}}
-          </p>
-          </div>
-      </div>
+          
+          <p>  {{ts.translate('aboutusdata1')}}</p>
+          
+          <div class="para2">
+              <div>{{ts.translate('aboutusdata21')}}</div>
+              <div>{{ts.translate('aboutusdata22')}}</div>
+              <ol>
+                <li>{{ts.translate('aboutusdata23')}}</li>
+                <li>{{ts.translate('aboutusdata24')}}</li>
+                <li>{{ts.translate('aboutusdata25')}}</li>
+                <li>{{ts.translate('aboutusdata26')}}</li>
+              </ol>
+            
+            </div> 
+          
+         <p>  {{ts.translate('aboutusdata3')}}</p> 
+          
+          
+        <p>   {{ts.translate('aboutusdata4')}}</p> 
+          
+        </div>
+     
       <div class="linkstab">
         <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
         <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToPage('aboutus')"  >{{ts.translate('aboutus')}} </a></span> </span> 

@@ -17,14 +17,14 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { CollectionsComponent, DialogDataExample } from './components/collections/collections.component';
 
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+// import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { TalktousComponent } from './components/talktous/talktous.component';
 import { TodaysrateComponent } from './components/todaysrate/todaysrate.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
 import { MatMenuModule } from '@angular/material/menu';
 
-import { Location, PathLocationStrategy} from '@angular/common';
+// import { Location, PathLocationStrategy} from '@angular/common';
 
 
 
@@ -58,8 +58,7 @@ import { Location, PathLocationStrategy} from '@angular/common';
     FlexLayoutModule,
     
   ],
-  providers: [Location,{ provide: LocationStrategy, useClass: HashLocationStrategy }
-  ],
+  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [DialogDataExampleDialog,DialogDataExample,TopSellingDialog]
 })

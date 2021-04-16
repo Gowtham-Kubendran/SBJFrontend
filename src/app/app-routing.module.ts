@@ -8,6 +8,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { CollectionsComponent } from './components/collections/collections.component';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
   const routes: Routes = [
@@ -57,6 +58,9 @@ import { SetPricesComponent } from './components/set-prices/set-prices.component
   imports: [RouterModule.forRoot(routes,{
     onSameUrlNavigation: 'reload'
   })],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+    ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
