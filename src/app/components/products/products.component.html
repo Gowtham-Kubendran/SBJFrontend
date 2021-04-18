@@ -1,7 +1,7 @@
 <div *ngIf="showspinner">
   <div class="loading">
     <!-- <mat-spinner class="spinnerc" [value]="80"></mat-spinner> -->
-    <img class="spinnerc" src="../../../assets/images/sbjlogo.png" />
+    <img class="spinnerc" src="../../../assets/images/sbjlogo.webp" />
   </div>
 </div>
 <div class="productwrapper" id="wrapper">
@@ -266,8 +266,9 @@
             {{ ts.translate("noproductsfound") }}
           </div>
           <!-- <div *ngIf="showspinner" class="col-12 col-lg-12 col-md-12 col-sm-12 center"><div class="loading">  <mat-spinner class="spinnerc"></mat-spinner></div></div> -->
+          <!-- col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 -->
           <div
-            class="ImgList col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12"
+            class="ImgList "
             *ngFor="let item of tempdata"
           >
             <div class="indiImg" data-aos="fade-up" data-aos-once="true">

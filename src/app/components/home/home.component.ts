@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
         document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
      
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 900) {
      
         (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
@@ -121,7 +121,7 @@ export class HomeComponent implements OnInit {
         document.getElementById("navdropdown1").style.marginLeft = "15%";
         document.getElementById("navdropdown2").style.marginLeft = "28%";
       }
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 900) {
      
         document.getElementById("navbarnavid").style.marginLeft = "11%";
         document.getElementById("navdropdown1").style.marginLeft = "14%";
@@ -340,7 +340,7 @@ export class HomeComponent implements OnInit {
         document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
      
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 900) {
      
         (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
         (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
@@ -396,7 +396,7 @@ export class HomeComponent implements OnInit {
         document.getElementById("navdropdown1").style.marginLeft = "15%";
         document.getElementById("navdropdown2").style.marginLeft = "28%";
       }
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 900) {
      
         document.getElementById("navbarnavid").style.marginLeft = "11%";
         document.getElementById("navdropdown1").style.marginLeft = "14%";

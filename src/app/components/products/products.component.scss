@@ -34,7 +34,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-  	
+  	width:15rem;
     margin: auto;
     animation: rotate 1s infinite;
     animation-duration: 3s;
@@ -242,7 +242,7 @@ label > span:hover{
 .w100
 {
     width:100%;
-    display:block;
+    display:inline-flex;
 }
 .linkstab
 {
