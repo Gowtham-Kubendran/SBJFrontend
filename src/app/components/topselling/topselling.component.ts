@@ -29,7 +29,7 @@ export class TopsellingComponent implements OnInit {
     
     
     {
-      "imgsrc": "../../../assets/images/maalai/maalai2.jpg",
+      "imgsrc": "../../../assets/images/maalai/maalai2.webp",
       "name": "2",
       "code": "SBJGMA002",
       "category": "Maalai",
@@ -37,7 +37,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/maalai/maalai3.jpg",
+      "imgsrc": "../../../assets/images/maalai/maalai3.webp",
       "name": "3",
       "code": "SBJGMA003",
       "category": "Maalai",
@@ -45,7 +45,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/maalai/maalai11.jpg",
+      "imgsrc": "../../../assets/images/maalai/maalai11.webp",
       "name": "11",
       "code": "SBJGMA011",
       "category": "Maalai",
@@ -53,7 +53,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace8.jpg",
+      "imgsrc": "../../../assets/images/necklace/necklace8.webp",
       "name": "2",
       "code": "SBJGNC002",
       "category": "Necklace",
@@ -61,7 +61,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/necklace/necklace9.jpg",
+      "imgsrc": "../../../assets/images/necklace/necklace9.webp",
       "name": "3",
       "code": "SBJGNC003",
       "category": "Necklace",
@@ -69,7 +69,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/diamondnecklace/necklace2.jpg",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace2.webp",
       "name": "2",
       "code": "SBJDNC002",
       "category": "Necklace",
@@ -77,7 +77,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Diamond"
     },
     {
-      "imgsrc": "../../../assets/images/diamondnecklace/necklace3.jpg",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace3.webp",
       "name": "3",
       "code": "SBJDNC003",
       "category": "Necklace",
@@ -85,7 +85,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Diamond"
     },
     {
-      "imgsrc": "../../../assets/images/diamondnecklace/necklace6.jpg",
+      "imgsrc": "../../../assets/images/diamondnecklace/necklace6.webp",
       "name": "6",
       "code": "SBJDNC006",
       "category": "Necklace",
@@ -93,7 +93,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Diamond"
     },
     {
-      "imgsrc": "../../../assets/images/bangles/bangles12.jpg",
+      "imgsrc": "../../../assets/images/bangles/bangles12.webp",
       "name": "1",
       "code": "SBJGBA001",
       "category": "Bangles",
@@ -101,7 +101,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/rings/rings8.jpg",
+      "imgsrc": "../../../assets/images/rings/rings8.webp",
       "name": "8",
       "code": "SBJGRN008",
       "category": "Rings",
@@ -109,7 +109,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/earrings/earrings5.jpg",
+      "imgsrc": "../../../assets/images/earrings/earrings5.webp",
       "name": "5",
       "code": "SBJGER005",
       "category": "Earrings",
@@ -117,7 +117,7 @@ export class TopsellingComponent implements OnInit {
       "metal": "Gold"
     },
     {
-      "imgsrc": "../../../assets/images/rings/rings13.jpg",
+      "imgsrc": "../../../assets/images/rings/rings13.webp",
       "name": "2",
       "code": "SBJDRN002",
       "category": "Rings",

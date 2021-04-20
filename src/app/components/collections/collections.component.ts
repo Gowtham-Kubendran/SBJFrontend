@@ -120,7 +120,7 @@ export class CollectionsComponent implements OnInit {
 
     if (window.innerWidth < 600)
     {
-      $('#collheroimg').attr("src", "../../../assets/images/mobilebanners/collectionsmobile.jpg");
+      $('#collheroimg').attr("src", "../../../assets/images/mobilebanners/collectionsmobile.webp");
      
         
      }

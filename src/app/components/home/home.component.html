@@ -131,13 +131,14 @@
   
   
   </nav>
+  <!-- appNoRightClick -->
  
 <div class="homebody" appNoRightClick>
 
   <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel"  data-pause="true" data-interval="6000">
     <div class="carousel-inner">
       <div class="carousel-item .item active">
-        <img class="d-block w-100 carosolimg img-fluid" id="heroone" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="heroone" src="../../../assets/images/banners/hero1.webp" alt="First slide">
         <div class="carousel-caption cartext">
          
           <div class="lines" >{{ts.translate('goldheroline1')}}   </div> 
@@ -151,7 +152,7 @@
         </div>
       </div>
      <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" id="herotwo" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="herotwo" src="../../../assets/images/banners/hero2.webp" alt="Second slide">
         <div class="carousel-caption cartext">
          
             <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
@@ -163,7 +164,7 @@
           </div>
       </div>
       <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" id="herothree" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="herothree" src="../../../assets/images/banners/hero3.webp" alt="Third slide">
         <div class="carousel-caption cartext">
             <div class="lines" > {{ts.translate('silverheroline1') }}  </div>
             <div class="lines" > <span class="boldcartext" >{{ts.translate('silverheroline2') }} </span> </div>
@@ -176,7 +177,7 @@
         </div>
       </div>
       <div class="carousel-item .item">
-        <img class="d-block w-100 carosolimg img-fluid" id="herofour" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
+        <img class="d-block w-100 carosolimg img-fluid" id="herofour" src="../../../assets/images/banners/hero4.webp" alt="Fouth slide">
         <div class="carousel-caption cartext">
 
             <div class="lines" > {{ts.translate('collectionsheroline1')}}  </div>
@@ -212,19 +213,19 @@
    <div class="flexhori">
         <div class="indi">
             <div class="imageContainer  setpad0">
-              <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
+              <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.webp">
                 <div class="bottom-left "> {{ts.translate('gold') | titlecase }} <img class="rarrow" src="../../../assets/images/downarrow2.png"/></div></a>
             </div>
         </div>
         <div class="">
             <div class="imageContainer setpad0">
-                <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
+                <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.webp">
                 <div class="bottom-left "> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
             </div>
         </div>
         <div class="">
             <div class="imageContainer setpad0 mar0">
-                <a (click)="goToProducts('allproducts','Silver')"> <img class="collectionGoldImage" src="../../../assets/images/banners/silver.jpg">
+                <a (click)="goToProducts('allproducts','Silver')"> <img class="collectionGoldImage" src="../../../assets/images/banners/silver.webp">
                 <div class="bottom-left "> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
             </div>
         </div>
@@ -241,21 +242,21 @@
 
             <div class="carousel-item padl4 active">
               <div class="col-sm-12 col-12 padr5">
-                <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
+                <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.webp">
                 <div class="bottom-left padr3"> {{ts.translate('gold') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>  
             </div>  
 
             <div class="carousel-item padl4">
               <div class="col-sm-12 col-12">
-                  <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
+                  <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.webp">
                     <div class="bottom-left padr3"> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>  
             </div>
         
             <div class="carousel-item padl4">
               <div class="col-sm-12 col-12">
-                  <a (click)="goToProducts('allproducts','Silver')">  <img class="collectionGoldImage" src="../../../assets/images/banners/silver.jpg">
+                  <a (click)="goToProducts('allproducts','Silver')">  <img class="collectionGoldImage" src="../../../assets/images/banners/silver.webp">
                     <div class="bottom-left padr3"> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>  
             </div>  
@@ -289,7 +290,7 @@
     <div class="row padl5 margin0 ">
       <div class="col-lg-4 col-md-4 col-sm-6 col-12 padl0 height100 padr20" >
           <div class="imageContainer marb20 nonmargin mar0">
-              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
+              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.webp">
               <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
           </div>
       </div>
@@ -297,13 +298,13 @@
       <div class="col-lg-4 col-md-4 col-sm-6 col-12 coll2column">
           <div class="row">
               <div class="imageContainer colimg mar-3 mar-r-1 collectionside  mar0 padr0">
-                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionmen.jpg">
+                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionmen.webp">
                   <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>
             </div>
             <div class="row padt20">
                 <div class="imageContainer marb20 colimg mar-r-1 collectionside  mar0 padr0" >
-                    <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionwomen.jpg"/>
+                    <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25 adjust" src="../../../assets/images/banners/collectionwomen.webp"/>
                     <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
                 </div>
              </div>
@@ -312,13 +313,13 @@
       <div class="col-lg-4 col-md-4 col-sm-6 col-12 coll3column">
           <div class="row p15 w103">
               <div class="imageContainer colimg mar-3 padingt20 collectionsideright mar0  padr0">
-                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage  padl0" src="../../../assets/images/banners/collectionkids.jpg">
+                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage  padl0" src="../../../assets/images/banners/collectionkids.webp">
                   <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
               </div>
             </div>
           <div class="row padt20 p15 w103">
              <div class="imageContainer colimg collectionsideright mar0  padr0">
-                <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage  padl0" src="../../../assets/images/banners/collectiongift.jpg">
+                <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage  padl0" src="../../../assets/images/banners/collectiongift.webp">
                  <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
              </div>
            </div>

@@ -1,7 +1,7 @@
 
   [
     {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace1.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace1.webp",
     "name": "1",
     "code": "SBJDNC001",
     "category": "Necklace",
@@ -9,7 +9,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace2.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace2.webp",
     "name": "2",
     "code": "SBJDNC002",
     "category": "Necklace",
@@ -17,7 +17,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace3.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace3.webp",
     "name": "3",
     "code": "SBJDNC003",
     "category": "Necklace",
@@ -25,7 +25,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace4.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace4.webp",
     "name": "4",
     "code": "SBJDNC004",
     "category": "Necklace",
@@ -33,7 +33,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace5.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace5.webp",
     "name": "5",
     "code": "SBJDNC005",
     "category": "Necklace",
@@ -41,7 +41,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/diamondnecklace/necklace6.jpg",
+    "imgsrc": "../../../assets/images/diamondnecklace/necklace6.webp",
     "name": "6",
     "code": "SBJDNC006",
     "category": "Necklace",
@@ -49,7 +49,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace7.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace7.webp",
     "name": "1",
     "code": "SBJGNC001",
     "category": "Necklace",
@@ -57,7 +57,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace8.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace8.webp",
     "name": "2",
     "code": "SBJGNC002",
     "category": "Necklace",
@@ -65,7 +65,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace9.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace9.webp",
     "name": "3",
     "code": "SBJGNC003",
     "category": "Necklace",
@@ -73,7 +73,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace10.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace10.webp",
     "name": "4",
     "code": "SBJGNC004",
     "category": "Necklace",
@@ -81,7 +81,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace11.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace11.webp",
     "name": "5",
     "code": "SBJGNC005",
     "category": "Necklace",
@@ -89,7 +89,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace12.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace12.webp",
     "name": "6",
     "code": "SBJGNC006",
     "category": "Necklace",
@@ -97,7 +97,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace13.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace13.webp",
     "name": "7",
     "code": "SBJGNC007",
     "category": "Necklace",
@@ -105,7 +105,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace14.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace14.webp",
     "name": "8",
     "code": "SBJGNC008",
     "category": "Necklace",
@@ -113,7 +113,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace15.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace15.webp",
     "name": "9",
     "code": "SBJGNC009",
     "category": "Necklace",
@@ -121,7 +121,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace16.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace16.webp",
     "name": "10",
     "code": "SBJGNC010",
     "category": "Necklace",
@@ -129,7 +129,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace17.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace17.webp",
     "name": "11",
     "code": "SBJGNC011",
     "category": "Necklace",
@@ -137,7 +137,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/necklace/necklace18.jpg",
+    "imgsrc": "../../../assets/images/necklace/necklace18.webp",
     "name": "12",
     "code": "SBJGNC012",
     "category": "Necklace",
@@ -149,7 +149,7 @@
   
  
   {
-    "imgsrc": "../../../assets/images/rings/rings1.jpg",
+    "imgsrc": "../../../assets/images/rings/rings1.webp",
     "name": "1",
     "code": "SBJGRN001",
     "category": "Rings",
@@ -157,7 +157,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings2.jpg",
+    "imgsrc": "../../../assets/images/rings/rings2.webp",
     "name": "2",
     "code": "SBJGRN002",
     "category": "Rings",
@@ -165,7 +165,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings3.jpg",
+    "imgsrc": "../../../assets/images/rings/rings3.webp",
     "name": "3",
     "code": "SBJGRN003",
     "category": "Rings",
@@ -173,7 +173,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings4.jpg",
+    "imgsrc": "../../../assets/images/rings/rings4.webp",
     "name": "4",
     "code": "SBJGRN004",
     "category": "Rings",
@@ -181,7 +181,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings5.jpg",
+    "imgsrc": "../../../assets/images/rings/rings5.webp",
     "name": "5",
     "code": "SBJGRN005",
     "category": "Rings",
@@ -189,7 +189,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings6.jpg",
+    "imgsrc": "../../../assets/images/rings/rings6.webp",
     "name": "6",
     "code": "SBJGRN006",
     "category": "Rings",
@@ -197,7 +197,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings7.jpg",
+    "imgsrc": "../../../assets/images/rings/rings7.webp",
     "name": "7",
     "code": "SBJGRN007",
     "category": "Rings",
@@ -205,7 +205,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings8.jpg",
+    "imgsrc": "../../../assets/images/rings/rings8.webp",
     "name": "8",
     "code": "SBJGRN008",
     "category": "Rings",
@@ -213,7 +213,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings9.jpg",
+    "imgsrc": "../../../assets/images/rings/rings9.webp",
     "name": "9",
     "code": "SBJGRN009",
     "category": "Rings",
@@ -221,7 +221,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings10.jpg",
+    "imgsrc": "../../../assets/images/rings/rings10.webp",
     "name": "10",
     "code": "SBJRN010",
     "category": "Rings",
@@ -229,7 +229,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings11.jpg",
+    "imgsrc": "../../../assets/images/rings/rings11.webp",
     "name": "11",
     "code": "SBJGRN011",
     "category": "Rings",
@@ -237,7 +237,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings12.jpg",
+    "imgsrc": "../../../assets/images/rings/rings12.webp",
     "name": "1",
     "code": "SBJDRN001",
     "category": "Rings",
@@ -245,7 +245,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings13.jpg",
+    "imgsrc": "../../../assets/images/rings/rings13.webp",
     "name": "2",
     "code": "SBJDRN002",
     "category": "Rings",
@@ -253,7 +253,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings14.jpg",
+    "imgsrc": "../../../assets/images/rings/rings14.webp",
     "name": "3",
     "code": "SBJDRN003",
     "category": "Rings",
@@ -261,7 +261,7 @@
     "metal": "Diamond"
   },
   {
-    "imgsrc": "../../../assets/images/rings/rings15.jpg",
+    "imgsrc": "../../../assets/images/rings/rings15.webp",
     "name": "4",
     "code": "SBJDRN004",
     "category": "Rings",
@@ -273,7 +273,7 @@
   
 
   {
-    "imgsrc": "../../../assets/images/dollar/dollar1.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar1.webp",
     "name": "1",
     "code": "SBJGDO001",
     "category": "Dollar",
@@ -281,7 +281,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/dollar/dollar2.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar2.webp",
     "name": "2",
     "code": "SBJGDO002",
     "category": "Dollar",
@@ -289,7 +289,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/dollar/dollar3.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar3.webp",
     "name": "3",
     "code": "SBJGDO003",
     "category": "Dollar",
@@ -297,7 +297,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/dollar/dollar4.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar4.webp",
     "name": "4",
     "code": "SBJGDO004",
     "category": "Dollar",
@@ -305,7 +305,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/dollar/dollar5.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar5.webp",
     "name": "5",
     "code": "SBJGDO005",
     "category": "Dollar",
@@ -313,7 +313,7 @@
     "metal": "Gold"
   },
   {
-    "imgsrc": "../../../assets/images/dollar/dollar6.jpg",
+    "imgsrc": "../../../assets/images/dollar/dollar6.webp",
     "name": "6",
     "code": "SBJGDO006",
     "category": "Dollar",
@@ -322,7 +322,7 @@
   },
   
   {
-    "imgsrc": "../../../assets/images/vessels/vessels1.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels1.webp",
     "name": "1",
     "code": "SBJSVS001",
     "category": "silvervessels",
@@ -330,7 +330,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/vessels/vessels2.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels2.webp",
     "name": "2",
     "code": "SBJSVS002",
     "category": "silvervessels",
@@ -338,7 +338,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/vessels/vessels3.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels3.webp",
     "name": "3",
     "code": "SBJSVS003",
     "category": "silvervessels",
@@ -346,7 +346,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/vessels/vessels4.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels4.webp",
     "name": "4",
     "code": "SBJSVS004",
     "category": "silvervessels",
@@ -354,7 +354,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/vessels/vessels5.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels5.webp",
     "name": "5",
     "code": "SBJSVS005",
     "category": "silvervessels",
@@ -362,7 +362,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/vessels/vessels6.jpg",
+    "imgsrc": "../../../assets/images/vessels/vessels6.webp",
     "name": "6",
     "code": "SBJSVS006",
     "category": "silvervessels",
@@ -373,7 +373,7 @@
   
   
   {
-    "imgsrc": "../../../assets/images/gifts/gifts8.jpg",
+    "imgsrc": "../../../assets/images/gifts/gifts8.webp",
     "name": "1",
     "code": "SBJSID001",
     "category": "idols",
@@ -381,7 +381,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/idols/idol2.jpg",
+    "imgsrc": "../../../assets/images/idols/idol2.webp",
     "name": "2",
     "code": "SBJSID002",
     "category": "idols",
@@ -389,7 +389,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/idols/idol3.jpg",
+    "imgsrc": "../../../assets/images/idols/idol3.webp",
     "name": "3",
     "code": "SBJSID003",
     "category": "idols",
@@ -398,7 +398,7 @@
   },
 
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai1.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai1.webp",
     "name": "1",
     "code": "SBSPID001",
     "category": "poojaitems",
@@ -407,7 +407,7 @@
   },
   
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai2.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai2.webp",
     "name": "2",
     "code": "SBSPID002",
     "category": "poojaitems",
@@ -415,7 +415,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai3.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai3.webp",
     "name": "3",
     "code": "SBSPID003",
     "category": "poojaitems",
@@ -423,7 +423,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai4.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai4.webp",
     "name": "4",
     "code": "SBSPID004",
     "category": "poojaitems",
@@ -431,7 +431,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai5.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai5.webp",
     "name": "5",
     "code": "SBSPID005",
     "category": "poojaitems",
@@ -439,7 +439,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai6.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai6.webp",
     "name": "6",
     "code": "SBSPID006",
     "category": "poojaitems",
@@ -447,7 +447,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai7.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai7.webp",
     "name": "7",
     "code": "SBSPID007",
     "category": "poojaitems",
@@ -458,7 +458,7 @@
 
 
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai9.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai9.webp",
     "name": "9",
     "code": "SBSPID008",
     "category": "poojaitems",
@@ -466,7 +466,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai10.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai10.webp",
     "name": "9",
     "code": "SBSPID009",
     "category": "poojaitems",
@@ -474,7 +474,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai11.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai11.webp",
     "name": "10",
     "code": "SBSPID010",
     "category": "poojaitems",
@@ -482,7 +482,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai12.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai12.webp",
     "name": "11",
     "code": "SBSPID011",
     "category": "poojaitems",
@@ -490,7 +490,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/silverpoojai/poojai13.jpg",
+    "imgsrc": "../../../assets/images/silverpoojai/poojai13.webp",
     "name": "12",
     "code": "SBSPID012",
     "category": "poojaitems",
@@ -502,7 +502,7 @@
 
  
   {
-    "imgsrc": "../../../assets/images/idols/idol1.jpg",
+    "imgsrc": "../../../assets/images/idols/idol1.webp",
     "name": "14",
     "code": "SBSPID014",
     "category": "poojaitems",
@@ -511,7 +511,7 @@
   },
 
   {
-    "imgsrc": "../../../assets/images/anklet/anklet1.jpg",
+    "imgsrc": "../../../assets/images/anklet/anklet1.webp",
     "name": "1",
     "code": "SBJSAK001",
     "category": "Anklet",
@@ -519,7 +519,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/anklet/anklet2.jpg",
+    "imgsrc": "../../../assets/images/anklet/anklet2.webp",
     "name": "2",
     "code": "SBJSAK002",
     "category": "Anklet",
@@ -527,7 +527,7 @@
     "metal": "Silver"
   },
   {
-    "imgsrc": "../../../assets/images/anklet/anklet3.jpg",
+    "imgsrc": "../../../assets/images/anklet/anklet3.webp",
     "name": "3",
     "code": "SBJSAK003",
     "category": "Anklet",

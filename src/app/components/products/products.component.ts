@@ -251,10 +251,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     if (!this.selectedMetal)
     {
       this.selectedMetal = "allmetals";
-      img.src = "./assets/images/banners/goldbanner.jpg";
+      img.src = "./assets/images/banners/goldbanner.webp";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
        
       
         }
@@ -265,10 +265,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('goldjewels');
       this.talktouscontent = this.ts.translate('talktousgold');
-      img.src = "./assets/images/banners/goldbanner.jpg";
+      img.src = "./assets/images/banners/goldbanner.webp";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
        
       
         }
@@ -278,10 +278,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('silverjewels');
       this.talktouscontent = this.ts.translate('talktoussilver');
-      img.src = "./assets/images/banners/silverbanner.jpg";
+      img.src = "./assets/images/banners/silverbanner.webp";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/silverproductsmobile.jpg"
+        img.src = "../../../assets/images/mobilebanners/silverproductsmobile.webp"
        
       
         }
@@ -291,10 +291,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('diamondjewels');
       this.talktouscontent = this.ts.translate('talktousdiamond');
-      img.src = "./assets/images/banners/diamondbanner.jpg";
+      img.src = "./assets/images/banners/diamondbanner.webp";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/diamondproductsmobile.jpg"
+        img.src = "../../../assets/images/mobilebanners/diamondproductsmobile.webp"
        
       
         }
@@ -303,10 +303,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     else {
       this.talktouscontent = this.ts.translate('talktousproduct');
       this.cartext = this.ts.translate('goldjewels');
-      img.src = "./assets/images/banners/goldbanner.jpg";
+      img.src = "./assets/images/banners/goldbanner.webp";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
        
       
         }
