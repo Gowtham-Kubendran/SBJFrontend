@@ -123,7 +123,7 @@ export class HeaderComponent implements OnInit {
         (document.getElementById(`navlink3`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
         (document.getElementById(`navlink4`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
         (document.getElementById(`navlink5`) as HTMLInputElement).style.padding = "10px 1rem 1rem";
-        document.getElementById("navbarnavid").style.marginLeft = "10%";
+        document.getElementById("navbarnavid").style.marginLeft = "8%";
         document.getElementById("navdropdown1").style.marginLeft = "14%";
         document.getElementById("navdropdown2").style.marginLeft = "26%";
       }

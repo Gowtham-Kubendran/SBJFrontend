@@ -123,7 +123,7 @@ export class HomeComponent implements OnInit {
       }
       if (window.innerWidth < 900) {
      
-        document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navbarnavid").style.marginLeft = "9%";
         document.getElementById("navdropdown1").style.marginLeft = "14%";
         document.getElementById("navdropdown2").style.marginLeft = "26%";
         
@@ -398,7 +398,7 @@ export class HomeComponent implements OnInit {
       }
       if (window.innerWidth < 900) {
      
-        document.getElementById("navbarnavid").style.marginLeft = "11%";
+        document.getElementById("navbarnavid").style.marginLeft = "9%";
         document.getElementById("navdropdown1").style.marginLeft = "14%";
         document.getElementById("navdropdown2").style.marginLeft = "26%";
       }
