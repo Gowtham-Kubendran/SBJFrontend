@@ -165,6 +165,9 @@ position: relative;
     object-fit: cover;
     height:100%;
  }
+ .productimg:hover{
+     cursor: pointer;
+ }
 
  :checked + span {
    

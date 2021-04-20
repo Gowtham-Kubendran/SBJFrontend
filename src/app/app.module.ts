@@ -23,6 +23,7 @@ import { TodaysrateComponent } from './components/todaysrate/todaysrate.componen
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { NoRightClickDirective } from './no-right-click.directive';
 
 // import { Location, PathLocationStrategy} from '@angular/common';
 
@@ -46,7 +47,8 @@ import { MatMenuModule } from '@angular/material/menu';
     CollectionsComponent,
     TalktousComponent,
     TodaysrateComponent,
-    SetPricesComponent
+    SetPricesComponent,
+    NoRightClickDirective
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@
     <img class="spinnerc" src="../../../assets/images/sbjlogo.webp" />
   </div>
 </div>
-<div class="productwrapper" id="wrapper">
+<div class="productwrapper" id="wrapper" appNoRightClick>
   <app-header class="headerfixed"></app-header>
   <div class="productbody">
     <app-todaysrate></app-todaysrate>
@@ -234,7 +234,7 @@
         </div>
 
         <div id="dropdown" class="dropdown">
-          <div class="staticfield">
+          <div class="staticfield" >
             <label id="findtext">
               {{ ts.translate("findyourjewels") | uppercase }}</label
             >
@@ -253,7 +253,7 @@
                   {{ ts.translate(item.value) | titlecase }}
                 </mat-option>
               </mat-select>
-              <img
+              <img 
                 id="productdropicon"
                 src="../../../assets/images/downarrowb.png"
               />

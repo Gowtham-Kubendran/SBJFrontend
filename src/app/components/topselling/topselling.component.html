@@ -3,7 +3,7 @@
 <div id="demo1" class="carousel slide" data-interval="false" pause="true" >
 
  
-  <div class="carousel-inner no-padding">
+  <div class="carousel-inner no-padding" appNoRightClick>
     <div class="carousel-item active">
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
@@ -177,7 +177,7 @@
  
   
   
-  <div class="carousel-inner no-padding">
+  <div class="carousel-inner no-padding" appNoRightClick>
     <div class="carousel-item active center">
       <div class="col-sm-12 col-12">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
@@ -340,7 +340,7 @@
           <div class="procode">{{imgsrc[11].code}}</div>
           <div class="proname"> 
               {{ ts.translate(imgsrc[11].metal) | titlecase }}  {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
-          <img
+          <img appNoRightClick
             class="productimg"
             src="{{imgsrc[11].imgsrc}}"
             (click)="openDialog(imgsrc[11])"
