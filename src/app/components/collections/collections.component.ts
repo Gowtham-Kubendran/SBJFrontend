@@ -201,6 +201,9 @@ export class CollectionsComponent implements OnInit {
       this.showspinner = false;
       document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
+      this.jsondata.forEach(ele => {
+        ele.imgsrc.replace(".jpg", ".webp");
+      });
       this.tempdata = this.jsondata;
       if (!this.metals.includes(this.value)) {
         (document.getElementById(this.value) as HTMLInputElement).checked = true;

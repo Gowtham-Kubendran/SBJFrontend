@@ -331,7 +331,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
 
     // this.value="allproducts"
 
-    this.getAllProducts();
+    // this.getAllProducts();
 
     this.getAllProducts().subscribe(data => {
       
@@ -339,9 +339,13 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       this.showspinner = false;
       document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
-      
+      this.jsondata.forEach(ele => {
+        ele.imgsrc.replace(".jpg", ".webp");
+      });
+      console.log("modified " + this.jsondata);
       this.tempdata = this.jsondata;
       // console.log(this.tempdata);
+    
 
       if (this.selectedMetal != "allmetals")
       {
