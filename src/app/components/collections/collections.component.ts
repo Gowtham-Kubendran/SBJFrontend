@@ -103,6 +103,13 @@ export class CollectionsComponent implements OnInit {
     });
 
   }
+  gotowhatsapp(src)
+  {
+    console.log(src);
+    src=src.replace("../../../", "https://sribalagopalanjewellerymart.com/");
+    console.log(src);
+    window.open("//api.whatsapp.com/send?phone=919994926518&text=I need to know more about \n"+src);
+  }
   clearcolor()
   {
     document.getElementById("navlink1").style.color = "#000";
@@ -120,7 +127,7 @@ export class CollectionsComponent implements OnInit {
 
     if (window.innerWidth < 600)
     {
-      $('#collheroimg').attr("src", "../../../assets/images/mobilebanners/collectionsmobile.webp");
+      $('#collheroimg').attr("src", "../../../assets/images/mobilebanners/collectionsmobile.jpg");
      
         
      }
@@ -201,9 +208,9 @@ export class CollectionsComponent implements OnInit {
       this.showspinner = false;
       document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
-      this.jsondata.forEach(ele => {
-        ele.imgsrc.replace(".jpg", ".webp");
-      });
+      // this.jsondata.forEach(ele => {
+      //   ele.imgsrc.replace(".jpg", ".webp");
+      // });
       this.tempdata = this.jsondata;
       if (!this.metals.includes(this.value)) {
         (document.getElementById(this.value) as HTMLInputElement).checked = true;

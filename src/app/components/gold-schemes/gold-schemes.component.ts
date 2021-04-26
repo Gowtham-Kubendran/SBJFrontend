@@ -37,7 +37,7 @@ export class GoldSchemesComponent implements OnInit {
     
     if (window.innerWidth < 600)
     {
-      $('#goldheroimg').attr("src", "../../../assets/images/mobilebanners/savingsmobile.webp");
+      $('#goldheroimg').attr("src", "../../../assets/images/mobilebanners/savingsmobile.jpg");
      
         
      }

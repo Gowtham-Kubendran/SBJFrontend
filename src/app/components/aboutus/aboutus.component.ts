@@ -36,7 +36,7 @@ export class AboutusComponent implements OnInit {
     
     if (window.innerWidth < 600)
     {
-      $('#shop1img').attr("src", "../../../assets/images/mobilebanners/aboutusmobile.webp");
+      $('#shop1img').attr("src", "../../../assets/images/mobilebanners/aboutusmobile.jpg");
      
         
      }

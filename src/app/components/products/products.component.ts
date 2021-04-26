@@ -12,6 +12,8 @@ import * as AOS from 'aos';
 import { ActivatedRoute, Router, NavigationEnd, RouterEvent } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
+import { HttpUrlEncodingCodec } from '@angular/common/http';
+
 
 export interface DialogData {
   url: '';
@@ -29,7 +31,7 @@ export interface DialogData {
 export class ProductsComponent implements OnInit {
   selectedValue: any;
   talktouscontent: any = "";
-  
+  codec = new HttpUrlEncodingCodec;
   cartext = "";
 
 
@@ -183,7 +185,10 @@ export class ProductsComponent implements OnInit {
 
       }
 
-
+      ngEncode(param: string){
+        return this.codec.encodeValue(param);
+  }
+  
   aosInit()
   {
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
@@ -251,10 +256,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     if (!this.selectedMetal)
     {
       this.selectedMetal = "allmetals";
-      img.src = "./assets/images/banners/goldbanner.webp";
+      img.src = "./assets/images/banners/goldbanner.jpg";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
        
       
         }
@@ -265,10 +270,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('goldjewels');
       this.talktouscontent = this.ts.translate('talktousgold');
-      img.src = "./assets/images/banners/goldbanner.webp";
+      img.src = "./assets/images/banners/goldbanner.jpg";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
        
       
         }
@@ -278,10 +283,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('silverjewels');
       this.talktouscontent = this.ts.translate('talktoussilver');
-      img.src = "./assets/images/banners/silverbanner.webp";
+      img.src = "./assets/images/banners/silverbanner.jpg";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/silverproductsmobile.webp"
+        img.src = "../../../assets/images/mobilebanners/silverproductsmobile.jpg"
        
       
         }
@@ -291,10 +296,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     {
       this.cartext = this.ts.translate('diamondjewels');
       this.talktouscontent = this.ts.translate('talktousdiamond');
-      img.src = "./assets/images/banners/diamondbanner.webp";
+      img.src = "./assets/images/banners/diamondbanner.jpg";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/diamondproductsmobile.webp"
+        img.src = "../../../assets/images/mobilebanners/diamondproductsmobile.jpg"
        
       
         }
@@ -303,10 +308,10 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     else {
       this.talktouscontent = this.ts.translate('talktousproduct');
       this.cartext = this.ts.translate('goldjewels');
-      img.src = "./assets/images/banners/goldbanner.webp";
+      img.src = "./assets/images/banners/goldbanner.jpg";
       if (window.innerWidth < 600)
       {
-        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.webp"
+        img.src = "../../../assets/images/mobilebanners/goldprodutsmobile.jpg"
        
       
         }
@@ -340,9 +345,9 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
       this.jsondata.forEach(ele => {
-        ele.imgsrc.replace(".jpg", ".webp");
+        ele.imgsrc.replace(".jpg", ".jpg");
       });
-      console.log("modified " + this.jsondata);
+    
       this.tempdata = this.jsondata;
       // console.log(this.tempdata);
     
@@ -414,7 +419,13 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
 
 
   }
-
+  gotowhatsapp(src)
+  {
+    console.log(src);
+    src=src.replace("../../../", "https://sribalagopalanjewellerymart.com/");
+    console.log(src);
+    window.open("//api.whatsapp.com/send?phone=919994926518&text=I need to know more about \n"+src);
+  }
   ngAfterViewInit() {
     // this.showspinner = false;
 

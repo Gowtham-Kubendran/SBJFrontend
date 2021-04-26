@@ -62,7 +62,7 @@ export class ContactusComponent implements OnInit {
     
     if (window.innerWidth < 600)
     {
-      $('#contactushero').attr("src", "../../../assets/images/mobilebanners/contactusmobile.webp");
+      $('#contactushero').attr("src", "../../../assets/images/mobilebanners/contactusmobile.jpg");
      
         
      }

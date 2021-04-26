@@ -172,17 +172,17 @@ export class HomeComponent implements OnInit {
     if (window.innerWidth < 900)
     {
       $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
-      $('#marriagecoll').attr("src", "../../../assets/images/banners/collectionlandscape.webp");
+      $('#marriagecoll').attr("src", "../../../assets/images/banners/collectionlandscape.jpg");
       }
 
 
       if (window.innerWidth < 600)
       {
-        $('#heroone').attr("src", "../../../assets/images/mobilebanners/hero1mobile.webp");
+        $('#heroone').attr("src", "../../../assets/images/mobilebanners/hero1mobile.jpg");
        
-        $('#herotwo').attr("src", "../../../assets/images/mobilebanners/hero2mobile.webp");
-        $('#herothree').attr("src", "../../../assets/images/mobilebanners/hero3mobile.webp");
-        $('#herofour').attr("src", "../../../assets/images/mobilebanners/hero4mobile.webp");
+        $('#herotwo').attr("src", "../../../assets/images/mobilebanners/hero2mobile.jpg");
+        $('#herothree').attr("src", "../../../assets/images/mobilebanners/hero3mobile.jpg");
+        $('#herofour').attr("src", "../../../assets/images/mobilebanners/hero4mobile.jpg");
       
         }
   
