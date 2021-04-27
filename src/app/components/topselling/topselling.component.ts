@@ -127,6 +127,13 @@ export class TopsellingComponent implements OnInit {
 
   ];
   step2: any;
+  gotowhatsapp(src)
+  {
+    console.log(src);
+    src=src.replace("../../../", "https://sribalagopalanjewellerymart.com/");
+    console.log(src);
+    window.open("//api.whatsapp.com/send?phone=919994926518&text=I need to know more about \n"+src);
+  }
   ngOnInit() {
 
     $(document).ready(function () {

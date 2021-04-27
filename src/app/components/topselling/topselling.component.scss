@@ -31,6 +31,20 @@
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .sharewp
+ {
+ position: absolute;
+ top: -4rem;
+ right: 1rem;
+ width: 25px;
+ opacity:0;
+transition: 0.3s ease-in-out all;
+cursor: pointer;
+ }
+ .indiImg:hover  .sharewp
+ {
+     opacity:1;
+ }
   .carousel-inner
   {
     display:inline-flex;
@@ -48,12 +62,14 @@
 
   .indiImg
  {
-     margin:4em 2em;
-     display: flex;
-     height:250px;
-     width:250px;
-     text-align: center;
-     flex-flow: column-reverse;
+    margin: 4em 3em;
+    display: flex;
+    height: 300px;
+    width: 250px;
+    /* border: 1px solid#dfdfdf; */
+    text-align: center;
+    flex-flow: column-reverse;
+    justify-content: center;
  }
  .productsLists
 {
@@ -62,7 +78,7 @@
 
 .productimg{
     object-fit: cover;
-    height:100%;
+
 margin-bottom: 20px;
  }
 .proname
@@ -159,6 +175,12 @@ margin-bottom: 20px;
         flex-flow: column-reverse;
         text-align: center;
     }  
+    .sharewp
+    {
+        opacity:1;
+        top: 0rem;
+    right: -1rem;
+    }
     .productimg
     {
         height: 77%;

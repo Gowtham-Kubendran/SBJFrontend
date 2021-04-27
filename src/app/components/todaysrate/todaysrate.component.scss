@@ -59,6 +59,20 @@
     margin-top: 8px;
   
 }
+.sharewp
+ {
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ width: 25px;
+ opacity:0;
+transition: 0.3s ease-in-out all;
+cursor: pointer;
+ }
+ .indiImg:hover  .sharewp
+ {
+     opacity:1;
+ }
 .circle:hover
 {
   

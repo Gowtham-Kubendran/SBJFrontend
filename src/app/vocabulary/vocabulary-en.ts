@@ -146,8 +146,8 @@ export const VOCAB_EN = {
   goldheroline1:'Explore Our latest',
   goldheroline2: 'Gold ORNAMENTS',
   goldheroline3:'that',
-  goldheroline4:'enhances the grace and ',
-  goldheroline5:'beauty',
+  goldheroline4:'enhances the grace and beauty',
+  // goldheroline5:'beauty',
   
   diamondheroline1:  'Enhance your beauty by ',
   diamondheroline2: 'Wearing our ',
