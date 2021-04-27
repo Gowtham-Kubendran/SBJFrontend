@@ -17,7 +17,7 @@
       </div>
       <div class="mainbody ">
         <div class="row center">
-        <div class="col-lg-3 cent">
+        <div class="col-lg-3 col-sm-12 col--12 cent">
           
           <div class="findjewels">
             {{ ts.translate("findyourjewels") | uppercase }}
@@ -76,7 +76,7 @@
         </div>
           </div>
           
-        <div id="productsLists" class="col-lg-9 productsLists">
+        <div id="productsLists" class="col-lg-9 col-sm-12 col-12 productsLists">
             <div *ngIf="tempdata.length==0" class="noproducts">{{ts.translate('noproductsfound')}}</div>
           <div class="ImgList " *ngFor="let item of tempdata">
             <div class="indiImg" data-aos="fade-up" data-aos-once="true">

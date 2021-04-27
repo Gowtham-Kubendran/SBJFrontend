@@ -17,7 +17,7 @@
     </div>
     <div class="mainbody ">
       <div class="row w100">
-        <div class="col-lg-3 cent">
+        <div class="col-lg-3 col-sm-12 col-12 dropmenudev cent">
           <div class="findjewels">
             {{ ts.translate("findyourjewels") | uppercase }}
           </div>
@@ -262,7 +262,7 @@
           </div>
         </div>
 
-        <div id="productsLists" class="col-lg-9 productsLists">
+        <div id="productsLists" class="col-lg-9 col-sm-12 col-12 productsLists">
           <div *ngIf="tempdata.length == 0" class="noproducts">
             {{ ts.translate("noproductsfound") }}
           </div>
