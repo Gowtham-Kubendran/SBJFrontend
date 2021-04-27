@@ -131,7 +131,7 @@ position: relative;
  #productdropicon
  {position: absolute;
  right: 0;
- top: 10px;
+ top: 7px;
  
  transition:0.5s all ease-in-out;
  }
@@ -423,7 +423,7 @@ label > span:hover{
 
    mat-form-field{
     width: 100%;
-    font-size: 18px;
+    font-size: 14px;
    }
   
    ::ng-deep .mat-form-field-appearance-outline  ::ng-deep .mat-form-field-outline {
