@@ -113,6 +113,7 @@ export const VOCAB_EN = {
   aboutusdata3: 'Our enterprise instituted a number of savings schemes to suit the specific needs of various demographics, distinguishing itself a great deal from the run-of-the-mill business practices in retail jewellery and has the collections has been distinguished specific to the events.',
   aboutusdata4:'The "Sri Silver" exclusive showroom for the silver  the overwhelming response and love of the people made us in introducing the showroom which has the distinguished collections of silver ornaments on the latest trend for all occasions ,auspicious events.',
 
+  engal:'our',
 
   // aboutusdata1:'In 1992, Sri Balagopalan Jewellery Mart has been inaugrated in Small Scale by S.B.Senthilkumar . Each and everyone feel elite on shopping with us in quality, design, price and service . Quality for the end consumer is key priority for us and we are comitted to fulfill our promises!!!',
   Gold: 'gold',
