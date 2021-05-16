@@ -1,174 +1,157 @@
 
-<nav class="navbar  navbar-light  navbar-expand-sm">
-  <a   class="navbar-brand" ><div class="logo" id="logo" (click)="goToPage('home')">
-    <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
-    <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
-   </div></a>
-  <button id="collapsebut" class="navbar-toggler collapser" type="button" data-toggle="collapse" data-target="#navbarContent">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarContent">
-    <ul class="navbar-nav" id="navbarnavid">
-      <li class="nav-item">
-          <a class="nav-link producthover dropdown-toggle" href="#" id="navlink1" role="button" (click)="hidesubmenus()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ts.translate('products') }}
-            </a>
-        <div class="dropdown-menu" id="navdropdown1" aria-labelledby="navlink1">
-            <!-- <a class="dropdown-item" (click)="goToProducts('allproducts','allmetals')"> {{ts.translate('allproducts') | titlecase}} </a>
-            <div class="dropdown-divider"></div> -->
-           
-           <a class="dropdown-item" (click)="openMenu('gold')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-            {{ts.translate('gold') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
-          <ul class="submenu" id="goldmenu">
-            <a class="dropdown-item" (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a>
-              <a class="dropdown-item" (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a>
-              <!-- <a class="dropdown-item" (click)="goToProducts('gifts','Gold')">{{ts.translate('gifts') | titlecase}}</a> -->
-          
-            
-          </ul>
-           <a class="dropdown-item" (click)="openMenu('diamond')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-              {{ts.translate('diamond') | titlecase}} <span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
-            <ul class="submenu" id="diamondmenu">
-              <a class="dropdown-item" (click)="goToProducts('allproducts','Diamond')"> {{ts.translate('allproducts') | titlecase}} </a>
-              <a class="dropdown-item" (click)="goToProducts('necklace','Diamond')">{{ts.translate('necklace') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('earrings','Diamond')">{{ts.translate('earrings') | titlecase}}</a>
-              <a class="dropdown-item" (click)="goToProducts('rings','Diamond')">{{ts.translate('rings') | titlecase}}</a>
-            </ul>
-          
-            <a class="dropdown-item" (click)="openMenu('silver')" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-              {{ts.translate('silver') | titlecase}}<span><img class="downarrowmenu" src="../../../assets/images/downarrowb.png"/></span></a>
-            <ul class="submenu" id="silvermenu">
-              <a class="dropdown-item" (click)="goToProducts('allproducts','Silver')"> {{ts.translate('allproducts') | titlecase}} </a>
-              <a class="dropdown-item" (click)="goToProducts('gifts','Silver')">{{ts.translate('gifts') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('silvervessels','Silver')">{{ts.translate('silvervessels') | titlecase}}</a>
-               
-                <a class="dropdown-item" (click)="goToProducts('idols','Silver')">{{ts.translate('idols') | titlecase}}</a>
-                <a class="dropdown-item" (click)="goToProducts('poojaitems','Silver')">{{ts.translate('poojaitems') | titlecase}}</a>
-        
-
-              
-            </ul>
-            
-          </div>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link producthover dropdown-toggle" href="#"  id="navlink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ts.translate('collections')}}
-            </a>
-        <div class="dropdown-menu" id="navdropdown2" aria-labelledby="navlink2">
-            <!-- <a class="dropdown-item" (click)="goToCollections('allcollections')"> {{ts.translate('allcollections') | titlecase}} </a>
-            <div class="dropdown-divider"></div> -->
-            <a class="dropdown-item" (click)="goToCollections('marriage')" >{{ts.translate('wedding') | titlecase}}</a>
-            <a class="dropdown-item" (click)="goToCollections('women')" >{{ts.translate('women') | titlecase}}</a>
-            <a class="dropdown-item" (click)="goToCollections('men')" >{{ts.translate('men') | titlecase}}</a>
-            <a class="dropdown-item" (click)="goToCollections('kids')" >{{ts.translate('kids') | titlecase}}</a>
-            <a class="dropdown-item" (click)="goToCollections('gifts')" >{{ts.translate('gifts') | titlecase}}</a>
-          
-            
-          </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"   id="navlink3"  (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"   id="navlink4"  (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"   id="navlink5"  (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
-      </li>
-  </ul>
- </div>
- <div class="lang ">
-  <span class="phonelink"><img class="phoneiconheader" style="width: 18px;padding-right: 0;" src="../../../assets/images/wicon.svg"  />
-    {{ ts.translate("phonebody1") }} &nbsp;&nbsp;&nbsp;|</span>
-  <!-- <mat-form-field class="langclass">
-      
-      <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
-        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang.key">
-          {{lang.key}}
-        </mat-option>
-      
-      </mat-select>
-    </mat-form-field> -->
-    <button  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <img id="changedrop2" style="width:20px" src="../../../assets/images/languageiconb.svg" />
-       </button>
-       <mat-menu #menu="matMenu">
-        
-          <mat-radio-group
-           aria-labelledby="example-radio-group-label"
-           class="example-radio-group"
-           [(ngModel)]="languageselect">
-           <mat-radio-button class="radbutton" *ngFor="let lang of langlist1"  [checked]="lang.checked" [value]="lang.key" (change)="getLang(lang.key)" >
-             {{lang.value}}
-           </mat-radio-button>
-         </mat-radio-group>
- 
- 
-       </mat-menu>
-       <span style="font-size:12px;padding-top: 12px;">{{showlang}}</span>
-  </div>
-
-
-
-</nav>
-<!-- 
-<nav class="navbar  navbar-light  navbar-expand-sm">
-  <a class="navbar-brand" ><div class="logo" id="logo" (click)="goToPage('home')">
-    <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
-    <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
-   </div></a>
-  <button id="collapsebut" class="navbar-toggler collapser" type="button" data-toggle="collapse" data-target="#navbarContent">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarContent">
-    <ul class="navbar-nav" id="navbarnavid">
-      <li class="nav-item">
-     <a class="nav-link producthover"  id="navlink1" (click)="goToProducts('allproducts','allmetals')" >{{ts.translate('products') }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collectionhover" id="navlink2" (click)="goToCollections('allcollections')">{{ts.translate('collections')}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="navlink3" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes')}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link"  id="navlink4" (click)="goToPage('aboutus')">{{ts.translate('aboutus')}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="navlink5" (click)="goToPage('contactus')">{{ts.translate('contactus')}}</a>
-      </li>
-  </ul>
-  <div id="productdropdown">
-
-  </div>
-  <div id="collectiondropdown">
+<nav id="menu">
     
-  </div>
- </div>
- <div class="lang ">
-  <span class="phonelink"><img class="phoneicon" style="padding-right: 1rem;" src="../../../assets/images/phoneicon.svg" />
-    9042222681 &nbsp;&nbsp;&nbsp;|</span>
-  <mat-form-field class="langclass">
+    <label for="tm" id="toggle-menu">
+
+
+        <div class="collapse-logo">
+            <div class="logo" id="logo" (click)="goToPage('home')">
+                <img *ngIf="languageselect=='LA-EN'" class="collapse-logoimg" src="../../../assets/images/sbjlogo.png">
+                <img *ngIf="languageselect=='LA-TA'" class="collapse-logoimg" src="../../../assets/images/sbjlogo-ta.png">
+               </div>
+        </div>
+
+      <span class="drop-icon hamburger">
+      <img src="../../../assets/images/hamburger.svg">
+         </span>
+    </label>
+    
+   
+    <input type="checkbox" id="tm">
+    <ul class="main-menu clearfix">
+      <div class="icondiv">
+        <div class="logo" id="logo" (click)="goToPage('home')">
+              <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
+              <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
+             </div>
+      </div>
+      <div class="mainmenus">
       
-      <mat-select id="language"  [(ngModel)]="languageselect" (selectionChange)="getLang(languageselect)" name="language">
-        <mat-option class="droptext"  *ngFor="let lang of langlist" [value]="lang">
-          {{lang}}
-        </mat-option>
-      
-      </mat-select>
-    </mat-form-field>
-  </div>
+
+
+      <li><a class="mainmenutext drop-icon" [ngClass]="{'gold': checkProducts()}">{{ts.translate('products') | titlecase}}
+          
+          <label title="Toggle Drop-down" class="drop-icon hidediv" for="products">-</label>
+        </a>
+        <input type="checkbox" id="products">
+        <ul class="sub-menu">
+         
+          <li><a >{{ts.translate('gold') | titlecase}}
+              <span class="drop-icon opaque">-</span>
+              <label title="Toggle Drop-down " class="drop-icon opaque" for="goldid">-</label>
+            </a>
+            <input type="checkbox" id="goldid">
+            <ul class="sub-menu">
+              
+              <li><a (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a></li>
+            
+
+
+            </ul>
+          </li>
+
+          <li><a > {{ts.translate('diamond') | titlecase}}
+              <span class="drop-icon opaque">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon opaque" for="disid">▾</label>
+            </a>
+            <input type="checkbox" id="disid">
+            <ul class="sub-menu">
+            
+
+              <li><a  (click)="goToProducts('allproducts','Diamond')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a  (click)="goToProducts('necklace','Diamond')">    {{ts.translate('necklace') | titlecase}}      </a></li>
+              <li><a  (click)="goToProducts('earrings','Diamond')">    {{ts.translate('earrings') | titlecase}}    </a></li>
+              <li><a  (click)="goToProducts('rings','Diamond')">       {{ts.translate('rings') | titlecase}}       </a></li>
+
+            </ul>
+          </li>
+
+          <li><a > {{ts.translate('silver') | titlecase}}
+              <span class="drop-icon  opaque">▾</span>
+              <label title="Toggle Drop-down opaque" class="drop-icon opaque" for="silverid">▾</label>
+            </a>
+            <input type="checkbox" id="silverid">
+            <ul class="sub-menu">
+         
+
+              <li><a  (click)="goToProducts('allproducts','Silver')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a  (click)="goToProducts('gifts','Silver')">{{ts.translate('gifts') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('silvervessels','Silver')">{{ts.translate('silvervessels') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('idols','Silver')">{{ts.translate('idols') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('poojaitems','Silver')">{{ts.translate('poojaitems') | titlecase}}</a></li>
+        
+
+
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li><a class="mainmenutext drop-icon" [ngClass]="{'gold': checkcollection()}">{{ts.translate('collections') | titlecase}} 
+          
+          <label title="Toggle Drop-down" class="drop-icon hidediv" for="collections">-</label>
+        </a>
+        <input type="checkbox" id="collections">
+        <ul class="sub-menu">
+        
+
+         <li><a (click)="goToCollections('marriage')" >{{ts.translate('wedding') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('women')" >{{ts.translate('women') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('men')" >{{ts.translate('men') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('kids')" >{{ts.translate('kids') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('gifts')" >{{ts.translate('gifts') | titlecase}}</a></li>
+        
+
+
+        </ul>
+      </li>
+
+
+      <li><a class="mainmenutext" (click)="goToPage('goldschemes')" [ngClass]="{'gold': checkGoldScheme()}">{{ts.translate('goldschemes') | titlecase}}</a>
+
+      <li><a class="mainmenutext" (click)="goToPage('aboutus')" [ngClass]="{'gold': checkAboutus()}">{{ts.translate('aboutus') | titlecase}}</a>
+
+      <li><a class="mainmenutext" (click)="goToPage('contactus')" [ngClass]="{'gold': checkcontuctus()}">{{ts.translate('contactus') | titlecase }}</a></li>
 
 
 
-</nav> -->
+    </div>
+      <div class="phonediv">
+        
+          
+              <span class="phonelink"><img class="phoneiconheader" style="width: 22px;padding-right: 0;" src="../../../assets/images/wicon.svg"  />
+                {{ ts.translate("phonebody1") }} &nbsp;&nbsp;&nbsp;|</span>
+            
+                <button class="martop11" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <img id="changedrop2" style="width:20px" src="../../../assets/images/languageiconb.svg" />
+                   </button>
+                   <mat-menu #menu="matMenu">
+                    
+                      <mat-radio-group
+                       aria-labelledby="example-radio-group-label"
+                       class="example-radio-group"
+                       [(ngModel)]="languageselect">
+                       <mat-radio-button class="radbutton" *ngFor="let lang of langlist1"  [checked]="lang.checked" [value]="lang.key" (change)="getLang(lang.key)" >
+                         {{lang.value}}
+                       </mat-radio-button>
+                     </mat-radio-group>
+             
+             
+                   </mat-menu>
+                   <span style="font-size:12px;">{{showlang}}</span>
+
+
+        </div>
+    </ul>
+
+
+  </nav>

@@ -32,22 +32,22 @@ export class ContactusComponent implements OnInit {
 
   sbjmailID = "1994gowtham@gmail.com"
   
-  clearcolor()
-  {
-    document.getElementById("navlink1").style.color = "#000";
-    document.getElementById("navlink2").style.color = "#000";
-    document.getElementById("navlink3").style.color = "#000";
-    document.getElementById("navlink4").style.color = "#000";
-    document.getElementById("navlink5").style.color = "#000";
-  }
+  // clearcolor()
+  // {
+  //   document.getElementById("navlink1").style.color = "#000";
+  //   document.getElementById("navlink2").style.color = "#000";
+  //   document.getElementById("navlink3").style.color = "#000";
+  //   document.getElementById("navlink4").style.color = "#000";
+  //   document.getElementById("navlink5").style.color = "#000";
+  // }
   ngOnInit() {
     this.sending = false;
     this.cartext = "contactus";
     this.clearerrors();
     
     
-    this.clearcolor();
-    document.getElementById("navlink5").style.color = "#CC9F08";
+    // this.clearcolor();
+    // document.getElementById("navlink5").style.color = "#CC9F08";
 
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
 

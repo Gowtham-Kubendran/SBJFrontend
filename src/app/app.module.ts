@@ -24,7 +24,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SetPricesComponent } from './components/set-prices/set-prices.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { NoRightClickDirective } from './no-right-click.directive';
-import { NavheaderComponent } from './components/navheader/navheader.component';
+// import { NavheaderComponent } from './components/navheader/navheader.component';
 
 // import { Location, PathLocationStrategy} from '@angular/common';
 
@@ -50,7 +50,7 @@ import { NavheaderComponent } from './components/navheader/navheader.component';
     TodaysrateComponent,
     SetPricesComponent,
     NoRightClickDirective,
-    NavheaderComponent
+    // NavheaderComponent
   ],
   imports: [
     BrowserModule,

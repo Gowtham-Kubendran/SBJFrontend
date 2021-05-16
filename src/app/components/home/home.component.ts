@@ -38,107 +38,10 @@ export class HomeComponent implements OnInit {
   setLang()
   {
     if (window.sessionStorage.getItem('lang') == 'LA-TA') {
-      // document.getElementById("butonid").style.left = "-9rem";
-      console.log(window.innerWidth);
-      if (window.innerWidth < 2700 )
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "35%";
-      }
-      if (window.innerWidth < 1600)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "15%";
-        
-      }
-      if (window.innerWidth < 1500)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
-        }
-      if (window.innerWidth < 1200) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0 8px";
-        document.getElementById("navbarnavid").style.marginLeft = "10%";
-        document.getElementById("navdropdown1").style.marginLeft = "14%";
-        document.getElementById("navdropdown2").style.marginLeft = "26%";
-      }
-     
-      if (window.innerWidth < 900) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0rem 1rem";
-        document.getElementById("navbarnavid").style.marginLeft = "5%";
-        document.getElementById("navdropdown1").style.marginLeft = "9%";
-        document.getElementById("navdropdown2").style.marginLeft = "20%";
-
-      }
-    
- 
-        if (window.innerWidth < 500) {
-     
-          (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
-          document.getElementById("navbarnavid").style.marginLeft = "1%";
-          document.getElementById("navdropdown1").style.marginLeft = "0%";
-          document.getElementById("navdropdown2").style.marginLeft = "0%";
-        }
-        
-     
-     
-    
-      (document.getElementById("wrapper") as HTMLInputElement).style.fontFamily = "tamilf !important";
+       (document.getElementById("wrapper") as HTMLInputElement).style.fontFamily = "tamilf !important";
     }
     else {
-      // document.getElementById("butonid").style.left = "-3rem";
-      (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      if (window.innerWidth < 2700)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "35%";
-      }
-      if (window.innerWidth < 1600) {
-        document.getElementById("navbarnavid").style.marginLeft = "16%";
-      }
-      if (window.innerWidth < 1200) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0rem 1rem";
-        document.getElementById("navbarnavid").style.marginLeft = "11%";
-        document.getElementById("navdropdown1").style.marginLeft = "15%";
-        document.getElementById("navdropdown2").style.marginLeft = "28%";
-      }
-      if (window.innerWidth < 900) {
-     
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
-        document.getElementById("navdropdown1").style.marginLeft = "14%";
-        document.getElementById("navdropdown2").style.marginLeft = "26%";
-        
-      }
-      if (window.innerWidth < 500) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
-        document.getElementById("navdropdown1").style.marginLeft = "0%";
-        document.getElementById("navdropdown2").style.marginLeft = "0%";
-        // document.getElementById("butonid").style.left = "3rem";
-      }
+    
     }
   }
 
@@ -149,8 +52,8 @@ export class HomeComponent implements OnInit {
     this.silverclick=0;
     this.counter = 0;
     this.togglesclass();
-    this.langlist = [{ key: 'LA-EN', value: 'English', checked: 'false' }, { key: 'LA-TA', value: 'தமிழ்', checked: 'false' }];
-    
+    this.langlist = [{ key: 'LA-EN', value: 'English' , checked:false},{key:'LA-TA',value:'தமிழ்' , checked:false}];
+    this.languageselect = 'LA-EN';
     if (window.sessionStorage.getItem('lang') == "LA-TA")
     {
       this.showlang = "TA";
@@ -189,17 +92,7 @@ export class HomeComponent implements OnInit {
 
 
       $(document).ready(function () {
-        // $('.producthover').on("hover", function(e){
-        //   $(this).next('ul').toggle();
-        //   e.stopPropagation();
-        //   e.preventDefault();
-        // });
-      //   $(".nav-link").hover(function(){
-      //     var dropdownMenu = $(this).children(".dropdown-menu");
-      //     if(dropdownMenu.is(":visible")){
-      //         dropdownMenu.parent().toggleClass("open");
-      //     }
-      // });
+      
      
       (<any>jQuery('.carousel')).carousel({
         interval: 6000,
@@ -214,7 +107,7 @@ export class HomeComponent implements OnInit {
     });
     
   
-    // this.sh.setAllProductsData();
+  
 
     
     console.log(window.sessionStorage.getItem('lang'))
@@ -232,15 +125,17 @@ export class HomeComponent implements OnInit {
     }
 
 
-    // this.router.events.subscribe((evt) => {
-    //   if (!(evt instanceof NavigationEnd)) {
-    //       return;
-    //   }
-    //   window.scrollTo(0, 0);
-    // });
+
     window.scrollTo(0, 0);
     this.aosInit();
+
+
     this.togglesclass();
+
+    //initial icons
+
+    $(".phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
+    $('#changedrop2home').attr("src", "../../../assets/images/languageiconw.svg");
   }
 
   open(id)
@@ -287,21 +182,45 @@ export class HomeComponent implements OnInit {
   {
     $(window).scroll(function () {
       
-      $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 50);
-     if ($(this).scrollTop() > 50) {
-       $(".phoneicon").attr("src", "../../../assets/images/wicon.svg");
+      $('.mainmenutext2').toggleClass('scrolled', $(this).scrollTop() < 50);
+      $('#menu2').toggleClass('scrolled', $(this).scrollTop() < 50);
       
-       $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
-     }
-     else {
+     if ($(this).scrollTop() < 50) {
+     
+     
+       $(".phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
+       $('#changedrop2home').attr("src", "../../../assets/images/languageiconw.svg");
 
-       $(".phoneicon").attr("src", "../../../assets/images/wiconw.png");
-      
-       $('#changedrop').attr("src", "../../../assets/images/languageiconw.svg");
+
+       $('.mainmenutext2').css("background-color", "transparent");
+       $('.mainmenutext2').css("color", "#fff");
+
+       $('#menu2').css("background-color", "transparent");
+       $('#menu2').css("color", "#fff");
+
        if (window.innerWidth < 900)
        {
-         $('#changedrop').attr("src", "../../../assets/images/languageiconb.svg");
-         }
+        $('.mainmenutext2').css("color", "#444");
+        }
+     }
+     else {
+   
+      $(".phoneiconheaderhome").attr("src", "../../../assets/images/wicon.svg");
+      
+      $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+
+       
+      $('.mainmenutext2').css("background-color", "#fff");
+       $('.mainmenutext2').css("color", "#000");
+       
+       $('#menu2').css("background-color", "#fff");
+       $('#menu2').css("color", "#000");
+       
+
+       if (window.innerWidth < 900)
+       {
+         $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+        }
      }
     
    });
@@ -313,106 +232,17 @@ export class HomeComponent implements OnInit {
 
     if (data == 'LA-TA') {
       this.showlang = 'TA';
-      // document.getElementById("butonid").style.left = "-9rem";
+   
       
       this.languageselect = "LA-TA";
-      if (window.innerWidth < 2700)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "35%";
-      }
-      if (window.innerWidth < 1600)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "15%";
-      }
-      if (window.innerWidth < 1500)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
-        }
-      if (window.innerWidth < 1200) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0 8px";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0 8px";
-        document.getElementById("navbarnavid").style.marginLeft = "10%";
-        document.getElementById("navdropdown1").style.marginLeft = "14%";
-        document.getElementById("navdropdown2").style.marginLeft = "26%";
-      }
-     
-      if (window.innerWidth < 900) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0rem 1rem";
-        document.getElementById("navbarnavid").style.marginLeft = "5%";
-        document.getElementById("navdropdown1").style.marginLeft = "9%";
-        document.getElementById("navdropdown2").style.marginLeft = "20%";
-      }
-    
  
-        if (window.innerWidth < 500) {
-     
-          (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "2rem 0";
-          (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
-          document.getElementById("navbarnavid").style.marginLeft = "1%";
-          document.getElementById("navdropdown1").style.marginLeft = "0%";
-          document.getElementById("navdropdown2").style.marginLeft = "0%";
-        }
-        
-     
     
       (document.getElementById("wrapper") as HTMLInputElement).style.fontFamily = "tamilf !important";
     }
     else {
       this.showlang = 'EN';
       this.languageselect = "LA-EN";
-      //
-      (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "10px 0 1rem 1rem";
-      if (window.innerWidth < 2700)
-      {
-        document.getElementById("navbarnavid").style.marginLeft = "35%";
-      }
-      if (window.innerWidth < 1600) {
-        document.getElementById("navbarnavid").style.marginLeft = "16%";
-      }
-      if (window.innerWidth < 1200) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "0rem 1rem";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "0rem 1rem";
-        document.getElementById("navbarnavid").style.marginLeft = "11%";
-        document.getElementById("navdropdown1").style.marginLeft = "15%";
-        document.getElementById("navdropdown2").style.marginLeft = "28%";
-      }
-      if (window.innerWidth < 900) {
-     
-        document.getElementById("navbarnavid").style.marginLeft = "9%";
-        document.getElementById("navdropdown1").style.marginLeft = "14%";
-        document.getElementById("navdropdown2").style.marginLeft = "26%";
-      }
-      if (window.innerWidth < 500) {
-     
-        (document.getElementById(`manlinkh1`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh2`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh3`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh4`) as HTMLInputElement).style.padding = "2rem 0";
-        (document.getElementById(`manlinkh5`) as HTMLInputElement).style.padding = "2rem 0";
-        document.getElementById("navdropdown1").style.marginLeft = "0%";
-        document.getElementById("navdropdown2").style.marginLeft = "0%";
-        // document.getElementById("butonid").style.left = "3rem";
-      }
+    
 
     }
     this.ts.updateComp1Val(data);
@@ -443,10 +273,12 @@ export class HomeComponent implements OnInit {
     document.getElementById("wrapper").scrollTop -= 10;
 
   }
-  toggleDrop()
-  {
-    $("nav ul li ul").fadeToggle(500);
-  }
+
+
+  // toggleDrop()
+  // {
+  //   $("nav ul li ul").fadeToggle(500);
+  // }
  
   
   function(){
@@ -469,71 +301,71 @@ export class HomeComponent implements OnInit {
     });
   };
 
-  clearclicks()
-  {
-    this.diaclick = 0;
-    this.goldclick = 0;
-    this.silverclick = 0;
-  }
-  openMenu(metal)
-  {
-    if (metal == 'diamond')
-    {
+  // clearclicks()
+  // {
+  //   this.diaclick = 0;
+  //   this.goldclick = 0;
+  //   this.silverclick = 0;
+  // }
+  // openMenu(metal)
+  // {
+  //   if (metal == 'diamond')
+  //   {
      
-      document.getElementById('goldmenu').style.display = "none";
-    document.getElementById('silvermenu').style.display = "none";
-   document.getElementById('diamondmenu').style.display = "block";
-      this.diaclick++;
-      if (this.diaclick == 2)
-      {
-        document.getElementById('diamondmenu').style.display = "none";
-        this.clearclicks();
-        }
+  //     document.getElementById('goldmenu').style.display = "none";
+  //   document.getElementById('silvermenu').style.display = "none";
+  //  document.getElementById('diamondmenu').style.display = "block";
+  //     this.diaclick++;
+  //     if (this.diaclick == 2)
+  //     {
+  //       document.getElementById('diamondmenu').style.display = "none";
+  //       this.clearclicks();
+  //       }
  
      
-    }
-    if (metal == 'gold')
-    {
+  //   }
+  //   if (metal == 'gold')
+  //   {
       
-      document.getElementById('diamondmenu').style.display = "none";
-      document.getElementById('silvermenu').style.display = "none";
-      document.getElementById('goldmenu').style.display = "block";
+  //     document.getElementById('diamondmenu').style.display = "none";
+  //     document.getElementById('silvermenu').style.display = "none";
+  //     document.getElementById('goldmenu').style.display = "block";
     
-      this.goldclick++;
-      if (this.goldclick == 2)
-      {
-        document.getElementById('goldmenu').style.display = "none";
-        this.clearclicks();
-        }
+  //     this.goldclick++;
+  //     if (this.goldclick == 2)
+  //     {
+  //       document.getElementById('goldmenu').style.display = "none";
+  //       this.clearclicks();
+  //       }
   
-    }
-    if (metal == 'silver')
-    {
+  //   }
+  //   if (metal == 'silver')
+  //   {
      
-      document.getElementById('diamondmenu').style.display = "none";
-      document.getElementById('goldmenu').style.display = "none";
-      document.getElementById('silvermenu').style.display = "block";
-      this.silverclick++;
-      if (this.silverclick == 2)
-      {
-        document.getElementById('silvermenu').style.display = "none";
-        this.clearclicks();
-        }
+  //     document.getElementById('diamondmenu').style.display = "none";
+  //     document.getElementById('goldmenu').style.display = "none";
+  //     document.getElementById('silvermenu').style.display = "block";
+  //     this.silverclick++;
+  //     if (this.silverclick == 2)
+  //     {
+  //       document.getElementById('silvermenu').style.display = "none";
+  //       this.clearclicks();
+  //       }
   
-      }
-  }
+  //     }
+  // }
 
-  hidesubmenus()
-  {
+  // hidesubmenus()
+  // {
 
-    // this.status = !this.status;       
-    document.getElementById('diamondmenu').style.display = "none";
-    document.getElementById('goldmenu').style.display = "none";
-    document.getElementById('silvermenu').style.display = "none";
-    document.getElementById('navdropdown2').style.display = "none";
+  //   // this.status = !this.status;       
+  //   document.getElementById('diamondmenu').style.display = "none";
+  //   document.getElementById('goldmenu').style.display = "none";
+  //   document.getElementById('silvermenu').style.display = "none";
+  //   document.getElementById('navdropdown2').style.display = "none";
 
 
-  }
+  // }
   clearuser()
   {
     document.getElementById("user1").style.display = "none";

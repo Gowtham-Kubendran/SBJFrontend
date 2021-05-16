@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject,AfterViewInit } from '@angular/core';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { TranslateService } from 'src/app/services/translate/translate.service';
 import { SharedService } from 'src/app/services/shared.service';
@@ -27,7 +27,7 @@ export interface DialogData {
 })
   
   
-export class CollectionsComponent implements OnInit {
+export class CollectionsComponent implements OnInit,AfterViewInit {
 
   
   selectedValue: any;
@@ -110,20 +110,16 @@ export class CollectionsComponent implements OnInit {
     console.log(src);
     window.open("//api.whatsapp.com/send?phone=919994926518&text=I need to know more about \n"+src);
   }
-  clearcolor()
-  {
-    document.getElementById("navlink1").style.color = "#000";
-    document.getElementById("navlink2").style.color = "#000";
-    document.getElementById("navlink3").style.color = "#000";
-    document.getElementById("navlink4").style.color = "#000";
-    document.getElementById("navlink5").style.color = "#000";
-  }
+  // clearcolor()
+  // {
+  //   document.getElementById("navlink1").style.color = "#000";
+  //   document.getElementById("navlink2").style.color = "#000";
+  //   document.getElementById("navlink3").style.color = "#000";
+  //   document.getElementById("navlink4").style.color = "#000";
+  //   document.getElementById("navlink5").style.color = "#000";
+  // }
   ngOnInit() {
-    this.router.events.pipe(
-      filter((event: RouterEvent) => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.getallDetails();
-    });
+   
 
     if (window.innerWidth < 600)
     {
@@ -135,12 +131,14 @@ export class CollectionsComponent implements OnInit {
    
 
   }
+
+ 
   getallDetails()
   {
-    this.clearcolor();
-    document.getElementById("navlink2").style.color = "#CC9F08";
+    // this.clearcolor();
+    // document.getElementById("navlink2").style.color = "#CC9F08";
     this.showspinner = true;
-    document.getElementById('wrapper').style.opacity = "0";
+    // document.getElementById('wrapper').style.opacity = "0";
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
 
 
@@ -206,7 +204,7 @@ export class CollectionsComponent implements OnInit {
 
     this.getAllProducts().subscribe(data => {
       this.showspinner = false;
-      document.getElementById('wrapper').style.opacity = "1";
+      // document.getElementById('wrapper').style.opacity = "1";
       this.jsondata = data;
       // this.jsondata.forEach(ele => {
       //   ele.imgsrc.replace(".jpg", ".webp");
@@ -214,20 +212,29 @@ export class CollectionsComponent implements OnInit {
       this.tempdata = this.jsondata;
       if (!this.metals.includes(this.value)) {
         (document.getElementById(this.value) as HTMLInputElement).checked = true;
-        (document.getElementById('allcollections') as HTMLInputElement).checked = true;
+        // (document.getElementById('allcollections') as HTMLInputElement).checked = true; //commented
         this.value = 'allcollections';
         
       }
       else {
         this.tempdata = this.tempdata.filter(data => data.collection.includes(this.value));
         // console.log(this.value);
-        (document.getElementById(this.value) as HTMLInputElement).checked = true;
+        // (document.getElementById(this.value) as HTMLInputElement).checked = true; //checked
       }
       // console.log(this.tempdata);
     });
   }
  
   ngAfterViewInit() {
+    
+    this.router.events.pipe(
+      filter((event: RouterEvent) => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.getallDetails();
+    });
+
+
+
     $('#exampleModal').on('show.bs.modal', function (event) {
       var button = $(event) // Button that triggered the modal
       var recipient = button.data('whatever') // Extract info from data-* attributes

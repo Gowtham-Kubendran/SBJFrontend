@@ -296,6 +296,8 @@ label > span:hover{
 ::ng-deep .mat-progress-spinner circle, ::ng-deep .mat-spinner circle {
     stroke: #CC9F08;
     }
+
+   
     ::ng-deep .mat-form-field-flex
     {
 outline:0;
@@ -583,6 +585,12 @@ display:block;
     {
         padding:0 0 0 40px;
     }
+}
+
+::ng-deep .mat-select-arrow
+{
+    border-left: 0 !important;
+    border-right: 0 !important;
 }
 
 

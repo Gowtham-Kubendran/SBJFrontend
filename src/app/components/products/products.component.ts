@@ -208,14 +208,7 @@ export class ProductsComponent implements OnInit {
   }
 
   
-  clearcolor()
-  {
-    document.getElementById("navlink1").style.color = "#CC9F08";
-    document.getElementById("navlink2").style.color = "#000";
-    document.getElementById("navlink3").style.color = "#000";
-    document.getElementById("navlink4").style.color = "#000";
-    document.getElementById("navlink5").style.color = "#000";
-  }
+ 
   ngOnInit() {
 
 
@@ -231,13 +224,12 @@ export class ProductsComponent implements OnInit {
     this.aosInit();
    
 
-    this.clearcolor();
+   
 
   }
   getallDetails()
   {
-    this.clearcolor();
-    document.getElementById("navlink1").style.color = "#CC9F08";
+    
     
      this.route.params.subscribe(params => this.selectedMetal=params.metal);
     
@@ -322,16 +314,6 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
     
     //this.selectedMetal="allmetals"
 
-    if (this.sh.getValue()) {
-      this.value = this.sh.getValue();
-      this.selectedoption = this.value;
-      this.selectedValue = this.value;
-      setTimeout(() => {
-        this.handleChange(this.selectedoption);
-      }, 500);
-    
-
-    }
    
 
     // this.value="allproducts"
@@ -416,7 +398,17 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
   });
 
 
+  if (this.sh.getValue()) {
+    this.value = this.sh.getValue();
+    this.selectedoption = this.value;
+    this.selectedValue = this.value;
+    setTimeout(() => {
+      this.handleChange(this.selectedoption);
+    }, 500);
+  
 
+  }
+ 
 
   }
   gotowhatsapp(src)
@@ -454,7 +446,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
   handleChange(event)
   {
     // document.getElementById("productdropicon").style.transform = "rotate(180deg)";
-    (document.getElementById(event) as HTMLInputElement).checked = true;
+    // (document.getElementById(event) as HTMLInputElement).checked = true; //commented
     this.aosInit();
     window.scrollTo(0, 0);
     this.value = event;
