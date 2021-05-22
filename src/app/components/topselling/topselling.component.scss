@@ -62,10 +62,11 @@ cursor: pointer;
 
   .indiImg
  {
-    margin: 4em 3em;
+    margin: 4em 0;
     display: flex;
     height: 300px;
-    width: 250px;
+   
+    position: relative;
     /* border: 1px solid#dfdfdf; */
     text-align: center;
     flex-flow: column-reverse;
@@ -77,8 +78,9 @@ cursor: pointer;
 }
 
 .productimg{
-    object-fit: cover;
-
+    object-fit: contain;
+width:100%;
+height:100%;
 margin-bottom: 20px;
  }
 .proname
@@ -86,6 +88,7 @@ margin-bottom: 20px;
     color:#444;
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
     font-family: 'avenirR','tamilf';
 }
 // .carousel-control-prev
@@ -97,6 +100,7 @@ margin-bottom: 20px;
 {
     color:#888888;
     font-family: 'avenirR','tamilf';
+    text-align: center;
     font-size: 14px;
 }
 .zoombut
@@ -131,8 +135,10 @@ margin-bottom: 20px;
 }
 @media screen and (max-width: 1200px) {
     .productimg {
-        height: 90%;
-        width: 70%;
+        // height: 90%;
+        // width: 70%;
+        height:100%;
+        width:100%;
     }
     #prevbut1
     {
@@ -150,8 +156,8 @@ margin-bottom: 20px;
 @media screen and (max-width: 800px) {
 .productimg
 {
-    height: 60%;
-    width: 14rem;
+    height: 100%;
+    width: 100%;
 }
 .indiImg {
     margin: 4em 0em;
@@ -183,9 +189,9 @@ margin-bottom: 20px;
     }
     .productimg
     {
-        height: 77%;
+        height: 100%;
         width: 100%;
-        object-fit: cover
+       
     }
     .zoombut
     {
@@ -194,6 +200,7 @@ margin-bottom: 20px;
     .procode
     {
         font-size: 16px;
+
     }
     .proname
     {

@@ -2,7 +2,16 @@
   margin: 0;
   padding: 0;
 }
+::ng-deep .mat-menu-content
+  {
+    padding: 0em 0em 0em 0em;
+    width: 100px;
+  }
 
+  #logo
+  {
+    width:70px !important;
+  }
 #logo:hover{
   cursor: pointer;
 }
@@ -248,9 +257,9 @@ font: 12px 'opR' , 'tamilf';
     font:12px opB,tamilf;
   }
   .mainmenus
-  {
-    padding: 0 11% 0 10%;
-  }
+    {
+      padding: 0 0% 0 10%;
+    }
   .phonediv{
     font-size: 12px;
     

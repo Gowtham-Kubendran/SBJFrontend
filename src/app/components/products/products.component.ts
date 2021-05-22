@@ -372,7 +372,7 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
         header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "auto", "padding": "0px 2.6em 40px 2.6em  " });
         if (window.innerWidth < 1200)
         {
-          header.css({"padding": "0px 0em 40px 45px  " })
+          header.css({"padding": "0px 0em 40px 62px  " })
           }
       }
   });

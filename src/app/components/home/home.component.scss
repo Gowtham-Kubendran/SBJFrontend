@@ -648,7 +648,7 @@ color:#444;
 }
   ::ng-deep .mat-menu-content
   {
-   padding:1em 0 1em 1em;
+    padding: 0em 0em 0em 1em;
   }
   ::ng-deep .mat-option-text:hover
   {
@@ -1646,7 +1646,7 @@ padding:0;
  
  .collectionGoldImage
  {
-  height:300px;
+  height:530px;
   width:auto;
  }
 .collectionImage
@@ -2542,7 +2542,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     }
     .mainmenus
     {
-      padding: 0 11% 0 10%;
+      padding: 0 0% 0 10%;
     }
     .phonediv{
       font-size: 12px;

@@ -188,7 +188,7 @@ export class HomeComponent implements OnInit {
      if ($(this).scrollTop() < 50) {
      
      
-       $(".phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
+       $("#phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
        $('#changedrop2home').attr("src", "../../../assets/images/languageiconw.svg");
 
 
@@ -205,7 +205,7 @@ export class HomeComponent implements OnInit {
      }
      else {
    
-      $(".phoneiconheaderhome").attr("src", "../../../assets/images/wicon.svg");
+      $("#phoneiconheaderhome").attr("src", "../../../assets/images/wicon.svg");
       
       $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
 
