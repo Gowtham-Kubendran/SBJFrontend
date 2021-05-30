@@ -186,10 +186,15 @@ display: inline-flex;
     margin-top: 3em;
     padding-left: 0;
     }
+
+    .menulinks
+    {
+        padding-left: 0px;
+    }
     .footerrow
     {
         border-bottom:0px;
-        margin: 0 30px;
+        margin: 0 20px;
     }
     .divline
     {
@@ -199,15 +204,15 @@ display: inline-flex;
         padding: 0 20px 0 0;
     }
     .copyrights{
-        padding: 50px 48px;
+        padding: 50px 20px;
     }
 .columl
 {
-    padding-left:15px;
+    padding-left:0px;
 }
 .flex
 {
-    padding-left:15px;
+    padding-left:0px;
 }
 }
 

@@ -382,14 +382,14 @@ let img=(document.getElementById("heroimgplaceholder") as HTMLImageElement)
       var y = $(document).scrollTop(), //get page y value 
           header = $("#dropdown");
       if(y >= 420)  {
-        header.css({ position: "fixed", "left": "0", "top": "3em", "width": "100%", "background-color": "#fff", "z-index": "1", "padding": "6em 5em 0em 5em" });
+        header.css({ position: "fixed", "left": "0", "top": "3em", "width": "100%", "background-color": "#fff", "z-index": "1", "padding": "6em 1em 0em 1em" });
         $('#findtext').css({ 'display': 'none' });
         if (header.css('display') == 'block') {
           $("#productsLists").css({ "padding-top": "22em" });
         }
        
       } else {
-        header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "100%", "padding": "3em 5em 0 5em" });
+        header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "100%", "padding": "3em 1em 0 1em" });
         $('#findtext').css({ 'display': 'block' });
         if (header.css('display') == 'block') {
           $("#productsLists").css({ "padding-top": "8em" });
