@@ -44,15 +44,11 @@ export class ContactusComponent implements OnInit {
     this.sending = false;
     this.cartext = "contactus";
     this.clearerrors();
-    
-    
-    // this.clearcolor();
-    // document.getElementById("navlink5").style.color = "#CC9F08";
 
     this.ts.updateComp1Val(window.sessionStorage.getItem('lang'));
 
     
-    this.emailstring= `mailto:1994gowtham@gmail.com?Subject=Enquiry&body=Hi Team ,\n Myself ... `;
+    this.emailstring= `mailto:info@sribalagopalanjewellerymart.com?Subject=Enquiry&body=Hi Team ,\n Myself ... `;
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
           return;
@@ -72,11 +68,11 @@ export class ContactusComponent implements OnInit {
 
   clearerrors()
   {
-    this.fullnameerror   =false;
-    this.phoneerror      =false;
-    this.emailerror      =false;
-    this.messageerror    =false;
-    this.suberror        =false;
+    this.fullnameerror   =  false;
+    this.phoneerror      =  false;
+    this.emailerror      =  false;
+    this.messageerror    =  false;
+    this.suberror        =  false;
   }
 
 

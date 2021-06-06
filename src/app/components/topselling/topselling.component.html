@@ -7,210 +7,175 @@
     <div class="carousel-item active">
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[0].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[0].code}}</div>
          <div class="proname"> 
-            {{ ts.translate(imgsrc[0].metal) | titlecase }} {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
+            {{ ts.translate(imgsrc[0].metal+'a') | titlecase }} {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[0].imgsrc}}"
             (click)="openDialog(imgsrc[0])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[0].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+          
         </div>
       </div>    
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[1].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[1].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[1].metal) | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
+              {{ ts.translate(imgsrc[1].metal+'a') | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[1].imgsrc}}"
             (click)="openDialog(imgsrc[1])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[1].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"(click)="gotowhatsapp(imgsrc[2].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          
           <div class="procode">{{imgsrc[2].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[2].metal) | titlecase }}   {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
+              {{ ts.translate(imgsrc[2].metal+'a') | titlecase }}   {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[2].imgsrc}}"
             (click)="openDialog(imgsrc[2])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[2].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+          
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[3].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[3].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[3].metal) | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
+              {{ ts.translate(imgsrc[3].metal+'a') | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[3].imgsrc}}"
             (click)="openDialog(imgsrc[3])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[3].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>   
     </div>
     <div class="carousel-item">
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[4].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[4].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[4].metal) | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
+              {{ ts.translate(imgsrc[4].metal+'a') | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[4].imgsrc}}"
             (click)="openDialog(imgsrc[4])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[4].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>    
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[5].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[5].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[5].metal) | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[5].imgsrc}}"
             (click)="openDialog(imgsrc[5])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[5].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[6].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[6].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[6].metal) | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
+              {{ ts.translate(imgsrc[6].metal+'a') | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[6].imgsrc}}"
             (click)="openDialog(imgsrc[6])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[6].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[7].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[7].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[7].metal) | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
+              {{ ts.translate(imgsrc[7].metal+'a') | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[7].imgsrc}}"
             (click)="openDialog(imgsrc[7])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[7].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>
     <div class="carousel-item">
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[8].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[8].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[8].metal) | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
+              {{ ts.translate(imgsrc[8].metal+'a') | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[8].imgsrc}}"
             (click)="openDialog(imgsrc[8])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[8].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>    
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[9].imgsrc)"  ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[9].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[9].metal) | titlecase }}  {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
+              {{ ts.translate(imgsrc[9].metal+'a') | titlecase }}  {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[9].imgsrc}}"
             (click)="openDialog(imgsrc[9])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[9].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[10].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[10].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[10].metal) | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
+              {{ ts.translate(imgsrc[10].metal+'a') | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[10].imgsrc}}"
             (click)="openDialog(imgsrc[10])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[10].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>   
       <div class="col-xs-3 col-sm-3 col-md-3 col-6">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"(click)="gotowhatsapp(imgsrc[11].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[11].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[11].metal) | titlecase }}   {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
+              {{ ts.translate(imgsrc[11].metal+'a') | titlecase }}   {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[11].imgsrc}}"
             (click)="openDialog(imgsrc[11])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[11].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>  
     </div>
@@ -240,231 +205,195 @@
   <div class="carousel-inner no-padding" appNoRightClick>
     <div class="carousel-item active center">
       <div class="col-sm-12 col-12">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[0].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[0].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[0].metal) | titlecase }}  {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
+              {{ ts.translate(imgsrc[0].metal+'a') | titlecase }}  {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[0].imgsrc}}"
             (click)="openDialog(imgsrc[0])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[0].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>  
 
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[1].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[1].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[2].metal) | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
+              {{ ts.translate(imgsrc[2].metal+'a') | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[1].imgsrc}}"
             (click)="openDialog(imgsrc[1])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[1].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>  
     </div>  
 
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[2].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[2].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[3].metal) | titlecase }}  {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
+              {{ ts.translate(imgsrc[3].metal+'a') | titlecase }}  {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[2].imgsrc}}"
             (click)="openDialog(imgsrc[2])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[2].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[3].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[3].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[4].metal) | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
+              {{ ts.translate(imgsrc[4].metal+'a') | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[3].imgsrc}}"
             (click)="openDialog(imgsrc[3])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[3].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center ">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[4].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[4].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[5].metal) | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[4].imgsrc}}"
             (click)="openDialog(imgsrc[4])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[4].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+          
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[5].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[5].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[5].metal) | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[5].imgsrc}}"
             (click)="openDialog(imgsrc[5])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[5].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+          
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[6].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[6].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[6].metal) | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
+              {{ ts.translate(imgsrc[6].metal+'a') | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[6].imgsrc}}"
             (click)="openDialog(imgsrc[6])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[6].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[7].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[7].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[7].metal) | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
+              {{ ts.translate(imgsrc[7].metal+'a') | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[7].imgsrc}}"
             (click)="openDialog(imgsrc[7])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[7].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div>  
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[8].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[8].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[8].metal) | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
+              {{ ts.translate(imgsrc[8].metal+'a') | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[8].imgsrc}}"
             (click)="openDialog(imgsrc[8])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[8].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>  
     </div> 
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
         <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[9].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[9].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[9].metal) | titlecase }}   {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
+              {{ ts.translate(imgsrc[9].metal+'a') | titlecase }}   {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[9].imgsrc}}"
             (click)="openDialog(imgsrc[9])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[9].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+         
         </div>
       </div>  
     </div> 
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[10].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[10].code}}</div>
           <div class="proname">
-              {{ ts.translate(imgsrc[10].metal) | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
+              {{ ts.translate(imgsrc[10].metal+'a') | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
           <img
             class="productimg"
             src="{{imgsrc[10].imgsrc}}"
             (click)="openDialog(imgsrc[10])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[10].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+       
         </div>
       </div>  
     </div> 
     <div class="carousel-item">
       <div class="col-sm-12 col-12 center">
-        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[11].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
           <div class="procode">{{imgsrc[11].code}}</div>
           <div class="proname"> 
-              {{ ts.translate(imgsrc[11].metal) | titlecase }}  {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
+              {{ ts.translate(imgsrc[11].metal+'a') | titlecase }}  {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
           <img appNoRightClick
             class="productimg"
             src="{{imgsrc[11].imgsrc}}"
             (click)="openDialog(imgsrc[11])"
           />
-          <div class="sharewp">
-            <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-              <img  (click)="gotowhatsapp(imgsrc[11].imgsrc)" src="../../../assets/images/wicon.svg"/>
-             <!-- </a> -->
-           </div>
+        
         </div>
       </div>  
     </div> 

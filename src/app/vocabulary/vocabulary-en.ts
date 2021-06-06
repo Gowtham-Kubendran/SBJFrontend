@@ -15,6 +15,7 @@ export const VOCAB_EN = {
   
   
   gold: 'gold',
+  golda: 'gold',
   diamond:'diamond',
   silver: 'silver',
   promises: 'Promises',
@@ -117,8 +118,11 @@ export const VOCAB_EN = {
 
   // aboutusdata1:'In 1992, Sri Balagopalan Jewellery Mart has been inaugrated in Small Scale by S.B.Senthilkumar . Each and everyone feel elite on shopping with us in quality, design, price and service . Quality for the end consumer is key priority for us and we are comitted to fulfill our promises!!!',
   Gold: 'gold',
+  Golda: 'gold',
   Diamond:'diamond',
+  Diamonda: 'diamond',
   Silver: 'silver',
+  Silvera: 'silver',
   talktoushome: 'Have questions about our exquisite jewellery collections and can\'t decide what suits your taste! Look no further',
   talktousgold: 'Confused with the gold collection you are looking at? Leave it to us',
   talktousdiamond: 'Confused with the Diamond collection you are looking at? Leave it to us',
@@ -198,5 +202,6 @@ export const VOCAB_EN = {
   userprofession2: 'Software Engineer',
   userprofession3: 'LIC Agent',
   userprofession4: 'Home Maker',
+  enquire:'Enquire',
   
 }

@@ -17,7 +17,7 @@
       </div>
       <div class="mainbody ">
         <div class="row center">
-        <div class="col-lg-3 col-sm-12 col--12 cent">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12 cent">
           
           <div class="findjewels">
             {{ ts.translate("findyourjewels") | uppercase }}
@@ -81,9 +81,9 @@
           <div class="ImgList " *ngFor="let item of tempdata">
             <div class="indiImg" data-aos="fade-up" data-aos-once="true">
             <!-- <a class="zoombut" (click)="openDialog(item)">Click to zoom</a> -->
-              <!-- <button mat-button (click)="openDialog(item)">Click to Zoom</button> -->
+            <button mat-button  class="enqbut" (click)="gotowhatsapp(item.imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
               <div class="procode">{{item.code}}</div>
-              <div  class="proname"> {{ ts.translate(item.metal) | titlecase }} {{ts.translate(item.category)}} {{item.name}}</div>
+              <div  class="proname"> {{ ts.translate(item.metal+'a') | titlecase }} {{ts.translate(item.category)}} {{item.name}}</div>
              <div class="imgwrapper">
               <img
                 class="productimg"
@@ -91,11 +91,7 @@
                 (click)="openDialog(item)"
               />
             </div>
-            <div class="sharewp">
-              <!-- <a  href='//api.whatsapp.com/send?phone=919994926518&text=https://www.thangamayil.com/gold-jewellery/necklace/choker-necklace-4804.html'> -->
-                <img  (click)="gotowhatsapp(item.imgsrc)" src="../../../assets/images/wicon.svg"/>
-               <!-- </a> -->
-             </div>
+            
             </div>
           </div>
         </div>

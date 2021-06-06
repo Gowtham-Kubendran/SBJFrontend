@@ -194,9 +194,11 @@ export class HomeComponent implements OnInit {
 
        $('.mainmenutext2').css("background-color", "transparent");
        $('.mainmenutext2').css("color", "#fff");
+      
 
        $('#menu2').css("background-color", "transparent");
        $('#menu2').css("color", "#fff");
+       $('#menu2').css("box-shadow", "0px 0px 0px 0px");
 
        if (window.innerWidth < 900)
        {
@@ -212,9 +214,11 @@ export class HomeComponent implements OnInit {
        
       $('.mainmenutext2').css("background-color", "#fff");
        $('.mainmenutext2').css("color", "#000");
+      
        
        $('#menu2').css("background-color", "#fff");
        $('#menu2').css("color", "#000");
+       $('#menu2').css("box-shadow", "0px 0px 10px 1px #cfcfcf");
        
 
        if (window.innerWidth < 900)
