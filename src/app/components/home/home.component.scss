@@ -113,7 +113,10 @@ mat-sidenav {
   font-weight:700;
   color:#FFDDC3;
 }
-
+.mainmenutext2
+{
+  background-color: transparent;
+}
 
 .cartext
 {
@@ -2326,7 +2329,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   #menu2 input[type="checkbox"], 
   #menu2 ul span.drop-icon {
     display: none;
-    transition: 0.5s all ease-in-out;
+     transition: 0.5s all ease-in-out;
   }
   
   #menu2 li, 
@@ -2376,7 +2379,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
     background-color: transparent;
     color:#fff;
     height: 70px;
-    transition: 0.5s all ease-in-out;
+    // transition: 0.5s all ease-in-out;
   }
   
   
@@ -2576,6 +2579,7 @@ color:#444;
   .mainmenutext2.scrolled
   {
 color:#444;
+background-color: transparent;
   }
   #toggle-menu, #menu2 a {
     padding: 1em 1.5em;

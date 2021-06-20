@@ -11,4 +11,10 @@
   RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
   RewriteRule ^.*$ - [NC,L]
   RewriteRule ^(.*) index.html [NC,L]
+
+
 </IfModule>
+
+  RewriteEngine On
+  RewriteCond %{SERVER_PORT} 80
+  RewriteRule ^(.*)$ https://sribalagopalanjewellerymart.com/ [R,L]

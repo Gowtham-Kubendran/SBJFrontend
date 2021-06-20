@@ -148,7 +148,7 @@ export class CollectionsComponent implements OnInit,AfterViewInit {
     var y = $(document).scrollTop(), //get page y value 
         header = $("#selectedJewell");
     if(y >= 450)  {
-      header.css({ position: "fixed", "left": "0", "top": "3em", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "22px 8rem 8px" });
+      header.css({ position: "fixed", "left": "0", "top": "6rem", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "22px 8rem 8px" });
       if (window.innerWidth < 1200)
       {
         header.css({ "top": "4em", "padding": "14px 2em 8px 2em " })

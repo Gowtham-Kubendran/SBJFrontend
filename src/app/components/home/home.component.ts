@@ -182,7 +182,7 @@ export class HomeComponent implements OnInit {
   {
     $(window).scroll(function () {
       
-      $('.mainmenutext2').toggleClass('scrolled', $(this).scrollTop() < 50);
+      // $('.mainmenutext2').toggleClass('scrolled', $(this).scrollTop() < 50);
       $('#menu2').toggleClass('scrolled', $(this).scrollTop() < 50);
       
      if ($(this).scrollTop() < 50) {
@@ -212,7 +212,7 @@ export class HomeComponent implements OnInit {
       $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
 
        
-      $('.mainmenutext2').css("background-color", "#fff");
+      // $('.mainmenutext2').css("background-color", "#fff");
        $('.mainmenutext2').css("color", "#000");
       
        
