@@ -1,0 +1,53 @@
+<div class="todaysrate" *ngIf="desktop">
+    
+  <div  class="circle" >
+   
+  
+        <span id="today">
+          {{ts.translate('todaysrate')}}
+        </span>
+        <div  id="close" >X</div>
+      
+   
+      
+  </div>
+  <div class="goldrate"  id="rate">
+    <div class="goldratehead">
+        {{ts.translate('todaysrate')}}
+    </div>
+    <div class="goldbody">
+     <div> <span class="bold"><img style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/goldrate.png" /> {{ts.translate('Gold') |  titlecase }} 1gm</span> - RS {{goldprice}}</div>
+     <div> <span class="bold"><img  style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/silverrate.png" /> {{ts.translate('Silver') |  titlecase }}  1gm</span> - RS {{silverprice}}</div>
+    </div>
+  </div>
+  <div class="bar"></div>
+  
+
+</div>
+
+<div class="todaysrate1" *ngIf="!desktop">
+    
+  <div  class="circle1" (click)="toggle()">
+   
+  
+        <span id="today1">
+          {{ts.translate('todaysrate')}}
+        </span>
+        <div  id="close1" >X</div>
+      
+   
+      
+  </div>
+  <div class="goldrate1"  id="rate1">
+    <div class="goldratehead1">
+        {{ts.translate('todaysrate')}}
+    </div>
+    <div class="goldbody1">
+     <div> <span class="bold1"><img style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/goldrate.png" /> {{ts.translate('Gold') |  titlecase }} 1gm</span> - RS {{goldprice}}</div>
+     <div> <span class="bold1"><img  style="width:1.5em;    margin-right: 4px;" src="../../../assets/images/silverrate.png" /> {{ts.translate('Silver') |  titlecase }}  1gm</span> - RS {{silverprice}}</div>
+    </div>
+  </div>
+  <div class="bar1"></div>
+  
+
+</div>

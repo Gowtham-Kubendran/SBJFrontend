@@ -1,0 +1,569 @@
+
+
+.productwrapper
+{
+    position: relative;
+}
+.loading {
+    height:100vh;
+    width:100vw;
+    background-color: #fff;
+    position:static;
+    top:0;
+    }
+    .enqbut
+    {
+      background-color: #cc9f08;
+      text-align: center;
+      margin: 10px 4rem;
+      color: #fff;
+      font-family: 'opR','tamilf';
+    }
+    .enqimg
+    {
+      width: 20px;
+      margin-top: -3px;
+      margin-right: 12px;
+      padding-right: 0;
+    }
+    .noproducts
+  {
+    text-align: center;
+    font-size: 28px;
+    color: #808080;
+    font-family: 'opR','tamilf';
+  }
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 8px 0 1em 0;
+}
+    .spinnerc
+  {
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    width:15rem;
+  	
+	margin: auto;
+    animation: rotate 1s infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes rotate {
+
+     0%   {transform: rotateY(0deg)}
+  25%  {transform: rotateY(90deg)}
+  50%  {transform: rotateY(180deg)}
+  50%  {transform: rotateY(270deg)}
+  100% {transform: rotateY(0deg)}
+    }
+.productbody
+{
+    padding: 7em 0 0em 0;
+    position:relative;
+}
+
+.cartextdiv
+  {
+    position: absolute;
+    top: 25vh;
+    font-family: 'monB';
+    color: #FDEEBC !important;
+    left: 60px;
+    font-size: 48px;
+    /* color: #ffffff; */
+    height: 5rem;
+  }
+.productheroimgdiv
+{
+    width: 100%;
+    height: 420px;
+position: relative;
+}
+
+.productheroimg
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: right;
+}
+.filterList
+{
+    padding:1em;
+    font-family: 'opEB','tamilf';
+    color:black;
+}
+.productfooter
+{
+    position: absolute;
+    bottom:0;
+}
+//button group
+.cent
+{
+    text-align: center;
+    display:block;
+}
+.btnGroup{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    padding: 0 0 0 40px;
+   
+ }
+
+ .findjewels
+ {
+    color: #333333;
+    background-color: #fff;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 40px;
+    font-family: 'opR','tamilf';
+    margin-top:2em;
+    padding-bottom: 1em;
+ }
+
+ .selectedJewell
+ {
+    color: #CC9F08;
+    background-color: #fff;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 2.6em;
+    padding-top:2em;
+    font-family: 'opEB','tamilf';
+    
+   
+    // position: fixed;
+ }
+ #productdropicon
+ {position: absolute;
+ right: 0;
+ top: 7px;
+ 
+ transition:0.5s all ease-in-out;
+ }
+ .static
+ {
+   position: fixed;
+   z-index: 99;
+   top: 55px;
+   padding-right: 2em !important;
+ }
+
+ .static + .staticfield
+ {
+       padding-top: 4em;
+ }
+
+ .ImgList
+ {
+     display: inline-flex;
+     text-align: center;
+ }
+
+ .indiImg
+ {
+    padding:4rem;
+    display: flex;
+   border:1px solid #dfdfdf;
+    flex-flow: column-reverse;
+ }
+ .sharewp
+ {
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ width: 25px;
+ opacity:0;
+transition: 0.3s ease-in-out all;
+cursor: pointer;
+ }
+ .indiImg:hover  .sharewp
+ {
+     opacity:1;
+ }
+ .productimg{
+    object-fit: cover;
+    height:100%;
+ }
+ .productimg:hover{
+     cursor: pointer;
+ }
+
+ :checked + span {
+   
+    color: #CC9F08;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="radio"]
+{
+ display:none;
+}
+/* Optional other stuff just to make it look better */
+label {
+   display: inline-block;
+   width: 200px;
+   padding: 5px;
+   cursor:pointer;
+   transition: 0.2s ease-in-out;
+}
+span{
+    transition: 0.3s ease-in-out;
+}
+label > span:hover{
+    color: #CC9F08;
+}
+.productsLists
+{
+    padding-top:20em;
+    padding-bottom:12em;
+}
+.proname
+{
+    color:#444;
+    font-size: 20px;
+    font-family: 'opR','tamilf';
+    padding-top: 20px;
+}
+.procode
+{
+    color:#888888;
+    font-family: 'opR','tamilf';
+    font-size:14px;
+}
+.zoombut
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #666666;
+    font-size: 12px;
+    padding-top: 16px;
+    font-family: 'opB','tamilf';
+}
+
+.imgwrapper {
+    height: 250px;
+    width: 250px;
+}
+
+.dropdown
+{
+    display:none;
+}
+.fixeddiv
+{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin-top: -518px;
+}
+.fixeddiv + .btnGroup {
+    padding-top: 3em;
+  }
+  .linkstab
+{
+    display: inline-flex;
+    color:#fff;
+    background-color: #171717;
+    font-size: 14px;
+    font-family: 'opR','tamilf';
+    width:100%;
+    padding:11px 65px;
+}
+.downarrow
+{
+    height:12px;
+    transform: rotate(-90deg);
+}
+.padl15
+{
+    padding-left: 15px;
+}
+.homeimg
+{
+    height: 22px;
+    width: 22px;
+    
+}
+
+.pointer
+{
+    cursor:pointer;
+}
+.center{
+    display: block;
+    justify-content: center;
+    
+}
+.mat-spinner{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    z-index:999;
+}
+.layout
+{
+    position: absolute;
+    width:100vw;
+    height:100vh;
+    z-index:998;
+    background-color: #2e2e2e;
+}
+::ng-deep .mat-progress-spinner circle, ::ng-deep .mat-spinner circle {
+    stroke: #CC9F08;
+    }
+
+@media screen and (max-width: 800px) {
+    .cent{
+        display:none;
+    }
+    .dropdown
+    {
+        display:block;
+        width:100%;
+          transition: 0.5s all ease-in-out;
+    }
+    .cartextdiv
+    {
+    
+    
+        margin-top: -27rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    }
+  
+    label
+    {
+        display: inline-block;
+        width: auto;
+        padding: 1em;
+        white-space: nowrap;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+      
+
+    }
+    .btnGroup
+    {
+        display: inline-flex;
+    font-size: 20px;
+    background-color: #fff;
+    text-align: left;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+    transition: 0.5s all ease-in-out;
+   
+    padding: 1em 0 0 0;
+    }
+    .findjewels , .selectedJewell
+    {
+        display:none;
+    }
+    .productsLists
+    {
+        padding: 8em 4em 8em 2em;
+        text-align: center;
+    }
+
+    .indiImg
+    {
+        padding: 2rem;
+        display: flex;
+        width: 100%;
+        /* height: 200px; */
+        flex-flow: column-reverse;
+    }
+
+    .productimg
+    {
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .zoombut
+    {
+        font-size: 10px;
+        padding-top:4px;
+    }
+    .procode
+    {
+        font-size: 10px;
+    }
+    .proname
+    {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .fixeddiv
+    {
+        padding-top:0;
+        position: sticky;
+    }
+    .center
+    {
+        text-align: center;
+    }
+   .imgwrapper {
+    /* height: 250px; */
+    /* width: 250px; */
+    width: 100%;
+    // height: 100%;
+}
+.dropdown
+   {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    z-index:1;
+    text-align: center;
+    padding: 3em 1em 0 1em;
+   }
+
+   mat-form-field{
+    width: 100%;
+    font-size: 14px;
+   }
+  
+   ::ng-deep .mat-form-field-appearance-outline  ::ng-deep .mat-form-field-outline {
+    // border: 2px solid #A57F00;
+    border-radius: 5px;
+    outline:0;
+
+    }
+    ::ng-deep .mat-form-field-appearance-outline:focus ::ng-deep .mat-form-field-appearance-outline:active ::ng-deep .mat-form-field-appearance-outline:visited .mat-form-field-appearance-outline:hover
+     ::ng-deep .mat-form-field-outline:focus ::ng-deep .mat-form-field-outline:active ::ng-deep .mat-form-field-outline:visited .mat-form-field-outline:hover{
+        outline: 0;
+        border: 2px solid #A57F00;
+        border-radius: 5px;
+    }
+    .dropdownselect .dropdownselect:focus
+    {
+        outline: 0;
+        border: 2px solid #A57F00;
+        border-radius: 5px;
+    }
+    .droptext
+    {
+        color:#A57F00;
+    }
+    .extrapadtop
+    {
+        padding-top:24px;
+    }
+    .linkstab
+    {
+        padding: 11px 20px;
+    }
+
+}
+
+.headerfixed
+{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+
+    .cent{
+        text-align: left;
+    }
+    .findjewels
+    {
+        font-size: 20px;
+        padding-left: 44px;
+        text-align: left;
+    }
+    .selectedJewell
+    {
+        font-size: 20px;
+    width: 100%;
+    padding: 0 0 40px 40px;
+    }
+    .btnGroup
+    {
+        padding:0 0 0 40px;
+    }
+    .static + .staticfield
+ {
+       padding-top: 4em;
+ }
+}
+
+@media screen and (max-width: 600px) {
+    .productheroimg
+    {
+      object-position: 65% 90%;
+    }
+    .cartextdiv
+    {
+    
+    
+        margin-top: -25rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    } 
+    .procode
+    {
+        font-size: 15px;
+    }
+    .proname
+    {
+    font-size: 20px;
+    }
+    .productsLists
+    {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .indiImg {
+        margin: 0em 1em;
+        height: auto;
+    }   
+    .sharewp
+    {
+        opacity:1;
+    } 
+   .imgwrapper
+   {
+       width:100%;
+
+    }
+   
+}
+
+::ng-deep .mat-select-arrow
+{
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+
+
+

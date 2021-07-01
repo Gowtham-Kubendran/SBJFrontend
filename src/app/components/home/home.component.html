@@ -1,0 +1,489 @@
+
+<div id="wrapper" class="wrapper">
+ 
+
+  <app-todaysrate></app-todaysrate>
+  
+
+  <nav id="menu2" class="headerfixed">
+    
+    <label for="tm" id="toggle-menu">
+
+
+        <div class="collapse-logo">
+            <div class="logo" id="logo" (click)="goToPage('home')">
+                <img *ngIf="languageselect=='LA-EN'" class="collapse-logoimg" src="../../../assets/images/sbjlogo.png">
+                <img *ngIf="languageselect=='LA-TA'" class="collapse-logoimg" src="../../../assets/images/sbjlogo-ta.png">
+               </div>
+        </div>
+
+      <span class="drop-icon hamburger">
+      <img src="../../../assets/images/hamburger.svg">
+         </span>
+    </label>
+    
+   
+    <input type="checkbox" id="tm">
+    <ul class="main-menu clearfix">
+      <div class="icondiv">
+        <div class="logo" id="logo" (click)="goToPage('home')">
+              <img *ngIf="languageselect=='LA-EN'" class="logoimg" src="../../../assets/images/sbjlogo.png">
+              <img *ngIf="languageselect=='LA-TA'" class="logoimg" src="../../../assets/images/sbjlogo-ta.png">
+             </div>
+      </div>
+      <div class="mainmenus">
+      
+
+
+      <li><a class="mainmenutext2 drop-icon">{{ts.translate('products') | titlecase}}
+          
+          <label title="Toggle Drop-down" class="drop-icon hidediv" for="products">-</label>
+        </a>
+        <input type="checkbox" id="products">
+        <ul class="sub-menu">
+         
+          <li><a >{{ts.translate('gold') | titlecase}}
+              <span class="drop-icon opaque">-</span>
+              <label title="Toggle Drop-down " class="drop-icon opaque" for="goldid">-</label>
+            </a>
+            <input type="checkbox" id="goldid">
+            <ul class="sub-menu">
+              
+              <li><a (click)="goToProducts('allproducts','Gold')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a (click)="goToProducts('maalai','Gold')">{{ts.translate('maalai') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('bangles','Gold')">{{ts.translate('bangles') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('necklace','Gold')">{{ts.translate('necklace') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('chains','Gold')">{{ts.translate('chains') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('earrings','Gold')">{{ts.translate('earrings') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('rings','Gold')">{{ts.translate('rings') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('bracelet','Gold')">{{ts.translate('bracelet') | titlecase}}</a></li>
+              <li><a (click)="goToProducts('dollar','Gold')">{{ts.translate('dollar') | titlecase}}</a></li>
+            
+
+
+            </ul>
+          </li>
+
+          <li><a > {{ts.translate('diamond') | titlecase}}
+              <span class="drop-icon opaque">▾</span>
+              <label title="Toggle Drop-down" class="drop-icon opaque" for="disid">▾</label>
+            </a>
+            <input type="checkbox" id="disid">
+            <ul class="sub-menu">
+            
+
+              <li><a  (click)="goToProducts('allproducts','Diamond')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a  (click)="goToProducts('necklace','Diamond')">    {{ts.translate('necklace') | titlecase}}      </a></li>
+              <li><a  (click)="goToProducts('earrings','Diamond')">    {{ts.translate('earrings') | titlecase}}    </a></li>
+              <li><a  (click)="goToProducts('rings','Diamond')">       {{ts.translate('rings') | titlecase}}       </a></li>
+
+            </ul>
+          </li>
+
+          <li><a > {{ts.translate('silver') | titlecase}}
+              <span class="drop-icon  opaque">▾</span>
+              <label title="Toggle Drop-down opaque" class="drop-icon opaque" for="silverid">▾</label>
+            </a>
+            <input type="checkbox" id="silverid">
+            <ul class="sub-menu">
+         
+
+              <li><a  (click)="goToProducts('allproducts','Silver')"> {{ts.translate('allproducts') | titlecase}} </a></li>
+              <li><a  (click)="goToProducts('gifts','Silver')">{{ts.translate('gifts') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('silvervessels','Silver')">{{ts.translate('silvervessels') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('idols','Silver')">{{ts.translate('idols') | titlecase}}</a></li>
+              <li><a  (click)="goToProducts('poojaitems','Silver')">{{ts.translate('poojaitems') | titlecase}}</a></li>
+        
+
+
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li><a class="mainmenutext2 drop-icon">{{ts.translate('collections') | titlecase}} 
+          
+          <label title="Toggle Drop-down" class="drop-icon hidediv" for="collections">-</label>
+        </a>
+        <input type="checkbox" id="collections">
+        <ul class="sub-menu">
+        
+
+         <li><a (click)="goToCollections('marriage')" >{{ts.translate('wedding') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('women')" >{{ts.translate('women') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('men')" >{{ts.translate('men') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('kids')" >{{ts.translate('kids') | titlecase}}</a></li>
+         <li><a (click)="goToCollections('gifts')" >{{ts.translate('gifts') | titlecase}}</a></li>
+        
+
+
+        </ul>
+      </li>
+
+
+      <li><a class="mainmenutext2" (click)="goToPage('goldschemes')">{{ts.translate('goldschemes') | titlecase}}</a>
+
+      <li><a class="mainmenutext2" (click)="goToPage('aboutus')">{{ts.translate('aboutus') | titlecase}}</a>
+
+      <li><a class="mainmenutext2" (click)="goToPage('contactus')">{{ts.translate('contactus') | titlecase }}</a></li>
+
+
+
+    </div>
+      <div class="phonediv">
+        
+          
+              <span class="phonelink"><img class="phoneiconheaderhomehome" id="phoneiconheaderhome" style="width: 22px;padding-right: 0;" src="../../../assets/images/wiconw.png"  />
+               <span class="phonenumber"> {{ ts.translate("phonebody1") }}</span>
+                
+                &nbsp;&nbsp;&nbsp;|</span>
+            
+                <button class="martop11" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <img id="changedrop2home" style="width:20px" src="../../../assets/images/languageiconw.svg" />
+                   </button>
+                   <mat-menu #menu="matMenu">
+                    
+                      <mat-radio-group
+                       aria-labelledby="example-radio-group-label"
+                       class="example-radio-group"
+                       [(ngModel)]="languageselect">
+                       <mat-radio-button class="radbutton" *ngFor="let lang of langlist"  [checked]="lang.checked" [value]="lang.key" (change)="getLang(lang.key)" >
+                         {{lang.value}}
+                       </mat-radio-button>
+                     </mat-radio-group>
+             
+             
+                   </mat-menu>
+                   <span style="font-size:12px;">{{showlang}}</span>
+
+
+        </div>
+    </ul>
+
+
+  </nav>
+
+  
+
+  <!-- <app-header class="headerfixed"></app-header> -->
+
+  
+
+  <!-- appNoRightClick -->
+ 
+<div class="homebody" appNoRightClick>
+
+  <div id="carouselExampleSlidesOnly herocarosol" class="carousel slide heroc" data-ride="carousel"  data-pause="true" data-interval="6000">
+    <div class="carousel-inner">
+      <div class="carousel-item .item active">
+        <img class="d-block w-100 carosolimg img-fluid" id="heroone" src="../../../assets/images/banners/hero1.jpg" alt="First slide">
+        <div class="carousel-caption cartext">
+         
+          <div class="lines" >{{ts.translate('goldheroline1')}}   </div> 
+          <div class="lines" ><span class="boldcartext" >{{ts.translate('goldheroline2')}} </span> {{ts.translate('goldheroline3')}} </div>
+          <div class="lines" >{{ts.translate('goldheroline4')}}  </div>
+          <div class="lines" >{{ts.translate('goldheroline5')}}  </div>
+        
+            
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Gold')"><span class="spanclass">{{ts.translate('viewourjewels')}} </span></button>
+         
+        </div>
+      </div>
+     <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" id="herotwo" src="../../../assets/images/banners/hero2.jpg" alt="Second slide">
+        <div class="carousel-caption cartext">
+         
+            <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
+            <div class="lines" > {{ts.translate('diamondheroline2')}} <span class="boldcartext" >{{ts.translate('diamondheroline3')}} </span> </div>
+            <div class="lines" >  <span class="boldcartext" >{{ts.translate('diamondheroline4')}} {{ts.translate('diamondheroline5')}}</span> </div>
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Diamond')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+              
+           
+          </div>
+      </div>
+      <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" id="herothree" src="../../../assets/images/banners/hero3.jpg" alt="Third slide">
+        <div class="carousel-caption cartext">
+            <div class="lines" > {{ts.translate('silverheroline1') }}  </div>
+            <div class="lines" > <span class="boldcartext" >{{ts.translate('silverheroline2') }} </span> </div>
+           
+
+            <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Silver')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+                        
+          
+         
+        </div>
+      </div>
+      <div class="carousel-item .item">
+        <img class="d-block w-100 carosolimg img-fluid" id="herofour" src="../../../assets/images/banners/hero4.jpg" alt="Fouth slide">
+        <div class="carousel-caption cartext">
+
+            <div class="lines" > {{ts.translate('collectionsheroline1')}}  </div>
+            <div class="lines" > {{ts.translate('collectionsheroline2')}}         </div>
+            <div class="lines" ><span class="boldcartext" > {{ts.translate('collectionsheroline3')}}     </span>    </div>
+
+            <button class="buttonclass btn-1"  [ngClass]="{'left9': showlang == 'TA'}" (click)="goToCollections('marriage')" ><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
+         
+        </div>
+      </div> 
+     
+      
+    </div>
+  
+    <div class="downarrowdiv">
+    <a (click)="scrollToproducts()"> <span class="material-icons downarrow" >
+      <button style="border: 0px;
+      outline: 0px;
+      background-color: transparent;">expand_more</button>
+            </span>
+          
+          </a>
+       
+    </div>
+  </div>
+  <!-- <div class="mobilecartext">
+
+  </div> -->
+  <div id="productsec" class="bodyView" #products data-aos="fade-up" data-aos-once="true">
+    <div class="bodyHeading">
+        {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('products') |  uppercase}}</span>
+    </div>
+   <div class="flexhori">
+        <div class="indi">
+            <div class="imageContainer  setpad0">
+              <a (click)="goToProducts('allproducts','Gold')">  <img class="collectionGoldImage" src="../../../assets/images/banners/gold.jpg">
+                <div class="bottom-left "> {{ts.translate('gold') | titlecase }} <img class="rarrow" src="../../../assets/images/downarrow2.png"/></div></a>
+            </div>
+        </div>
+        <div class="">
+            <div class="imageContainer setpad0">
+                <a (click)="goToProducts('allproducts','Diamond')">  <img class="collectionGoldImage" src="../../../assets/images/banners/diamond.jpg">
+                <div class="bottom-left "> {{ts.translate('diamond') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+            </div>
+        </div>
+        <div class="">
+            <div class="imageContainer setpad0 mar0">
+                <a (click)="goToProducts('allproducts','Silver')"> <img class="collectionGoldImage" src="../../../assets/images/banners/silver.jpg">
+                <div class="bottom-left "> {{ts.translate('silver') | titlecase }}<img class="rarrow" src="../../../assets/images/downarrow2.png"/> </div></a>
+            </div>
+        </div>
+    </div> 
+
+
+ 
+  
+       
+     
+
+     
+  
+  </div>
+
+
+  <div class="bodyView" data-aos="fade-up" data-aos-once="true">
+    <div class="bodyHeading nonmargin" >
+        {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('collections') |  uppercase}}</span>
+    </div>
+    <div class="row padl5 margin0 ">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 padl0 height100 padr20 parmar0" >
+          <div class="imageContainer marb20 nonmargin mar0 parmar0">
+              <a (click)="goToCollections('marriage')"> <img class="collectionwedding smallheight parmar0" id="marriagecoll" src="../../../assets/images/banners/collectionpotrait.jpg">
+              <div class="bottom-left left2 top2"> {{ts.translate('wedding') | titlecase }}<img class="rarrow" id="marriageimg" src="../../../assets/images/downarrow2.png"/> </div></a>
+          </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 coll2column parmar0">
+          <div class="row parmar0">
+              <div class="imageContainer colimg mar-3 mar-r-1 collectionside  mar0 padr0 parmar0">
+                  <a (click)="goToCollections('men')">  <img  class="collectionImage h240 sidecollectionimage p25 adjust parmar0" src="../../../assets/images/banners/collectionmen.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('men') | titlecase}}<img class="rarrow"  id="menimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+            <div class="row padt20 parmar0">
+                <div class="imageContainer marb20 colimg mar-r-1 collectionside  mar0 padr0 parmar0" >
+                    <a (click)="goToCollections('women')"> <img class="collectionImage sidecollectionimage p25 adjust parmar0" src="../../../assets/images/banners/collectionwomen.jpg"/>
+                    <div class="bottom-left lefter bot1">{{ts.translate('women') | titlecase}}<img class="rarrow"  id="womenimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+                </div>
+             </div>
+         
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-12 coll3column parmar0 padlr0">
+          <div class="row p15 w103 parmar0">
+              <div class="imageContainer colimg mar-3 padingt20 collectionsideright mar0  padr0 parmar0">
+                  <a (click)="goToCollections('kids')"> <img class="collectionImage h240 sidecollectionimage  padl0 parmar0" src="../../../assets/images/banners/collectionkids.jpg">
+                  <div class="bottom-left lefter bot1">{{ts.translate('kids')| titlecase }}<img class="rarrow"  id="kidsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+              </div>
+            </div>
+          <div class="row padt20 p15 w103 parmar0">
+             <div class="imageContainer colimg collectionsideright mar0  padr0 parmar0">
+                <a (click)="goToCollections('gifts')"> <img class="collectionImage sidecollectionimage  padl0 parmar0" src="../../../assets/images/banners/collectiongift.jpg">
+                 <div class="bottom-left lefter bot1">{{ts.translate('gifts') | titlecase}} <img class="rarrow"  id="giftsimg"  src="../../../assets/images/downarrow2.png"/> </div></a>
+             </div>
+           </div>
+       </div>
+
+
+
+    </div>
+  </div>
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+    {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('promises') |  uppercase}}</span>
+  </div>
+  <div class="row marginTop">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
+            <div class="promiseBody">
+              <div>
+                <img class="width50" src="../../../assets/images/promise1.svg" />
+              </div>
+              {{ts.translate('promise1')}}
+              
+            </div>
+            <div class="numbering">1</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise2.svg" />
+                  </div>
+                  {{ts.translate('promise2')}}
+              
+            </div>
+            <div class="numbering">2</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise3.svg" />
+                  </div>
+                  {{ts.translate('promise3')}}
+              
+            </div>
+            <div class="numbering">3</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
+            <div class="promiseBody">
+                <div>
+                    <img class="width50" src="../../../assets/images/promise4.svg" />
+                  </div>
+                  {{ts.translate('promise4')}}
+              
+            </div>
+            <div class="numbering">4</div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+    {{ts.translate('top') |  uppercase}} <span class="bold">{{ts.translate('sellingjewels') |  uppercase}}</span>
+  </div>
+<app-topselling></app-topselling>
+</div>
+<div class="bodyView" data-aos="fade-up" data-aos-once="true">
+  <div class="bodyHeading">
+      {{ts.translate('whatpeople') |  uppercase}} <span class="bold">{{ts.translate('talkaboutus') |  uppercase}}</span>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user1">
+      <div class="userpic">
+       
+        <div class="username">
+          <div class="name">{{ts.translate('username1')}}</div>
+          <div class="designation">{{ts.translate('userprofession1')}}</div>
+        </div>
+      </div>
+      <div class="usercomment">
+        <div>
+          <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+        </div>
+        <div class="comments">
+          {{ts.translate('comments1')}}
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user2">
+        <div class="userpic">
+         
+          <div class="username">
+              <div class="name">{{ts.translate('username2')}}</div>
+              <div class="designation">{{ts.translate('userprofession2')}}</div>
+          </div>
+        </div>
+        <div class="usercomment">
+          <div>
+            <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+          </div>
+          <div class="comments">
+              {{ts.translate('comments2')}} </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user3">
+          <div class="userpic">
+           
+            <div class="username">
+                <div class="name">{{ts.translate('username3')}}</div>
+                <div class="designation">{{ts.translate('userprofession3')}}</div>
+            </div>
+          </div>
+          <div class="usercomment">
+            <div>
+              <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+            </div>
+            <div class="comments">
+                {{ts.translate('comments3')}}
+               </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 padl0 " id="user4">
+            <div class="userpic">
+             
+              <div class="username">
+                  <div class="name">{{ts.translate('username4')}}</div>
+                  <div class="designation">{{ts.translate('userprofession4')}}</div>
+              </div>
+            </div>
+            <div class="usercomment">
+              <div>
+                <img src="../../../assets/images/DoubleQuotes.svg" class="doublequotes" />
+              </div>
+              <div class="comments">
+                  {{ts.translate('comments4')}}
+                </div>
+            </div>
+          </div>
+
+
+
+
+      
+  </div>
+  <div class="pagination0">
+      <div id="prevuser0"  ><img  (click)="toggleuser0(1)"  style="transform:rotate(90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+      <div id="nextuser0"  ><img (click)="toggleuser0(2)"  style="transform:rotate(-90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+    </div>
+
+  <div class="pagination">
+    <div id="prevuser"  ><img  (click)="toggleuser('prev')"  style="transform:rotate(90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+    <div id="nextuser"  ><img  (click)="toggleuser('next')"   style="transform:rotate(-90deg) scale(0.7)" src="../../../assets/images/downarrow.png" /></div>
+  </div>
+
+</div>
+
+
+
+</div>
+<app-talktous [talktouscontent]="ts.translate('talktoushome')"></app-talktous>
+<app-footer></app-footer>
+</div>
+

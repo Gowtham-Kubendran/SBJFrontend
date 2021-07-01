@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '~aos/dist/aos.css'; 
+@import './flicker.css';
+
+@font-face {
+    font-family: opL;
+    src: url(assets/fonts/OpenSans-Light.ttf);
+  }
+
+  @font-face {
+    font-family: dance;
+    src: url(assets/fonts/dancer.ttf);
+  }
+  
+  @font-face {
+    font-family: avenirR;
+    src: url(assets/fonts/Metropolis-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: monR;
+    src: url(assets/fonts/MontserratRegular.ttf);
+  }
+
+
+  @font-face {
+    font-family: monB;
+    src: url(assets/fonts/MontserratBold.ttf);
+  }
+
+
+
+  @font-face {
+    font-family: opR;
+    src: url(assets/fonts/OpenSans-Regular.ttf);
+  }
+  @font-face {
+    font-family: opB;
+    src: url(assets/fonts/OpenSans-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: opEB;
+    src: url(assets/fonts/OpenSans-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: tamilf;
+    src: url(assets/fonts/tamil.ttf);
+  }
+
+
+html , body{
+  scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    outline:0;
+    overflow-x: hidden;
+    font-family: opR;
+}
+
+.close.mat-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  line-height: 14px;
+  min-width: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+
+.row
+{
+display:inline-block ;
+width:100%;
+margin:0;
+}
+
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color:#CC9F08; 
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+  color:#CC9F08;
+  background-color:#CC9F08 ;
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    background-color:#CC9F08;
+}
+
+::ng-deep .mat-select-arrow
+{
+  width: 0;
+    height: 0;
+    /* display: none; */
+    /* border-left: 5px solid transparent; */
+    /* border-right: 5px solid transparent; */
+    /* border-top: 5px solid; */
+    margin: 0 4px;
+}

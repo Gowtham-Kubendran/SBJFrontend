@@ -1,0 +1,24 @@
+<div class="talktous " id="talktousid" data-aos="fade-up" data-aos-once="true">
+   
+      <div class="talktouspara">
+       {{talktouscontent}}
+      </div>
+    
+      <button *ngIf="smallerscreen" (click)="goToPage('contactus')"  class="talktousButton">
+        {{ts.translate('talkto') |  titlecase }}
+        <br>
+        {{ts.translate('us') |  titlecase }}
+      </button>
+
+      <button *ngIf="!smallerscreen" (click)="goToPage('contactus')"  class="talktousButton">
+        {{ts.translate('talktous') |  titlecase }}
+        
+      </button>
+      <!-- <button (click)="goToPage('contactus')" *ngIf="lang=='LA-TA'" class="talktousButton">
+        {{ts.translate('engaludan') |  titlecase }}
+        <br>
+        {{ts.translate('pesungal') |  titlecase }}
+      </button> -->
+        
+  
+  </div>

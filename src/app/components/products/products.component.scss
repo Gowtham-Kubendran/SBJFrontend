@@ -1,0 +1,612 @@
+
+
+.productwrapper
+{
+    position: relative;
+}
+.loading {
+  height:100vh;
+  width:100vw;
+  background-color: #fff;
+  }
+  .enqbut
+  {
+    background-color: #cc9f08;
+    text-align: center;
+    margin: 10px 4rem;
+    color: #fff;
+    font-family: 'opR','tamilf';
+  }
+  .enqimg
+  {
+    width: 20px;
+    margin-top: -3px;
+    margin-right: 12px;
+    padding-right: 0;
+  }
+  .cartextdiv
+  {
+    position: absolute;
+    top: 25vh;
+    font-family: 'monB';
+    color: #FDEEBC !important;
+    left: 60px;
+    font-size: 48px;
+    /* color: #ffffff; */
+    height: 5rem;
+  }
+  .noproducts
+  {
+    text-align: center;
+    font-size: 28px;
+    color: #808080;
+    font-family: 'opR','tamilf';
+  }
+  .spinnerc
+{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	width:15rem;
+    margin: auto;
+    animation: rotate 1s infinite;
+    animation-duration: 3s;
+
+}
+
+@keyframes rotate {
+
+     0%   {transform: rotateY(0deg)}
+  25%  {transform: rotateY(90deg)}
+  50%  {transform: rotateY(180deg)}
+  50%  {transform: rotateY(270deg)}
+  100% {transform: rotateY(0deg)}
+    }
+  
+#productdropicon
+{position: absolute;
+right: 0;
+top: 7px;
+
+transition:0.5s all ease-in-out;
+}
+.productbody
+{
+    padding: 7em 0 0em 0;
+    position:relative;
+}
+.productheroimgdiv
+{
+    width: 100%;
+    height: 420px;
+position: relative;
+}
+
+.productheroimg
+{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: right;
+}
+.filterList
+{
+    padding:1em;
+    font-family: 'opEB','tamilf';
+    color:black;
+}
+.productfooter
+{
+    position: absolute;
+    bottom:0;
+}
+//button group
+.cent
+{
+    text-align: center;
+    display: block;
+}
+.btnGroup{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    padding: 0 0 0 40px;
+ }
+ 
+ .dropdown{
+     display:none;
+ }
+
+.fixeddiv
+{
+    position: fixed;
+    z-index: 99;
+    margin-top: -520px;
+}
+.fixeddiv + .btnGroup {
+    padding-top: 3em;
+  }
+
+  .static
+  {
+    position: fixed;
+    z-index: 99;
+    top: 55px;
+    padding-right: 2em !important;
+  }
+
+  .static + .staticfield
+  {
+        padding-top: 3em;
+  }
+  .imgwrapper
+  {
+      height:250px;
+      width:250px;
+  }
+ .findjewels
+ {
+    color: #333333;
+    background-color: #fff;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 40px;
+    font-family: 'opR','tamilf';
+    margin-top:2em;
+    padding-bottom: 20px;
+ }
+
+ .selectedJewell
+ {
+    color: #CC9F08;
+    background-color: #fff;
+    text-align: left;
+    font-size: 24px;
+    width: 100%;
+    padding: 0 0 40px;
+    padding-left: 2.6em;
+    font-family: 'opEB','tamilf';
+    // position: fixed;
+ }
+
+ .ImgList
+ {
+     display: inline-flex;
+     text-align: center;
+     padding: 0;
+ }
+
+ .indiImg
+ {
+    // margin: 0em 73px 80px 0;
+    padding:4rem;
+     display: flex;
+    border:1px solid #dfdfdf;
+     flex-flow: column-reverse;
+ }
+ .sharewp
+ {
+ position: absolute;
+ top: 1rem;
+ right: 1rem;
+ width: 25px;
+ opacity:0;
+transition: 0.3s ease-in-out all;
+cursor: pointer;
+ }
+ .indiImg:hover  .sharewp
+ {
+     opacity:1;
+ }
+ .productimg{
+    object-fit: cover;
+    height:100%;
+    
+ }
+
+ .productimg:hover{
+     cursor: pointer;
+ }
+
+ :checked + span {
+   
+    color: #CC9F08;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="radio"]
+{
+ display:none;
+}
+/* Optional other stuff just to make it look better */
+label {
+   display: inline-block;
+   width: 200px;
+   padding: 5px;
+   cursor:pointer;
+   transition: 0.2s ease-in-out;
+}
+
+span{
+    transition: 0.3s ease-in-out;
+}
+label > span:hover{
+    color: #CC9F08;
+}
+.productsLists
+{
+    padding-top:20em;
+    padding-bottom: 12em;
+}
+.proname
+{
+    color:#444;
+    font-size: 20px;
+    font-family: 'opR','tamilf';
+    padding-top: 20px;
+}
+.procode
+{
+    color:#888888;
+    font-family: 'opR','tamilf';
+    font-size:14px;
+}
+.zoombut
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color:#666666;
+    font-size: 12px;
+    font-family:'opB','tamilf';
+    padding-top: 16px;
+}
+#findtext
+{
+    display:none;
+}
+.w100
+{
+    width:100%;
+    display:inline-flex;
+}
+.linkstab
+{
+    display: inline-flex;
+    color:#fff;
+    background-color: #171717;
+    font-size: 14px;
+    font-family: 'opR','tamilf';
+    width:100%;
+    padding:11px 65px;
+}
+.downarrow
+{
+    height:12px;
+    transform: rotate(-90deg);
+}
+.padl15
+{
+    padding-left: 15px;
+}
+.homeimg
+{
+    height: 22px;
+    width: 22px;
+    
+}
+
+.pointer
+{
+    cursor:pointer;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+::ng-deep .mat-progress-spinner circle, ::ng-deep .mat-spinner circle {
+    stroke: #CC9F08;
+    }
+
+   
+    ::ng-deep .mat-form-field-flex
+    {
+outline:0;
+    }
+    ::ng-deep .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+        background-color: #CC9F08 !important;
+    }
+    
+    //input outline color
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: #CC9F08 !important;
+        // opacity: 1!important;
+    }
+    
+    //mat-input focused color
+    ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+        color: #CC9F08 !important;
+    }
+    
+    // mat-input error outline color
+    ::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick{
+        color: #CC9F08 !important;
+        opacity: 0.8 !important;
+    }
+    
+    // mat-input carent color
+    ::ng-deep .mat-input-element {
+        caret-color: #CC9F08 !important;
+    }
+    
+    // mat-input error carent color
+    ::ng-deep .mat-form-field-invalid .mat-input-element, .mat-warn .mat-input-element {
+        caret-color: #CC9F08 !important;
+    }
+    
+    // mat-label normal state style
+    ::ng-deep .mat-form-field-label {
+        color: #CC9F08 !important;
+        // color: $mainColor!important;
+    }
+    
+    // mat-label focused style
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+        color: #CC9F08 !important;
+    }
+    
+    // mat-label error style
+    ::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+        color: #CC9F08 !important;
+    }
+
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+        padding: 8px 0 1em 0;
+    }
+
+    .droptext {
+    text-align: center;
+        }
+    .headerfixed
+{
+    position: fixed;
+    z-index: 99;
+    margin: 0;
+    height: 85px;
+    width: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .cent{
+        display:none;
+    }
+    #findtext
+    {
+display:block;  
+    transition:0.5s all ease-in-out;  
+    }
+    label
+    {
+        display: inline-block;
+        width: auto;
+        padding: 1em;
+        white-space: nowrap;
+        font-size: 12px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .productheroimg
+    {
+        object-position: 95% 90%;
+    }
+    .btnGroup
+    {
+        display: inline-flex;
+    font-size: 20px;
+    background-color: #fff;
+    text-align: left;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: auto;
+   
+    padding: 1em 0 0 0;
+    }
+    .findjewels , .selectedJewell
+    {
+        display:none;
+    }
+    .productsLists
+    {
+        padding: 8em 4em 8em 2em;
+        text-align: center;
+    }
+
+    .indiImg
+    {
+        padding: 2rem;
+        display: flex;
+        width: 100%;
+        /* height: 200px; */
+        flex-flow: column-reverse;
+    }
+
+    .productimg
+    {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    .zoombut
+    {
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    .procode
+    {
+        font-size: 10px;
+    }
+    .proname
+    {
+        font-size: 14px;
+    }
+    .fixeddiv
+    {
+        padding-top:0;
+        position: sticky;
+    }
+    .imgwrapper
+    {
+        
+        width:100%;
+        object-fit: cover;
+    }
+   .w100
+   {
+       width:auto;
+   }
+
+  
+   .dropdown
+   {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    z-index:1;
+    text-align: center;
+    padding: 3em 1em 0 1em;
+   }
+
+   mat-form-field{
+    width: 100%;
+    font-size: 14px;
+   }
+
+   .cartextdiv
+    {
+    
+    
+        margin-top: -27rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    }
+  
+   ::ng-deep .mat-form-field-appearance-outline  ::ng-deep .mat-form-field-outline {
+    // border: 0px solid #A57F00;
+    border-radius: 5px;
+    outline:0;
+
+    }
+    ::ng-deep .mat-form-field-appearance-outline:focus ::ng-deep .mat-form-field-appearance-outline:active ::ng-deep .mat-form-field-appearance-outline:visited .mat-form-field-appearance-outline:hover
+     ::ng-deep .mat-form-field-outline:focus ::ng-deep .mat-form-field-outline:active ::ng-deep .mat-form-field-outline:visited .mat-form-field-outline:hover{
+        outline: 0;
+        border: 2px solid #A57F00;
+        border-radius: 5px;
+    }
+    ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: rgba(0,0,0,0);
+    }
+    .dropdownselect .dropdownselect:focus
+    {
+        outline: 0;
+        border: 2px solid #A57F00;
+        border-radius: 5px;
+    }
+    .droptext
+    {
+        color:#A57F00;
+    }
+
+    .extrapadtop
+    {
+        padding-top:24em;
+    }
+
+    .linkstab
+    {
+        padding: 11px 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .procode
+    {
+        font-size: 15px;
+    }
+    .proname
+    {
+    font-size: 20px;
+    }
+    .indiImg {
+        margin: 0em 1em;
+        height: auto;
+    }   
+    .sharewp
+    {
+        opacity:1;
+    }
+    .productsLists
+    {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .cartextdiv
+    {
+    
+    
+        margin-top: -25rem;
+        text-align: center;
+        /* bottom: 2rem; */
+        margin-left: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        font-size: 3rem;
+        color: #ffffff;
+
+    } 
+}
+@media screen and (max-width: 1024px) {
+    .cent{
+        text-align: left;
+    }
+   
+    .findjewels
+    {
+        font-size: 20px;
+        padding-left: 44px;
+        text-align: left;
+    }
+    .selectedJewell
+    {
+        font-size: 20px;
+    width: 100%;
+    padding: 0 0 40px 40px;
+    }
+    .btnGroup
+    {
+        padding:0 0 0 40px;
+    }
+}
+
+::ng-deep .mat-select-arrow
+{
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+

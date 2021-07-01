@@ -1,0 +1,117 @@
+<div *ngIf="showspinner" >
+  <div class="loading"> 
+   <!-- <mat-spinner class="spinnerc"></mat-spinner> -->
+   <img class="spinnerc" src="../../../assets/images/sbjlogo.png" />
+  </div>
+</div>
+<div class="productwrapper" id="wrapper" appNoRightClick>
+    <app-header class="headerfixed"></app-header>
+    <div class="productbody">
+        <app-todaysrate></app-todaysrate>
+      <div class="productheroimgdiv">
+        <img class="productheroimg" id="collheroimg" src="../../../assets/images/banners/collectionbanner.jpg" />
+       
+        <div class="cartextdiv">
+          {{ ts.translate(cartext) | uppercase }}
+        </div>
+      </div>
+      <div class="mainbody ">
+        <div class="row center">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-12 cent">
+          
+          <div class="findjewels">
+            {{ ts.translate("findyourjewels") | uppercase }}
+          </div>
+
+          <div id="selectedJewell" class="selectedJewell">{{ ts.translate(selectedValue) | uppercase }}</div>
+          <div class="btnGroup">
+           <label>
+              <input id="allcollections" (change)="handleChange($event.target.value)" type="radio" value="allcollections" name="productradio" />
+              <span>{{ ts.translate("allcollections") | titlecase }}</span>
+            </label>
+  
+            <label>
+                <input id="marriage" type="radio" (change)="handleChange($event.target.value)" value="marriage" name="productradio" />
+                <span>{{ ts.translate("wedding") | titlecase }}</span>
+              </label>
+              <label>
+                <input id="women" type="radio" (change)="handleChange($event.target.value)" value="women" name="productradio" />
+                <span>{{ ts.translate("women") | titlecase }}</span>
+              </label>
+            <label>
+              <input id="men" type="radio" (change)="handleChange($event.target.value)" value="men" name="productradio" />
+              <span>{{ ts.translate("men") | titlecase }}</span>
+            </label>
+           
+            <label>
+              <input id="kids" type="radio" (change)="handleChange($event.target.value)" value="kids"  name="productradio" />
+              <span>{{ ts.translate("kids") | titlecase }}</span>
+            </label>
+            <label>
+              <input id="gifts" type="radio" (change)="handleChange($event.target.value)" value="gifts" name="productradio" />
+              <span>{{ ts.translate("gifts") | titlecase }}</span>
+            </label>
+           
+  
+            
+          </div>
+        
+        </div>
+
+      
+        <div id="dropdown" class="dropdown">
+           
+          <div class="staticfield">
+              <label id="findtext"> {{ ts.translate("findyourjewels") | uppercase }}</label>
+          <mat-form-field appearance="outline">
+        
+          
+            <mat-select class="dropdownselect" [(ngModel)]="selectedoption" (selectionChange)="handleChange($event.value)" name="jwelltype">
+              <mat-option class="droptext" *ngFor="let item of types" [value]="item.key">
+                {{ts.translate(item.value) | titlecase }}
+              </mat-option>
+            </mat-select>
+            <img id="productdropicon" src="../../../assets/images/downarrowb.png">
+          </mat-form-field>
+        </div>
+          </div>
+          
+        <div id="productsLists" class="col-lg-9 col-md-9   col-sm-12 col-12 productsLists">
+            <div *ngIf="tempdata.length==0" class="noproducts">{{ts.translate('noproductsfound')}}</div>
+          <div class="ImgList " *ngFor="let item of tempdata">
+            <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+            <!-- <a class="zoombut" (click)="openDialog(item)">Click to zoom</a> -->
+            <button mat-button  class="enqbut" (click)="gotowhatsapp(item.imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+              <div class="procode">{{item.code}}</div>
+              <div  class="proname"> {{ ts.translate(item.metal+'a') | titlecase }} {{ts.translate(item.category)}} {{item.name}}</div>
+             <div class="imgwrapper">
+              <img
+                class="productimg"
+                src="{{ item.imgsrc }}"
+                (click)="openDialog(item)"
+              />
+            </div>
+            
+            </div>
+          </div>
+        </div>
+  
+  
+  
+      </div>
+      <app-talktous [talktouscontent]="ts.translate('talktouscollection')"></app-talktous>
+    </div>
+    <div class="linkstab">
+      <a (click)="goToPage('home')"><img class="homeimg pointer" src="../../../assets/images/homeicon.svg"></a>
+      <span class="padl15"> <img class="downarrow " src="../../../assets/images/downarrow.png"/> <span class="padl15 pointer"> <a (click)="goToCollections('allcollections')"  >{{ts.translate('collections')}} </a></span> </span> 
+     
+  
+    </div>
+    <app-footer></app-footer>
+    </div>
+   
+  </div>
+  
+    
+   
+  

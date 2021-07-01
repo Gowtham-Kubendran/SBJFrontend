@@ -1,0 +1,421 @@
+
+
+<div id="demo1" class="carousel slide" data-interval="false" pause="true" >
+
+ 
+  <div class="carousel-inner no-padding" appNoRightClick>
+    <div class="carousel-item active">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[0].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[0].code}}</div>
+         <div class="proname"> 
+            {{ ts.translate(imgsrc[0].metal+'a') | titlecase }} {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[0].imgsrc}}"
+            (click)="openDialog(imgsrc[0])"
+          />
+          
+        </div>
+      </div>    
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[1].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[1].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[1].metal+'a') | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[1].imgsrc}}"
+            (click)="openDialog(imgsrc[1])"
+          />
+         
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"(click)="gotowhatsapp(imgsrc[2].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          
+          <div class="procode">{{imgsrc[2].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[2].metal+'a') | titlecase }}   {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[2].imgsrc}}"
+            (click)="openDialog(imgsrc[2])"
+          />
+          
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[3].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[3].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[3].metal+'a') | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[3].imgsrc}}"
+            (click)="openDialog(imgsrc[3])"
+          />
+        
+        </div>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[4].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[4].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[4].metal+'a') | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[4].imgsrc}}"
+            (click)="openDialog(imgsrc[4])"
+          />
+        
+        </div>
+      </div>    
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[5].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[5].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[5].imgsrc}}"
+            (click)="openDialog(imgsrc[5])"
+          />
+         
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[6].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[6].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[6].metal+'a') | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[6].imgsrc}}"
+            (click)="openDialog(imgsrc[6])"
+          />
+         
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[7].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[7].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[7].metal+'a') | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[7].imgsrc}}"
+            (click)="openDialog(imgsrc[7])"
+          />
+         
+        </div>
+      </div>  
+    </div>
+    <div class="carousel-item">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[8].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[8].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[8].metal+'a') | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[8].imgsrc}}"
+            (click)="openDialog(imgsrc[8])"
+          />
+         
+        </div>
+      </div>    
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[9].imgsrc)"  ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[9].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[9].metal+'a') | titlecase }}  {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[9].imgsrc}}"
+            (click)="openDialog(imgsrc[9])"
+          />
+         
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[10].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[10].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[10].metal+'a') | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[10].imgsrc}}"
+            (click)="openDialog(imgsrc[10])"
+          />
+         
+        </div>
+      </div>   
+      <div class="col-xs-3 col-sm-3 col-md-3 col-6">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut"(click)="gotowhatsapp(imgsrc[11].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[11].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[11].metal+'a') | titlecase }}   {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[11].imgsrc}}"
+            (click)="openDialog(imgsrc[11])"
+          />
+        
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <a id="prevbut1"  class="carousel-control-prev"  (click)="hideprev1()" href="#demo1" data-slide="prev">
+    
+    <div class="nextCaro" >	<img class="left"  src="../../../assets/images/arrow.png" /></div>
+   </a>
+
+  <a id="nextbut1" class="carousel-control-next" (click)="showprev1()" href="#demo1" data-slide="next">
+      <div class="nextCaro" >	<img class="right" src="../../../assets/images/arrow.png" /></div>
+    
+  </a>
+</div>
+
+
+
+
+
+
+<div id="demo2" class="carousel slide"  data-touch="false" data-wrap="false" data-interval="false" pause="true" >
+
+ 
+  
+  
+  <div class="carousel-inner no-padding" appNoRightClick>
+    <div class="carousel-item active center">
+      <div class="col-sm-12 col-12">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[0].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[0].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[0].metal+'a') | titlecase }}  {{ts.translate(imgsrc[0].category)}} {{imgsrc[0].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[0].imgsrc}}"
+            (click)="openDialog(imgsrc[0])"
+          />
+         
+        </div>
+      </div>  
+    </div>  
+
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[1].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[1].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[2].metal+'a') | titlecase }}  {{ts.translate(imgsrc[1].category)}} {{imgsrc[1].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[1].imgsrc}}"
+            (click)="openDialog(imgsrc[1])"
+          />
+        
+        </div>
+      </div>  
+    </div>  
+
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[2].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[2].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[3].metal+'a') | titlecase }}  {{ts.translate(imgsrc[2].category)}} {{imgsrc[2].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[2].imgsrc}}"
+            (click)="openDialog(imgsrc[2])"
+          />
+         
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[3].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[3].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[4].metal+'a') | titlecase }}  {{ts.translate(imgsrc[3].category)}} {{imgsrc[3].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[3].imgsrc}}"
+            (click)="openDialog(imgsrc[3])"
+          />
+         
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center ">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[4].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[4].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[4].category)}} {{imgsrc[4].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[4].imgsrc}}"
+            (click)="openDialog(imgsrc[4])"
+          />
+          
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[5].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[5].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[5].metal+'a') | titlecase }}  {{ts.translate(imgsrc[5].category)}} {{imgsrc[5].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[5].imgsrc}}"
+            (click)="openDialog(imgsrc[5])"
+          />
+          
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[6].imgsrc)" ><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[6].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[6].metal+'a') | titlecase }}  {{ts.translate(imgsrc[6].category)}} {{imgsrc[6].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[6].imgsrc}}"
+            (click)="openDialog(imgsrc[6])"
+          />
+         
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[7].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[7].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[7].metal+'a') | titlecase }}  {{ts.translate(imgsrc[7].category)}} {{imgsrc[7].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[7].imgsrc}}"
+            (click)="openDialog(imgsrc[7])"
+          />
+         
+        </div>
+      </div>  
+    </div>  
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut"  (click)="gotowhatsapp(imgsrc[8].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[8].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[8].metal+'a') | titlecase }}  {{ts.translate(imgsrc[8].category)}} {{imgsrc[8].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[8].imgsrc}}"
+            (click)="openDialog(imgsrc[8])"
+          />
+        
+        </div>
+      </div>  
+    </div> 
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true">
+           <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[9].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[9].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[9].metal+'a') | titlecase }}   {{ts.translate(imgsrc[9].category)}} {{imgsrc[9].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[9].imgsrc}}"
+            (click)="openDialog(imgsrc[9])"
+          />
+         
+        </div>
+      </div>  
+    </div> 
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[10].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[10].code}}</div>
+          <div class="proname">
+              {{ ts.translate(imgsrc[10].metal+'a') | titlecase }}  {{ts.translate(imgsrc[10].category)}} {{imgsrc[10].name}}</div>
+          <img
+            class="productimg"
+            src="{{imgsrc[10].imgsrc}}"
+            (click)="openDialog(imgsrc[10])"
+          />
+       
+        </div>
+      </div>  
+    </div> 
+    <div class="carousel-item">
+      <div class="col-sm-12 col-12 center">
+        <div class="indiImg" data-aos="fade-up" data-aos-once="true"> 
+          <button mat-button  class="enqbut" (click)="gotowhatsapp(imgsrc[11].imgsrc)"><span><img class="enqimg" src="../../../assets/images/wiconw.png"  /></span>{{ts.translate('enquire')}}</button>
+          <div class="procode">{{imgsrc[11].code}}</div>
+          <div class="proname"> 
+              {{ ts.translate(imgsrc[11].metal+'a') | titlecase }}  {{ts.translate(imgsrc[11].category)}} {{imgsrc[11].name}}</div>
+          <img appNoRightClick
+            class="productimg"
+            src="{{imgsrc[11].imgsrc}}"
+            (click)="openDialog(imgsrc[11])"
+          />
+        
+        </div>
+      </div>  
+    </div> 
+   
+
+    
+  </div>
+  
+  <!-- <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+    <div class="nextCaro">	<img class="left" src="../../../assets/images/arrow.png" /></div>
+     -->
+    <a id="prevbut2"  class="carousel-control-prev" (click)="hideprev2()"  href="#demo2" data-slide="prev">
+    
+     <div class="nextCaro">	<img class="left" src="../../../assets/images/arrow.png" /></div>
+    </a>
+  
+  <a id="nextbut2" class="carousel-control-next" (click)="showprev2()"  href="#demo2" data-slide="next">
+      <div class="nextCaro">	<img class="right" src="../../../assets/images/arrow.png" /></div>
+   </a>
+
+
+
+
+
+    
