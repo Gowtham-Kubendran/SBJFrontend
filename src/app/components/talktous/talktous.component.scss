@@ -38,14 +38,22 @@
     width: 80%;
     padding-left: 40px;
 }
+
+.fw100
+{
+  font-weight: 100;
+}
+
 .talktousButton
 {
   margin: 0;
   position: absolute;
   top: 50%;
   right: 20px;
+  font-weight: 100;
   font-size: 18px;  
-  font-family: 'opR','tamilf';
+  font-family: 'opB','tamilf';
+  // font:  400/100 18px 'opR','tamilf';
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -71,14 +79,30 @@
 }
 .talktousButton
 {
-  right: 20px;
+  right: 60px;
   font-size: 16px;
 }
 .talktouspara
 {
   width: 75%;
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 15px;
+}
+
+}
+@media screen and (max-width: 930px) {
+
+.talktousButton
+{
+  right: 2em;
+}
+.talktouspara
+{
+  padding-left: 1em;
+}
+.talktous
+{
+  padding:2em 0;
 }
 
 }

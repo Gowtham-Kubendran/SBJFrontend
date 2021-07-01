@@ -176,7 +176,10 @@ mat-sidenav {
 main {
   padding: 10px;
 }
-
+.phonenumber
+{
+  padding-top: 2px;
+}
 .wrapper
 {
   overflow-x: hidden;
@@ -408,11 +411,11 @@ color: white;
     color:#fff;
     border-radius:5px;
   }
-  // .phonelink
-  // {
-  //   font-size: 12px;
-  //   padding-top: 1em;
-  // }
+  .phonelink
+  {
+    font-size: 12px;
+    
+  }
 
   #prevuser  
   {
@@ -1763,6 +1766,11 @@ padding:0;
    {
      width:100%;
    }
+
+   .icondiv{
+    padding-left: 2em;
+    padding-top: 0.5em;
+   }
  }
 
  @media screen and (max-width: 700px) {
@@ -2300,7 +2308,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   .phonelink
     {
       display: block;
-      font-size:14px;
+      font-size:12px;
     }
   
   .opaque
@@ -2476,7 +2484,7 @@ all and (min-width: 992px) and (-webkit-transform-3d) {
   .phonediv
   {
     float: right;
-    padding: 25px 40px;
+    padding: 25px 60px;
   }
   
   .icondiv
