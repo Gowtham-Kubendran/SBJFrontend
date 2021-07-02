@@ -672,6 +672,17 @@ color:#444;
     margin-top: -2px !important;
 
   }
+  .flexdisplay
+  {
+    display:inline-flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  .promisebox
+  {
+    width: 300px;
+  }
   .marginTop
   {
     margin-top: 8em;
@@ -1780,6 +1791,11 @@ padding:0;
   // left: 0;
   // display: block;
   // }
+
+  .flexdisplay
+  {
+    justify-content: center;
+  }
 .downarrow
 {
   display:none;
