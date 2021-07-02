@@ -44,6 +44,9 @@
 {
   width:75px;
   height:75px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(0%) translateY(-50%);
 }
 .opaque
 {
@@ -103,13 +106,13 @@
   color: black;
   cursor: pointer;
   background-color: #fff;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+  
 }
 
 #menu, 
 #toggle-menu {
   background-color: #fff;
-  height: 70px;
+  height: 100px;
 }
 
 #toggle-menu, 
@@ -198,7 +201,7 @@
 .phonediv
 {
   float: right;
-  padding: 25px 40px;
+  padding: 40px 40px;
 }
 
 .icondiv
@@ -263,7 +266,7 @@ font: 12px 'opR' , 'tamilf';
 @media only screen and (max-width: 1024px) {
   .mainmenutext
   {
-    font:12px opB,tamilf;
+    font:18px opB,tamilf;
   }
   .mainmenus
     {
@@ -298,6 +301,7 @@ font: 12px 'opR' , 'tamilf';
   width: 100%;
   display: inline-flex;
   font: 12px 'opR' , 'tamilf';
+ 
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -330,7 +334,7 @@ height: 70px;
 .logoimg
 {
 
-  display: block;
+  display: none;
   width: 50px;
   top: -65px;
   left: 3rem;
@@ -353,7 +357,7 @@ height: 70px;
   font-size: 12px;
   /* top: 0; */
   position: absolute;
-  top: -7.6rem;
+  top: -9.3rem;
   right: 40px;
   font-family: 'opR';
 }
@@ -390,7 +394,7 @@ height: 70px;
   #menu div {
     display: inline-flex;
     // height: 100%;
-    height:70px !important;
+    height:100px !important;
     margin: auto;
   }
 
