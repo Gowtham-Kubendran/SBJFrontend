@@ -135,7 +135,15 @@ export class HomeComponent implements OnInit {
     //initial icons
 
     $(".phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
+
     $('#changedrop2home').attr("src", "../../../assets/images/languageiconw.svg");
+    $('#displaylanguage').css("color", "#fff");
+
+    if (window.innerWidth < 1024)
+    {
+      $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+      $('#displaylanguage').css("color", "black");
+     }
   }
 
   open(id)
@@ -190,7 +198,7 @@ export class HomeComponent implements OnInit {
      
        $("#phoneiconheaderhome").attr("src", "../../../assets/images/wiconw.png");
        $('#changedrop2home').attr("src", "../../../assets/images/languageiconw.svg");
-
+       $('#displaylanguage').css("color", "#fff");
 
        $('.mainmenutext2').css("background-color", "transparent");
        $('.mainmenutext2').css("color", "#fff");
@@ -200,16 +208,20 @@ export class HomeComponent implements OnInit {
        $('#menu2').css("color", "#fff");
        $('#menu2').css("box-shadow", "0px 0px 0px 0px");
 
-       if (window.innerWidth < 900)
+       if (window.innerWidth < 1024)
        {
-        $('.mainmenutext2').css("color", "#444");
-        }
+         $('.mainmenutext2').css("color", "#444");
+         $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+         $('#displaylanguage').css("color", "black");
+       }
+       
      }
      else {
    
       $("#phoneiconheaderhome").attr("src", "../../../assets/images/wicon.svg");
       
-      $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+       $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+       $('#displaylanguage').css("color", "black");
 
        
       // $('.mainmenutext2').css("background-color", "#fff");
@@ -221,12 +233,13 @@ export class HomeComponent implements OnInit {
        $('#menu2').css("box-shadow", "0px 0px 10px 1px #cfcfcf");
        
 
-       if (window.innerWidth < 900)
+       if (window.innerWidth < 1024)
        {
          $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
+         $('#displaylanguage').css("color", "black");
         }
      }
-    
+    //  $('#changedrop2home').attr("src", "../../../assets/images/languageiconb.svg");
    });
   }
 

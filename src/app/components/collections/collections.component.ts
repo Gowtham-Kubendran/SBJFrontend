@@ -148,7 +148,7 @@ export class CollectionsComponent implements OnInit,AfterViewInit {
     var y = $(document).scrollTop(), //get page y value 
         header = $("#selectedJewell");
     if(y >= 450)  {
-      header.css({ position: "fixed", "left": "0", "top": "6rem", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "22px 60px 8px" });
+      header.css({ position: "fixed", "left": "0", "top": "9rem", "width": "100%", "background-color": "#fff", "z-index": "2", "padding": "22px 60px 8px" });
       if (window.innerWidth < 1200)
       {
         header.css({ "top": "4em", "padding": "14px 2em 8px 2em " })
@@ -157,7 +157,7 @@ export class CollectionsComponent implements OnInit,AfterViewInit {
       header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "auto", "padding": "0px 0em 40px 40px  " });
       if (window.innerWidth < 1200)
       {
-        header.css({"padding": "0px 0em 40px 2em  " })
+        header.css({"padding": "0px 0em 40px 40px  " })
         }
     }
 });
@@ -174,7 +174,7 @@ export class CollectionsComponent implements OnInit,AfterViewInit {
       }
      
     } else {
-      header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "100%", "padding": "3em 1em 0 1em" });
+      header.css({ "position": "relative", "top": "0em", "background-color": "transparent", "z-index": "2", "width": "100%", "padding": "3em 3em 0 3em" });
       $('#findtext').css({ 'display': 'block' });
       if (header.css('display') == 'block') {
         $("#productsLists").css({ "padding-top": "8em" });

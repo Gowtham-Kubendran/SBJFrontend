@@ -155,7 +155,7 @@
              
              
                    </mat-menu>
-                   <span style="font-size:12px;">{{showlang}}</span>
+                   <span id="displaylanguage" style="font-size:12px;">{{showlang}}</span>
 
 
         </div>
@@ -195,8 +195,8 @@
         <div class="carousel-caption cartext">
          
             <div class="lines" >{{ts.translate('diamondheroline1')}}            </div>
-            <div class="lines" > {{ts.translate('diamondheroline2')}} <span class="boldcartext" >{{ts.translate('diamondheroline3')}} </span> </div>
-            <div class="lines" >  <span class="boldcartext" >{{ts.translate('diamondheroline4')}} {{ts.translate('diamondheroline5')}}</span> </div>
+            <div class="lines" > <span class="boldcartext" >{{ts.translate('diamondheroline2')}}</span> <span class="boldcartext" >{{ts.translate('diamondheroline3')}} </span> </div>
+            <!-- <div class="lines" >  <span class="boldcartext" >{{ts.translate('diamondheroline4')}} {{ts.translate('diamondheroline5')}}</span> </div> -->
             <button class="buttonclass btn-1" [ngClass]="{'left9': showlang == 'TA'}" (click)="goToProducts('allproducts','Diamond')"><span class="spanclass">{{ts.translate('viewourjewels')}}</span></button>
               
            
@@ -247,7 +247,7 @@
   </div> -->
   <div id="productsec" class="bodyView" #products data-aos="fade-up" data-aos-once="true">
     <div class="bodyHeading">
-        {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('products') |  uppercase}}</span>
+        {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('thayarippugal') |  uppercase}}</span>
     </div>
    <div class="flexhori">
         <div class="indi">
@@ -331,8 +331,8 @@
   <div class="bodyHeading">
     {{ts.translate('engal') |  uppercase}} <span class="bold">{{ts.translate('promises') |  uppercase}}</span>
   </div>
-  <div class="row marginTop">
-    <div class="col-lg-3 col-md-6 col-sm-6">
+  <div class="marginTop flexdisplay">
+    <div class="promisebox">
         <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
               <div>
@@ -344,7 +344,7 @@
             <div class="numbering">1</div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="promisebox">
         <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>
@@ -356,7 +356,7 @@
             <div class="numbering">2</div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="promisebox">
         <div class="PromiseContainer pcolor1" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>
@@ -368,7 +368,7 @@
             <div class="numbering">3</div>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="promisebox">
         <div class="PromiseContainer pcolor2" [ngClass]="{'padtop1em': showlang === 'TA'}">
             <div class="promiseBody">
                 <div>

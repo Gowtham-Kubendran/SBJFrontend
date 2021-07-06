@@ -22,7 +22,8 @@ export const VOCAB_EN = {
   top: 'top',
   sellingjewels: 'selling jewels',
   whatpeople: 'What People',
-  talkaboutus:'talk about us',
+  talkaboutus: 'talk about us',
+  engalaip:'About',
   talktous: 'talk to us',
   talkto: 'talk to',
   us:'us',
@@ -102,7 +103,7 @@ export const VOCAB_EN = {
   withus: 'with us',
   allcollections:'All Collections',
   marriage: 'wedding',
-  story: 'story',
+  story: 'us',
   
   aboutusdata1: 'Sri balagopalan jewelry mart (SBJ) one of the finest sellers of gold,silver and diamond in and around Madurai. It was first inagurated by S.B.Senthil Kumar in 1992 as a small scale industry with 2 employees , the customers satisfaction on the quality of the products and services made our enterprise the best place to buy jewelry was primary key for increase in ratio in the family having around 30 employees till date.The small scale was then made as the large scale jewelers around 2012 which has become the landmark for purchasing the exquisite ornaments . The uniqueness of our enterprise is that the jewelry will be carved based on the customers design and our collection is said to have an tranditional essence as our goldsmiths have experience more than 20 years.',
   aboutusdata21: 'The major intresting feature of our enterprise is the jewellery will be delivered to the customers on-demand brings the exact model without even missing the minute detailing in the jewellery which has attracted the customers even to the rural areas in and around madurai, our organization deals with the B2C having large number of collections to choose for each and every model which fits the customers taste.',
@@ -202,6 +203,15 @@ export const VOCAB_EN = {
   userprofession2: 'Software Engineer',
   userprofession3: 'LIC Agent',
   userprofession4: 'Home Maker',
-  enquire:'Enquire',
+  enquire: 'Enquire',
+  
+  thayarippugal: 'Products',
+  thoguppugal: 'Collections',
+  enterfullname: 'Enter Full Name',
+  enterphonenumber: 'Enter Phone Number',
+  enteremail: 'Enter Email',
+  entersubject: 'Enter Subject',
+  entermessage: 'Enter Message',
+  sendmessage:'Send Message'
   
 }
