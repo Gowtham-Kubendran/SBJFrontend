@@ -39,6 +39,7 @@
     "ngx-slick-carousel": "^0.5.1",
     "popper.js": "^1.16.1",
     "rxjs": "~6.3.3",
+    "sass": "^1.53.0",
     "slick-carousel": "^1.8.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
